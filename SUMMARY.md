@@ -7,5 +7,4 @@
    * Install CLI
        * Linux
        * Mac (coming soon)
-       * Windows (Coming Soon)
 
