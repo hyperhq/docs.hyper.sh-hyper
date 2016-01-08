@@ -3,5 +3,5 @@
 * [Introduction](README.md)
    * What is HyperServe
    * Why HyperServe
-* Getting Started
+* [Getting Started](getting_started.md)
 
