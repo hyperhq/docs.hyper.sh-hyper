@@ -6,7 +6,7 @@
    * [FAQ](faq.md)
 * [Getting Started](getting_started.md)
    * Install CLI
-       * Linux
+       * [Linux](linux.md)
        * Mac (coming soon)
        * Windows (coming soon)
    * Setup Credential
