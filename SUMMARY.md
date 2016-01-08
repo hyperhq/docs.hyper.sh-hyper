@@ -9,7 +9,7 @@
        * [Linux](linux.md)
        * Mac (coming soon)
        * Windows (coming soon)
-   * Setup Credential
+   * [Setup Credential](setup_credential.md)
 * [Features](features.md)
    * [Container](container.md)
    * [Volume](volume.md)
