@@ -9,7 +9,7 @@
        * Mac (coming soon)
        * Windows (coming soon)
    * Setup Credential
-* Features
+* [Features](features.md)
    * Container
    * Volume
    * Network
