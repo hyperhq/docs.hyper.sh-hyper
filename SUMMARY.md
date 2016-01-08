@@ -3,6 +3,7 @@
 * [Introduction](README.md)
    * What is HyperServe
    * Why HyperServe
+   * FAQ
 * [Getting Started](getting_started.md)
    * Install CLI
        * Linux
