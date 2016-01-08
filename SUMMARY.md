@@ -14,4 +14,5 @@
    * [Volume](volume.md)
    * [Network](network.md)
 * [Reference](reference.md)
+   * CLI
 
