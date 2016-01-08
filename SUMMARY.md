@@ -9,4 +9,5 @@
        * Mac (coming soon)
        * Windows (coming soon)
    * Setup Credential
+* Features
 
