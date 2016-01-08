@@ -16,5 +16,5 @@
 * [Reference](reference.md)
    * CLI
    * API
-* Release Notes
+* [Release Notes](release_notes.md)
 
