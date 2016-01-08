@@ -15,4 +15,5 @@
    * [Network](network.md)
 * [Reference](reference.md)
    * CLI
+   * API
 
