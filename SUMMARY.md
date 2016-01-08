@@ -6,6 +6,5 @@
 * [Getting Started](getting_started.md)
    * Install CLI
        * Linux
-       * (Coming) Mac
        * Windows (Coming Soon)
 
