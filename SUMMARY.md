@@ -5,4 +5,5 @@
    * Why HyperServe
 * [Getting Started](getting_started.md)
    * Install CLI
+       * Linux
 
