@@ -31,6 +31,7 @@
        * logs
        * port
        * ps
+       * pull
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
