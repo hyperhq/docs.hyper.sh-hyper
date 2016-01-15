@@ -24,7 +24,6 @@
        * fip_associate
        * fip_deassociate
        * fip_ls
-       * fip_rm
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
