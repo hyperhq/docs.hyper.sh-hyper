@@ -39,7 +39,7 @@
        * [rmi](Reference/CLI/rmi.md)
        * [run](Reference/CLI/run.md)
        * [start](Reference/CLI/start.md)
-       * stop
+       * [stop](Reference/CLI/stop.md)
        * tag
        * version
        * volume_create
