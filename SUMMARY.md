@@ -43,6 +43,7 @@
        * tag
        * version
        * volume_create
+       * volume_ls
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
