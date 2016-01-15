@@ -23,7 +23,7 @@
        * [fip_allocate](Reference/CLI/fipallocate.md)
        * [fip_associate](Reference/CLI/fipassociate.md)
        * [fip_deassociate](Reference/CLI/fip_deassociate.md)
-       * fip_ls
+       * [fip_ls](Reference/CLI/fip_ls.md)
        * fip_release
        * images
        * login
