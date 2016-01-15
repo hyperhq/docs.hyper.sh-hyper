@@ -30,7 +30,7 @@
        * [logout](Reference/CLI/logout.md)
        * [logs](Reference/CLI/logs.md)
        * [port](Reference/CLI/port.md)
-       * ps
+       * [ps](Reference/CLI/ps.md)
        * pull
        * push
        * rename
