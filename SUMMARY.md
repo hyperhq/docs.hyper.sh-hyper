@@ -38,7 +38,7 @@
        * [rm](Reference/CLI/rm.md)
        * [rmi](Reference/CLI/rmi.md)
        * [run](Reference/CLI/run.md)
-       * start
+       * [start](Reference/CLI/start.md)
        * stop
        * tag
        * version
