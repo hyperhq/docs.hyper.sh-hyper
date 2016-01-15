@@ -42,7 +42,7 @@
        * [stop](Reference/CLI/stop.md)
        * [tag](Reference/CLI/tag.md)
        * [version](Reference/CLI/version.md)
-       * volume_create
+       * [volume_create](Reference/CLI/volume_create.md)
        * volume_ls
        * volume_rm
    * API
