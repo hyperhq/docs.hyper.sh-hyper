@@ -37,6 +37,7 @@
        * restart
        * rm
        * rmi
+       * run
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
