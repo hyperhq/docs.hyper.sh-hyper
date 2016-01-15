@@ -36,6 +36,7 @@
        * rename
        * restart
        * rm
+       * rmi
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
