@@ -33,6 +33,7 @@
        * ps
        * pull
        * push
+       * rename
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
