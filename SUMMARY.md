@@ -1,4 +1,4 @@
-# Summary
+# HyperServe User Guide (2016-01-15)
 
 * [Introduction](./Introduction/__index__.md)
    * [What is HyperServe](./Introduction/what_is_hyperserve.md)
