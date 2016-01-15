@@ -29,7 +29,7 @@
        * [login](Reference/CLI/login.md)
        * [logout](Reference/CLI/logout.md)
        * [logs](Reference/CLI/logs.md)
-       * port
+       * [port](Reference/CLI/port.md)
        * ps
        * pull
        * push
