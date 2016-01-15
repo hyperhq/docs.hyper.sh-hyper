@@ -43,7 +43,7 @@
        * [tag](Reference/CLI/tag.md)
        * [version](Reference/CLI/version.md)
        * [volume_create](Reference/CLI/volume_create.md)
-       * volume_ls
+       * [volume_ls](Reference/CLI/volume_ls.md)
        * volume_rm
    * API
 * [Release Notes](ReleaseNote/__index__.md)
