@@ -25,6 +25,7 @@
        * fip_deassociate
        * fip_ls
        * fip_release
+       * images
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
