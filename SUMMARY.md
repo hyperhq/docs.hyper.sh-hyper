@@ -32,7 +32,7 @@
        * [port](Reference/CLI/port.md)
        * [ps](Reference/CLI/ps.md)
        * [pull](Reference/CLI/pull.md)
-       * push
+       * [push](Reference/CLI/push.md)
        * rename
        * restart
        * rm
