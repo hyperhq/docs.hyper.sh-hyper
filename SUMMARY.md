@@ -41,7 +41,7 @@
        * [start](Reference/CLI/start.md)
        * [stop](Reference/CLI/stop.md)
        * [tag](Reference/CLI/tag.md)
-       * version
+       * [version](Reference/CLI/version.md)
        * volume_create
        * volume_ls
        * volume_rm
