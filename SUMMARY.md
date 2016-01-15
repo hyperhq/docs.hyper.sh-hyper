@@ -25,7 +25,7 @@
        * [fip_deassociate](Reference/CLI/fip_deassociate.md)
        * [fip_ls](Reference/CLI/fip_ls.md)
        * [fip_release](Reference/CLI/fip_release.md)
-       * images
+       * [images](Reference/CLI/images.md)
        * login
        * logout
        * logs
