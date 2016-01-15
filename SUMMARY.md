@@ -19,6 +19,7 @@
    * [CLI](Reference/CLI/__index__.md)
        * [attach](Reference/CLI/attach.md)
        * [commit](Reference/CLI/commit.md)
+       * exec
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
