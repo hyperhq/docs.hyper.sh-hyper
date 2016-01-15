@@ -21,7 +21,7 @@
        * [commit](Reference/CLI/commit.md)
        * [exec](Reference/CLI/exec.md)
        * [fip_allocate](Reference/CLI/fipallocate.md)
-       * fip_associate
+       * [fip_associate](Reference/CLI/fipassociate.md)
        * fip_deassociate
        * fip_ls
        * fip_release
