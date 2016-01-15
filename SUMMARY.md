@@ -38,6 +38,7 @@
        * rm
        * rmi
        * run
+       * start
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
