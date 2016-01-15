@@ -41,6 +41,7 @@
        * start
        * stop
        * tag
+       * version
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
