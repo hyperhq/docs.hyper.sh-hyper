@@ -19,7 +19,7 @@
    * [CLI](Reference/CLI/__index__.md)
        * [attach](Reference/CLI/attach.md)
        * [commit](Reference/CLI/commit.md)
-       * exec
+       * [exec](Reference/CLI/exec.md)
        * fip_allocate
        * fip_associate
        * fip_deassociate
