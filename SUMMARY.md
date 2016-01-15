@@ -18,7 +18,7 @@
 * [Reference](Reference/__index__.md)
    * [CLI](Reference/CLI/__index__.md)
        * [attach](Reference/CLI/attach.md)
-       * commit
+       * [commit](Reference/CLI/commit.md)
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
