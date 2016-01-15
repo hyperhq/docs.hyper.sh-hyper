@@ -27,7 +27,7 @@
        * [fip_release](Reference/CLI/fip_release.md)
        * [images](Reference/CLI/images.md)
        * [login](Reference/CLI/login.md)
-       * logout
+       * [logout](Reference/CLI/logout.md)
        * logs
        * port
        * ps
