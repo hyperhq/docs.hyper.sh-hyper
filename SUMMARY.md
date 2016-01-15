@@ -40,7 +40,7 @@
        * [run](Reference/CLI/run.md)
        * [start](Reference/CLI/start.md)
        * [stop](Reference/CLI/stop.md)
-       * tag
+       * [tag](Reference/CLI/tag.md)
        * version
        * volume_create
        * volume_ls
