@@ -23,6 +23,7 @@
        * fip_allocate
        * fip_associate
        * fip_deassociate
+       * fip_ls
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
