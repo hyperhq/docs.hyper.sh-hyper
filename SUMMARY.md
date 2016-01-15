@@ -1,6 +1,5 @@
 # Table of Contents
 
-* [Introduction](README.md)
 * [Introduction](Introduction/__index__.md)
    * [What is HyperServe](Introduction/what_is_hyperserve.md)
    * [Why HyperServe](Introduction/why_hyperserve.md)
