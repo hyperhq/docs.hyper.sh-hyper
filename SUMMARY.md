@@ -36,7 +36,7 @@
        * [rename](Reference/CLI/rename.md)
        * [restart](Reference/CLI/restart.md)
        * [rm](Reference/CLI/rm.md)
-       * rmi
+       * [rmi](Reference/CLI/rmi.md)
        * run
        * start
        * stop
