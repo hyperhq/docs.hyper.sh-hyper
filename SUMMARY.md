@@ -15,7 +15,7 @@
    * [Volume](volume.md)
    * [Network](network.md)
 * [Reference](reference.md)
-   * CLI
+   * [CLI](cli.md)
    * API
 * [Release Notes](release_notes.md)
 
