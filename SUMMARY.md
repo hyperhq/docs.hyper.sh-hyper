@@ -37,7 +37,7 @@
        * [restart](Reference/CLI/restart.md)
        * [rm](Reference/CLI/rm.md)
        * [rmi](Reference/CLI/rmi.md)
-       * run
+       * [run](Reference/CLI/run.md)
        * start
        * stop
        * tag
