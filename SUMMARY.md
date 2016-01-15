@@ -21,6 +21,7 @@
        * [commit](Reference/CLI/commit.md)
        * exec
        * fip_allocate
+       * fip_associate
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
