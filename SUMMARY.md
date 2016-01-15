@@ -44,7 +44,7 @@
        * [version](Reference/CLI/version.md)
        * [volume_create](Reference/CLI/volume_create.md)
        * [volume_ls](Reference/CLI/volume_ls.md)
-       * volume_rm
+       * [volume_rm](Reference/CLI/volume_rm.md)
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
