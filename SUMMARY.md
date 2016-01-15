@@ -40,6 +40,7 @@
        * run
        * start
        * stop
+       * tag
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
