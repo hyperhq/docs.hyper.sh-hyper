@@ -27,6 +27,7 @@
        * fip_release
        * images
        * login
+       * logout
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
