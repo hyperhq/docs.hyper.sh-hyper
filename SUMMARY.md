@@ -30,6 +30,7 @@
        * logout
        * logs
        * port
+       * ps
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
