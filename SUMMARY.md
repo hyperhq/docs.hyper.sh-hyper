@@ -15,7 +15,7 @@
    * [Volume](./Feature/volume.md)
    * [Network](./Feature/network.md)
 * [Reference](./Reference/__index__.md)
-   * [CLI](./Reference/CLI/cli.md)
+   * [CLI](./Reference/CLI/__index__.md)
    * API
 * [Release Notes](./ReleaseNote/__index__.md)
 
