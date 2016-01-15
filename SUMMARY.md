@@ -28,6 +28,7 @@
        * images
        * login
        * logout
+       * logs
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
