@@ -29,6 +29,7 @@
        * login
        * logout
        * logs
+       * port
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
