@@ -31,7 +31,7 @@
        * [logs](Reference/CLI/logs.md)
        * [port](Reference/CLI/port.md)
        * [ps](Reference/CLI/ps.md)
-       * pull
+       * [pull](Reference/CLI/pull.md)
        * push
        * rename
        * restart
