@@ -32,6 +32,7 @@
        * port
        * ps
        * pull
+       * push
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
