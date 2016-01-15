@@ -1,21 +1,23 @@
-# HyperServe User Guide (2016-01-15)
+# Summary
 
-* [Introduction](./Introduction/__index__.md)
-   * [What is HyperServe](./Introduction/what_is_hyperserve.md)
-   * [Why HyperServe](./Introduction/why_hyperserve.md)
-   * [FAQ](./Introduction/faq.md)
-* [Getting Started](./GettingStarted/__index__.md)
+* [Introduction](README.md)
+* [Introduction](Introduction/__index__.md)
+   * [What is HyperServe](Introduction/what_is_hyperserve.md)
+   * [Why HyperServe](Introduction/why_hyperserve.md)
+   * [FAQ](Introduction/faq.md)
+* [Getting Started](GettingStarted/__index__.md)
    * Install CLI
-       * [Linux](./GettingStarted/linux.md)
+       * [Linux](GettingStarted/linux.md)
        * Mac (coming soon)
        * Windows (coming soon)
-   * [Setup Credential](./GettingStarted/setup_credential.md)
-* [Features](./Feature/__index__.md)
-   * [Container](./Feature/container.md)
-   * [Volume](./Feature/volume.md)
-   * [Network](./Feature/network.md)
-* [Reference](./Reference/__index__.md)
-   * [CLI](./Reference/CLI/__index__.md)
+   * [Setup Credential](GettingStarted/setup_credential.md)
+* [Features](Feature/__index__.md)
+   * [Container](Feature/container.md)
+   * [Volume](Feature/volume.md)
+   * [Network](Feature/network.md)
+* [Reference](Reference/__index__.md)
+   * [CLI](Reference/CLI/__index__.md)
+       * attach
    * API
-* [Release Notes](./ReleaseNote/__index__.md)
+* [Release Notes](ReleaseNote/__index__.md)
 
