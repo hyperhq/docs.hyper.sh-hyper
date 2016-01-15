@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * What is HyperServe
+   * [What is HyperServe](what_is_hyperserve.md)
    * Why HyperServe
    * [FAQ](faq.md)
 * [Getting Started](getting_started.md)
