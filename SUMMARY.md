@@ -33,7 +33,7 @@
        * [ps](Reference/CLI/ps.md)
        * [pull](Reference/CLI/pull.md)
        * [push](Reference/CLI/push.md)
-       * rename
+       * [rename](Reference/CLI/rename.md)
        * restart
        * rm
        * rmi
