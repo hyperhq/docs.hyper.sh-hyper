@@ -20,6 +20,7 @@
        * [attach](Reference/CLI/attach.md)
        * [commit](Reference/CLI/commit.md)
        * exec
+       * fip_allocate
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
