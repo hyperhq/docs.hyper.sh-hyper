@@ -44,6 +44,7 @@
        * version
        * volume_create
        * volume_ls
+       * volume_rm
    * API
 * [Release Notes](ReleaseNote/__index__.md)
 
