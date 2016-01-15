@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
    * [What is HyperServe](what_is_hyperserve.md)
-   * Why HyperServe
+   * [Why HyperServe](why_hyperserve.md)
    * [FAQ](faq.md)
 * [Getting Started](getting_started.md)
    * Install CLI
