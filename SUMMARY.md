@@ -66,7 +66,7 @@
                * [Remove a container](Reference/API/2016-01-18/Container/remove.md)
                * [Exec Create](Reference/API/2016-01-18/Container/exec_create.md)
                * [Exec Start](Reference/API/2016-01-18/Container/exec_start.md)
-               * Exec Resize
+               * [Exec Resize](Reference/API/2016-01-18/Container/exec_resize.md)
                * Exec Inspect
            * [Image](Reference/API/2016-01-18/Image/__index__.md)
                * [List Images](Reference/API/2016-01-18/Image/list.md)
