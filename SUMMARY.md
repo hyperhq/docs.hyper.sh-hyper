@@ -68,6 +68,7 @@
            * [Exec](Reference/API/2016-01-18/Exec/__index__.md)
                * Start
                * Resize
+               * Inspect
            * [Image](Reference/API/2016-01-18/Image/__index__.md)
                * [List Images](Reference/API/2016-01-18/Image/list.md)
                * [Create an image](Reference/API/2016-01-18/Image/create.md)
