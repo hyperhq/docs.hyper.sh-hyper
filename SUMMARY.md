@@ -67,6 +67,7 @@
                * [Exec Create](Reference/API/2016-01-18/Container/exec_create.md)
            * [Exec](Reference/API/2016-01-18/Exec/__index__.md)
                * Start
+               * Resize
            * [Image](Reference/API/2016-01-18/Image/__index__.md)
                * [List Images](Reference/API/2016-01-18/Image/list.md)
                * [Create an image](Reference/API/2016-01-18/Image/create.md)
