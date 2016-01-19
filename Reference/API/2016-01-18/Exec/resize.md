@@ -1,1 +1,1 @@
-# Misc
+# Resize
