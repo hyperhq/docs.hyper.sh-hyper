@@ -63,7 +63,6 @@
                * [Pause a container](Reference/API/2016-01-18/Container/pause.md)
                * [Unpause a container](Reference/API/2016-01-18/Container/unpause.md)
                * [Attach to a container](Reference/API/2016-01-18/Container/attach.md)
-               * [Attach to a container (websocket)](Reference/API/2016-01-18/Container/attach_ws.md)
                * [Remove a container](Reference/API/2016-01-18/Container/remove.md)
            * [Image](Reference/API/2016-01-18/Image/__index__.md)
                * [List Images](Reference/API/2016-01-18/Image/list.md)
