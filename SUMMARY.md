@@ -6,7 +6,7 @@
    * [Why HyperServe](Introduction/why_hyperserve.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/__index__.md)
-   * Install CLI
+   * [Install CLI](GettingStarted/install.md)
        * [Linux](GettingStarted/linux.md)
        * [Mac (coming soon)](mac.md)
        * [Windows (coming soon)](windows.md)
