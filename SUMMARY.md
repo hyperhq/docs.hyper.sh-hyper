@@ -9,7 +9,7 @@
    * Install CLI
        * [Linux](GettingStarted/linux.md)
        * [Mac (coming soon)](mac.md)
-       * Windows (coming soon)
+       * [Windows (coming soon)](windows.md)
    * [Setup Credential](GettingStarted/setup_credential.md)
 * [Features](Feature/__index__.md)
    * [Container](Feature/container.md)
