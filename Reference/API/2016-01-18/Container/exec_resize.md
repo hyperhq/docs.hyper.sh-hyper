@@ -1,2 +1,0 @@
-# Exec Resize
-
