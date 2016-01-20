@@ -1,5 +1,6 @@
-# Table of Contents
+# Summary
 
+* [Introduction](README.md)
 * [Introduction](Introduction/__index__.md)
    * [What is HyperServe](Introduction/what_is_hyperserve.md)
    * [Why HyperServe](Introduction/why_hyperserve.md)
@@ -7,7 +8,7 @@
 * [Getting Started](GettingStarted/__index__.md)
    * Install CLI
        * [Linux](GettingStarted/linux.md)
-       * Mac (coming soon)
+       * [Mac (coming soon)](mac.md)
        * Windows (coming soon)
    * [Setup Credential](GettingStarted/setup_credential.md)
 * [Features](Feature/__index__.md)
