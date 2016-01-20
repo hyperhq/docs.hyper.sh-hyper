@@ -85,5 +85,5 @@
                * [Allocate floating IP](Reference/API/2016-01-18/Network/fip_allocate.md)
                * [List floating IP](Reference/API/2016-01-18/Network/fip_ls.md)
                * [Release floating IP](Reference/API/2016-01-18/Network/fip_release.md)
-* [Release Notes](ReleaseNote/__index__.md)
-
+* [Release Notes](ReleaseNotes/__index__.md)
+   * [2016-01-21](ReleaseNotes/2016-01-21.md)
