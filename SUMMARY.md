@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-   * [What is HyperServe](Introduction/what_is_hyperserve.md)
-   * [Why HyperServe](Introduction/why_hyperserve.md)
+   * [What is Hyper_](Introduction/what_is_hyper_.md)
+   * [Why Hyper_](Introduction/why_hyper_.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/__index__.md)
    * [Install CLI](GettingStarted/install.md)
@@ -88,5 +88,6 @@
                * [List floating IP](Reference/API/2016-01-18/Network/fip_ls.md)
                * [Release floating IP](Reference/API/2016-01-18/Network/fip_release.md)
     * [Quota and Limits](Reference/quota_and_limits.md)
+    * [SLA](Reference/sla.md)
 * [Release Notes](ReleaseNotes/__index__.md)
    * [2016-01-21](ReleaseNotes/2016-01-21.md)

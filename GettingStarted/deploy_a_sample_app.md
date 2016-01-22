@@ -13,7 +13,7 @@ First of all, open a shell session, and enter
 	$ hyper pull hummingbird
 	$ hyper pull mysql
 
-The command will pull the Hummingbird image from Docker Hub to HyperServe cloud. 
+The command will pull the Hummingbird image from Docker Hub to Hyper_ cloud. 
 
 ### 2. Allocate a floating IP 
 
