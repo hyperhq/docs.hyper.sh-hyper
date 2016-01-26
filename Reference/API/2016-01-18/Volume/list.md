@@ -14,9 +14,10 @@
     {
       "Volumes": [
         {
+          "Id": "vol-gnj432se",
           "Name": "tardis",
-          "Driver": "local",
-          "Mountpoint": "/var/lib/docker/volumes/tardis"
+          "Size": 10,
+          "SnapshotId": "snapshot-3gkjo4z4"
         }
       ]
     }

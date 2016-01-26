@@ -69,7 +69,9 @@ The `-w` lets the command being executed inside directory given, here
 
 #### Mount volume (-v, --read-only)
 
-~~TBD~~
+    $ hyper run -d -v hello:/world busybox ls /world
+
+The mount is created inside the container's `/world` directory. Hyper does not support relative paths for mount points inside the container.
 
 #### Publish or expose port (-p, --expose)
 

@@ -10,7 +10,8 @@ Create a volume
     Content-Type: application/json
 
     {
-      "Name": "tardis"
+      "Name": "tardis",
+      "Size": 10
     }
 
 **Example response**:
@@ -20,8 +21,8 @@ Create a volume
 
     {
       "Name": "tardis",
-      "Driver": "local",
-      "Mountpoint": "/var/lib/docker/volumes/tardis"
+      "Size": 10,
+      "SnapshotId": ""
     }
 
 Status Codes:
@@ -32,6 +33,5 @@ Status Codes:
 JSON Parameters:
 
 - **Name** - The new volume's name. If not specified, Docker generates a name.
-- **Driver** - Name of the volume driver to use. Defaults to `local` for the name.
-- **DriverOpts** - A mapping of driver options and values. These options are
-    passed directly to the driver and are driver specific.
+- **Size** - The size of the new volume. The value must be integar with the unit of GB, and valid value is from 10-1000 (1TB).
+- **SnapshotId** - The Id of the snapshot to restore.

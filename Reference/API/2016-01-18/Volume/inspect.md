@@ -14,9 +14,10 @@ Return low-level information on the volume `name`
     Content-Type: application/json
 
     {
-      "Name": "tardis",
-      "Driver": "local",
-      "Mountpoint": "/var/lib/docker/volumes/tardis"
+        "Id": "vol-gnj432se",
+        "Name": "tardis",
+        "Size": 10,
+        "SnapshotId": "snapshot-3gkjo4z4"
     }
 
 Status Codes:

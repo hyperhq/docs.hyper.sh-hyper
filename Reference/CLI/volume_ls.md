@@ -19,6 +19,6 @@ Example output:
     $ hyper volume create --name tyler
     tyler
     $ hyper volume ls
-    DRIVER              VOLUME NAME
-    local               rose
-    local               tyler
+    ID              	SIZE	NAME
+    vol-lcb83sdj        10    	rose
+    vol-vr9cx2zx        100    	tyler

@@ -7,16 +7,17 @@
       --help=false          Print usage
       --name=               Specify volume name
       --size=               Specify volume size (a multiple of 10 GB, up to 1TB)
-      --snapshot=           Specify snapshot id to restore
+      --snapshot=           Specify snapshot id or name to restore
 
 Creates a new volume that containers can consume and store data in. If a name is not specified, Hyper generates a random id. You create a volume and then configure the container to use it, for example:
 
     $ hyper volume create --name hello
     hello
 
-    $ hyper run -d -v hello:/world busybox ls /world
+You can also restore a snapshot to a new volume:
 
-The mount is created inside the container's `/world` directory. Hyper does not support relative paths for mount points inside the container.
+	$ hyper volume create --name hello --snapshot=snapshot-d3848dgk
+	$ hello
 
 Volume names must be unique.  This means you cannot use the same volume name with two different volumes.  If you attempt this `hyper` returns an error:
 
