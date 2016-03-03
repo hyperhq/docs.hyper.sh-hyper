@@ -4,7 +4,7 @@
 
 **Example request**:
 
-    GET /fips HTTP/1.1
+    GET /fips?filters={"dangling":true}} HTTP/1.1
 
 **Example response**:
 
