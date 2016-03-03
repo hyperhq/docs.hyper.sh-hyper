@@ -1,27 +1,29 @@
-# Deploy a sample app
+# Deploy a sample container
 
-Now, let's try to deploy some app. In this walk-through we choose [Rocket.chat](https://rocket.chat/), which is an amazing real time web-based chat tool. To cimplete the tutorial, you need the following:
+Now, let's try to deploy some app. In this walk-through we choose [Rocket.chat](https://rocket.chat/), a popular open realtime webchat tool. To complete this tutorial, you need the following:
 
-- An active account on [Hyper.sh](hyper.sh)
-- Some credits or credit info in your account
-- `hyper` CLI on your laptop, with your credential configured
+- An active account in [Hyper_](hyper.sh)
+- Some credits or credit card info in your account
+- Setup `hyper` CLI on your laptop, configured with the credential
 
 ### 1. Pull the image
 
-Rocket.chat requires two Docker imaes: the app itself and MongoDB. To pull the images into Hyper_, open a shell session on your computer, and enter
+The first step is to pull the image. However, instead of fetching to the laptop, `hyper pull` will
+download the image to Hyper_ cloud. Open your terminal and enter:
 
-	$ hyper pull rocketchat/rocket.chat mongo
+    $ hyper pull rocketchat/rocket.chat
 
-It usually takes several seconds for Hyper_ to fetch these images. Once completed, you can see them with:
+
+It usually takes several seconds for Hyper_ to fetch a image. Once completed, you can see them with:
 
 	$ hyper images
 	~~TODO~~
 
 ### 2. Allocate a floating IP 
 
-To allow Internet access on the web container, you need to allocate a floating IP address：
+To enable public Internet access to a container, you need to allocate a floating IP address：
 
-	$ hyper fip reserve 1
+	$ hyper fip allocate 1
 	211.98.26.201
 
 ### 3. Create a persistent volume 
@@ -35,17 +37,16 @@ For most cases, stateful app (MongoDB) should store the data on persistent volum
 
 	$ hyper run mongo -v vol-z93clfg6:/data
 
-### 5. Acess your container
+### 5. Access your container
 
-The following command setup a remote shell session between your local computer and the container:
+You can "login" the container using the following command:
 
 	$ hyper exec mongo /bin/sh
 
-NOTE: the connection is fully encrypted with the Hyper_ credential on your local computer.
+NOTE: the connection is fully encrypted with the credential configured at your local computer.
 
 ### 6. Launch the container and connect with database
 
 	$ hyper run rocketchat/rocket.chat --public_ip=211.98.26.201
 
 ### Done!
-
