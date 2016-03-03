@@ -1,6 +1,6 @@
 ## deassociate
 
-    Usage: hyper deassociate [OPTIONS] CONTAINER
+    Usage: hyper fip deassociate [OPTIONS] CONTAINER
 
    Deassociate the floating IP from a (stopped) conainer
 

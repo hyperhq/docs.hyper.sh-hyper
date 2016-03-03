@@ -17,6 +17,6 @@ Example output:
 
     $ hyper fip allocate 2
     $ hyper fip ls
-    Floating IP         Pod
-    211.98.26.102       -
+    Floating IP         Container
+    211.98.26.102       
     211.98.26.192       c-08v8wq32
