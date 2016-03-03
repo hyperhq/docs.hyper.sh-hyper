@@ -1,22 +1,26 @@
-# Deassociate the floating IP to a (stopped) container
+# Deassociate the floating IP (FIP) from a container
 
-`POST /containers/(id)/deassociate`
+`POST /fips/deassocate`
 
-Deassociate the floating IP from a (stopped) container
+Deassociate the floating IP from a container
 
 **Example request**:
 
 ```
-POST /containers/e90e34656806/deassociate HTTP/1.1
-Content-Type: application/json
+POST /fips/deassocate?container=hehe HTTP/1.1
+
 ```
 
 **Example response**:
 
-    HTTP/1.1 201 OK
+    HTTP/1.1 204 OK
 
 Status Codes:
 
-- **201** - no error
-- **404** - client request error
+- **204** - no error
+- **404** - no such Container
 - **500** - Internal Server Error
+
+Parameters:
+
+- **container** - the container to be assocated

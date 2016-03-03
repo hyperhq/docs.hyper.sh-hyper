@@ -7,24 +7,20 @@ Release floating IP
 **Example request**:
 
 ```
-POST /fips/release HTTP/1.1
-Content-Type: application/json
+POST /fips/release?ip=8.8.8.8 HTTP/1.1
 
-{
-  "FIP":["8.8.8.8", "9.9.9.9"]
-}
 ```
 
 **Example response**:
 
-    HTTP/1.1 201 OK
+    HTTP/1.1 204 OK
 
 Status Codes:
 
-- **201** - no error
-- **404** - client request error
+- **204** - no error
+- **404** - no such FIP
 - **500** - Internal Server Error
 
-JSON Parameters:
+Parameters:
 
-- **FIP** - the array of FIPs to release
+- **ip** - the FIP to release

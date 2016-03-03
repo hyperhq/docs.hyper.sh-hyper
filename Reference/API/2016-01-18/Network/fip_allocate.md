@@ -7,24 +7,32 @@ Allocate free floating IP
 **Example request**:
 
 ```
-POST /fips/allocate HTTP/1.1
-Content-Type: application/json
-
-{
-  "Count":"5"
-}
+POST /fips/allocate?count=5 HTTP/1.1
 ```
 
 **Example response**:
 
-    HTTP/1.1 201 OK
+```
+HTTP/1.1 201 OK
+
+Content-Type: application/json
+
+{
+  [
+    "172.16.0.6",
+    "172.16.0.7",
+    "172.16.0.8",
+    "172.16.0.9",
+    "172.16.0.10",
+  ]
+}
+```
 
 Status Codes:
 
 - **201** - no error
-- **404** - client request error
 - **500** - Internal Server Error
 
-JSON Parameters:
+Parameters:
 
-- **Count** - the number of free FIPs to allocate
+- **count** - the number of free FIPs to allocate
