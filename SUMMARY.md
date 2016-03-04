@@ -5,7 +5,6 @@
    * [Why Hyper_](Introduction/why_hyper_.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/__index__.md)
-   * Setup
    * [Install CLI](GettingStarted/install.md)
        * [Linux](GettingStarted/linux.md)
        * [Mac (coming soon)](mac.md)
