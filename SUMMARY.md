@@ -5,13 +5,13 @@
    * [Why Hyper_](Introduction/why_hyper_.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/__index__.md)
+   * Setup
    * [Install CLI](GettingStarted/install.md)
        * [Linux](GettingStarted/linux.md)
        * [Mac (coming soon)](mac.md)
        * [Windows (coming soon)](windows.md)
    * [Setup Credential](GettingStarted/setup_credential.md)
    * [Deploy a sample app](GettingStarted/deploy_a_sample_app.md)
-   * Setup
 * [Features](Feature/__index__.md)
    * [Image](Feature/Image/__index__.md)
    * [Container](Feature/Container/__index__.md)
