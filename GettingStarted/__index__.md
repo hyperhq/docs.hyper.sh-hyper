@@ -9,7 +9,7 @@ To get started, please following these steps:
 - Install `hyper` CLI on your laptop
 - Generate a credential and configure the CLI
 
-Done! Your Hyper_ account is ready to use. Next, you can play with the following samples:
+Done! Your Hyper_ account is ready to use. Now you can try to launch a container, or play with these examples:
 
 - Deploy a Rocket.chat container
 - Deploy a Wordpress container with a PostgreSQL container
