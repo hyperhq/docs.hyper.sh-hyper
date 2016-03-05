@@ -2,7 +2,7 @@
 
 Welcome to Hyper_!
 
-To get started, please following these steps:
+To get started, please follow these steps:
 
 - [Create an account](https://hyper.sh/signup/) with Hyper_
 - Provide your billing information and complete your account
