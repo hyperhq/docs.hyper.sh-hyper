@@ -1,6 +1,6 @@
 # Deploy a sample container
 
-Now, let's try to deploy some app. In this walk-through we choose [Rocket.chat](https://rocket.chat/), a popular open realtime webchat tool. To complete this tutorial, you need the following:
+Now, let's try to launch a container. To complete this tutorial, you need the following:
 
 - An active account in [Hyper_](hyper.sh)
 - Some credits or credit card info in your account
@@ -11,8 +11,7 @@ Now, let's try to deploy some app. In this walk-through we choose [Rocket.chat](
 The first step is to pull the image. However, instead of fetching to the laptop, `hyper pull` will
 download the image to Hyper_ cloud. Open your terminal and enter:
 
-    $ hyper pull rocketchat/rocket.chat
-
+    $ hyper pull nginx
 
 It usually takes several seconds for Hyper_ to fetch a image. Once completed, you can see them with:
 
@@ -21,32 +20,43 @@ It usually takes several seconds for Hyper_ to fetch a image. Once completed, yo
 
 ### 2. Allocate a floating IP 
 
-To enable public Internet access to a container, you need to allocate a floating IP address：
+To enable public Internet access to the container, you can allocate a floating IP address：
 
 	$ hyper fip allocate 1
 	211.98.26.201
 
 ### 3. Create a persistent volume 
 
-For most cases, stateful app (MongoDB) should store the data on persistent volumes:
+In the case that you prefer to store data on an additional disk, you can create a persistent volume:t cases, stateful app (MongoDB) should store the data on persistent volumes:
 
-	$ hyper volume create 10
+	$ hyper volume create 10     # size in GB
 	vol-z93clfg6 is created
 	
-### 4. Launch MongoDB container with the volume
+### 4. Launch the container
 
-	$ hyper run mongo -v vol-z93clfg6:/data
+	$ hyper run nginx -v vol-z93clfg6:/data myweb
+	myweb
 
-### 5. Access your container
+### 5. Associate the floating IP with the container
 
-You can "login" the container using the following command:
+    $ hyper associate 211.98.26.201 myweb
+    myweb
 
-	$ hyper exec mongo /bin/sh
+### 6. Test
+- open your browser
+- enter `http://211.98.26.201/`
+
+### 7. Access your container
+
+You can remotely access the container using the following command:
+
+	$ hyper exec myweb /bin/sh
 
 NOTE: the connection is fully encrypted with the credential configured at your local computer.
 
-### 6. Launch the container and connect with database
+### 8. Remove the container
 
-	$ hyper run rocketchat/rocket.chat --public_ip=211.98.26.201
+    $ hyper rm myweb
+    myweb
 
 ### Done!
