@@ -10,16 +10,16 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 	- Volume Size Range: 10GB - 1TB
 	- Max number of volumes mounted on one container: 4
 - Network
-	- Maxi Floating IP per Container: 1
-	- Maxi Internal IP per Container: 1
+	- Max Floating IP per Container: 1
+	- Max Internal IP per Container: 1
 
 ## Quota
-- Container: 100 per region
+- Container: 50 per region
 - Image:  100 per region
 - Storage
-	- Volume: 1000 volumes per region
-	- Snapshot: 2000 snapshots per region
-- Floating IP: 5 per region
+	- Volume: 200 volumes per region
+	- Snapshot: 400 snapshots per region
+- Floating IP: 10 per region
 
 ### Request a quota increase
 
