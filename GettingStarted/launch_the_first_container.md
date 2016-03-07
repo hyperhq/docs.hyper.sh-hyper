@@ -37,8 +37,8 @@ To enable public Internet access to the container, you need to associate a float
 
 	$ hyper fip allocate 1
 	211.98.26.201
-    $ hyper associate 211.98.26.201 myweb
-    myweb
+	$ hyper associate 211.98.26.201 myweb
+	myweb
 
 ### 5. Test
 - Open your browser
