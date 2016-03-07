@@ -4,31 +4,26 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 
 ## Hard Limits
 - Image
-	- Maximum Image Size: 5GB – Hard
-- CPU:
-	- Maximum CPU cores per Container: 32 - Hard
-- Disk
-	- Maximum Container Disk Space (without Volume): 10GB – Hard
-	- Maximum Volume Size: 1TB - Hard
-	- Minimum Volume Size: 10GB - Hard
+	- Max Image Size: 5GB
+- Volume
+	- Root Volume Size: 10GB
+	- Volume Size Range: 10GB - 1TB
+	- Max number of volumes mounted on one container: 4
 - Network
-	- Maximum Floating IP per Container: 1 - Hard
-	- Maximum Internal IP per Container: 1 - Hard
+	- Maxi Floating IP per Container: 1
+	- Maxi Internal IP per Container: 1
 
 ## Quota
-- Container: 100 per region per account
-- Image:  100 per region per account
-- CPU:  20 cores per region per account
-- Mem: 40 GB per region per account
-- Disk
-	- Total volume storage per region per account: 10TB
-	- Volume: 1000 volumes per region per account
-	- Snapshot: 2000 snapshots per region per account
-- Floating IP: 5 per region per account
+- Container: 100 per region
+- Image:  100 per region
+- Storage
+	- Volume: 1000 volumes per region
+	- Snapshot: 2000 snapshots per region
+- Floating IP: 5 per region
 
 ### Request a quota increase
 
-Sign in the Hyper web console, open the support page.
+Sign in Hyper_ console, open the support page.
 
 Under Regarding, choose Service Limit Increase.
 
