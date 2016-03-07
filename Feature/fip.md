@@ -9,12 +9,29 @@ Floating IP is associated with your Hyper_ account. You need to allocate new fre
     52.68.129.20
     52.68.129.21
     52.68.129.22
-    $ hyper fip assign
+    $ hyper fip associate 52.68.129.19 myweb
+    myweb
 
+To de-associate a floating IP from a running container:
+
+    $ hyper fip deassociate myweb
+    52.68.129.19
     
+When a container is stopped, the associated floating IP (if any) will be automatically de-associated. When you start the container, you need to associate the IP again:
+    
+    $ hyper stop myweb
+    myweb
+    (52.68.129.19 is free)
+    $ hyper start myweb
+    $ hyper fip associate 52.68.129.19 myweb
+    myweb
 
+NOTE: when a container is restarted, the floating IP will keep associated.
 
--------------------------
+To release a floating IP:
 
-An Elastic IP address is a static IP address designed for dynamic cloud computing. With an Elastic IP address, you can mask the failure of an instance or software by rapidly remapping the address to another instance in your account. Your Elastic IP address is associated with your AWS account, not a particular instance, and it remains associated with your account until you choose to release it explicitly. An Elastic IP address is for use in a specific region only.
+    $ hyper fip release 52.68.129.19
+    52.68.129.19
+
+> NOTE: floating IP is priced at a monthly rate: $1/month. When an IP is allocated, you will be charged for that current month. And ~~TODO~~
 
