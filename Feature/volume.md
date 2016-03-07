@@ -1,7 +1,8 @@
 # Volume
 
-In Hyper_, volume offers high availability, durability, and consistent performance needed to run your workloads. `Volume` is a persistent storage service for use with containers in the Hyper_ cloud.  Multiple replicas will be automatically created with each volume in the same region to protect your data from hardware failure. 
-In Hyper_, volume uses `EXt4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container, with the size range of `10GB` to `1TB`:
+In Hyper_, volume offers high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from hardware failure. 
+
+Volume uses `EXt4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container, with the size range of `10GB` to `1TB`:
 
     $ hyper volume_create 100 -n db_data
 
