@@ -7,7 +7,7 @@
 * [Getting Started](GettingStarted/__index__.md)
    * [Install CLI](GettingStarted/install.md)
    * [Setup Credential](GettingStarted/setup_credential.md)
-   * [Launch the first container](GettingStarted/launch_a_container.md)
+   * [Launch the first container](GettingStarted/launch_the_first_container.md)
 * [Features](Feature/__index__.md)
    * [Image](Feature/Image/__index__.md)
    * [Container](Feature/Container/__index__.md)
