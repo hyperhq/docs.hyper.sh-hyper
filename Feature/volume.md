@@ -33,4 +33,4 @@ To failover a volume, you need to `rm` the old container, and launch a new one t
     $ hyper rm db_contaienr
     $ hyper run ubuntu -v db_data:/opt/data new_db
 
-Volume is 
+Volumes are constrained by region. There is currently no way for containers to access volume residing in different regions.
