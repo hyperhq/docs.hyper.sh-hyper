@@ -2,13 +2,15 @@
 
 In Hyper_, volume offers high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from hardware failure. 
 
-Volume uses `EXt4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container:
+Volume uses `EXT4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container:
 
     $ hyper volume create 100 -n db_data
 
-Volume can also be created from snapshot:
+Volume can also be created from snapshots:
 
     $ hyper volume create snapshot-2ixknb3z db_data
+    
+The new volume's size is the same as the original snapshot.
 
 To mount volumes to a container, use `hyper run`. 
 
