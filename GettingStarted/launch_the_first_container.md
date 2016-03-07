@@ -1,4 +1,4 @@
-# Deploy a sample container
+# Launch the first container
 
 Now, let's try to launch a container. To complete this tutorial, you need the following:
 
