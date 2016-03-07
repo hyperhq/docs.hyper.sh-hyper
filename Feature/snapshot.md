@@ -4,4 +4,4 @@ Hyper_ allows you to take point-in-time snapshots of your volumes. Snapshots are
 
 New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot. When you create a volume from an existing snapshot, it loads lazily in the background so that you can begin using them right away. If you access a piece of data that hasn't been loaded yet, the volume immediately downloads the requested data from Amazon S3, and then continues loading the rest of the volume's data in the background. For more information, see Creating an Amazon EBS Snapshot.
 
-Snapshots are constrained to the region in which they are created. After you have created a snapshot of an EBS volume, you can use it to create new volumes in the same region. 
+Snapshots are constrained to the region in which they are created. You can create new volumes from existing snapshots in the same region.
