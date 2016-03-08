@@ -5,6 +5,6 @@ Hyper_ allows you to take point-in-time snapshots of your volumes. Snapshots are
     $ hyper volume snapshot --name new_snapshot vol-2skg12da
     new_snapshot is created
 
-New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot.
+New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot, e.g. cannot increase or shrink the size.
 
 Snapshots are constrained to the region in which they are created. You can create new volumes from existing snapshots in the same region.
