@@ -17,7 +17,7 @@ To de-associate a floating IP from a running container:
     $ hyper fip deassociate myweb
     52.68.129.19
     
-When a container is stopped, the associated floating IP (if any) will be automatically de-associated. When you start the container, you need to associate the IP again:
+When a container is stopped, the associated floating IP (if any) will be automatically de-associated, which means that when you start the container, you need to associate the IP again:
     
     $ hyper stop myweb
     myweb
