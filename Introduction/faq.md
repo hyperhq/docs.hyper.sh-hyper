@@ -22,13 +22,13 @@ Q: How is Hyper_ different than typical container services?
 ### Product
 
 Q: How quickly will containers be running in Hyper_?
-> Usually it takes **less than 5 seconds** from the issue of `hyper run` to the point where the container is running.
+> Usually it takes **about 3 seconds** from the issue of `hyper run` to the point where the container is running.
 
 Q: How to schedule containers in Hyper_ ?
-> No, you don't. Hyper_ works like "**A remote laptop with unlimited capacity**". You may launch any number of containers at any point of time, and all containers appear to run on a single host. Therefore, you don't need 
+> No, you don't need to. Hyper_ works like "**a single host with unlimited capacity**". You may launch any number of containers at any point of time, without worrying about things like capacity planning, VM instance size, job scheduling and cluster utilization.
 
 Q: How to connect multiple containers in Hyper_?
-> By default, Hyper_ creates a L2 private network for each account, and place all containers of a user in her default network. With the help of L2 isolation and connectivity, you can simply connect containers in the same ways as you link containers on your local laptop:
+> By default, Hyper_ creates a L2 overlay network for each account, and place all containers of a user in one's default network, where all containers appear to run on the same node. This helps multi-tenant isolation as well as multi-container communication, e.g. you can simply connect containers in the same ways as you link containers on your local laptop:
 
 	$ hyper run nginx --link dbcontainer
 
