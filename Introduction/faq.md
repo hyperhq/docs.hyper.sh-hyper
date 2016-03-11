@@ -2,7 +2,7 @@
 
 ### General
 Q: What is Hyper_ ?
-> Hyper_ is a container cloud service. It is designed to make container hosting **simple and secure** for developers.
+> Hyper_ is a secure container cloud service. It is designed for developers to run container in production **simple and secure**.
 
 Q: How is Hyper_ different than typical container services?
 > **Simple, Secure, Save**!
