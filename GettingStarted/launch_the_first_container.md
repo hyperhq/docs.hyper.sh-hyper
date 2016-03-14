@@ -3,17 +3,16 @@
 Now, let's try to launch a container. To complete this tutorial, you need the following:
 
 - An active account in [Hyper_](hyper.sh)
-- Some credits or credit card info in your account
+- Some free credits or credit card info in your account
 - Setup `hyper` CLI on your laptop, configured with the credential
 
 ### 1. Pull the image
 
-The first step is to pull the image. However, instead of download to your local machine, `hyper pull` will
-fetch the image to Hyper_ cloud. Open your terminal and enter:
+Firstly, you need to pull the image, but the image is not pulled to your laptop. Instead, `hyper pull` will fetch the image to Hyper_ cloud. Open your terminal and enter:
 
     $ hyper pull nginx
 
-It usually takes several seconds for Hyper_ to fetch a image. Once completed, you can see them with:
+It usually takes several seconds to pull a image, depending on the connection between Hyper_ cloud and the registry where the image resides. Once completed, you can see the image in your Hyper_ cloud:
 
 	$ hyper images
 	~~TODO~~
