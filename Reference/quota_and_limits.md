@@ -28,4 +28,4 @@ Sign in Hyper_ console, open the [***quota***](https://console.hyper.sh/account/
 
 Under Regarding, choose Service Limit Increase.
 
-Under Limit Type, choose the type of limit to increase, fill in the necessary fields in the form, and then choose your preferred method of contact.
+Under Limit Type, choose the type of limit to increase, fill in the necessary fields in the form, and then submit the request. We will process your requests within 1-3 business days. Once the request is approved, new quota will be granted immediately and you will receive a notification email.
