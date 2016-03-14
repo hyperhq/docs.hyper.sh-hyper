@@ -14,6 +14,7 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 	- Max Internal IP per Container: 1
 
 ## Quota
+- API Credential: 3 per account
 - Container: 50 per region
 - Image:  100 per region
 - Storage
