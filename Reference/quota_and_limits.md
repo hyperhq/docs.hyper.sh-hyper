@@ -24,7 +24,7 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 
 ### Request a quota increase
 
-Sign in Hyper_ console, open the support page.
+Sign in Hyper_ console, open the [***quota***](https://console.hyper.sh/account/quota) page.
 
 Under Regarding, choose Service Limit Increase.
 
