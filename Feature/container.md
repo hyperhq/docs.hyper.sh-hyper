@@ -1,6 +1,6 @@
 # Container
 
-Hyper_ builds the virtualized container technology (open-source), called [HyperContainer](github.com/hyperhq/hyper), to run your Docker images. Simply put,
+Under the hood, Hyper_ is using the virtualized container technology (open-source), called [HyperContainer](github.com/hyperhq/hyper), to run your Docker images. Simply put,
 
   > HyperContainer = Hypervisor + Docker image
 
