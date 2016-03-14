@@ -29,9 +29,9 @@ To store data on an additional disk, you can create a persistent volume:
 	$ hyper run nginx -v vol-z93clfg6:/data myweb
 	myweb
 
-> `-v vol-z93clfg6:/data` tells Hyper_ to mount the volumes you just created to the new container under the path `/data`.
-
 ### 4. Associate a floating IP
+By default, Hyper_ creates a default Layer-2 private network for your account. When the container is launched, it is automatically placed in your private network with a private IP address. This ensures that all your containers are within the same network, and isolated with other containers and the Internet. 
+
 To enable public Internet access to the container, you need to associate a floating IP address to the container:
 
 	$ hyper fip allocate 1
