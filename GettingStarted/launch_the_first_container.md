@@ -3,16 +3,17 @@
 Now, let's try to launch a container. To complete this tutorial, you need the following:
 
 - An active account in [Hyper_](hyper.sh)
-- Some free credits or credit card info in your account
+- Some credits or credit card info in your account
 - Setup `hyper` CLI on your laptop, configured with the credential
 
 ### 1. Pull the image
 
-Firstly, you need to pull the image, but the image is not pulled to your laptop. Instead, `hyper pull` will fetch the image to Hyper_ cloud. Open your terminal and enter:
+The first step is to pull the image. However, instead of download to your local machine, `hyper pull` will
+fetch the image to Hyper_ cloud. Open your terminal and enter:
 
     $ hyper pull nginx
 
-It usually takes several seconds to pull a image, depending on the connection between Hyper_ cloud and the registry where the image resides. Once completed, you can see the image in your Hyper_ cloud:
+It usually takes several seconds for Hyper_ to fetch a image. Once completed, you can see them with:
 
 	$ hyper images
 	~~TODO~~
@@ -29,9 +30,9 @@ To store data on an additional disk, you can create a persistent volume:
 	$ hyper run nginx -v vol-z93clfg6:/data myweb
 	myweb
 
-### 4. Associate a floating IP
-By default, Hyper_ creates a default Layer-2 private network for your account. When the container is launched, it is automatically placed in your private network with a private IP address. This ensures that all your containers are within the same network, and isolated with other containers and the Internet. 
+> `-v vol-z93clfg6:/data` tells Hyper_ to mount the volumes you just created to the new container under the path `/data`.
 
+### 4. Associate a floating IP
 To enable public Internet access to the container, you need to associate a floating IP address to the container:
 
 	$ hyper fip allocate 1

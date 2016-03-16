@@ -14,7 +14,6 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 	- Max Internal IP per Container: 1
 
 ## Quota
-- API Credential: 3 per account
 - Container: 50 per region
 - Image:  100 per region
 - Storage
@@ -24,8 +23,8 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 
 ### Request a quota increase
 
-Sign in Hyper_ console, open the [***quota***](https://console.hyper.sh/account/quota) page.
+Sign in Hyper_ console, open the support page.
 
 Under Regarding, choose Service Limit Increase.
 
-Under Limit Type, choose the type of limit to increase, fill in the necessary fields in the form, and then submit the request. We will process your requests within 1-3 business days. Once the request is approved, new quota will be granted immediately and you will receive a notification email.
+Under Limit Type, choose the type of limit to increase, fill in the necessary fields in the form, and then choose your preferred method of contact.
