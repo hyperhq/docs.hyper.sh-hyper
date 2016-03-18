@@ -83,7 +83,6 @@
                * [Release floating IP](Reference/API/2016-01-18/Network/fip_release.md)
    * [Quota and Limits](Reference/quota_and_limits.md)
    * [SLA](Reference/sla.md)
-   * [Configuration](Reference/configuration.md)
 * [Release Notes](ReleaseNotes/__index__.md)
    * [2016-01-21](ReleaseNotes/2016-01-21.md)
 
