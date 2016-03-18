@@ -6,6 +6,7 @@
 
       -d, --detach=false         Detached mode: run command in the background
       --help=false               Print usage
+      -t, --tty                  Allocate a pseudo-TTY
       -i, --interactive=false    Keep STDIN open even if not attached
       -u, --user=                Username or UID (format: <name|uid>[:<group|gid>])
 

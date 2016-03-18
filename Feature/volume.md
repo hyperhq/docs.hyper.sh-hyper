@@ -4,22 +4,22 @@ In Hyper_, volume offers high availability, durability, and consistent performan
 
 Volume uses `EXT4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container:
 
-    $ hyper volume create 100 -n db_data
+    $ hyper volume create --size=100 --name=db_data
     db_data
 
 New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot (same size):
 
-    $ hyper volume create --snapshot=snapshot-2ixknb3z db_data
+    $ hyper volume create --snapshot=snapshot-2ixknb3z --name=db_data
     db_data
 
 To mount volumes to a container, use `hyper run`. 
 
-    $ hyper run ubuntu -v db_data:/opt/data/ mycontainer
+    $ hyper run -v db_data:/opt/data/ --name mycontainer ubuntu
     mycontainer
     
 You can also create volumes with `run`:
 
-    $ hyper run ubuntu -v /opt/data/ mycontainer           // a 10GB volume will be created
+    $ hyper run -v /opt/data/ --name mycontainer ubuntu         // a 10GB volume will be created
     mycontainer
     
 Once a volume is attached to a container, it will be associated with the container throughout the container's lifecycle, until removal:
@@ -38,7 +38,7 @@ To failover a volume, you need to `rm` the old container, and launch a new one t
 
     $ hyper rm db_contaienr
     db_container
-    $ hyper run ubuntu -v db_data:/opt/data new_db
+    $ hyper run -v db_data:/opt/data --name new_db ubuntu
     new_db
 
 Volumes are constrained by region. There is currently no way for containers to access volume residing in different regions.

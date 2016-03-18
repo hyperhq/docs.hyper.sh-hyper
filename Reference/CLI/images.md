@@ -36,7 +36,7 @@ An image will be listed more than once if it has multiple repository names or ta
 
 ### Listing images by name and tag
 
-The `hyper images` command takes an optional `[REPOSITORY[:TAG]]` argument that restricts the list to images that match the argument. If you specify `REPOSITORY`but no `TAG`, the `docker images` command lists all images in the given repository.
+The `hyper images` command takes an optional `[REPOSITORY[:TAG]]` argument that restricts the list to images that match the argument. If you specify `REPOSITORY`but no `TAG`, the `hyper images` command lists all images in the given repository.
 
 For example, to list all images in the "java" repository, run this command :
 
@@ -61,7 +61,7 @@ If nothing matches `REPOSITORY[:TAG]`, the list is empty.
 
 ### Listing the full length image IDs
 
-    $ docker images --no-trunc
+    $ hyper images --no-trunc
     REPOSITORY                    TAG                 IMAGE ID                                                           CREATED             VIRTUAL SIZE
     <none>                        <none>              77af4d6b9913e693e8d0b4b294fa62ade6054e6b2f1ffb617ac955dd63fb0182   19 hours ago        1.089 GB
     committest                    latest              b6fa739cedf5ea12a620a439402b6004d057da800f91c7524b5086a5e4749c9f   19 hours ago        1.089 GB
@@ -106,9 +106,9 @@ The currently supported filters are:
 
 This will display untagged images, that are the leaves of the images tree (not intermediary layers). These images occur when a new build of an image takes the `repo:tag` away from the image ID, leaving it as `<none>:<none>` or untagged. A warning will be issued if trying to remove an image when a container is presently using it. By having this flag it allows for batch cleanup.
 
-Ready for use by `docker rmi ...`, like:
+Ready for use by `hyper rmi ...`, like:
 
-    $ hyper rmi $(docker images -f "dangling=true" -q)
+    $ hyper rmi $(hyper images -f "dangling=true" -q)
 
     8abc22fbb042
     48e5f45168b9
@@ -117,7 +117,7 @@ Ready for use by `docker rmi ...`, like:
     dea752e4e117
     511136ea3c5a
 
-NOTE: Docker will warn you if any containers exist that are using these untagged images.
+NOTE: Hyper will warn you if any containers exist that are using these untagged images.
 
 ##### Labeled images
 
