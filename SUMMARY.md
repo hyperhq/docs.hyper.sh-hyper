@@ -72,6 +72,7 @@
                * [Create a volume](Reference/API/2016-01-18/Volume/create.md)
                * [Remove a volume](Reference/API/2016-01-18/Volume/remove.md)
            * [Snapshot](Reference/API/2016-01-18/Snapshot/__index__.md)
+    	       * [Create a snapshot](Reference/API/2016-01-18/Snapshot/create.md)
                * [List snapshots](Reference/API/2016-01-18/Snapshot/list.md)
                * [Inspect a snapshot](Reference/API/2016-01-18/Snapshot/inspect.md)
                * [Remove a snapshot](Reference/API/2016-01-18/Snapshot/remove.md)

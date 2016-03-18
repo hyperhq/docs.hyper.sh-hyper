@@ -21,10 +21,4 @@ The next step is to:
 
 #### Step 2. Configure the CLI
 
-Open the terminal, and enter `hyper config`. The command asks for access key and scret key you just created. 
-
-![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/720x143/35cc2d92081cd1f37523ec79092dc9d3/upload_3_18_2016_at_6_11_19_PM.png)
-
-
-
 
