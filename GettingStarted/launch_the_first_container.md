@@ -30,7 +30,7 @@ To store data on an additional disk, you can create a persistent volume:
 	$ hyper run nginx -v vol-z93clfg6:/data myweb
 	myweb
 
-> `-v vol-z93clfg6:/data` tells Hyper_ to mount the volumes you just created to the new container under the path `/data`.
+> `-v vol-z93clfg6:/data` tells Hyper_ to mount the volume onto the container under the path `/data`.
 
 ### 4. Associate a floating IP
 To enable public Internet access to the container, you need to associate a floating IP address to the container:
