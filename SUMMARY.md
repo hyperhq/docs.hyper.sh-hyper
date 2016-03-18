@@ -75,7 +75,6 @@
                * [List snapshots](Reference/API/2016-01-18/Snapshot/list.md)
                * [Inspect a snapshot](Reference/API/2016-01-18/Snapshot/inspect.md)
                * [Remove a snapshot](Reference/API/2016-01-18/Snapshot/remove.md)
-               * Create a snapshot
            * [Network](Reference/API/2016-01-18/Network/__index__.md)
                * [Allocate floating IP](Reference/API/2016-01-18/Network/fip_allocate.md)
                * [Associate a floating IP to a (running) container](Reference/API/2016-01-18/Network/fip_associate.md)
