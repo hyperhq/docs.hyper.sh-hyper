@@ -5,7 +5,7 @@
    * [Why Hyper_](Introduction/why_hyper_.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/__index__.md)
-   * [Setup Credential](GettingStarted/setup_credential.md)
+   * [Generate Credential](GettingStarted/setup_credential.md)
    * [Install CLI](GettingStarted/install.md)
    * [Launch the first container](GettingStarted/launch_the_first_container.md)
 * [Features](Feature/__index__.md)
