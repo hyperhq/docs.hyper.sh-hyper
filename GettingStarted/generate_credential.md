@@ -1,11 +1,6 @@
-# Setup Credential
+# Generate API Credential
 
-The next step is to:
-
-- generate access credential in your Hyper_ account;
-- configure the CLI with the credential
-
-#### Step 1. Generate Access Credential
+First of all, you need to generate your API credential:
 
 - Login the [console](https://console.hyper.sh/account/credential)
 - Click `Create New Credential`
