@@ -14,3 +14,7 @@ Don't like the "curl to bash" methods? Download tarballs [TODO: here]().
 
 ## Install on Mac
 ~~TODO~~
+
+## CLI Configuration
+
+Once the installation completes, enter `hyper config` in your terminal. The command will prompt to ask for your credential:
