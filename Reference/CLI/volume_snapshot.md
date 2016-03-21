@@ -1,15 +1,17 @@
 #### volume_snapshot
 
-    Usage: hyper volume snapshot [OPTIONS] VOLUME
+    Usage: hyper snapshot create [OPTIONS]
 
     Create a snapshot from a volume
     
-      --help=false          Print usage
-      --name=               Specify snapshot name
+    -f, --force               Force to create snapshot
+        --help=false          Print usage
+        --name=               Specify snapshot name
+    -v, --volume              Specify volume to create snapshot
 
 Creates a new snapshot from a volume. If a name is not specified, Hyper generates a random id:
 
-	$ hyper volume snapshot --name db_snapshot vol-g89gder4
+	$ hyper snapshot create --name db_snapshot vol-g89gder4
 	db_snapshot
 
 You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your volume at the time the snapshot command is issued. This might exclude any data that has been cached by the container. Tto ensure a consistent and complete snapshot, you should stop the container, issue the snapshot command, and then start the container.
