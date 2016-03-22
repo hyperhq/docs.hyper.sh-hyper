@@ -2,7 +2,7 @@
 
     Usage: hyper create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-    Create a new pod with one or more containers
+    Create a new container
 
       -a, --attach=[]               Attach to STDIN, STDOUT or STDERR
       --add-host=[]                 Add a custom host-to-IP mapping (host:ip)
