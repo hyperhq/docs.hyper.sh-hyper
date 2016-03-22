@@ -2,7 +2,7 @@
 
 	Usage:	hyper search [OPTIONS] TERM
 
-	Search the Docker Hub for images
+	Search the [Docker Hub](hub.docker.com) for images
 
 	  --automated        Only show automated builds
 	  --help             Print usage
@@ -10,9 +10,6 @@
 	  -s, --stars        Only displays with at least x stars
 
 Search [Docker Hub](https://hub.docker.com) for images
-
-See [*Find Public Images on Docker Hub*](../../userguide/containers/dockerrepos.md#searching-for-images) for
-more details on finding shared images from the command line.
 
 > **Note:**
 > Search queries will only return up to 25 results
@@ -23,7 +20,7 @@ more details on finding shared images from the command line.
 
 This example displays images with a name containing 'busybox':
 
-    $ docker search busybox
+    $ hyper search busybox
     NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
     busybox                          Busybox base image.                             316       [OK]       
     progrium/busybox                                                                 50                   [OK]
@@ -56,7 +53,7 @@ This example displays images with a name containing 'busybox':
 This example displays images with a name containing 'busybox' and at
 least 3 stars:
 
-    $ docker search --stars=3 busybox
+    $ hyper search --stars=3 busybox
     NAME                 DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
     busybox              Busybox base image.                             325       [OK]       
     progrium/busybox                                                     50                   [OK]
@@ -68,7 +65,7 @@ least 3 stars:
 This example displays images with a name containing 'busybox', at
 least 3 stars and are automated builds:
 
-    $ docker search --stars=3 --automated busybox
+    $ hyper search --stars=3 --automated busybox
     NAME                 DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
     progrium/busybox                                                     50                   [OK]
     radial/busyboxplus   Full-chain, Internet enabled, busybox made...   8                    [OK]
@@ -79,7 +76,7 @@ least 3 stars and are automated builds:
 This example displays images with a name containing 'busybox',
 at least 3 stars and the description isn't truncated in the output:
 
-    $ docker search --stars=3 --no-trunc busybox
+    $ hyper search --stars=3 --no-trunc busybox
     NAME                 DESCRIPTION                                                                               STARS     OFFICIAL   AUTOMATED
     busybox              Busybox base image.                                                                       325       [OK]       
     progrium/busybox                                                                                               50                   [OK]

@@ -8,7 +8,7 @@
 
 ## Example:
 
-    $ docker -D info
+    $ hyper -D info
     Containers: 14
      Running: 3
      Paused: 1
@@ -16,7 +16,7 @@
     Images: 52
     Server Version: 1.9.0
     Storage Driver: aufs
-     Root Dir: /var/lib/docker/aufs
+     Root Dir: /var/lib/hyper/aufs
      Backing Filesystem: extfs
      Dirs: 545
      Dirperm1 Supported: true
@@ -32,9 +32,9 @@
     Operating System: Ubuntu 15.04
     CPUs: 24
     Total Memory: 62.86 GiB
-    Name: docker
+    Name: hyper
     ID: I54V:OLXT:HVMM:TPKO:JPHQ:CQCD:JNLC:O3BZ:4ZVJ:43XJ:PFHZ:6N2S
-    Docker Root Dir: /var/lib/docker
+    hyper Root Dir: /var/lib/hyper
     Debug mode (client): true
     Debug mode (server): true
      File Descriptors: 59
@@ -42,17 +42,17 @@
      System Time: 2015-09-23T14:04:20.699842089+08:00
      EventsListeners: 0
      Init SHA1:
-     Init Path: /usr/bin/docker
-     Docker Root Dir: /var/lib/docker
+     Init Path: /usr/bin/hyper
+     hyper Root Dir: /var/lib/hyper
      Http Proxy: http://test:test@localhost:8080
      Https Proxy: https://test:test@localhost:8080
     WARNING: No swap limit support
     Username: svendowideit
-    Registry: [https://index.docker.io/v1/]
+    Registry: [https://index.hyper.io/v1/]
     Labels:
      storage=ssd
 
-The global `-D` option tells all `docker` commands to output debug information.
+The global `-D` option tells all `hyper` commands to output debug information.
 
-When sending issue reports, please use `docker version` and `docker -D info` to
+When sending issue reports, please use `hyper version` and `hyper -D info` to
 ensure we know how your setup is configured.

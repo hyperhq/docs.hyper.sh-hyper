@@ -1,4 +1,4 @@
-#### volume_snapshot
+#### snpapshot_create
 
     Usage: hyper snapshot create [OPTIONS]
 

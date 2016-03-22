@@ -45,7 +45,7 @@
        * [volume create](Reference/CLI/volume_create.md)
        * [volume ls](Reference/CLI/volume_ls.md)
        * [volume rm](Reference/CLI/volume_rm.md)
-       * [snapshot create](Reference/CLI/volume_snapshot.md)
+       * [snapshot create](Reference/CLI/snapshot_create.md)
        * [snapshot ls](Reference/CLI/snapshot_ls.md)
        * [snapshot rm](Reference/CLI/snapshot_rm.md)
        * [fip allocate](Reference/CLI/fip_allocate.md)
