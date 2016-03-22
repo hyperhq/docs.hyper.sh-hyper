@@ -79,7 +79,7 @@
                * [Create a volume](Reference/API/2016-01-18/Volume/create.md)
                * [Remove a volume](Reference/API/2016-01-18/Volume/remove.md)
            * [Snapshot](Reference/API/2016-01-18/Snapshot/__index__.md)
-    	       * [Create a snapshot](Reference/API/2016-01-18/Snapshot/create.md)
+               * [Create a snapshot](Reference/API/2016-01-18/Snapshot/create.md)
                * [List snapshots](Reference/API/2016-01-18/Snapshot/list.md)
                * [Inspect a snapshot](Reference/API/2016-01-18/Snapshot/inspect.md)
                * [Remove a snapshot](Reference/API/2016-01-18/Snapshot/remove.md)
@@ -89,6 +89,7 @@
                * [Deassociate floating IP from a (running) container](Reference/API/2016-01-18/Network/fip_deassociate.md)
                * [List floating IP](Reference/API/2016-01-18/Network/fip_ls.md)
                * [Release floating IP](Reference/API/2016-01-18/Network/fip_release.md)
+           * API Endpoints
    * [Quota and Limits](Reference/quota_and_limits.md)
    * [SLA](Reference/sla.md)
 * [Release Notes](ReleaseNotes/__index__.md)
