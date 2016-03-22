@@ -89,7 +89,7 @@
                * [Deassociate floating IP from a (running) container](Reference/API/2016-01-18/Network/fip_deassociate.md)
                * [List floating IP](Reference/API/2016-01-18/Network/fip_ls.md)
                * [Release floating IP](Reference/API/2016-01-18/Network/fip_release.md)
-           * API Endpoints
+           * [API Endpoints](Reference/API/2016-01-18/api_endpoints.md)
    * [Quota and Limits](Reference/quota_and_limits.md)
    * [SLA](Reference/sla.md)
 * [Release Notes](ReleaseNotes/__index__.md)
