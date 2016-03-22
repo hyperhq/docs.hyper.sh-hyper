@@ -6,7 +6,7 @@
 
 	  --help             Print usage
 
-For example:
+## Example:
 
     $ docker -D info
     Containers: 14
