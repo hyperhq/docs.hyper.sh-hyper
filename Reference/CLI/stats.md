@@ -27,3 +27,4 @@ Running `docker stats` on multiple containers by name and id.
     $ docker stats fervent_panini 5acfcb1b4fd1
     CONTAINER           CPU %               MEM USAGE/LIMIT     MEM %               NET I/O
     5acfcb1b4fd1        0.00%               115.2 MB/1.045 GB   11.03%              1.422 kB/648 B
+    fervent_panini      0.02%               11.08 MB/1.045 GB   1.06%               648 B/648 B
