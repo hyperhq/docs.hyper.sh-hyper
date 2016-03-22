@@ -39,23 +39,23 @@
       -w, --workdir=""              Working directory inside the container
 
 
-The `docker create` command creates a writeable container layer over the
+The `hyper create` command creates a writeable container layer over the
 specified image and prepares it for running the specified command.  The
-container ID is then printed to `STDOUT`.  This is similar to `docker run -d`
+container ID is then printed to `STDOUT`.  This is similar to `hyper run -d`
 except the container is never started.  You can then use the
-`docker start <container_id>` command to start the container at any point.
+`hyper start <container_id>` command to start the container at any point.
 
 This is useful when you want to set up a container configuration ahead of time
 so that it is ready to start when you need it. The initial status of the
 new container is `created`.
 
-Please see the [run command](run.md) section and the [Docker run reference](../run.md) for more details.
+Please see the [run command](run.md) section for more details.
 
 ## Examples
 
-    $ docker create -t -i fedora bash
+    $ hyper create -t -i fedora bash
     6d8af538ec541dd581ebc2a24153a28329acb5268abe5ef868c1f1a261221752
-    $ docker start -a -i 6d8af538ec5
+    $ hyper start -a -i 6d8af538ec5
     bash-4.2#
 
 As of v1.4.0 container volumes are initialized during the `docker create` phase
