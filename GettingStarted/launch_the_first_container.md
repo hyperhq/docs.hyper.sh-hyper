@@ -1,7 +1,8 @@
 # Launch the first container
 
-Now, you are ready to launch a container. To complete this tutorial, you need the following:
+Now, let's try to launch a container. To complete this tutorial, you need the following:
 
+- An active account in [Hyper_](hyper.sh)
 - Some credits or credit card info in your account
 - Setup `hyper` CLI on your laptop, configured with the credential
 
