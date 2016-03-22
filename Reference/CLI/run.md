@@ -6,9 +6,6 @@
 
       -a, --attach=[]               Attach to STDIN, STDOUT or STDERR
       --add-host=[]                 Add a custom host-to-IP mapping (host:ip)
-      --cpu-count=1                 CPU count
-      --cpuset-cpus=""              CPUs in which to allow execution (0-3, 0,1)
-      --cpuset-mems=""              Memory nodes (MEMs) in which to allow execution (0-3, 0,1)
       -d, --detach=false            Run container in background and print container ID
       --disable-content-trust=true  Skip image verification
       --dns=[]                      Set custom DNS servers
@@ -18,19 +15,13 @@
       --entrypoint=""               Overwrite the default ENTRYPOINT of the image
       --env-file=[]                 Read in a file of environment variables
       --expose=[]                   Expose a port or a range of ports
-      --group-add=[]                Add additional groups to run as
-      -h, --hostname=""             Container host name
       --help=false                  Print usage
       -i, --interactive=false       Keep STDIN open even if not attached
+      --size=xxs                    The size type for each container(e.g. xxs, xs, s, m, l, xl, xxl)
       -l, --label=[]                Set metadata on the container (e.g., --label=com.example.key=value)
       --label-file=[]               Read in a file of labels (EOL delimited)
       --link=[]                     Add link to another container
-       --log-opt=[]                  Log driver specific options
-      -m, --memory=""               Memory limit
-      --mac-address=""              Container MAC address (e.g. 92:d0:c6:0a:29:33)
-      --memory-reservation=""       Memory soft limit
-      --memory-swap=""              Total memory (memory + swap), '-1' to disable swap
-      --memory-swappiness=""        Tune a container's memory swappiness behavior. Accepts an integer between 0 and 100.
+      --log-opt=[]                  Log driver specific options
       --name=""                     Assign a name to the container
       -P, --publish-all=false       Publish all exposed ports to random ports
       -p, --publish=[]              Publish a container's port(s) to the host
@@ -38,9 +29,6 @@
       --restart="no"                Restart policy (no, on-failure[:max-retry], always, unless-stopped)
       --rm=false                    Automatically remove the container when it exits
       --shm-size=[]                 Size of `/dev/shm`. The format is `<number><unit>`. `number` must be greater than `0`.  Unit is optional and can be `b` (bytes), `k` (kilobytes), `m` (megabytes), or `g` (gigabytes). If you omit the unit, the system uses bytes. If you omit the size entirely, the system uses `64m`.
-      --sig-proxy=true              Proxy received signals to the process
-      --stop-signal="SIGTERM"       Signal to stop a container
-      -u, --user=""                 Username or UID (format: <name|uid>[:<group|gid>])
       --ulimit=[]                   Ulimit options
       -v, --volume=[host-src:]container-dest[:<options>]
                                     Bind mount a volume. The comma-delimited
@@ -54,7 +42,7 @@ The `hyper run` command first `creates` a writeable container layer over the spe
 of all containers.
 
 The `hyper run` command can be used in combination with `hyper commit` to
-[*change the command that a container runs*](commit.md). There is additional detailed information about `docker run` in the [Docker run reference](../run.md).
+[*change the command that a container runs*](commit.md). There is additional detailed information about `hyper run` in the [Hyper run reference](../run.md).
 
 ### Examples
 
@@ -75,7 +63,7 @@ The mount is created inside the container's `/world` directory. Hyper does not s
 
 #### Publish or expose port (-p, --expose)
 
-    $ docker run --expose 80 ubuntu bash
+    $ hyper run --expose 80 ubuntu bash
 
 This exposes port `80` of the pod.
 
@@ -111,7 +99,7 @@ An example of a file passed with `--env-file`
 
     # pass through this variable from the caller
     TEST_PASSTHROUGH
-    $ TEST_PASSTHROUGH=howdy docker run --env-file ./env.list busybox env
+    $ TEST_PASSTHROUGH=howdy hyper run --env-file ./env.list busybox env
     PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     HOSTNAME=5198e0745561
     TEST_FOO=BAR
@@ -147,7 +135,7 @@ A label is a `key=value` pair that applies metadata to a pod. To label a pod wit
 
 The `my-label` key doesn't specify a value so the label defaults to an empty string(`""`). To add multiple labels, repeat the label flag (`-l` or `--label`).
 
-The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Docker uses the last `key=value` you supply.
+The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper uses the last `key=value` you supply.
 
 Use the `--label-file` flag to load multiple labels from a file. Delimit each label in the file with an EOL mark. The example below loads labels from a labels file in the current directory:
 

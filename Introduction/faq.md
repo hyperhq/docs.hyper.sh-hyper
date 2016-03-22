@@ -79,7 +79,7 @@ Q: What is the pricing plan of Hyper_ ?
 
 Q: When does billing begin and end?
 > - Container: billing begins when Hyper_ launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
-> - Volume/Snapshot/Image:  billing begins when the storage object is created (`hyper volume create`, `hyper volume snapshot`, `hyper pull`), ends upon removal.
+> - Volume/Snapshot/Image:  billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal.
 > - Floating IP: billing begins when a new IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
 Q: Do your prices include taxes?

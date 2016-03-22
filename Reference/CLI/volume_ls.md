@@ -16,7 +16,7 @@ Example output:
 
     $ hyper volume create --name rose
     rose
-    $ hyper volume create --name tyler
+    $ hyper volume create --name tyler --size=100
     tyler
     $ hyper volume ls
     ID              	SIZE	NAME

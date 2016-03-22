@@ -14,9 +14,9 @@ There is a single supported filter `dangling=value` which takes a boolean of `tr
 
 Example output:
 
-    $ hyper volume snapshot dbvol --name rose
+    $ hyper snapshot create --volume dbvol --name rose
     rose
-    $ hyper volume snapshot dbvol --name tyler
+    $ hyper snapshot create --volume dbvol --name tyler
     tyler
     $ hyper snapshot ls
     ID              	SIZE	NAME			
