@@ -1,23 +1,26 @@
 # Launch the first container
 
-Now, let's try to launch a container. To complete this tutorial, you need some free credits or [setup the payment method](https://console.hyper.sh/billing/credit). 
+Now, let's try to launch a container. To complete this tutorial, you need the following:
 
+- An active account in [Hyper_](hyper.sh)
+- Some credits or credit card info in your account
+- Setup `hyper` CLI on your laptop, configured with the credential
 
 ### 1. Pull the image
 
-The first step is to pull the image. However, instead of downloading to your local laptop, `hyper pull` will pull the image to your account at Hyper_. 
-
-Open your terminal and enter:
+The first step is to pull the image. However, instead of download to your local machine, `hyper pull` will
+fetch the image to Hyper_ cloud. Open your terminal and enter:
 
     $ hyper pull nginx
 
-Once the download completes, you can see images with:
+It usually takes several seconds for Hyper_ to fetch a image. Once completed, you can see them with:
 
 	$ hyper images
 	~~TODO~~
 
-### 2. Create additional volumes 
-Hyper_ creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:
+### 2. Create a persistent volume 
+
+To store data on an additional disk, you can create a persistent volume:
 
 	$ hyper volume create 10     # size in GB
 	vol-z93clfg6 is created
@@ -27,16 +30,10 @@ Hyper_ creates a 10GB root volume for each container. In the case that you need 
 	$ hyper run nginx -v vol-z93clfg6:/data myweb
 	myweb
 
-`-v vol-z93clfg6:/data` tells Hyper_ to mount the volume `vol-z93clfg6` onto the new container at the path `/data`.
+> `-v vol-z93clfg6:/data` tells Hyper_ to mount the volumes you just created to the new container under the path `/data`.
 
 ### 4. Associate a floating IP
-Hyper_ creates a default private network for each accounts. 
-
-the new container comes with a private IP, which is reachi
-
-The new container is launched in your own private network, which Hyper_ creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other network or the Internet.
-
-To enable public Internet access to your applcation, you need to associate a floating IP address to the container:
+To enable public Internet access to the container, you need to associate a floating IP address to the container:
 
 	$ hyper fip allocate 1
 	211.98.26.201
@@ -46,9 +43,10 @@ To enable public Internet access to your applcation, you need to associate a flo
 ### 5. Test
 - Open your browser
 - Enter `http://211.98.26.201/`
-- You should be able to see the default homepage of Nginx
+- You should be able to see the default homepage of nginx
 
 ### 6. Access the container
+
 You can remotely access the container using the following command:
 
 	$ hyper exec myweb /bin/sh
@@ -60,6 +58,6 @@ You can remotely access the container using the following command:
     $ hyper rm myweb
     myweb
 
-The volume will be unmounted but not deleted. The floating IP will be de-associated, but not released.
+> The volume will be unmounted but not deleted. The floating IP will be de-associated, but not released.
 
 ### Done!

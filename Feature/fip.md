@@ -2,7 +2,7 @@
 
 A floating IP is a publicly-accessible IP address that can be assigned to one container. Floating IPs can be remapped to other containers in the same region, to mask the failure of container or application. 
 
-You need to allocate new free IPs before assigning them to containers:
+Floating IP is associated with your Hyper_ account. You need to allocate new free IPs before assigning to containers:
 
     $ hyper fip allocate 4
     52.68.129.19
