@@ -1,6 +1,6 @@
 # Generate API Credential
 
-First of all, you need to generate your API credential:
+First of all, you need to generate the API credential:
 
 - Login the [console](https://console.hyper.sh/account/credential)
 - Click `Create New Credential`
