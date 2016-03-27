@@ -6,7 +6,7 @@ Instruct the driver to remove the snapshot (`name`).
 
 **Example request**:
 
-    DELETE /snapshots/tardis HTTP/1.1
+    DELETE /snapshots/snapshot-tardis HTTP/1.1
 
 **Example response**:
 
@@ -15,6 +15,6 @@ Instruct the driver to remove the snapshot (`name`).
 Status Codes
 
 -   **204** - no error
--   **404** - no such snapshot or snapshot driver
+-   **404** - no such snapshot
 -   **409** - snapshot is in use and cannot be removed
 -   **500** - server error

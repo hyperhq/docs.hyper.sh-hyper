@@ -2,7 +2,7 @@
 
 `POST /containers/(id)/resize`
 
-Resize the TTY for container with  `id`. The unit is number of characters. You must restart the container for the resize to take effect.
+Resize the TTY for container with `id`. The unit is number of characters. You must restart the container for the resize to take effect.
 
 **Example request**:
 

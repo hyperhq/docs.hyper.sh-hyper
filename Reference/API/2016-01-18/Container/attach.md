@@ -19,9 +19,7 @@ Attach to the container `id`
 
 Query Parameters:
 
--   **detachKeys** – Override the key sequence for detaching a
-        container. Format is a single character `[a-Z]` or `ctrl-<value>`
-        where `<value>` is one of: `a-z`, `@`, `^`, `[`, `,` or `_`.
+-   **detachKeys** – Override the key sequence for detaching a container. 
 -   **logs** – 1/True/true or 0/False/false, return logs. Default `false`.
 -   **stream** – 1/True/true or 0/False/false, return stream.
         Default `false`.
@@ -83,41 +81,3 @@ Status Codes:
     3.  Extract the frame size from the last four bytes.
     4.  Read the extracted size and output it on the correct output.
     5.  Goto 1.
-
-### Attach to a container (websocket)
-
-`GET /containers/(id)/attach/ws`
-
-Attach to the container `id` via websocket
-
-Implements websocket protocol handshake according to [RFC 6455](http://tools.ietf.org/html/rfc6455)
-
-**Example request**
-
-    GET /containers/e90e34656806/attach/ws?logs=0&stream=1&stdin=1&stdout=1&stderr=1 HTTP/1.1
-
-**Example response**
-
-    {{ STREAM }}
-
-Query Parameters:
-
--   **detachKeys** – Override the key sequence for detaching a
-        container. Format is a single character `[a-Z]` or `ctrl-<value>`
-        where `<value>` is one of: `a-z`, `@`, `^`, `[`, `,` or `_`.
--   **logs** – 1/True/true or 0/False/false, return logs. Default `false`.
--   **stream** – 1/True/true or 0/False/false, return stream.
-        Default `false`.
--   **stdin** – 1/True/true or 0/False/false, if `stream=true`, attach
-        to `stdin`. Default `false`.
--   **stdout** – 1/True/true or 0/False/false, if `logs=true`, return
-        `stdout` log, if `stream=true`, attach to `stdout`. Default `false`.
--   **stderr** – 1/True/true or 0/False/false, if `logs=true`, return
-        `stderr` log, if `stream=true`, attach to `stderr`. Default `false`.
-
-Status Codes:
-
--   **200** – no error
--   **400** – bad parameter
--   **404** – no such container
--   **500** – server error
