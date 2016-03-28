@@ -26,9 +26,8 @@ In one line, [Hyper_](https://hyper.sh) is a secure container cloud service.
 
 ![](https://trello-attachments.s3.amazonaws.com/56b19c6e5bb4a89f92d0e71f/903x472/2ccb5880a4286dd6d4c14eb19b3dab99/upload_2_3_2016_at_2_21_34_PM.png)
 
+- **Persistent Storage (SSD)** – Run stateful workloads with Hyper_'s persistent SSD storage. Multiple replicas will be automatically created with each volume to protect your data from failures. And feel free to take point-in-time snapshots for backup/restore.
 
-- **Persistent Storage (SSD)** – Run stateful workload using Hyper_’s replicated, distributed and fault-tolerant volume, powered by 100% SSD.
-
-- **Private Network (10Gbps)** - Hyper_ setup a Layer-2 overlay network for each users to isolate the container traffic. And the best part is that it is built on the lastest 10Gbps Ethernet.
+- **Private Network (10Gbps, FREE)** - Hyper_ creates a default virtual private network for each user. Your container traffic is safely isolated from the rest. The network is built on 10Gbps Ethernet, and the best part is that all traffic is FREE!
 
 - **No Lock-in** – Two requirements to move your application between Hyper_ and LXC-based cluster: use Docker image and use Docker APIs. Nothing else!
