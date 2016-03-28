@@ -60,7 +60,7 @@ Q: Do you support sharing a single volume among multiple containers?
 > While you are able to attach multiple volumes to a single containers, attaching multiple containers to one volume is not supported at this time.
 
 `TODO`Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again?
-> No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your Amazon EBS volume, which might exclude any data that has been locally cached by your application or OS. In order to ensure consistent snapshots on volumes attached to an instance, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume. For Amazon EBS volumes that serve as root devices, we recommend shutting down the machine to take a clean snapshot.
+> No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your volume, which might exclude any data that has been locally cached by your application or containwer. In order to ensure consistent snapshots on volumes attached to a container, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume.
 
 Q: Are snapshots versioned? Can I read an older snapshot to do a point-in-time recovery?
 > Each snapshot is given a unique identifier, and an optional user-friendly name.
