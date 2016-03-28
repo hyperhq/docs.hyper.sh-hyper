@@ -1,4 +1,4 @@
-# Version 2016-01-18
+# Version 2016-04-04
 
  - The API tends to be REST. However, for some complex commands, like `attach`
    or `pull`, the HTTP connection is hijacked to transport `stdout`,

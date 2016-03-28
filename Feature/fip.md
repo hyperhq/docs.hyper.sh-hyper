@@ -2,7 +2,7 @@
 
 A floating IP is a publicly-accessible IP address that can be assigned to one container. Floating IPs can be remapped to other containers in the same region, to mask the failure of container or application. 
 
-Floating IP is associated with your Hyper\_ account. You need to allocate new free IPs before assigning to containers:
+You need to allocate new free IPs before assigning them to containers:
 
     $ hyper fip allocate 4
     52.68.129.19
@@ -34,4 +34,3 @@ To release a floating IP:
     52.68.129.19
 
 > NOTE: floating IP is priced at a monthly rate: $1/month. When an IP is allocated, you will be charged for that current month. And ~~TODO~~
-
