@@ -2,16 +2,17 @@
 
 ### General
 Q: What is Hyper_ ?
-> Hyper_ is a secure container cloud service. It is designed for developers to run container in production **simple and secure**.
+> Hyper_ is a secure container cloud service. It is designed for developers to run container in production **Simple and Secure**.
 
 Q: How is Hyper_ different than typical container services?
-> **Simple, Secure, Save**!
+> **Simple and Secure**!
 
-> Due to the lack of necessary isolation, Linux container is considered not secure in a multi-tenant public cloud. As such, many container services ask users to bring their own VM cluster to deploy containers. However, this raises a number of management issues:
-> - Capacity planning & CapEx:  developers have to acquire the cluster beforehand, meaning that things will never be lean
-> - Wasted resources: no matter how efficient the service schedules your containers, there will always be some resource sitting idle in the pool
-> - Over-subscribed VM size: a DB container needs a VM with big mem, and a web container needs high CPU. To make sure different VMs have enough capacity for various containers, developers are forced to use "Big & Tall" VMs across the entire fleet.
-> - Slow to scale up/down: a VM typically takes minutes to provision, which makes the cluster slow to scale to handle the traffic spike
+> Due to the lack of necessary isolation, Linux container is considered not secure in a multi-tenant public cloud. As such, most Container-as-a-Service ask users to bring their own VM cluster to deploy containers. However, this approach raises a number of issues:
+> - **Capacity planning & CapEx**:  developers have to reserve the VM cluster before deploying anything, meaning that they have to decide the cluster size, VM size, etc.
+
+> - **Wasted resources**: no matter how efficient the service schedules your workload, there will always be some resource in the pool sitting idle. Some may want to alleviate the problem by auto-adjusting the cluster, but VM scaling is slow and painful.
+
+> - **Over-subscribed VM size**: DB containers prefer VMs with big memory, but web containers love high CPU. If you provision VM based on container size, you are actually doing the scheduler's job. Otherwise, you will have to use "Big & Tall" VMs across the entire fleet.
 
 > Hyper_, on the other hand, leverages Intel VT, the same isolation technology in VM, to isolate containers. **With the hardware-enforced isolation, containers in Hyper_ are inherently secured**. Without the need of VMs, cluster is gone, along with things like capacity planning, CapEx, VM bootstrapping, scheduling, COE admin, etc. Thus, Hyper_ works like "**A remote laptop with unlimited capacity**". Developers may launch any number of containers at any point of time, completely isolated from others, without preparing anything.
 
