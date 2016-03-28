@@ -1,11 +1,5 @@
 # Container
 
-Simply put, [HyperContainer](https://github.com/hyperhq/hyper) is a virtualized container technology that allows you to run Docker images on hypervisor (KVM, Xen, etc.):
+Whenever you launch a Docker image in Hyper\_, a new virtualized container will be initiated. The container runs on top of [hyperd](github.com/hyperhq/hyperd) technology, which leverages hypervisor as the isolation mechanism.
 
-> HyperContainer = Hypervisor + Docker Image
-
-![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)
-
-By combing the best from both virtualization and container world, HyperContainer is able to bring the hardware-enforced Isolation as VM, and the speed of container.
-
-[TODO](table)
+Therefore, your workload is secured 
