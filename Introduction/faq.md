@@ -14,16 +14,17 @@ Q: How is Hyper_ different than typical container services?
 
 > - **Over-subscribed VM size**: DB containers prefer VMs with big memory, but web containers love high CPU. If you provision VM based on container size, you are actually doing the scheduler's job. Otherwise, you will have to use "Big & Tall" VMs across the entire fleet.
 
-> Hyper_, on the other hand, leverages Intel VT, the same isolation technology in VM, to isolate containers. **With the hardware-enforced isolation, containers in Hyper_ are inherently secured**. Without the need of VMs, cluster is gone, along with things like capacity planning, CapEx, VM bootstrapping, scheduling, COE admin, etc. Thus, Hyper_ works like "**A remote laptop with unlimited capacity**". Developers may launch any number of containers at any point of time, completely isolated from others, without preparing anything.
+>  Hyper_ leverages [virtualization](github.com/hyperhq/hyper) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both words gives you the security of virtual machines to containers with the speed of containers. Thus, the need of VM cluster is gone, along with things like capacity planning, CapEx, VM bootstrapping, scheduling, COE admin, etc. The entire Hyper_ cloud works like "**A single remote host with unlimited capacity**". Developers can use the Docker native workflow to deploy applications in Hyper_, just the same as on your laptop.
 
-> From the pricing perspective, Hyper_ uses a "**Resource-Second**" model, which differs fundamentally in the flexibility, control and significant cost savings it offers developers. Instead of a pre-configured instance type for a fixed amount of time and at a predetermined cost, Hyper_ allows developers to decide different cpu, mem, storage size and charge by second. 
+
+> Hyper_ uses a "**Per Second**" model, which differs fundamentally in the flexibility, control and significant cost savings it offers developers. You can spin up 100 containers in 2 seconds, crunch some data or run parallel builds on the lastest commit for 10s, destroy all containers in 1s, and Hyper\_ will only charge for 2+10+1=13s. 
 
 > Combined with the "**5-seconds**" launch time, Hyper_ can respond to the workload requests instantly, which empowers developers to build **truly on-demand applications**, e.g. Event-driven (AWS Lamda), Big Data, CD/CI, etc.
  
 ### Product
 
 Q: How quickly will containers be running in Hyper_?
-> Usually it takes **about 3 seconds** from the issue of `hyper run` to the point where the container is running.
+> Usually it takes **about 5 seconds** from the issue of `hyper run` to the point where the container is running.
 
 Q: How to schedule containers in Hyper_ ?
 > No, you don't need to. Hyper_ works like "**a single host with unlimited capacity**". You may launch any number of containers at any point of time, without worrying about things like capacity planning, VM instance size, job scheduling and cluster utilization.
