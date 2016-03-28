@@ -59,11 +59,8 @@ Q: What happens to my data when a container terminates?
 Q: Do you support sharing a single volume among multiple containers?
 > While you are able to attach multiple volumes to a single containers, attaching multiple containers to one volume is not supported at this time.
 
-`TODO`Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again?
+Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again?
 > No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your volume, which might exclude any data that has been locally cached by your application or containwer. In order to ensure consistent snapshots on volumes attached to a container, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume.
-
-Q: Are snapshots versioned? Can I read an older snapshot to do a point-in-time recovery?
-> Each snapshot is given a unique identifier, and an optional user-friendly name.
 
 Q: Why am I limited to 5 Flaoting IPs per region?
 > Public (IPv4) IP addresses are a scarce resource. We are working on IPv6 support.
@@ -77,7 +74,7 @@ Q: Does Hyper_ use ECC memory?
 ### Pricing
 
 Q: What is the pricing plan of Hyper_ ?
-> You pay only for what you use and there is no minimum fee. Pricing is per second consumed for each resource (CPU, Mem, Storage). Floating IPs are charged with a monthly rate: $1/ip/month. For the pricing information, please visit the [our pricing page](https://hyper.sh/pricing/).
+> You pay only for what you use and there is no minimum fee. Pricing is per second consumed for each container size. Floating IPs are charged with a monthly rate: $1/IP/month. For the pricing information, please visit the [our pricing page](https://hyper.sh/pricing/).
 
 Q: When does billing begin and end?
 > - Container: billing begins when Hyper_ launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
