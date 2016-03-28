@@ -2,19 +2,19 @@
 
 Now, let's try to deploy some app. In this walk-through we choose [Rocket.chat](https://rocket.chat/), a popular open realtime webchat tool. To complete this tutorial, you need the following:
 
-- An active account in [Hyper_](hyper.sh)
+- An active account in [Hyper\_](hyper.sh)
 - Some credits or credit card info in your account
 - Setup `hyper` CLI on your laptop, configured with the credential
 
 ### 1. Pull the image
 
 The first step is to pull the image. However, instead of fetching to the laptop, `hyper pull` will
-download the image to Hyper_ cloud. Open your terminal and enter:
+download the image to Hyper\_ cloud. Open your terminal and enter:
 
     $ hyper pull rocketchat/rocket.chat
 
 
-It usually takes several seconds for Hyper_ to fetch a image. Once completed, you can see them with:
+It usually takes several seconds for Hyper\_ to fetch a image. Once completed, you can see them with:
 
 	$ hyper images
 	~~TODO~~

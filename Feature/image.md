@@ -1,3 +1,0 @@
-# Image
-
-Hyper_ uses 
