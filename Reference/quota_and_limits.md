@@ -1,6 +1,6 @@
 # Quota & Limits
 
-Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard limits are automatically enforced by the Service. Soft limits are consumable resources that you may request to increase:
+Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard limits are automatically enforced by the service. Soft limits are consumable resources that you may request to increase:
 
 ## Hard Limits
 - Image
@@ -23,8 +23,9 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 
 ### Request a quota increase
 
-Sign in Hyper_ console, open the support page.
+Open the [Account](https://hyper.sh/account) page, choose `Quota`, click `Request Quota Increase`:
 
-Under Regarding, choose Service Limit Increase.
+![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1076x535/73ea2fdf183a69c3a68628d9a217d2f0/request_quota_increase.png)
 
-Under Limit Type, choose the type of limit to increase, fill in the necessary fields in the form, and then choose your preferred method of contact.
+In the dialog popup, fill in your request and use case details. It usually takes 1-2 business days for us to review the request and get back to you.
+
