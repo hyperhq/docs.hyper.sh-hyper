@@ -84,7 +84,4 @@ Q: When does billing begin and end?
 Q: Do your prices include taxes?
 > Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax.
 
-### Privacy
-
-### Policy
 
