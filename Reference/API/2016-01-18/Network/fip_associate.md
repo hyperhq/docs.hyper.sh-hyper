@@ -1,13 +1,13 @@
 # Associate the floating IP (FIP) to a container
 
-`POST /fips/assocate`
+`POST /fips/associate`
 
 Associate the floating IP to a container
 
 **Example request**:
 
 ```
-POST /fips/assocate?ip=8.8.4.4&container=hehe HTTP/1.1
+POST /fips/associate?ip=8.8.4.4&container=hehe HTTP/1.1
 
 ```
 

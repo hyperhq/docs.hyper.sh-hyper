@@ -4,10 +4,6 @@
 
 Search for an image on [Docker Hub](https://hub.docker.com).
 
-> **Note**:
-> The response keys have changed from API v1.6 to reflect the JSON
-> sent by the registry server to the docker daemon's request.
-
 **Example request**:
 
     GET /images/search?term=sshd HTTP/1.1

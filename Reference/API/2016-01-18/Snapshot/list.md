@@ -14,9 +14,10 @@
     {
       "Snapshots": [
         {
-          "Id": "snapshot-3gkjo4z4",
-          "Name": "tardis",
+          "Id": "snapshot-tardis",
+          "Name": "snapshot-tardis",
           "Size": "10"
+          "Volume": "tardis",
         }
       ]
     }

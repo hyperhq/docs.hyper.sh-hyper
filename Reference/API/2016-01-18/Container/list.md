@@ -15,119 +15,158 @@ List containers
 
     [
          {
-                 "Id": "8dfafdbc3a40",
+                 "Id": "52368c159761ea1832c891c128391d11ff87684b7f0aec683625296c9879dd57",
                  "Names":["/boring_feynman"],
                  "Image": "ubuntu:latest",
-                 "ImageID": "d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
+                 "ImageID": "sha256:d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
                  "Command": "echo 1",
                  "Created": 1367854155,
-                 "Status": "Exit 0",
                  "Ports": [{"PrivatePort": 2222, "PublicPort": 3333, "Type": "tcp"}],
                  "Labels": {
                          "com.example.vendor": "Acme",
                          "com.example.license": "GPL",
                          "com.example.version": "1.0"
+                         "sh.hyper.fip": "",
+                         "sh_hyper_instancetype": "xxs"
                  },
                  "SizeRw": 12288,
                  "SizeRootFs": 0,
+                 "State": "",
+                 "Status": "Exit 0",
+                 "HostConfig": {
+                          "NetworkMode": "bridge"
+                 },
                  "NetworkSettings": {
                          "Networks": {
                                  "bridge": {
-                                          "NetworkID": "7ea29fc1412292a2d7bba362f9253545fecdfa8ce9a6e37dd10ba8bee7129812",
-                                          "EndpointID": "2cdc4edb1ded3631c81f57966563e5c8525b81121bb3706a9a9a3ae102711f3f",
+                                          "IPAMConfig": null,
+                                          "Links": null,
+                                          "Aliases": null,
+                                          "NetworkID": "",
+                                          "EndpointID": "",
                                           "Gateway": "172.17.0.1",
                                           "IPAddress": "172.17.0.2",
                                           "IPPrefixLen": 16,
                                           "IPv6Gateway": "",
                                           "GlobalIPv6Address": "",
                                           "GlobalIPv6PrefixLen": 0,
-                                          "MacAddress": "02:42:ac:11:00:02"
+                                          "MacAddress": ""
                                   }
                          }
                  }
          },
          {
-                 "Id": "9cd87474be90",
+                 "Id": "7275e7626f770a1337c5a3479d4ac628b6ddb8d3f714dc0c465b08970008f115",
                  "Names":["/coolName"],
                  "Image": "ubuntu:latest",
-                 "ImageID": "d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
+                 "ImageID": "sha256:d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
                  "Command": "echo 222222",
                  "Created": 1367854155,
-                 "Status": "Exit 0",
                  "Ports": [],
-                 "Labels": {},
+                 "Labels": {
+                         "sh.hyper.fip": "",
+                         "sh_hyper_instancetype": "xxs"
+                 },
                  "SizeRw": 12288,
                  "SizeRootFs": 0,
+                 "State": "",
+                 "Status": "Exit 0",
+                 "HostConfig": {
+                          "NetworkMode": "bridge"
+                 },
                  "NetworkSettings": {
                          "Networks": {
                                  "bridge": {
-                                          "NetworkID": "7ea29fc1412292a2d7bba362f9253545fecdfa8ce9a6e37dd10ba8bee7129812",
-                                          "EndpointID": "88eaed7b37b38c2a3f0c4bc796494fdf51b270c2d22656412a2ca5d559a64d7a",
+                                          "IPAMConfig": null,
+                                          "Links": null,
+                                          "Aliases": null,
+                                          "NetworkID": "",
+                                          "EndpointID": "",
                                           "Gateway": "172.17.0.1",
                                           "IPAddress": "172.17.0.8",
                                           "IPPrefixLen": 16,
                                           "IPv6Gateway": "",
                                           "GlobalIPv6Address": "",
                                           "GlobalIPv6PrefixLen": 0,
-                                          "MacAddress": "02:42:ac:11:00:08"
+                                          "MacAddress": ""
                                   }
                          }
                  }
 
          },
          {
-                 "Id": "3176a2479c92",
+                 "Id": "225fb31677846376d54eae5686ad1a11e86f033b0580ff63e678ed2f49f10e75",
                  "Names":["/sleepy_dog"],
                  "Image": "ubuntu:latest",
-                 "ImageID": "d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
+                 "ImageID": "sha256:d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
                  "Command": "echo 3333333333333333",
                  "Created": 1367854154,
-                 "Status": "Exit 0",
                  "Ports":[],
-                 "Labels": {},
+                 "Labels": {
+                         "sh.hyper.fip": "",
+                         "sh_hyper_instancetype": "xxs"
+                 },
                  "SizeRw":12288,
                  "SizeRootFs":0,
+                 "State": "",
+                 "Status": "Exit 0",
+                 "HostConfig": {
+                          "NetworkMode": "bridge"
+                 },
                  "NetworkSettings": {
                          "Networks": {
                                  "bridge": {
-                                          "NetworkID": "7ea29fc1412292a2d7bba362f9253545fecdfa8ce9a6e37dd10ba8bee7129812",
-                                          "EndpointID": "8b27c041c30326d59cd6e6f510d4f8d1d570a228466f956edf7815508f78e30d",
+                                          "IPAMConfig": null,
+                                          "Links": null,
+                                          "Aliases": null,
+                                          "NetworkID": "",
+                                          "EndpointID": "",
                                           "Gateway": "172.17.0.1",
                                           "IPAddress": "172.17.0.6",
                                           "IPPrefixLen": 16,
                                           "IPv6Gateway": "",
                                           "GlobalIPv6Address": "",
                                           "GlobalIPv6PrefixLen": 0,
-                                          "MacAddress": "02:42:ac:11:00:06"
+                                          "MacAddress": ""
                                   }
                          }
                  }
 
          },
          {
-                 "Id": "4cb07b47f9fb",
+                 "Id": "781b3089f578545224cc32a62a428563f2d4e33bccd3494e2516b3ca0cc1ffb5",
                  "Names":["/running_cat"],
                  "Image": "ubuntu:latest",
-                 "ImageID": "d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
+                 "ImageID": "sha256:d74508fb6632491cea586a1fd7d748dfc5274cd6fdfedee309ecdcbc2bf5cb82",
                  "Command": "echo 444444444444444444444444444444444",
                  "Created": 1367854152,
-                 "Status": "Exit 0",
                  "Ports": [],
-                 "Labels": {},
+                 "Labels": {
+                         "sh.hyper.fip": "",
+                         "sh_hyper_instancetype": "xxs"
+                 },
                  "SizeRw": 12288,
                  "SizeRootFs": 0,
+                 "State": "",
+                 "Status": "Exit 0",
+                 "HostConfig": {
+                          "NetworkMode": "bridge"
+                 },
                  "NetworkSettings": {
                          "Networks": {
                                  "bridge": {
-                                          "NetworkID": "7ea29fc1412292a2d7bba362f9253545fecdfa8ce9a6e37dd10ba8bee7129812",
-                                          "EndpointID": "d91c7b2f0644403d7ef3095985ea0e2370325cd2332ff3a3225c4247328e66e9",
+                                          "IPAMConfig": null,
+                                          "Links": null,
+                                          "Aliases": null,
+                                          "NetworkID": "",
+                                          "EndpointID": "",
                                           "Gateway": "172.17.0.1",
                                           "IPAddress": "172.17.0.5",
                                           "IPPrefixLen": 16,
                                           "IPv6Gateway": "",
                                           "GlobalIPv6Address": "",
                                           "GlobalIPv6PrefixLen": 0,
-                                          "MacAddress": "02:42:ac:11:00:05"
+                                          "MacAddress": ""
                                   }
                          }
                  }
@@ -151,7 +190,6 @@ Query Parameters:
   -   `exited=<int>`; -- containers with exit code of  `<int>` ;
   -   `status=`(`created`|`restarting`|`running`|`paused`|`exited`|`dead`)
   -   `label=key` or `label="key=value"` of a container label
-  -   `isolation=`(`default`|`process`|`hyperv`)   (Windows daemon only)
 
 Status Codes:
 

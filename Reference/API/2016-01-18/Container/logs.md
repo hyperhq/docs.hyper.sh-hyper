@@ -27,8 +27,8 @@ Query Parameters:
 -   **stderr** – 1/True/true or 0/False/false, show `stderr` log. Default `false`.
 -   **since** – UNIX timestamp (integer) to filter logs. Specifying a timestamp
     will only output log-entries since that timestamp. Default: 0 (unfiltered)
--   **timestamps** – 1/True/true or 0/False/false, print timestamps for
-        every log line. Default `false`.
+-   **timestamps** – 1/True/true or 0/False/false, print timestamps for every log line. 
+        Default `false`.
 -   **tail** – Output specified number of lines at the end of logs: `all` or `<number>`. Default all.
 
 Status Codes:

@@ -22,13 +22,13 @@ Display Hyper system-wide information
         "CpuCfsPeriod": true,
         "CpuCfsQuota": true,
         "Debug": false,
-        "DiscoveryBackend": "etcd://localhost:2379",
-        "DockerRootDir": "/var/lib/docker",
-        "Driver": "btrfs",
+        "DiscoveryBackend": "",
+        "DockerRootDir": "",
+        "Driver": "cinder",
         "DriverStatus": [[""]],
         "Plugins": {
             "Volume": [
-                "local"
+                "cinder"
             ],
             "Network": [
                 "null",
@@ -36,15 +36,15 @@ Display Hyper system-wide information
                 "bridge"
             ]
         },
-        "ExecutionDriver": "native-0.1",
+        "ExecutionDriver": "hyper",
         "ExperimentalBuild": false,
-        "HttpProxy": "http://test:test@localhost:8080",
-        "HttpsProxy": "https://test:test@localhost:8080",
-        "ID": "7TRN:IPZB:QYBB:VPBQ:UMPP:KARE:6ZNR:XE6T:7EWV:PKF4:ZOJD:TPYS",
+        "HttpProxy": "",
+        "HttpsProxy": "",
+        "ID": "",
         "IPv4Forwarding": true,
         "Images": 16,
         "IndexServerAddress": "https://index.docker.io/v1/",
-        "InitPath": "/usr/bin/docker",
+        "InitPath": "",
         "InitSha1": "",
         "KernelVersion": "3.12.0-1-amd64",
         "Labels": [
@@ -61,7 +61,7 @@ Display Hyper system-wide information
         "OomKillDisable": true,
         "OSType": "linux",
         "OomScoreAdj": 500,
-        "OperatingSystem": "Boot2Docker",
+        "OperatingSystem": "HyperStart",
         "RegistryConfig": {
             "IndexConfigs": {
                 "docker.io": {
@@ -71,9 +71,7 @@ Display Hyper system-wide information
                     "Secure": true
                 }
             },
-            "InsecureRegistryCIDRs": [
-                "127.0.0.0/8"
-            ]
+            "InsecureRegistryCIDRs": [ ]
         },
         "SwapLimit": false,
         "SystemTime": "2015-03-10T11:11:23.730591467-07:00"
