@@ -103,7 +103,7 @@
    * [SLA](Reference/sla.md)
 * [Release Notes](ReleaseNotes/__index__.md)
    * [2016-01-21](ReleaseNotes/2016-01-21.md)
+* [Privacy Policy](privacy_policy.md)
 * [Terms of Service](terms_of_service.md)
 * [Acceptable Use Policy](acceptable_use_policy.md)
-* [Privacy Policy](privacy_policy.md)
 
