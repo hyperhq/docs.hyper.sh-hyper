@@ -68,7 +68,6 @@
                * [Kill a container](Reference/API/2016-01-18/Container/kill.md)
                * [Attach to a container](Reference/API/2016-01-18/Container/attach.md)
                * [Remove a container](Reference/API/2016-01-18/Container/remove.md)
-               * [Get container logs](Reference/API/2016-01-18/Container/logs.md)
                * [Get container stats](Reference/API/2016-01-18/Container/stats.md)
                * [Inspect a container](Reference/API/2016-01-18/Container/inspect.md)
                * [Exec Create](Reference/API/2016-01-18/Container/exec_create.md)
@@ -104,4 +103,5 @@
    * [SLA](Reference/sla.md)
 * [Release Notes](ReleaseNotes/__index__.md)
    * [2016-01-21](ReleaseNotes/2016-01-21.md)
+* Terms of Service
 
