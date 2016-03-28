@@ -48,7 +48,7 @@ Q: How many containers can I run in Hyper_?
 > You are limited to running up to 100 containers per region, though you may [request to increase the quota](../Reference/quota_and_limits.md).
 
 Q: How quickly can I scale my containers both up and down?
-> Hyper_ provides a truly elastic container environment. You can spin-up or shutdown one, hundreds or even thousands of containers simultaneously in less than 5 seconds.
+> Hyper_ provides a super elastic container environment. You can spin-up or shutdown containers in less than 5 seconds.
 
 Q: What happens to my data when a container terminates?
 > The data stored on the container's `rootfs` will persist only as long as that container exists. However, data that is stored on additional volumes will persist independently of containers. 
