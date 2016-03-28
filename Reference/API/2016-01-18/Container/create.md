@@ -32,6 +32,7 @@ Create a container
                    "com.example.vendor": "Acme",
                    "com.example.license": "GPL",
                    "com.example.version": "1.0"
+                   "sh_hyper_instancetype": "xxs"
            },
            "Mounts": [
              {
@@ -52,7 +53,7 @@ Create a container
            },
            "StopSignal": "SIGTERM",
            "HostConfig": {
-             "Binds": ["/tmp:/tmp"],
+             "Binds": ["tmp_volume:/tmp"],
              "Links": ["redis3:redis"],
              "Memory": 0,
              "MemorySwap": 0,
@@ -102,7 +103,7 @@ Create a container
       Content-Type: application/json
 
       {
-           "Id":"e90e34656806",
+           "Id":"6501525d12b5314538c520d6f0709d04296293507952d96b2dcc61e620313ef1",
            "Warnings":[]
       }
 

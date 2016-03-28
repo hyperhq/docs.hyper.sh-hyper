@@ -14,7 +14,7 @@
     {
       "Volumes": [
         {
-          "Id": "vol-gnj432se",
+          "Id": "tardis",
           "Name": "tardis",
           "Size": 10,
           "SnapshotId": "snapshot-3gkjo4z4"

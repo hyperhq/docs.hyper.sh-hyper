@@ -1,13 +1,13 @@
 # Deassociate the floating IP (FIP) from a container
 
-`POST /fips/deassocate`
+`POST /fips/deassociate`
 
 Deassociate the floating IP from a container
 
 **Example request**:
 
 ```
-POST /fips/deassocate?container=hehe HTTP/1.1
+POST /fips/deassociate?container=hehe HTTP/1.1
 
 ```
 
@@ -23,4 +23,4 @@ Status Codes:
 
 Parameters:
 
-- **container** - the container to be assocated
+- **container** - the container to be associated

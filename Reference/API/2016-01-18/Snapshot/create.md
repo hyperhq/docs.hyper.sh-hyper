@@ -1,10 +1,10 @@
-# List snapshots
+# Create a snapshot
 
-`GET /snapshots`
+`POST /snapshot/create`
 
 **Example request**:
 
-    GET /snapshots HTTP/1.1
+    POST /snapshot/createi?name=snapshot-tardis&volume=tardis HTTP/1.1
 
 **Example response**:
 
@@ -14,18 +14,21 @@
     {
       "Snapshots": [
         {
-          "Id": "snapshot-3gkjo4z4",
-          "Name": "tardis",
-          "Size": "10"
+          "Id": "snapshot-tardis",
+          "Name": "snapshot-tardis",
+          "Size": "10",
+          "Volume": "tardis"
         }
       ]
     }
 
 Query Parameters:
 
-- **filters** - JSON encoded value of the filters (a `map[string][]string`) to process on the snapshots list. There is one available filter: `dangling=true`
+- **name** - Snapshot's name
+- **volume** - Snapshot's volume
 
 Status Codes:
 
 -   **200** - no error
+-   **404** - no such volume
 -   **500** - server error
