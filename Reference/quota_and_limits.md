@@ -19,7 +19,7 @@ Hyper_ has certain hard and soft (`quota`) limits in using its service. Hard lim
 - Storage
 	- Volume: 200 volumes per region
 	- Snapshot: 400 snapshots per region
-- Floating IP: 5 per region
+- Floating IP: 10 per region
 
 ### Request a quota increase
 
