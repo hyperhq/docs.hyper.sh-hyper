@@ -74,7 +74,7 @@ Q: Does Hyper_ use ECC memory?
 ### Pricing
 
 Q: What is the pricing plan of Hyper_ ?
-> You pay only for what you use and there is no minimum fee. Pricing is per second consumed for each container size. Floating IPs are charged with a monthly rate: $1/IP/month. For the pricing information, please visit the [our pricing page](https://hyper.sh/pricing/).
+> You pay only for what you use and there is no minimum fee. Pricing is per second consumed for each container size. Floating IPs are charged with a monthly rate: $1/IP/month. For more pricing information, please visit the [our pricing page](https://hyper.sh/pricing/).
 
 Q: When does billing begin and end?
 > - Container: billing begins when Hyper_ launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
