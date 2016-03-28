@@ -105,5 +105,5 @@
    * [2016-01-21](ReleaseNotes/2016-01-21.md)
 * [Terms of Service](terms_of_service.md)
 * [Acceptable Use Policy](acceptable_use_policy.md)
-* Privacy Policy
+* [Privacy Policy](privacy_policy.md)
 
