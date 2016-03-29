@@ -15,7 +15,7 @@
       --entrypoint=""               Overwrite the default ENTRYPOINT of the image
       --env-file=[]                 Read in a file of environment variables
       --expose=[]                   Expose a port or a range of ports
-      --group-add=[]                Add additional groups to run as
+      --group-add=[]                Add additional groups to run
       -h, --hostname=""             Container host name
       --help=false                  Print usage
       -i, --interactive=false       Keep STDIN open even if not attached
