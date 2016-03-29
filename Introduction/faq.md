@@ -42,7 +42,7 @@ Q: How to access my containers in Hyper\_?
 	$ hyper attach mycontainer
 
 Q: What does `hyper pull` do?
-> `hyper pull` fetches images from a public or private registry to your account at Hyper\_'s.
+> `hyper pull` fetches images from a public or private registry to your Hyper\_ account.
 
 Q: How many containers can I run in Hyper\_?
 > You are limited to running up to 100 containers per region, though you may [request to increase the quota](../Reference/quota_and_limits.md).
@@ -54,10 +54,10 @@ Q: What happens to my data when a container terminates?
 > The data stored on the container's `rootfs` will persist only as long as that container exists. However, data that is stored on additional volumes will persist independently of containers. 
 
 Q: Do you support sharing a single volume among multiple containers?
-> While you are able to attach multiple volumes to a single containers, attaching multiple containers to one volume is not supported at this time.
+> While you are able to attach multiple volumes to a single container, attaching multiple containers to one volume is not supported at this time.
 
 Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again?
-> No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your volume, which might exclude any data that has been locally cached by your application or containwer. In order to ensure consistent snapshots on volumes attached to a container, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume.
+> No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your volume, which might exclude any data that has been locally cached by your application or container. In order to ensure consistent snapshots on volumes attached to a container, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume.
 
 Q: Why am I limited to 5 Flaoting IPs per region?
 > Public (IPv4) IP addresses are a scarce resource. We are working on IPv6 support.
@@ -74,7 +74,7 @@ Q: What is the pricing plan of Hyper\_ ?
 > You pay only for what you use and there is no minimum fee. Pricing is per second consumed for each container size. Floating IPs are charged with a monthly rate: $1/IP/month. For more pricing information, please visit the [our pricing page](https://hyper.sh/pricing/).
 
 Q: When does billing begin and end?
-> - Container: billing begins when Hyper\_ launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
+> - Container: billing begins when Hyper\_ launches a new container or starts a stopped container, ends when the container stops or terminates, either through an API call, or through container exits (success or failure).
 > - Volume/Snapshot/Image:  billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal.
 > - Floating IP: billing begins when a new IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
