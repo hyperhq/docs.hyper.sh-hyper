@@ -15,9 +15,9 @@
 > - Everytime you issue a `hyper run/start` request, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 
 #### Storage
-- Image: $0.05/GB/month
+- Image: $0.1/GB/month
 - Volume: $0.1/GB/month
-- Snapshot: $0.1/GB/month
+- Snapshot: $0.05/GB/month
 > Billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal.
 
 #### Network
