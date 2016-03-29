@@ -32,7 +32,7 @@ Q: How to schedule containers in Hyper\_ ?
 Q: How to connect multiple containers in Hyper\_?
 > By default, Hyper\_ creates a L2 overlay network for each account, and place all containers of a user in one's default network, where all containers appear to run on the same node. This helps multi-tenant isolation as well as multi-container communication, e.g. you can simply connect containers in the same ways as you link containers on your local laptop:
 
-	$ hyper run nginx --link dbcontainer
+	$ hyper run -d --name web --link mysql:db -p 80 nginx
 
 Q: How to access my containers in Hyper\_?
 > You can access a container using `hyper` CLI:
@@ -42,7 +42,7 @@ Q: How to access my containers in Hyper\_?
 	$ hyper attach mycontainer
 
 Q: What does `hyper pull` do?
-> `hyper pull` fetches images from a public or private registry to Hyper\_'s internal mirror . This helps to avoid repeated downloading of the same image.
+> `hyper pull` fetches images from a public or private registry to your account at Hyper\_'s.
 
 Q: How many containers can I run in Hyper\_?
 > You are limited to running up to 100 containers per region, though you may [request to increase the quota](../Reference/quota_and_limits.md).
@@ -52,9 +52,6 @@ Q: How quickly can I scale my containers both up and down?
 
 Q: What happens to my data when a container terminates?
 > The data stored on the container's `rootfs` will persist only as long as that container exists. However, data that is stored on additional volumes will persist independently of containers. 
-
-`TODO`Q: What kind of performance can I expect from volumes?
-> ~~TODO~~
 
 Q: Do you support sharing a single volume among multiple containers?
 > While you are able to attach multiple volumes to a single containers, attaching multiple containers to one volume is not supported at this time.

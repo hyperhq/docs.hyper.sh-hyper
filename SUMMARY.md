@@ -99,11 +99,13 @@
                * [Deassociate floating IP from a (running) container](Reference/API/2016-04-04/Network/fip_deassociate.md)
                * [List floating IP](Reference/API/2016-04-04/Network/fip_ls.md)
                * [Release floating IP](Reference/API/2016-04-04/Network/fip_release.md)
-   * [Quota and Limits](Reference/quota_and_limits.md)
-   * [SLA](Reference/sla.md)
+* [FAQ](FAQ/index.md)
+   * [Pricing](FAQ/pricing.md)
+   * [Quota and Limits](FAQ/quota_and_limits.md)
+   * [Privacy Policy](privacy_policy.md)
+   * [Terms of Service](terms_of_service.md)
+   * [Acceptable Use Policy](acceptable_use_policy.md)
 * [Release Notes](ReleaseNotes/index.md)
    * [2016-04-04](ReleaseNotes/2016-04-04.md)
-* [Privacy Policy](privacy_policy.md)
-* [Terms of Service](terms_of_service.md)
-* [Acceptable Use Policy](acceptable_use_policy.md)
+
 
