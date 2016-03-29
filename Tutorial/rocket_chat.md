@@ -1,6 +1,6 @@
 # Deploy a sample container
 
-Now, let's try to deploy some app. In this walk-through we choose [Rocket.chat](https://rocket.chat/), a popular open realtime webchat tool. To complete this tutorial, you need the following:
+Now, let's try to deploy an app. In this walk-through we chose [Rocket.chat](https://rocket.chat/), a popular open realtime webchat tool. To complete this tutorial, you will need the following:
 
 - An active account in [Hyper\_](hyper.sh)
 - Some credits or credit card info in your account
@@ -28,7 +28,7 @@ To enable public Internet access to a container, you need to allocate a floating
 
 ### 3. Create a persistent volume 
 
-For most cases, stateful app (MongoDB) should store the data on persistent volumes:
+For most cases, stateful app (MongoDB) you should store the data on persistent volumes:
 
 	$ hyper volume create 10
 	vol-z93clfg6 is created
