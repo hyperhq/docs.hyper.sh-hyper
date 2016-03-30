@@ -26,7 +26,7 @@ When a container is stopped, the associated floating IP (if any) will be automat
     $ hyper fip associate 52.68.129.19 myweb
     myweb
 
-NOTE: when a container is restarted, the floating IP will keep associated.
+NOTE: when a container is restarted, the floating IP will remain associated.
 
 To release a floating IP:
 

@@ -1,7 +1,7 @@
 # Why Hyper\_?
 
 
-- **Secure Container** - Hyper\_ leverages [virtualization](github.com/hyperhq/hyper) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both words gives you the security of virtual machines to containers with the speed of containers.
+- **Secure Container** - Hyper\_ leverages [virtualization](github.com/hyperhq/hyper) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both worlds gives you the security of virtual machines to containers with the speed of containers.
 
 ![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)
 
