@@ -9,7 +9,6 @@
    * [Install CLI](GettingStarted/install.md)
    * [Launch the first container](GettingStarted/launch_the_first_container.md)
 * [Features](Feature/index.md)
-   * [Image](Feature/image.md)
    * [Container](Feature/container.md)
    * [Volume](Feature/volume.md)
    * [Snapshot](Feature/snapshot.md)
