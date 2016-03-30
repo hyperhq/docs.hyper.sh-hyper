@@ -42,7 +42,7 @@ The `hyper run` command first `creates` a writeable container layer over the spe
 of all containers.
 
 The `hyper run` command can be used in combination with `hyper commit` to
-[*change the command that a container runs*](commit.md). There is additional detailed information about `hyper run` in the [Hyper run reference](../run.md).
+[*change the command that a container runs*](commit.md). There is additional detailed information about `hyper run` in the [Hyper_ run reference](../run.md).
 
 ### Examples
 
@@ -59,7 +59,7 @@ The `-w` lets the command being executed inside directory given, here
 
     $ hyper run -d -v hello:/world busybox ls /world
 
-The mount is created inside the container's `/world` directory. Hyper does not support relative paths for mount points inside the container.
+The mount is created inside the container's `/world` directory. Hyper_ does not support relative paths for mount points inside the container.
 
 #### Publish or expose port (-p, --expose)
 
@@ -135,7 +135,7 @@ A label is a `key=value` pair that applies metadata to a pod. To label a pod wit
 
 The `my-label` key doesn't specify a value so the label defaults to an empty string(`""`). To add multiple labels, repeat the label flag (`-l` or `--label`).
 
-The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper uses the last `key=value` you supply.
+The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper_ uses the last `key=value` you supply.
 
 Use the `--label-file` flag to load multiple labels from a file. Delimit each label in the file with an EOL mark. The example below loads labels from a labels file in the current directory:
 
@@ -174,7 +174,7 @@ retrieve the pod's ID once the pod has finished running.
 #### Restart policies (--restart)
 
 Use Hyper's `--restart` to specify a pod's *restart policy*. A restart policy controls whether to restart a pod after exit.
-Hyper supports the following restart policies:
+Hyper_ supports the following restart policies:
 
 <table>
   <thead>
@@ -206,7 +206,7 @@ Hyper supports the following restart policies:
       <td><strong>always</strong></td>
       <td>
         Always restart the pod regardless of the exit status.
-        When you specify always, Hyper will try to restart
+        When you specify always, Hyper_ will try to restart
         the pod indefinitely. The pod will also always start
         on daemon startup, regardless of the current state of the pod.
       </td>
@@ -250,7 +250,7 @@ You can add other hosts into a pod's `/etc/hosts` file by using one or more `--a
 > **Note:**
 > If you do not provide a `hard limit`, the `soft limit` will be used for both values. If no `ulimits` are set, they will be inherited from the default `ulimits`.  `as` option is disabled now. In other words, the following script is not supported: `$ hyper run -it --ulimit as=1024 fedora /bin/bash`
 
-The values are sent to the appropriate `syscall` as they are set. Hyper doesn't perform any byte conversion. Take this into account when setting the values.
+The values are sent to the appropriate `syscall` as they are set. Hyper_ doesn't perform any byte conversion. Take this into account when setting the values.
 
 ##### For `nproc` usage
 

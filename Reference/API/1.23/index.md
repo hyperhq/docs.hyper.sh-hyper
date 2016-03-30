@@ -14,7 +14,7 @@
    `400 Bad Request` error message.
 
 ### Error Code
-Hyper has two types of error codes:
+Hyper\_ has two types of error codes:
 
 - `Client errors`: These errors are usually caused by something the client did, such as use an action or resource on behalf of a user that doesn't have permission to use the action or resource, or specify an identifier that is not valid. These errors are accompanied by a 400-series HTTP response code.
 - `Server errors`: These errors are usually caused by a server-side issue. These errors are accompanied by a 500-series HTTP response code.

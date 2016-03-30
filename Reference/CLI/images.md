@@ -117,7 +117,7 @@ Ready for use by `hyper rmi ...`, like:
     dea752e4e117
     511136ea3c5a
 
-NOTE: Hyper will warn you if any containers exist that are using these untagged images.
+NOTE: Hyper_ will warn you if any containers exist that are using these untagged images.
 
 ##### Labeled images
 

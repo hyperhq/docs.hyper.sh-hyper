@@ -1,8 +1,8 @@
-# Show Hyper API version information
+# Show Hyper_ API version information
 
 `GET /version`
 
-Show Hyper API version information
+Show Hyper_ API version information
 
 **Example request**:
 
