@@ -19,6 +19,7 @@
 * [Reference](Reference/index.md)
    * [CLI](Reference/CLI/index.md)
        * [attach](Reference/CLI/attach.md)
+       * [config](Reference/CLI/config.md)
        * [create](Reference/CLI/create.md)
        * [exec](Reference/CLI/exec.md)
        * [images](Reference/CLI/images.md)
