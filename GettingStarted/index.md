@@ -4,8 +4,8 @@ Welcome to Hyper\_!
 
 To get started, please follow these steps:
 
-- [Create an account](https://hyper.sh/signup/) with Hyper\_
-- Provide your billing information and complete your account
+- [Create an account](https://hyper.sh/register) with Hyper\_
+- [Provide your billing information and complete your account](https://console.hyper.sh/billing/credit)
 - [Install `hyper` CLI on your laptop](./install.md)
 - [Generate a credential and configure the CLI](generate_api_credential.md)
 
