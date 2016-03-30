@@ -9,14 +9,13 @@
       --help=false         Print usage
       -q, --quiet=false    Only display floating ip addresses
 
-Lists all the floating ips Hyper_ knows about. You can filter using the `-f` or `--filter` flag. The filtering format is a `key=value` pair. To specify more than one filter,  pass multiple flags (for example,  `--filter "foo=bar" --filter "bif=baz"`)
+Lists all the floating ips Hyper knows about. You can filter using the `-f` or `--filter` flag. The filtering format is a `key=value` pair.
 
 There is a single supported filter `dangling=value` which takes a boolean of `true` or `false`.
 
 Example output:
 
-    $ hyper fip allocate 2
     $ hyper fip ls
     Floating IP         Container
     211.98.26.102       
-    211.98.26.192       c-08v8wq32
+    211.98.26.192       aa733d1782c92f295ff7291817b92c37938274b5e9fc3f4202c13f2db246192b

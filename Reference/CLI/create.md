@@ -3,40 +3,75 @@
     Usage: hyper create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
     Create a new container
-
-      -a, --attach=[]               Attach to STDIN, STDOUT or STDERR
-      --add-host=[]                 Add a custom host-to-IP mapping (host:ip)
-      -d, --detach=false            Run container in background and print container ID
-      --disable-content-trust=true  Skip image verification
-      --dns=[]                      Set custom DNS servers
-      --dns-opt=[]                  Set custom DNS options
-      --dns-search=[]               Set custom DNS search domains
-      -e, --env=[]                  Set environment variables
-      --entrypoint=""               Overwrite the default ENTRYPOINT of the image
-      --env-file=[]                 Read in a file of environment variables
-      --expose=[]                   Expose a port or a range of ports
-      --group-add=[]                Add additional groups to run
-      -h, --hostname=""             Container host name
-      --help=false                  Print usage
-      -i, --interactive=false       Keep STDIN open even if not attached
-      -l, --label=[]                Set metadata on the container (e.g., --label=com.example.key=value)
-      --label-file=[]               Read in a file of labels (EOL delimited)
-      --link=[]                     Add link to another container
-       --log-opt=[]                  Log driver specific options
-      --name=""                     Assign a name to the container
-      -P, --publish-all=false       Publish all exposed ports to random ports
-      -p, --publish=[]              Publish a container's port(s) to the host
-      --read-only=false             Mount the container's root filesystem as read only
-      --restart="no"                Restart policy (no, on-failure[:max-retry], always, unless-stopped)
-      --rm=false                    Automatically remove the container when it exits
-      --shm-size=[]                 Size of `/dev/shm`. The format is `<number><unit>`. `number` must be greater than `0`.  Unit is optional and can be `b` (bytes), `k` (kilobytes), `m` (megabytes), or `g` (gigabytes). If you omit the unit, the system uses bytes. If you omit the size entirely, the system uses `64m`.
-      -v, --volume=[host-src:]container-dest[:<options>]
-                                    Bind mount a volume. The comma-delimited
-                                    `options` are [rw|ro], [z|Z], or
-                                    [[r]shared|[r]slave|[r]private]. The
-                                    'host-src' is an absolute path or a name
-                                    value.
-      -w, --workdir=""              Working directory inside the container
+      -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR
+      --add-host=[]                   Add a custom host-to-IP mapping (host:ip)
+      --blkio-weight                  Block IO (relative weight), between 10 and 1000                        [IGNORED]
+      --blkio-weight-device=[]        Block IO weight (relative device weight)                               [IGNORED]
+      --cpu-shares                    CPU shares (relative weight)                                           [IGNORED]
+      --cap-add=[]                    Add Linux capabilities                                                 [IGNORED]
+      --cap-drop=[]                   Drop Linux capabilities                                                [IGNORED]
+      --cgroup-parent                 Optional parent cgroup for the container                               [IGNORED]
+      --cidfile                       Write the container ID to the file
+      --cpu-period                    Limit CPU CFS (Completely Fair Scheduler) period                       [IGNORED]
+      --cpu-quota                     Limit CPU CFS (Completely Fair Scheduler) quota                        [IGNORED]
+      --cpuset-cpus                   CPUs in which to allow execution (0-3, 0,1)                            [IGNORED]
+      --cpuset-mems                   MEMs in which to allow execution (0-3, 0,1)                            [IGNORED]
+      --device=[]                     Add a host device to the container                                     [IGNORED]
+      --device-read-bps=[]            Limit read rate (bytes per second) from a device                       [IGNORED]
+      --device-read-iops=[]           Limit read rate (IO per second) from a device                          [IGNORED]
+      --device-write-bps=[]           Limit write rate (bytes per second) to a device                        [IGNORED]
+      --device-write-iops=[]          Limit write rate (IO per second) to a device                           [IGNORED]
+      --disable-content-trust=true    Skip image verification
+      --dns=[]                        Set custom DNS servers                                                 [IGNORED]
+      --dns-opt=[]                    Set DNS options                                                        [IGNORED]
+      --dns-search=[]                 Set custom DNS search domains                                          [IGNORED]
+      -e, --env=[]                    Set environment variables
+      --entrypoint                    Overwrite the default ENTRYPOINT of the image
+      --env-file=[]                   Read in a file of environment variables
+      --expose=[]                     Expose a port or a range of ports
+      --group-add=[]                  Add additional groups to join                                          [IGNORED]
+      -h, --hostname                  Container host name                                                    [IGNORED]
+      --help                          Print usage
+      -i, --interactive               Keep STDIN open even if not attached
+      --instance-type=xxs             The type for each instance (e.g. xxs, xs, s, m, l, xl, xxl)
+      --ip                            Container IPv4 address (e.g. 172.30.100.104)
+      --ip6                           Container IPv6 address (e.g. 2001:db8::33)                             [IGNORED]
+      --ipc                           IPC namespace to use                                                   [IGNORED]
+      --isolation                     Container isolation level                                              [IGNORED]
+      --kernel-memory                 Kernel memory limit                                                    [IGNORED]
+      -l, --label=[]                  Set meta data on a container
+      --label-file=[]                 Read in a line delimited file of labels
+      --link=[]                       Add link to another container
+      --log-driver                    Logging driver for container
+      --log-opt=[]                    Log driver options
+      -m, --memory                    Memory limit                                                           [IGNORED]
+      --mac-address                   Container MAC address (e.g. 92:d0:c6:0a:29:33)                         [IGNORED]
+      --memory-reservation            Memory soft limit                                                      [IGNORED]
+      --memory-swap                   Swap limit equal to memory plus swap: '-1' to enable unlimited swap    [IGNORED]
+      --memory-swappiness=-1          Tune container memory swappiness (0 to 100)
+      --name                          Assign a name to the container
+      --net=bridge                    Connect a container to a network
+      --net-alias=[]                  Add network-scoped alias for the container
+      --oom-kill-disable              Disable OOM Killer                                                     [IGNORED]
+      --oom-score-adj                 Tune host's OOM preferences (-1000 to 1000)                            [IGNORED]
+      -P, --publish-all               Publish all exposed ports to random ports
+      -p, --publish=[]                Publish a container's port(s) to the host
+      --pid                           PID namespace to use                                                   [IGNORED]
+      --privileged                    Give extended privileges to this container                             [IGNORED]
+      --read-only                     Mount the container's root filesystem as read only
+      --restart=no                    Restart policy to apply when a container exits
+      --security-opt=[]               Security Options                                                       [IGNORED]
+      --shm-size                      Size of /dev/shm, default value is 64MB                                [IGNORED]
+      --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default                         [IGNORED]
+      -t, --tty                       Allocate a pseudo-TTY
+      --tmpfs=[]                      Mount a tmpfs directory
+      -u, --user                      Username or UID (format: <name|uid>[:<group|gid>])                     [IGNORED]
+      --ulimit=[]                     Ulimit options                                                         [IGNORED]
+      --uts                           UTS namespace to use                                                   [IGNORED]
+      -v, --volume=[]                 Bind mount a volume
+      --volume-driver                 Optional volume driver for the container
+      --volumes-from=[]               Mount volumes from the specified container(s)                          [IGNORED]
+      -w, --workdir                   Working directory inside the container
 
 
 The `hyper create` command creates a writeable container layer over the
