@@ -55,7 +55,6 @@
        * [fip release](Reference/CLI/fip_release.md)
    * [API](Reference/API/index.md)
        * [1.23 (2016-04-04)](Reference/API/1.23/index.md)
-           * [API Endpoints](Reference/API/1.23/api_endpoints.md)
            * [Container](Reference/API/1.23/Container/index.md)
                * [List Containers](Reference/API/1.23/Container/list.md)
                * [Create a container](Reference/API/1.23/Container/create.md)
@@ -102,10 +101,8 @@
 * [FAQ](FAQ/index.md)
    * [Pricing](FAQ/pricing.md)
    * [Quota and Limits](FAQ/quota_and_limits.md)
-   * [Privacy Policy](privacy_policy.md)
-   * [Terms of Service](terms_of_service.md)
-   * [Acceptable Use Policy](acceptable_use_policy.md)
+   * [Privacy Policy](FAQ/privacy_policy.md)
+   * [Terms of Service](FAQ/terms_of_service.md)
+   * [Acceptable Use Policy](FAQ/acceptable_use_policy.md)
 * [Release Notes](ReleaseNotes/index.md)
-   * [2016-04-04](ReleaseNotes/2016-04-04.md)
-
-
+   * [1.23 (2016-04-04)](ReleaseNotes/1.23.md)
