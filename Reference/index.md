@@ -1,5 +1,5 @@
 # Reference
 
-- [CLI](./CLI/__index__.md)
+- [CLI](./CLI/index.md)
 - API
-    - [2016-04-04](./API/2016-04-04/__index__.md)
+    - [1.23 (2016-04-04)](./API/1.23/index.md)
