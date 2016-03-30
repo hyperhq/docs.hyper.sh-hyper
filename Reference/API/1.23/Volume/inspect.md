@@ -14,10 +14,13 @@ Return low-level information on the volume `name`
     Content-Type: application/json
 
     {
-        "Id": "vol-gnj432se",
         "Name": "tardis",
-        "Size": 10,
-        "SnapshotId": "snapshot-3gkjo4z4"
+        "Driver": "cinder",
+        "Mountpoint": "",
+        "Labels": {
+            "size": "10",
+            "snapshot": ""
+        }
     }
 
 Status Codes:

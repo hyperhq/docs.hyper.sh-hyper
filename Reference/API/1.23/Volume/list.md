@@ -14,10 +14,13 @@
     {
       "Volumes": [
         {
-          "Id": "tardis",
           "Name": "tardis",
-          "Size": 10,
-          "SnapshotId": "snapshot-3gkjo4z4"
+          "Driver": "cinder",
+          "Mountpoint": "",
+          "Labels": {
+              "size": "10",
+              "snapshot": ""
+          }
         }
       ]
     }

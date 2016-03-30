@@ -4,9 +4,10 @@
 
     Attach to a running container
 
+      --detach-keys       Override the key sequence for detaching a container   [IGNORED]
       --help=false        Print usage
       --no-stdin=false    Do not attach STDIN
-      --sig-proxy=true    Proxy all received signals to the process
+      --sig-proxy=true    Proxy all received signals to the process             [IGNORED]
 
 The `hyper attach` command allows you to attach to a running container using the container's ID or name, either to view its ongoing output or to control it interactively. You can attach to the same container multiple times simultaneously, screen sharing style, or quickly view the progress of your detached  process.
 

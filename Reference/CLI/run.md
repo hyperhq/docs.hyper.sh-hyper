@@ -4,39 +4,79 @@
 
     Run a new pod with one or more containers
 
-      -a, --attach=[]               Attach to STDIN, STDOUT or STDERR
-      --add-host=[]                 Add a custom host-to-IP mapping (host:ip)
-      -d, --detach=false            Run container in background and print container ID
-      --disable-content-trust=true  Skip image verification
-      --dns=[]                      Set custom DNS servers
-      --dns-opt=[]                  Set custom DNS options
-      --dns-search=[]               Set custom DNS search domains
-      -e, --env=[]                  Set environment variables
-      --entrypoint=""               Overwrite the default ENTRYPOINT of the image
-      --env-file=[]                 Read in a file of environment variables
-      --expose=[]                   Expose a port or a range of ports
-      --help=false                  Print usage
-      -i, --interactive=false       Keep STDIN open even if not attached
-      --size=xxs                    The size type for each container(e.g. xxs, xs, s, m, l, xl, xxl)
-      -l, --label=[]                Set metadata on the container (e.g., --label=com.example.key=value)
-      --label-file=[]               Read in a file of labels (EOL delimited)
-      --link=[]                     Add link to another container
-      --log-opt=[]                  Log driver specific options
-      --name=""                     Assign a name to the container
-      -P, --publish-all=false       Publish all exposed ports to random ports
-      -p, --publish=[]              Publish a container's port(s) to the host
-      --read-only=false             Mount the container's root filesystem as read only
-      --restart="no"                Restart policy (no, on-failure[:max-retry], always, unless-stopped)
-      --rm=false                    Automatically remove the container when it exits
-      --shm-size=[]                 Size of `/dev/shm`. The format is `<number><unit>`. `number` must be greater than `0`.  Unit is optional and can be `b` (bytes), `k` (kilobytes), `m` (megabytes), or `g` (gigabytes). If you omit the unit, the system uses bytes. If you omit the size entirely, the system uses `64m`.
-      --ulimit=[]                   Ulimit options
-      -v, --volume=[host-src:]container-dest[:<options>]
-                                    Bind mount a volume. The comma-delimited
-                                    `options` are [rw|ro], [z|Z], or
-                                    [[r]shared|[r]slave|[r]private]. The
-                                    'host-src' is an absolute path or a name
-                                    value.
-      -w, --workdir=""              Working directory inside the container
+      -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR
+      --add-host=[]                   Add a custom host-to-IP mapping (host:ip)                              [IGNORED]
+      --blkio-weight                  Block IO (relative weight), between 10 and 1000                        [IGNORED]
+      --blkio-weight-device=[]        Block IO weight (relative device weight)                               [IGNORED]
+      --cpu-shares                    CPU shares (relative weight)                                           [IGNORED]
+      --cap-add=[]                    Add Linux capabilities                                                 [IGNORED]
+      --cap-drop=[]                   Drop Linux capabilities                                                [IGNORED]
+      --cgroup-parent                 Optional parent cgroup for the container                               [IGNORED]
+      --cidfile                       Write the container ID to the file
+      --cpu-period                    Limit CPU CFS (Completely Fair Scheduler) period                       [IGNORED]
+      --cpu-quota                     Limit CPU CFS (Completely Fair Scheduler) quota                        [IGNORED]
+      --cpuset-cpus                   CPUs in which to allow execution (0-3, 0,1)                            [IGNORED]
+      --cpuset-mems                   MEMs in which to allow execution (0-3, 0,1)                            [IGNORED]
+      -d, --detach                    Run container in background and print container ID
+      --detach-keys                   Override the key sequence for detaching a container                    [IGNORED]
+      --device=[]                     Add a host device to the container                                     [IGNORED]
+      --device-read-bps=[]            Limit read rate (bytes per second) from a device                       [IGNORED]
+      --device-read-iops=[]           Limit read rate (IO per second) from a device                          [IGNORED]
+      --device-write-bps=[]           Limit write rate (bytes per second) to a device                        [IGNORED]
+      --device-write-iops=[]          Limit write rate (IO per second) to a device                           [IGNORED]
+      --disable-content-trust=true    Skip image verification
+      --dns=[]                        Set custom DNS servers                                                 [IGNORED]
+      --dns-opt=[]                    Set DNS options                                                        [IGNORED]
+      --dns-search=[]                 Set custom DNS search domains                                          [IGNORED]
+      -e, --env=[]                    Set environment variables
+      --entrypoint                    Overwrite the default ENTRYPOINT of the image
+      --env-file=[]                   Read in a file of environment variables
+      --expose=[]                     Expose a port or a range of ports
+      --group-add=[]                  Add additional groups to join                                          [IGNORED]
+      -h, --hostname                  Container host name                                                    [IGNORED]
+      --help                          Print usage
+      -i, --interactive               Keep STDIN open even if not attached
+      --instance-type=xxs             The type for each instance (e.g. xxs, xs, s, m, l, xl, xxl)
+      --ip                            Container IPv4 address (e.g. 172.30.100.104)
+      --ip6                           Container IPv6 address (e.g. 2001:db8::33)                             [IGNORED]
+      --ipc                           IPC namespace to use                                                   [IGNORED]
+      --isolation                     Container isolation level                                              [IGNORED]
+      --kernel-memory                 Kernel memory limit                                                    [IGNORED]
+      -l, --label=[]                  Set meta data on a container
+      --label-file=[]                 Read in a line delimited file of labels
+      --link=[]                       Add link to another container
+      --log-driver                    Logging driver for container
+      --log-opt=[]                    Log driver options
+      -m, --memory                    Memory limit                                                           [IGNORED]
+      --mac-address                   Container MAC address (e.g. 92:d0:c6:0a:29:33)                         [IGNORED]
+      --memory-reservation            Memory soft limit                                                      [IGNORED]
+      --memory-swap                   Swap limit equal to memory plus swap: '-1' to enable unlimited swap    [IGNORED]
+      --memory-swappiness=-1          Tune container memory swappiness (0 to 100)
+      --name                          Assign a name to the container
+      --net=bridge                    Connect a container to a network
+      --net-alias=[]                  Add network-scoped alias for the container
+      --oom-kill-disable              Disable OOM Killer                                                     [IGNORED]
+      --oom-score-adj                 Tune host's OOM preferences (-1000 to 1000)                            [IGNORED]
+      -P, --publish-all               Publish all exposed ports to random ports
+      -p, --publish=[]                Publish a container's port(s) to the host
+      --pid                           PID namespace to use                                                   [IGNORED]
+      --privileged                    Give extended privileges to this container                             [IGNORED]
+      --read-only                     Mount the container's root filesystem as read only
+      --rm                            Automatically remove the container when it exits
+      --restart=no                    Restart policy to apply when a container exits
+      --sig-proxy=true                Proxy received signals to the process                                  [IGNORED]
+      --security-opt=[]               Security Options                                                       [IGNORED]
+      --shm-size                      Size of /dev/shm, default value is 64MB                                [IGNORED]
+      --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default                         [IGNORED]
+      -t, --tty                       Allocate a pseudo-TTY
+      --tmpfs=[]                      Mount a tmpfs directory
+      -u, --user                      Username or UID (format: <name|uid>[:<group|gid>])                     [IGNORED]
+      --ulimit=[]                     Ulimit options                                                         [IGNORED]
+      --uts                           UTS namespace to use                                                   [IGNORED]
+      -v, --volume=[]                 Bind mount a volume
+      --volume-driver                 Optional volume driver for the container
+      --volumes-from=[]               Mount volumes from the specified container(s)                          [IGNORED]
+      -w, --workdir                   Working directory inside the container
 
 The `hyper run` command first `creates` a writeable container layer over the specified image, and then `starts` it using the specified Docker images. That is, `hyper run` is equivalent to the API `/pod/create` then `/pod/(id)/start`. A stopped container can be restarted with all its previous changes intact using `hyper start`. See `hyper ps -a` to view a list
 of all containers.
@@ -227,42 +267,3 @@ Hyper_ supports the following restart policies:
 This will run the `redis` pod with a restart policy of **always**
 so that if the pod exits, Docker will restart it.
 
-#### Add entries to pod hosts file (--add-host)
-
-You can add other hosts into a pod's `/etc/hosts` file by using one or more `--add-host` flags. This example adds a static address for a host named `docker`:
-
-    $ hyper run --add-host=web:10.180.0.1 --rm -it debian
-    $$ ping web
-    PING docker (10.180.0.1): 48 data bytes
-    56 bytes from 10.180.0.1: icmp_seq=0 ttl=254 time=7.600 ms
-    56 bytes from 10.180.0.1: icmp_seq=1 ttl=254 time=30.705 ms
-    ^C--- web ping statistics ---
-    2 packets transmitted, 2 packets received, 0% packet loss
-    round-trip min/avg/max/stddev = 7.600/19.152/30.705/11.553 ms
-
-#### Set ulimits in pod (--ulimit)
-
-`--ulimit` is specified with a soft and hard limit as such: `<type>=<soft limit>[:<hard limit>]`, for example:
-
-    $ hyper run --ulimit nofile=1024:1024 --rm debian ulimit -n
-    1024
-
-> **Note:**
-> If you do not provide a `hard limit`, the `soft limit` will be used for both values. If no `ulimits` are set, they will be inherited from the default `ulimits`.  `as` option is disabled now. In other words, the following script is not supported: `$ hyper run -it --ulimit as=1024 fedora /bin/bash`
-
-The values are sent to the appropriate `syscall` as they are set. Hyper_ doesn't perform any byte conversion. Take this into account when setting the values.
-
-##### For `nproc` usage
-
-Be careful setting `nproc` with the `ulimit` flag as `nproc` is designed by Linux to set the maximum number of processes available to a user, not to a pod.  For example, start four pods with `daemon` user:
-
-    hyper run -d -u daemon --ulimit nproc=3 busybox top
-    hyper run -d -u daemon --ulimit nproc=3 busybox top
-    hyper run -d -u daemon --ulimit nproc=3 busybox top
-    hyper run -d -u daemon --ulimit nproc=3 busybox top
-
-The 4th pod fails and reports "[8] System error: resource temporarily unavailable" error. This fails because the caller set `nproc=3` resulting in the first three containers using up the three processes quota set for the `daemon` user.
-
-#### Stop pod with signal (--stop-signal)
-
-The `--stop-signal` flag sets the system call signal that will be sent to the pod to exit. This signal can be a valid unsigned number that matches a position in the kernel's syscall table, for instance 9, or a signal name in the format SIGNAME, for instance SIGKILL.
