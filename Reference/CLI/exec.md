@@ -8,7 +8,7 @@
       --help=false               Print usage
       -t, --tty                  Allocate a pseudo-TTY
       -i, --interactive=false    Keep STDIN open even if not attached
-      -u, --user=                Username or UID (format: <name|uid>[:<group|gid>]) [IGNORED]
+      `IGNORED` -u, --user=                Username or UID (format: <name|uid>[:<group|gid>]) 
 
 The `hyper exec` command runs a new command in a running container.
 
