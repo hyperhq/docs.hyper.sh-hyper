@@ -14,10 +14,8 @@ Remove the container `id` from the filesystem
 
 Query Parameters:
 
--   **v** – 1/True/true or 0/False/false, Remove the volumes associated to the container.
-        Default `false`.
--   **force** - 1/True/true or 0/False/false, Kill then remove the container.
-        Default `false`.
+-   **v** – 1/True/true or 0/False/false, Remove the volumes associated to the container.  Default `false`.
+-   **force** - 1/True/true or 0/False/false, Kill then remove the container.  Default `false`.
 
 Status Codes:
 

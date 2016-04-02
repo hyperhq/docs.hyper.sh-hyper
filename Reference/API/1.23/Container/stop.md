@@ -14,7 +14,7 @@ Stop the container `id`
 
 Query Parameters:
 
--   **t** – number of seconds to wait before killing the container
+-   **t** – number of seconds to wait before killing the container.
 
 Status Codes:
 

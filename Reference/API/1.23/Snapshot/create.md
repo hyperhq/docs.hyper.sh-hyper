@@ -16,7 +16,7 @@
         {
           "Id": "snapshot-tardis",
           "Name": "snapshot-tardis",
-          "Size": "10",
+          "Size": 10,
           "Volume": "tardis"
         }
       ]

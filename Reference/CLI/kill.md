@@ -4,8 +4,8 @@
 
     Kill a running container
 
-      --help               Print usage
-      `IGNORED` -s, --signal=KILL    Signal to send to the container 
+                --help               Print usage
+      [IGNORED] -s, --signal=KILL    Signal to send to the container 
 
 The main process inside the container will be sent `SIGKILL`, or any
 signal specified with option `--signal`.

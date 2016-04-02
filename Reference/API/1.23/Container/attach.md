@@ -21,14 +21,10 @@ Query Parameters:
 
 -   **detachKeys** – Override the key sequence for detaching a container. 
 -   **logs** – 1/True/true or 0/False/false, return logs. Default `false`.
--   **stream** – 1/True/true or 0/False/false, return stream.
-        Default `false`.
--   **stdin** – 1/True/true or 0/False/false, if `stream=true`, attach
-        to `stdin`. Default `false`.
--   **stdout** – 1/True/true or 0/False/false, if `logs=true`, return
-        `stdout` log, if `stream=true`, attach to `stdout`. Default `false`.
--   **stderr** – 1/True/true or 0/False/false, if `logs=true`, return
-        `stderr` log, if `stream=true`, attach to `stderr`. Default `false`.
+-   **stream** – 1/True/true or 0/False/false, return stream.  Default `false`.
+-   **stdin** – 1/True/true or 0/False/false, if `stream=true`, attach to `stdin`. Default `false`.
+-   **stdout** – 1/True/true or 0/False/false, if `logs=true`, return `stdout` log, if `stream=true`, attach to `stdout`. Default `false`.
+-   **stderr** – 1/True/true or 0/False/false, if `logs=true`, return `stderr` log, if `stream=true`, attach to `stderr`. Default `false`.
 
 Status Codes:
 
