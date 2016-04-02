@@ -13,7 +13,13 @@ Hyper\_ currently provides official CLI builds for Linux and Mac. Windows releas
 Don't like the "curl to bash" methods? Download the tarball [TODO: here]().
 
 ## Install on Mac
-~~TODO~~
+
+Now, a PR to homebrew-cask is submitted, waiting for result.
+
+    brew update; brew upgrade
+    brew cask install hypercli
+
+Don't like the "brew cask" methods? Download the install [package](https://hypercli-install.s3.amazonaws.com/hypercli.pkg).
 
 ## CLI Configuration
 
