@@ -14,8 +14,7 @@ Kill the container `id`
 
 Query Parameters
 
--   **signal** - Signal to send to the container: integer or string like `SIGINT`.
-        When not set, `SIGKILL` is assumed and the call waits for the container to exit.
+-   **signal** - Signal to send to the container: integer or string like `SIGINT`.  When not set, `SIGKILL` is assumed and the call waits for the container to exit.
 
 Status Codes:
 

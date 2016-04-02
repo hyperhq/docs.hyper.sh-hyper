@@ -16,7 +16,8 @@ Return low-level information on the snapshot `name`
     {
         "Id": "snapshot-3gkjo4z4",
         "Name": "tardis",
-        "Size": "10"
+        "Size": 10,
+        "Volume": ""
     }
 
 Status Codes:

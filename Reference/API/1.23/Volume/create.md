@@ -11,7 +11,11 @@ Create a volume
 
     {
       "Name": "tardis",
-      "Size": 10
+      "Driver": "cinder",
+      "DriverOpts": {
+          "size": "10",
+          "snapshot":""
+       }
     }
 
 **Example response**:
@@ -20,9 +24,13 @@ Create a volume
     Content-Type: application/json
 
     {
-      "Name": "tardis",
-      "Size": 10,
-      "SnapshotId": ""
+          "Name": "tardis",
+          "Driver": "cinder",
+          "Mountpoint": "",
+          "Labels": {
+              "size": "10",
+              "snapshot": ""
+          }
     }
 
 Status Codes:
