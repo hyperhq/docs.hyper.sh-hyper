@@ -1,5 +1,7 @@
 # CLI
 
+> NOTE: Options with the `IGNORED` mark are not supported and will be ignored.
+
 - [attach](./attach.md)
 - [create](./create.md)
 - [exec](./exec.md)

@@ -1,6 +1,6 @@
 # Version 1.23 (2016-04-04)
 
-> NOTE: Parameters with the `IGNORED` mark are not supported in this version. All data passed will be ignored.
+> NOTE: Parameters with the `IGNORED` mark are not supported in this version. Parameter value will be ignored.
 
 ### API Endpoints
 
