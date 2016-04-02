@@ -14,7 +14,12 @@ Open your terminal and enter:
 Once the download completes, you can see images with:
 
 	$ hyper images
-	~~TODO~~
+	REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+    busybox             latest              47bcc53f74dc        2 weeks ago         1.113 MB
+    busybox             uclibc              47bcc53f74dc        2 weeks ago         1.113 MB
+    busybox             glibc               54df49495ae4        2 weeks ago         4.18 MB
+    mysql               latest              7a5866c2edbf        2 weeks ago         361.2 MB
+    nginx               latest              af4b3d7d5401        3 weeks ago         190.5 MB
 
 ### 2. Create additional volumes 
 Hyper\_ creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:

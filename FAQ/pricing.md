@@ -18,11 +18,12 @@
 - Image: $0.1/GB/month
 - Volume: $0.1/GB/month
 - Snapshot: $0.05/GB/month
-> Billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal.
+> - Billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal.
+> - Images less than 1GB will be charge for 1GB
 
 #### Network
 - Floating IP: $1/IP/month
-> Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
+> - Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
 #### Tax
 Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax.

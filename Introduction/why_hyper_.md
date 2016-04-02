@@ -1,9 +1,8 @@
 # Why Hyper\_?
 
-
 - **Secure Container** - Hyper\_ leverages [virtualization](github.com/hyperhq/hyper) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both worlds gives you the security of virtual machines to containers with the speed of containers.
 
-![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)
+![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)
 
 - **Docker Native Workflow** - Imagine the entire Hyper\_ cloud as a single remote host with unlimited capacity. You can use the same Docker native workflow to deploy containers. Working with Hyper\_ is as simple as running Docker on your own laptop.
 
@@ -17,7 +16,7 @@
 
  `hyper exec db /bin/sh` // remote access
 
-![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1317x490/d94b089c895cd3feaab21c5277491343/laptop-left.png)
+![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1051x413/256afdcdaf886adcaf93ce86edd5529b/docker_native_workflow.png)
 
 - **3 Seconds to Deploy** - It takes only 3 seconds from issuing `hyper run` to the point where the container is running in Hyper\_. Your application is empowered with super elasticity to handle customer needs.
 

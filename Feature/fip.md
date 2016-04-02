@@ -33,4 +33,4 @@ To release a floating IP:
     $ hyper fip release 52.68.129.19
     52.68.129.19
 
-> NOTE: floating IP is priced at a monthly rate: $1/month. When an IP is allocated, you will be charged for that current month. And ~~TODO~~
+> NOTE: floating IP is priced at a monthly rate. When an IP is allocated, you will be charged for that current month.

@@ -8,4 +8,12 @@ Simply put, [HyperContainer](https://github.com/hyperhq/hyper) is a virtualized 
 
 By combing the best from both virtualization and container world, HyperContainer is able to bring the hardware-enforced Isolation as VM, and the speed of container.
 
-[TODO](table)
+|  . | VM | Container | HyperContainer |
+|:-:|:-:|:-:|:-:|
+|ISOLATION|**Strong**|Weak|**Strong**|
+|PORTABLE   |No   |**Yes**   |**Yes**   |
+|BOOT|Slow (seconds)   |**Fast (sub-seconds)**   |**Fast (sub-seconds)**   |
+|IMMUTABLE|No  |**Yes**   |**Yes**   |
+|IMAGE SIZE	|Big GBs  |**Small MBs**   |**Small MBs**   |
+|EXISTING INFRASTRUCTURE ROI|-  |No  |**Great**  |
+|TOOLCHAIN MATURITY	|**Great**  |Brand new   |**Great**  |
