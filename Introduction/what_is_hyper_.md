@@ -19,4 +19,4 @@ In a HyperContainer, the application process is still able to access what it nee
 
 ![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)
 
-The combination of the best from both worlds gives you the security of virtual machines to containers with the speed of containers. A HyperContainer is able to finish booting in milliseconds (~100ms), which is dramatically faster than VM. Some may argue that this speed still lags behind Linux container, but consider that application usually takes longer to launch, there is simply no difference in practice.
+The combination of the best from both worlds gives you the security of virtual machines to containers with the speed of containers. A HyperContainer is able to finish booting in milliseconds (~100ms), which is dramatically faster than VM. Some may argue that this speed still lags behind Linux container, but consider that application usually takes longer to launch, there is no practical difference.

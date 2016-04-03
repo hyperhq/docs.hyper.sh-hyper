@@ -15,7 +15,7 @@ Return low-level information on the volume `name`
 
     {
         "Name": "tardis",
-        "Driver": "cinder",
+        "Driver": "",
         "Mountpoint": "",
         "Labels": {
             "size": "10",

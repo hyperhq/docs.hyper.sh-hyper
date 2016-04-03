@@ -4,18 +4,12 @@
 
     Attach to a running container
 
-      [IGNORED] --detach-keys       Override the key sequence for detaching a container   
                 --help=false        Print usage
                 --no-stdin=false    Do not attach STDIN
-      [IGNORED] --sig-proxy=true    Proxy all received signals to the process 
 
 The `hyper attach` command allows you to attach to a running container using the container's ID or name, either to view its ongoing output or to control it interactively. You can attach to the same container multiple times simultaneously, screen sharing style, or quickly view the progress of your detached  process.
 
-You can detach from the container and leave it running with `CTRL-p CTRL-q` (for a quiet exit) or with `CTRL-c` if `--sig-proxy` is false.
-
-If `--sig-proxy` is true (the default),`CTRL-c` sends a `SIGINT` to the container.
-
-~~It is forbidden to redirect the standard input of a `docker attach` command while attaching to a tty-enabled container (i.e.: launched with `-t`).~~
+You can detach from the container and leave it running with `CTRL-p CTRL-q` (for a quiet exit) or with `CTRL-c`.
 
 #### Examples
 

@@ -15,7 +15,7 @@
       "Volumes": [
         {
           "Name": "tardis",
-          "Driver": "cinder",
+          "Driver": "",
           "Mountpoint": "",
           "Labels": {
               "size": "10",

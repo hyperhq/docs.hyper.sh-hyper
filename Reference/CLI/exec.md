@@ -6,13 +6,10 @@
 
                 -d, --detach=false         Detached mode: run command in the background
                 --help=false               Print usage
-                -t, --tty                  Allocate a pseudo-TTY
+                TBD-t, --tty                  Allocate a pseudo-TTY
                 -i, --interactive=false    Keep STDIN open even if not attached
-      [IGNORED] -u, --user=                Username or UID (format: <name|uid>[:<group|gid>]) 
 
 The `hyper exec` command runs a new command in a running container.
-
-~~The command started using `hyper exec` only runs while the container's primary process (`PID 1`) is running~~, and it is not restarted if the container is restarted.
 
 ### Examples
 

@@ -24,11 +24,11 @@ Display Hyper_ system-wide information
         "Debug": false,
         "DiscoveryBackend": "",
         "DockerRootDir": "",
-        "Driver": "cinder",
+        "Driver": "",
         "DriverStatus": [[""]],
         "Plugins": {
             "Volume": [
-                "cinder"
+                ""
             ],
             "Network": [
                 "null",
