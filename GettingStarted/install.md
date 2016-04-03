@@ -16,7 +16,7 @@ Don't like the "curl to bash" methods? Download the tarball [TODO: here]().
 
 Now, a PR to homebrew-cask is submitted, waiting for result.
 
-    brew update; brew upgrade
+    brew update
     brew cask install hypercli
 
 Don't like the "brew cask" methods? Download the install [package](https://hypercli-install.s3.amazonaws.com/hypercli.pkg).
