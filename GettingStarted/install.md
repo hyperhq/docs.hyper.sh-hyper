@@ -8,16 +8,16 @@ Hyper\_ currently provides official CLI builds for Linux and Mac. Windows releas
 
 ## Install on Linux
 
-    curl -sSL https://hyper.sh/install | bash
-
-Don't like the "curl to bash" methods? Download the tarball [TODO: here]().
+    $ wget https://hyper-install.s3.amazonaws.com/hyper-1.10-x86_64.tar.gz .
+    $ tar xzf hyper-1.10-x86_64.tar.gz
+    $ ./hyper --help
 
 ## Install on Mac
+TBD
 
-Now, a PR to homebrew-cask is submitted, waiting for result.
-
-    brew update
-    brew cask install hypercli
+    $ brew update
+    $ brew cask install hypercli
+    $ hyper --help
 
 Don't like the "brew cask" methods? Download the install [package](https://hypercli-install.s3.amazonaws.com/hypercli.pkg).
 
@@ -25,8 +25,7 @@ Don't like the "brew cask" methods? Download the install [package](https://hyper
 
 Once the installation completes, enter `hyper config` in your terminal. The CLI will prompt to ask for your API credential:
 
-
-![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/600x119/9fae270300cee6068785e666c0d350a7/upload_3_18_2016_at_6_11_19_PM.png)
+![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/720x143/9fdd9a68694376d4ec62a3d93409e67c/upload_3_18_2016_at_6_11_19_PM.png)
 
 The credential is stored in a local configuration file `$HOME/.hyper/config.json`. The configuration file is similar to Docker's, with an extra section `clouds`.
 

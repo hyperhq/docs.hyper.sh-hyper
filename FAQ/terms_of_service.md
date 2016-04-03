@@ -4,7 +4,7 @@
 
 ## Your Agreement with Hyper\_
 
-- `1.1` Your use of the Hyper\_ service is governed by this agreement (the “Terms”). “Hyper\_” means HyperHQ, Inc., located at ~~2302 Environ Way, Chapel Hill, NC, 27517~~, United States, and its subsidiaries or affiliates involved in providing the Hyper\_ Service. The “Hyper\_ Services” means the services Hyper\_ makes available through this website, including this website, the Hyper\_ cloud computing service, the Hyper\_ API, the Hyper\_ Add-ons, the Hyper\_ Components, and any other software or services offered by Hyper\_ in connection to any of those.
+- `1.1` Your use of the Hyper\_ service is governed by this agreement (the “Terms”). “Hyper\_” means HyperHQ, Inc., located at 25 Broadway, 9th Floor, New York, 10004, United States, and its subsidiaries or affiliates involved in providing the Hyper\_ Service. The “Hyper\_ Services” means the services Hyper\_ makes available through this website, including this website, the Hyper\_ cloud computing service, the Hyper\_ API, the Hyper\_ Add-ons, the Hyper\_ Components, and any other software or services offered by Hyper\_ in connection to any of those.
 
 - `1.2` In order to use the Hyper\_ Services, you must first agree to the Terms. You can agree to the Terms by actually using the Hyper\_ Services. You understand and agree that Hyper\_ will treat your use of the Hyper\_ Services as acceptance of the Terms from that point onwards.
 
@@ -19,7 +19,7 @@
 
 - `2.3` You agree not to (a) access (or attempt to access) the administrative interface of the Hyper\_ Services by any means other than through the interface that is provided by Hyper\_ in connection with the Hyper\_ Services, unless you have been specifically allowed to do so in a separate agreement with Hyper\_, or (b) engage in any activity that interferes with or disrupts the Hyper\_ Services (or the servers and networks which are connected to the Service).
 
-~~TBD~~- `2.4` Your account has “hard” and “soft” usage limits, as further explained in the Hyper\_ Acceptable Use Policy. The Hyper\_ Services does not permit you to exceed the hard usage limits. Hyper\_ reserves the right to enforce soft usage limits in its sole discretion, which may result in Hyper\_ serving a “quota exceeded” page to you or users to whom you serve web pages via the Hyper\_ Services (“End Users”). Repeated exceeding of the hard or soft usage limits may lead to termination of your account.
+- `2.4` Your account has “hard” and “soft” usage limits, as further explained in the [Quota & Limits](./quota_and_limits.md). The Hyper\_ Services does not permit you to exceed the hard usage limits. Hyper\_ reserves the right to enforce soft usage limits in its sole discretion. Repeated exceeding of the hard or soft usage limits may lead to termination of your account.
 
 - `2.5` You may use the Hyper\_ Services only to develop and run applications on the Hyper\_ infrastructure. You may not access the Hyper\_ Services for the purpose of bringing an intellectual property infringement claim against Hyper\_ or for the purpose of creating a product or service competitive with the Hyper\_ Services.
 
