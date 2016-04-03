@@ -1,8 +1,8 @@
 ## logs
 
-    Usage: hyper logs [OPTIONS] POD[:CONTAINER]
+    Usage: hyper logs [OPTIONS] CONTAINER
 
-    Fetch the logs of a pod or container
+    Fetch the logs of a container
 
       -f, --follow=false        Follow log output
       --help=false              Print usage

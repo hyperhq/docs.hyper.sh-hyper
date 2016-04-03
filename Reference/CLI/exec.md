@@ -15,12 +15,12 @@ The `hyper exec` command runs a new command in a running container.
 
     $ hyper run --name ubuntu_bash --rm -i -t ubuntu bash
 
-This will create a pod named `ubuntu_bash` and start a Bash session.
+This will create a container named `ubuntu_bash` and start a Bash session.
 
     $ hyper exec -d ubuntu_bash touch /tmp/execWorks
 
-This will create a new file `/tmp/execWorks` inside the default (only) container in the running pod `ubuntu_bash`, in the background.
+This will create a new file `/tmp/execWorks` inside the default (only) container in the running container `ubuntu_bash`, in the background.
 
     $ hyper exec -it ubuntu_bash bash
 
-This will create a new Bash session in the pod `ubuntu_bash`.
+This will create a new Bash session in the container `ubuntu_bash`.

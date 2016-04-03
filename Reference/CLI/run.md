@@ -2,7 +2,7 @@
 
     Usage: hyper run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-    Run a new pod with one or more containers
+    Run a new container
 
                 -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR     
                 --cidfile                       Write the container ID to the file
@@ -33,8 +33,7 @@
                 -v, --volume=[]                 Bind mount a volume
                 -w, --workdir                   Working directory inside the container
 
-The `hyper run` command first `creates` a writeable container layer over the specified image, and then `starts` it using the specified Docker images. That is, `hyper run` is equivalent to the API `/pod/create` then `/pod/(id)/start`. A stopped container can be restarted with all its previous changes intact using `hyper start`. See `hyper ps -a` to view a list
-of all containers.
+The `hyper run` command first `creates` a writeable container layer over the specified image, and then `starts` it using the specified Docker images. That is, `hyper run` is equivalent to the API `/container/create` then `/container/(id)/start`. A stopped container can be restarted with all its previous changes intact using `hyper start`. See `hyper ps -a` to view a list of all containers.
 
 The `hyper run` command can be used in combination with `hyper commit` to
 [*change the command that a container runs*](commit.md). There is additional detailed information about `hyper run` in the [Hyper_ run reference](../run.md).
@@ -48,7 +47,7 @@ The `hyper run` command can be used in combination with `hyper commit` to
 The `-w` lets the command being executed inside directory given, here
 `/path/to/dir/`. If the path does not exists it is created inside the container.
 
-> Note: this works when there is only one Docker image in the pod
+> Note: this works when there is only one Docker image in the container
 
 #### Mount volume (-v, --read-only)
 
@@ -60,7 +59,7 @@ The mount is created inside the container's `/world` directory. Hyper_ does not 
 
     $ hyper run --expose 80 ubuntu bash
 
-This exposes port `80` of the pod.
+This exposes port `80` of the container.
 
 #### Set environment variables (-e, --env, --env-file)
 
@@ -122,9 +121,9 @@ An example of a file passed with `--env-file`
     123qwe=bar
     org.spring.config=something
 
-#### Set metadata on pod(-l, --label, --label-file)
+#### Set metadata on container (-l, --label, --label-file)
 
-A label is a `key=value` pair that applies metadata to a pod. To label a pod with two labels:
+A label is a `key=value` pair that applies metadata to a container. To label a container with two labels:
 
     $ hyper run -l my-label --label com.example.foo=bar ubuntu bash
 
@@ -148,26 +147,24 @@ You can load multiple label-files by supplying multiple  `--label-file` flags.
 
 #### Attach to STDIN/STDOUT/STDERR (-a)
 
-The `-a` flag tells `hyper run` to bind to the pod's `STDIN`, `STDOUT` or `STDERR`. This makes it possible to manipulate the output and input as needed.
+The `-a` flag tells `hyper run` to bind to the container's `STDIN`, `STDOUT` or `STDERR`. This makes it possible to manipulate the output and input as needed.
 
     $ echo "test" | hyper run -i -a stdin ubuntu cat -
 
-This pipes data into a pod and prints the pod's ID by attaching only to the pod's `STDIN`.
+This pipes data into a container and prints the container's ID by attaching only to the container's `STDIN`.
 
     $ hyper run -a stderr ubuntu echo test
 
-This isn't going to print anything unless there's an error because we've only attached to the `STDERR` of the pod. The pod's logs
-still store what's been written to `STDERR` and `STDOUT`.
+This isn't going to print anything unless there's an error because we've only attached to the `STDERR` of the container. The container's logs still store what's been written to `STDERR` and `STDOUT`.
 
     $ cat somefile | hyper run -i -a stdin mybuilder dobuild
 
-This is how piping a file into a container could be done for a build. The pod's ID will be printed after the build is done and the build logs could be retrieved using `hyper logs`. This is useful if you need to pipe a file or something else into a pod and
-retrieve the pod's ID once the pod has finished running.
+This is how piping a file into a container could be done for a build. The container's ID will be printed after the build is done and the build logs could be retrieved using `hyper logs`. This is useful if you need to pipe a file or something else into a container and `retrieve the container's ID once the container has finished running.
 
 #### Restart policies (--restart)
 
-Use Hyper's `--restart` to specify a pod's *restart policy*. A restart policy controls whether to restart a pod after exit.
-Hyper_ supports the following restart policies:
+Use Hyper\_'s `--restart` to specify a container's *restart policy*. A restart policy controls whether to restart a container after exit. The policy will be triggered if the uptime of a container is more than 10 seconds.
+Hyper\_ supports the following restart policies:
 
 <table>
   <thead>
@@ -180,7 +177,7 @@ Hyper_ supports the following restart policies:
     <tr>
       <td><strong>no</strong></td>
       <td>
-        Do not automatically restart the pod when it exits. This is the
+        Do not automatically restart the container when it exits. This is the
         default.
       </td>
     </tr>
@@ -191,24 +188,24 @@ Hyper_ supports the following restart policies:
         </span>
       </td>
       <td>
-        Restart only if the pod exits with a non-zero exit status.
+        Restart only if the container exits with a non-zero exit status.
         Optionally, limit the number of restart retries
       </td>
     </tr>
     <tr>
       <td><strong>always</strong></td>
       <td>
-        Always restart the pod regardless of the exit status.
+        Always restart the container regardless of the exit status.
         When you specify always, Hyper_ will try to restart
-        the pod indefinitely. The pod will also always start
-        on daemon startup, regardless of the current state of the pod.
+        the container indefinitely. The container will also always start
+        on daemon startup, regardless of the current state of the container.
       </td>
     </tr>
     <tr>
       <td><strong>unless-stopped</strong></td>
       <td>
-        Always restart the pod regardless of the exit status, but
-        do not start it on daemon startup if the pod has been put
+        Always restart the container regardless of the exit status, but
+        do not start it on daemon startup if the container has been put
         to a stopped state before.
       </td>
     </tr>
@@ -217,6 +214,6 @@ Hyper_ supports the following restart policies:
 
     $ hyper run --restart=always redis
 
-This will run the `redis` pod with a restart policy of **always**
-so that if the pod exits, Docker will restart it.
+This will run the `redis` container with a restart policy of **always**
+so that if the container exits, Hyper\_ will restart it.
 

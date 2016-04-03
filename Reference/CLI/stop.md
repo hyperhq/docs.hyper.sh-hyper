@@ -2,7 +2,7 @@
 
     Usage: hyper stop [OPTIONS] CONTAINER
 
-    Stop a pod
+    Stop a container
 
       --help=false       Print usage
       -t, --time=10      Seconds to wait for stop before killing it
