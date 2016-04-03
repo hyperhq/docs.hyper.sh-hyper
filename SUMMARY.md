@@ -70,7 +70,7 @@
                * [Exec Create](Reference/API/1.23/Container/exec_create.md)
            * [Misc](Reference/API/1.23/Misc/index.md)
                * [Display system-wide information](Reference/API/1.23/Misc/info.md)
-               * [Show the docker version information](Reference/API/1.23/Misc/version.md)
+               * [Show the hyper version information](Reference/API/1.23/Misc/version.md)
                * [Exec Start](Reference/API/1.23/Misc/exec_start.md)
                * [Exec Resize](Reference/API/1.23/Misc/exec_resize.md)
                * [Exec Inspect](Reference/API/1.23/Misc/exec_inspect.md)
