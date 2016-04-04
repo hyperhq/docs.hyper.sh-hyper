@@ -8,12 +8,11 @@ Hyper\_ currently provides official CLI builds for Linux and Mac. Windows releas
 
 ## Install on Linux
 
-    $ wget https://hyper-install.s3.amazonaws.com/hyper-1.10-x86_64.tar.gz .
+    $ wget https://hyper-install.s3.amazonaws.com/hyper-1.10-x86_64.tar.gz
     $ tar xzf hyper-1.10-x86_64.tar.gz
     $ ./hyper --help
 
 ## Install on Mac
-TBD
 
     $ brew update
     $ brew cask install hypercli
