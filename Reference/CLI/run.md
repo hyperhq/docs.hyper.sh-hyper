@@ -13,7 +13,7 @@
                 --env-file=[]                   Read in a file of environment variables
                 --help                          Print usage
                 -i, --interactive               Keep STDIN open even if not attached
-                --size=xxs                      Container size (e.g. xxs, xs, s, m, l, xl, xxl)                  
+                --size=xs                       Container size (e.g. xxs, xs, s, m, l, xl, xxl), default size: xs 
                 -l, --label=[]                  Set meta data on a container
                 --label-file=[]                 Read in a line delimited file of labels
                 --link=[]                       Add link to another container
