@@ -58,7 +58,7 @@ You can remotely access the container using the following command:
 
 ### 8. Remove the container  (permanently)
 
-    $ hyper rm myweb
+    $ hyper rm -f myweb
     myweb
 
 The volume will be unmounted but not deleted. The floating IP will be de-associated, but not released.
