@@ -2,7 +2,7 @@
 
 First of all, you need to generate the API credential:
 
-- Login the [console](https://console.hyper.sh/account/credential)
+- Go to the [account page]((https://console.hyper.sh/account/credential)) in the console
 - Click `Create Credential`
 
 ![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1077x453/d15e4fee2aa8d1e4b601cb49dd1d0b93/Pasted_image_at_2016_04_03_05_07_PM.png)
