@@ -13,12 +13,12 @@ Hyper\_ has certain hard and soft (`quota`) limits in using its service. Hard li
 	- Max Floating IP per Container: 1
 	- Max Internal IP per Container: 1
 
-## Quota
-- Container: 50 per region
-- Image:  100 per region
+## Quota (for Beta)
+- Container: 10 per region
+- Image:  20 per region
 - Storage
-	- Volume: 200 volumes per region
-	- Snapshot: 400 snapshots per region
+	- Volume: 40 volumes per region
+	- Snapshot: 40 snapshots per region
 - Floating IP: 5 per region
 
 ### Request a quota increase
