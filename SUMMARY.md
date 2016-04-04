@@ -76,7 +76,6 @@
                * [Exec Inspect](Reference/API/1.23/Misc/exec_inspect.md)
            * [Image](Reference/API/1.23/Image/index.md)
                * [Inspect Images](Reference/API/1.23/Image/inspect.md)
-               * [Tag Images](Reference/API/1.23/Image/tag.md)
                * [Search Images](Reference/API/1.23/Image/search.md)
                * [List Images](Reference/API/1.23/Image/list.md)
                * [Create an image](Reference/API/1.23/Image/create.md)
