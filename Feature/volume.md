@@ -9,7 +9,7 @@ Volume uses `EXT4` filesystem (more options in the future). Each container is sh
 
 New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot (same size):
 
-    $ hyper volume create --snapshot=snapshot-2ixknb3z --name=db_data
+    $ hyper volume create --snapshot=mysnapshot --name=db_data
     db_data
 
 To mount volumes to a container, use `hyper run`. 

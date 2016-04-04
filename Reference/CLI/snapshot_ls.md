@@ -19,6 +19,6 @@ Example output:
     $ hyper snapshot create --volume dbvol --name tyler
     tyler
     $ hyper snapshot ls
-    ID              	SIZE	NAME			
-    snapshot-g9u3d4dp   10	rose
-    snapshot-bbnmk143   100	tyler
+	Snapshot Name       Volume              Size
+	rose        		my_vol              20
+	tyler        		my_vol              20

@@ -15,8 +15,6 @@
                 -l, --label=[]                  Set meta data on a container
                 --label-file=[]                 Read in a line delimited file of labels
                 --link=[]                       Add link to another container
-                --log-driver                    Logging driver for container
-                --log-opt=[]                    Log driver options
                 --name                          Assign a name to the container
                 --restart=no                    Restart policy to apply when a container exits
                 -t, --tty                       Allocate a pseudo-TTY
