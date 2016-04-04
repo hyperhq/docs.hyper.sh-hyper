@@ -12,21 +12,25 @@ You need to allocate new free IPs before assigning them to containers:
     $ hyper fip associate 52.68.129.19 myweb
     myweb
 
-To de-associate a floating IP from a running container:
+To de-associate a floating IP from a container:
 
     $ hyper fip deassociate myweb
     52.68.129.19
     
-When a container is stopped, the associated floating IP (if any) will be automatically de-associated, which means that when you start the container, you need to associate the IP again:
+When a container is stopped or restarted, the floating IP (if any) is still associated with the container, which means that when you (re)start the container, you don't need to associate the floating IP again.
     
     $ hyper stop myweb
     myweb
-    (52.68.129.19 is free)
+    $ hyper ps -a
+	CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS                      NAMES               PUBLIC IP
+	3259d441edae        ghost               "/entrypoint.sh npm s"   16 minutes ago      Exited (0) 4 seconds ago                               myweb          		23.236.114.91
     $ hyper start myweb
-    $ hyper fip associate 52.68.129.19 myweb
     myweb
+    $ hyper ps -a
+    CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS                      NAMES               PUBLIC IP
+	3259d441edae        ghost               "/entrypoint.sh npm s"   17 minutes ago      Up 4 seconds                0.0.0.0:2368->2368/tcp     myweb        		23.236.114.91
 
-NOTE: when a container is restarted, the floating IP will remain associated.
+However, when you `rm` a container, the floating IP will be automatically de-associated.
 
 To release a floating IP:
 
