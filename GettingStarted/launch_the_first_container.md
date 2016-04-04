@@ -24,7 +24,7 @@ Once the download completes, you can see images with:
 ### 2. Create additional volumes 
 Hyper\_ creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:
 
-	$ hyper volume create 10     # size in GB
+	$ hyper volume create --size 10    # size in GB
 	vol-z93clfg6 is created
 	
 ### 3. Launch the container
