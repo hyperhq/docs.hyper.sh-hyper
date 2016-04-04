@@ -11,7 +11,6 @@
                 -e, --env=[]                    Set environment variables
                 --entrypoint                    Overwrite the default ENTRYPOINT of the image
                 --env-file=[]                   Read in a file of environment variables
-                --expose=[]                     Expose a port or a range of ports        
                 --help                          Print usage
                 -i, --interactive               Keep STDIN open even if not attached
                 --size=xxs                      Container size (e.g. xxs, xs, s, m, l, xl, xxl)                  
@@ -21,15 +20,9 @@
                 --log-driver                    Logging driver for container
                 --log-opt=[]                    Log driver options
                 --name                          Assign a name to the container
-                --net=bridge                    Connect a container to a network
-                --net-alias=[]                  Add network-scoped alias for the container
-                -P, --publish-all               Publish all exposed ports to random ports
-                -p, --publish=[]                Publish a container's port(s) to the host
-                TBD--read-only                     Mount the container's root filesystem as read only
                 --rm                            Automatically remove the container when it exits
                 --restart=no                    Restart policy to apply when a container exits
-                TBD-t, --tty                       Allocate a pseudo-TTY
-                TBD--tmpfs=[]                      Mount a tmpfs directory 
+                -t, --tty                       Allocate a pseudo-TTY
                 -v, --volume=[]                 Bind mount a volume
                 -w, --workdir                   Working directory inside the container
 
@@ -54,12 +47,6 @@ The `-w` lets the command being executed inside directory given, here
     $ hyper run -d -v hello:/world busybox ls /world
 
 The mount is created inside the container's `/world` directory. Hyper_ does not support relative paths for mount points inside the container.
-
-#### Publish or expose port (-p, --expose)
-
-    $ hyper run --expose 80 ubuntu bash
-
-This exposes port `80` of the container.
 
 #### Set environment variables (-e, --env, --env-file)
 
