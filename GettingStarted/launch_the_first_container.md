@@ -29,7 +29,7 @@ Hyper\_ creates a 10GB root volume for each container. In the case that you need
 	
 ### 3. Launch the container
 
-	$ hyper run nginx -v data:/data myweb
+	$ hyper run -d -v data:/data --name myweb nginx
 	myweb
 
 `-v data:/data` tells Hyper\_ to mount the volume `data` onto the new container at the path `/data`.

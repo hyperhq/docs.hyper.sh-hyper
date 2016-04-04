@@ -40,7 +40,7 @@ The `-w` lets the command being executed inside directory given, here
 
 > Note: this works when there is only one Docker image in the container
 
-#### Mount volume (-v, --read-only)
+#### Mount volume (-v)
 
     $ hyper run -d -v hello:/world busybox ls /world
 
