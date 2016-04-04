@@ -45,7 +45,7 @@ To enable public Internet access to your applcation, you need to associate a flo
 
 	$ hyper fip allocate 1
 	211.98.26.201
-	$ hyper associate 211.98.26.201 myweb
+	$ hyper fip associate 211.98.26.201 myweb
 	myweb
 
 ### 5. Test
