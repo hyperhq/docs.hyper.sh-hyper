@@ -17,6 +17,7 @@ Hyper\_ currently provides official CLI builds for Linux and Mac. Windows releas
 
     $ curl -O https://mirror-hyper-install.s3.amazonaws.com/hyper-1.10-mac.bin.zip
     $ unzip hyper-1.10-mac.bin.zip 
+    $ chmod +x hyper
     $ ./hyper --help
 
 ## CLI Configuration
