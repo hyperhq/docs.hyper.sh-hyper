@@ -15,11 +15,9 @@ Hyper\_ currently provides official CLI builds for Linux and Mac. Windows releas
 
 ## Install on Mac
 
-    $ brew update
-    $ brew cask install hypercli
-    $ hyper --help
-
-Don't like the "brew cask" methods? Download the install [package](https://hypercli-install.s3.amazonaws.com/hypercli.pkg).
+    $ wget -O hyper https://hyper-install.s3.amazonaws.com/hyper-1.10-mac.bin
+    $ chmod +x hyper
+    $ ./hyper --help
 
 ## CLI Configuration
 
