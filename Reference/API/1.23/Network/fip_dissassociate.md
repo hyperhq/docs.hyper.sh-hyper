@@ -1,8 +1,8 @@
-# Deassociate the floating IP (FIP) from a container
+# Disassociate the floating IP (FIP) from a container
 
 `POST /fips/disassociate`
 
-Deassociate the floating IP from a container
+Disassociate the floating IP from a container
 
 **Example request**:
 

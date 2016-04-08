@@ -92,7 +92,7 @@
            * [Network](Reference/API/1.23/Network/index.md)
                * [Allocate floating IP](Reference/API/1.23/Network/fip_allocate.md)
                * [Associate a floating IP to a (running) container](Reference/API/1.23/Network/fip_associate.md)
-               * [Deassociate floating IP from a (running) container](Reference/API/1.23/Network/fip_disassociate.md)
+               * [Disassociate floating IP from a (running) container](Reference/API/1.23/Network/fip_disassociate.md)
                * [List floating IP](Reference/API/1.23/Network/fip_ls.md)
                * [Release floating IP](Reference/API/1.23/Network/fip_release.md)
 * [FAQ](FAQ/index.md)

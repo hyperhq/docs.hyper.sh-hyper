@@ -2,11 +2,11 @@
 
     Usage: hyper fip disassociate [OPTIONS] CONTAINER
 
-   Deassociate the floating IP from a (stopped) conainer
+   Disassociate the floating IP from a (stopped) conainer
 
       --help=false         Print usage
 
-Deassociate the floating IP from a (stopped) container:
+Disassociate the floating IP from a (stopped) container:
 
 	$ hyper disassociate myweb
 	211.98.26.102
