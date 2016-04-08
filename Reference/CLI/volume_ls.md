@@ -17,8 +17,8 @@ Example output:
     $ hyper volume create --name rose
     rose
     $ hyper volume create --name tyler --size=100
-    tyler
+    hyler
     $ hyper volume ls
-    ID              	SIZE	NAME
-    vol-lcb83sdj        10    	rose
-    vol-vr9cx2zx        100    	tyler
+	DRIVER              VOLUME NAME
+	hyper               100g
+	hyper               my_vol

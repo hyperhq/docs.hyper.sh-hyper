@@ -38,7 +38,7 @@ The `--change` option will apply `Dockerfile` instructions to the image that is 
     197387f1b436        ubuntu:12.04        /bin/bash           7 days ago          Up 25 hours
     $ hyper inspect -f "{{ .Config.Env }}" c3f279d17e0a
     [HOME=/ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin]
-    $ docker commit --change "ENV DEBUG true" c3f279d17e0a  SvenDowideit/testimage:version3
+    $ hyper commit --change "ENV DEBUG true" c3f279d17e0a  SvenDowideit/testimage:version3
     f5283438590d
     $ hyper inspect -f "{{ .Config.Env }}" f5283438590d
     [HOME=/ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin DEBUG=true]

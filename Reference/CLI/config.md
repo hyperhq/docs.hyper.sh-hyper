@@ -1,6 +1,6 @@
 ## config
 
-    Usage:  docker config [OPTIONS]
+    Usage: hyper config [OPTIONS]
 
     Cloud user's access key and secret key.
 

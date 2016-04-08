@@ -9,7 +9,7 @@ Volume uses `EXT4` filesystem (more options in the future). Each container is sh
 
 New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot (same size):
 
-    $ hyper volume create --snapshot=snapshot-2ixknb3z --name=db_data
+    $ hyper volume create --snapshot=mysnapshot --name=db_data
     db_data
 
 To mount volumes to a container, use `hyper run`. 
@@ -22,19 +22,16 @@ You can also create volumes with `run`:
     $ hyper run -v /opt/data/ --name mycontainer ubuntu         // a 10GB volume will be created
     mycontainer
     
-Once a volume is attached to a container, it will be associated with the container throughout the container's lifecycle, until removal:
+Once a volume is attached to a container, it will be associated with the container throughout the container's lifecycle, which means that when you (re)start the container, you don't need to mount the volume again. The only exception is that if you mount the volume of a stopped container to another container, the stopped container cannot be started.
 
-    $ hyper rm db_container
-    db_container
-    
-You may also remove the attached volumes along with a container:
+However, when you `rm` a container, the attached volumes will be automatically unmounted. To remove the attached volumes along with a container:
 
     $ hyper rm -v db_container
     db_container
 
 ### Volume Failover
 
-To failover a volume, you need to `rm` the old container, and launch a new one to mount the volume.
+To failover a volume, you need to `stop` or `rm` the old container, and launch a new one to mount the volume.
 
     $ hyper rm db_contaienr
     db_container

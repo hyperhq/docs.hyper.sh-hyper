@@ -78,7 +78,7 @@ the array has only one reference and that is to the
 digest. You can reference this digest using the value:
 `localhost:5000/test/busybox@sha256:cbbf2f9a99b47fc460d...`
 
-See the `docker run` and `docker build` commands for examples of digest and tag
+See the `hyperr run` and ~~`hyper build`~~ commands for examples of digest and tag
 references on the command line.
 
 Query Parameters:

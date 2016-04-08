@@ -19,7 +19,7 @@ Q: How is Hyper\_ different than typical container services?
 
 > Hyper\_ uses a "**Per Second**" model, which differs fundamentally in the flexibility, control and significant cost savings it offers developers. You can spin up 100 containers in 2 seconds, crunch some data or run parallel builds on the lastest commit for 10s, destroy all containers in 1s, and Hyper\_ will only charge for 2+10+1=13s. 
 
-> Combined with the "**5-seconds**" launch time, Hyper\_ can respond to the workload requests instantly, which empowers developers to build **truly on-demand applications**, e.g. Event-driven (AWS Lamda), Big Data, CD/CI, etc.
+> Combined with the "**5-seconds**" launch time, Hyper\_ can respond to the workload requests instantly, which empowers developers to build **truly on-demand applications**, e.g. Event-driven (AWS Lambda), Big Data, CD/CI, etc.
  
 ### Product
 

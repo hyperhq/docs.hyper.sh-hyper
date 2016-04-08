@@ -24,28 +24,24 @@ Once the download completes, you can see images with:
 ### 2. Create additional volumes 
 Hyper\_ creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:
 
-	$ hyper volume create 10     # size in GB
-	vol-z93clfg6 is created
+	$ hyper volume create --size 10 --name data    # size in GB
+	data
 	
 ### 3. Launch the container
 
-	$ hyper run nginx -v vol-z93clfg6:/data myweb
+	$ hyper run -d -v data:/data --name myweb nginx
 	myweb
 
-`-v vol-z93clfg6:/data` tells Hyper\_ to mount the volume `vol-z93clfg6` onto the new container at the path `/data`.
+`-v data:/data` tells Hyper\_ to mount the volume `data` onto the new container at the path `/data`.
 
 ### 4. Associate a floating IP
-Hyper\_ creates a default private network for each accounts. 
-
-the new container comes with a private IP, which is reachi
-
-The new container is launched in your own private network, which Hyper\_ creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other network or the Internet.
+Hyper\_ creates a default private network for each accounts. The new container is launched in your own private network, which Hyper\_ creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other network or the Internet.
 
 To enable public Internet access to your applcation, you need to associate a floating IP address to the container:
 
 	$ hyper fip allocate 1
 	211.98.26.201
-	$ hyper associate 211.98.26.201 myweb
+	$ hyper fip associate 211.98.26.201 myweb
 	myweb
 
 ### 5. Test
@@ -62,7 +58,7 @@ You can remotely access the container using the following command:
 
 ### 8. Remove the container  (permanently)
 
-    $ hyper rm myweb
+    $ hyper rm -f myweb
     myweb
 
 The volume will be unmounted but not deleted. The floating IP will be de-associated, but not released.
