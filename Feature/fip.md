@@ -14,7 +14,7 @@ You need to allocate new free IPs before assigning them to containers:
 
 To de-associate a floating IP from a running container:
 
-    $ hyper fip deassociate myweb
+    $ hyper fip disassociate myweb
     52.68.129.19
     
 When a container is stopped, the associated floating IP (if any) will be automatically de-associated, which means that when you start the container, you need to associate the IP again:

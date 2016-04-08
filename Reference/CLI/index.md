@@ -33,6 +33,6 @@
 - [snapshot rm](./snapshot_rm.md)
 - [fip allocate](./fip_allocate.md)
 - [fip associate](./fip_associate.md)
-- [fip deassociate](./fip_deassociate.md)
+- [fip disassociate](./fip_disassociate.md)
 - [fip ls](./fip_ls.md)
 - [fip release](./fip_release.md)
