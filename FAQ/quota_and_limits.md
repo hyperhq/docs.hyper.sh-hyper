@@ -7,7 +7,7 @@ Hyper\_ has certain hard and soft (`quota`) limits in using its service. Hard li
 	- Max Image Size: 5GB
 - Volume
 	- Root Volume Size: 10GB
-	- Volume Size Range: 10GB - 1TB
+	- Volume Size Range: 10GB - 50GB
 	- Max number of volumes mounted on one container: 4
 - Network
 	- Max Floating IP per Container: 1
