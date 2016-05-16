@@ -10,7 +10,11 @@ Remove the container `id` from the filesystem
 
 **Example response**:
 
-    HTTP/1.1 204 No Content
+    HTTP/1.1 200 
+    Content-Type: application/json
+    {
+        [] // warnings
+    }
 
 Query Parameters:
 
