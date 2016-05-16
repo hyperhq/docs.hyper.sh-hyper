@@ -1,10 +1,10 @@
 # Create a snapshot
 
-`POST /snapshot/create`
+`POST /snapshots/create`
 
 **Example request**:
 
-    POST /snapshot/createi?name=snapshot-tardis&volume=tardis HTTP/1.1
+    POST /snapshots/create?name=snapshot-tardis&volume=tardis HTTP/1.1
 
 **Example response**:
 
