@@ -26,13 +26,13 @@
 - Floating IP: $1/IP/month
 > - Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
-#### 计费周期
-我们会在每月1日结算并扣除上月所产生的费用.
-
-#### Tax
+#### 税率
 Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax.
 
 目前我们会为持美国纽约州(NY)和德克萨斯州(TX)的信用卡收取额外的销售税, 所收具体税额会显示在每月的历史账单中.
+
+#### 计费周期
+我们会在每月1日结算并扣除上月所产生的费用.
 
 #### 欠费处理
 
