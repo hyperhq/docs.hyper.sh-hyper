@@ -1,10 +1,10 @@
-# Version 1.23 (2016-04-04)
+# 2016-04-04 (Ver. 1.23)
 
 > NOTE: Parameters with the `IGNORED` mark are not supported in this version. Parameter value will be ignored.
 
 ### API Endpoints
 
-- Los Angels `us-west-1`: https://us-west-1.api.hyper.sh
+- Los Angels: https://la.api.hyper.sh/2016-04-04/
 
 ### API Format
  - The API tends to be REST. However, for some complex commands, like `attach`
