@@ -43,6 +43,6 @@ Balances are considered outstanding if a payment has failed to process on the fi
 - Re-submit after 7 days if the third request failed, and during this period you will not be able to create / update resource in your account
 - If the fourth request failed, we will stop the containers in your account, but you can login the web console to update the credit card information, which will trigger new payment request
 - If the balance is due over two months, we will deactivate your account (unable to login web console and all credential will be removed), and purge all resources in your account permanently
-- Whenever a payment request succeeded, we will immediately resume your account 
+- Whenever a payment request succeeded, we will immediately resume your account
 
-If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper_ Support](support@hyper.sh).
+If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper_ Support](mailto:support@hyper.sh).
