@@ -7,3 +7,4 @@
       -a, --attach=false         Attach STDOUT/STDERR and forward signals
       --help=false               Print usage
       -i, --interactive=false    Attach container's STDIN
+      -r, --reload               Reload container's volumes that have a source
