@@ -3,16 +3,16 @@
 #### Container
 |Size|CPU Core|Mem|Disk|Network|Per Second|Monthly|
 |:-:|:-:|:-:|:-:|:-:|---|---|
-|4xs|1|64MB |10GB|FREE|$0.0000004 |$1.03  |
-|3xs|1|128MB|10GB|FREE|$0.0000006 |$1.55  |
-|2xs|1|256MB|10GB|FREE|$0.000001  |$2.59  |
-|xs |1|512MB|10GB|FREE|$0.000002  |$5.18  |
-|s  |1|  1GB|10GB|FREE|$0.000004  |$10.36 |
-|m  |2|  2GB|10GB|FREE|$0.000008  |$20.73 |
-|l  |2|  4GB|10GB|FREE|$0.000015  |$38.88 |
-|xl |4|  4GB|10GB|FREE|$0.00003   |$77.76 |
-|2xl|4|  8GB|10GB|FREE|$0.00006   |$155.52|
-|3xl|8| 16GB|10GB|FREE|$0.00012   |$311.04|
+|3xs|1|64MB |10GB|FREE|$0.0000004 |$1.03  |
+|2xs|1|128MB|10GB|FREE|$0.0000006 |$1.55  |
+|xs |1|256MB|10GB|FREE|$0.000001  |$2.59  |
+|s  |1|512MB|10GB|FREE|$0.000002  |$5.18  |
+|m  |1|  1GB|10GB|FREE|$0.000004  |$10.36 |
+|xm |2|  2GB|10GB|FREE|$0.000008  |$20.73 |
+|2xm|2|  4GB|10GB|FREE|$0.000015  |$38.88 |
+|l  |4|  4GB|10GB|FREE|$0.00003   |$77.76 |
+|xl |4|  8GB|10GB|FREE|$0.00006   |$155.52|
+|2xl|8| 16GB|10GB|FREE|$0.00012   |$311.04|
 > - Billing begins when Hyper\_ launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
 > - Everytime you issue a `hyper run/start/restart` request, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 > - Everytime a container is restarted, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
