@@ -52,7 +52,7 @@ To enable public Internet access to your applcation, you need to associate a flo
 ### 6. Access the container
 You can remotely access the container using the following command:
 
-	$ hyper exec myweb /bin/sh
+	$ hyper exec -it myweb /bin/sh
 
 > NOTE: the connection is fully encrypted with the credential configured at your local computer.
 
