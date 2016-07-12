@@ -21,6 +21,14 @@ You can also create volumes with `run`:
 
     $ hyper run -v /opt/data/ --name mycontainer ubuntu         // a 10GB volume will be created
     mycontainer
+    $ hyper run -v /localdata/:/opt/data --name mycontainer ubuntu   // a 10GB volume will be created and filled with contents in /localdata directory
+    mycontainer
+    $ hyper run -v git://url:branch:/opt/data --name mycontainer ubuntu   // a 10GB volume will be created and filled with contents cloned from git://url:branch
+    mycontainer                                                           // and branch is optional in the git url
+    $ hyper run -v http://url.git:/opt/data --name mycontainer ubuntu // a 10GB volume will be created and filled with contents cloned from http://url.git
+    mycontainer                                                       // branch name is also supported like in the above case
+    $ hyper run -v http://url:/opt/data --name mycontainer ubuntu    // a 10GB volume will be created and filled with contents fetched from http://url
+    mycontainer
     
 Once a volume is attached to a container, it will be associated with the container throughout the container's lifecycle, which means that when you (re)start the container, you don't need to mount the volume again. The only exception is that if you mount the volume of a stopped container to another container, the stopped container cannot be started.
 
