@@ -46,24 +46,15 @@ The `-w` lets the command being executed inside directory given, here
 
 The mount is created inside the container's `/world` directory. Hyper_ does not support relative paths for mount points inside the container.
 
-#### Initialize volume (-v)
-Volume initialization via `hyper run -v` will acquire additional resources (volume, container and possibly fip) to accomplish initialization. So be aware of the addtional cost that might occur.
+#### Load data (-v)
+Besides mounting a volume, `-v` also allows to load data from either local computer (where the command is issued) or a URI:
 
-    $ hyper run -d -v /localdir:/remotedir busybox ls /remotedir
-
-A new volume is created and filled with contents from /localdir directory, and then mounted to /remotedir inside the container.
-
-    $ hyper run -d -v git://url:branch:/data busybox ls /data
-
-A new volume is created and filled with contents cloned from git://url:branch, and then mounted to /data inside the container. The branch name in the git url is optional.
-
-    $ hyper run -d -v http://url.git:branch:/data busybox ls /data
-
-A new volume is created and filled with contents cloned from http://url.git:branch, and then mounted to /data inside the container. The Branch name in the git url is optinal.
-
-    $ hyper run -d -v http://url:/data busybox ls /data
-
-A new volume is created with contents fetched from http://url and then mounted to /data inside the container.
+    $ hyper run -d -v /local/path:/container/path busybox         // load data from local path
+    $ hyper run -d -v git://url[:branch]:/data busybox            // load data from a git repo
+    $ hyper run -d -v http://url.git[:branch]:/data busybox       
+    $ hyper run -d -v http://url:/container/path busybox          // load data from a http url
+  
+A new volume will be automatically created and populated with data,  and then mounted onto the container.
 
 #### Set environment variables (-e, --env, --env-file)
 
