@@ -22,7 +22,7 @@
 - Volume: $0.1/GB/month
 - Snapshot: $0.05/GB/month
 > - Billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal
-> - Images less than 1GB will be charge for 1GB
+> - Images are charged per GB with a minimum of 1GB and will be rounded UP to nearest GB (i.e. 1.5GB billed at 2GB)
 
 #### Network
 - Floating IP: $1/IP/month
