@@ -4,7 +4,6 @@
 
     Pull an image or a repository from the registry
 
-      -a, --all-tags=false          Download all tagged images in the repository
       --disable-content-trust=true  Skip image verification
       --help=false                  Print usage
 
@@ -27,11 +26,9 @@ To download a particular image, or set of images (i.e., a repository), use `hype
     # and any intermediate layers it is based on.
     # (Typically the empty `scratch` image, a MAINTAINER layer,
     # and the un-tarred base).
-    $ hyper pull --all-tags centos
-    # will pull all the images from the centos repository
     $ hyper pull registry.hub.docker.com/debian
     # manually specifies the path to the default Docker registry. This could
     # be replaced with the path to a local registry to pull from another source.
     # sudo hyper pull myhub.com:8080/test-image
 
-Killing the `hyper pull` process, for example by pressing `CTRL-c` while it is running in a terminal, will terminate the pull operation.
+Killing the `hyper pull` process, for example by pressing `CTRL-c` while it is running in a terminal, will not terminate the pull operation.

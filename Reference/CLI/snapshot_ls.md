@@ -16,5 +16,5 @@ Example output:
     tyler
     $ hyper snapshot ls
 	Snapshot Name       Volume              Size
-	rose        		my_vol              20
-	tyler        		my_vol              20
+	rose        		dbvol               20
+	tyler        		dbvol               20
