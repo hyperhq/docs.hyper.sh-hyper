@@ -22,7 +22,6 @@ Remove the image `name` from the filesystem
 Query Parameters:
 
 -   **force** – 1/True/true or 0/False/false, default false
--   **noprune** – 1/True/true or 0/False/false, default false
 
 Status Codes:
 

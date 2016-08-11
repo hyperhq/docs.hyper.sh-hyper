@@ -4,25 +4,30 @@
 
     Run a new container
 
-                -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR     
-                --cidfile                       Write the container ID to the file
-                -d, --detach                    Run container in background and print container ID 
-                --disable-content-trust=true    Skip image verification
-                -e, --env=[]                    Set environment variables
-                --entrypoint                    Overwrite the default ENTRYPOINT of the image
-                --env-file=[]                   Read in a file of environment variables
-                --help                          Print usage
-                -i, --interactive               Keep STDIN open even if not attached
-                --size=xs                       Container size (e.g. xxs, xs, s, m, l, xl, xxl), default size: xs 
-                -l, --label=[]                  Set meta data on a container
-                --label-file=[]                 Read in a line delimited file of labels
-                --link=[]                       Add link to another container
-                --name                          Assign a name to the container
-                --rm                            Automatically remove the container when it exits
-                --restart=no                    Restart policy to apply when a container exits
-                -t, --tty                       Allocate a pseudo-TTY
-                -v, --volume=[]                 Bind mount a volume
-                -w, --workdir                   Working directory inside the container
+              -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR
+              --cidfile                       Write the container ID to the file
+              -d, --detach                    Run container in background and print container ID
+              --disable-content-trust=true    Skip image verification
+              -e, --env=[]                    Set environment variables
+              --entrypoint                    Overwrite the default ENTRYPOINT of the image
+              --env-file=[]                   Read in a file of environment variables
+              --expose=[]                     Expose a port or a range of ports
+              -h, --hostname                  Container host name
+              --help                          Print usage
+              -i, --interactive               Keep STDIN open even if not attached
+              -l, --label=[]                  Set meta data on a container
+              --label-file=[]                 Read in a line delimited file of labels
+              --link=[]                       Add link to another container
+              --name                          Assign a name to the container
+              -P, --publish-all               Publish all exposed ports to random ports
+              -p, --publish=[]                Publish a container's port(s) to the host
+              --restart=no                    Restart policy to apply when a container exits
+              --rm                            Automatically remove the container when it exits
+              --size=s4                       The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
+              --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
+              -t, --tty                       Allocate a pseudo-TTY
+              -v, --volume=[]                 Bind mount a volume
+              -w, --workdir                   Working directory inside the container
 
 The `hyper run` command first `creates` a writeable container layer over the specified image, and then `starts` it using the specified Docker images. That is, `hyper run` is equivalent to the API `/container/create` then `/container/(id)/start`. A stopped container can be restarted with all its previous changes intact using `hyper start`. See `hyper ps -a` to view a list of all containers.
 

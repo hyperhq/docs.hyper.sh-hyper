@@ -16,8 +16,8 @@ Creates a new volume that containers can consume and store data in. If a name is
 
 You can also restore a snapshot to a new volume:
 
-	$ hyper volume create --name new_vol --snapshot=db_snapshot
-	new_vol
+	$ hyper volume create --name new-vol --snapshot=db-snapshot
+	new-vol
 	
 The new volume's size is the same as the snapshot.
 

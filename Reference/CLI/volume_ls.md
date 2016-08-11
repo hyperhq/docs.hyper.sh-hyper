@@ -16,9 +16,9 @@ Example output:
 
     $ hyper volume create --name rose
     rose
-    $ hyper volume create --name tyler --size=100
-    hyler
+    $ hyper volume create --name tyler --size=50
+    tyler
     $ hyper volume ls
-	DRIVER              VOLUME NAME
-	hyper               100g
-	hyper               my_vol
+	DRIVER              VOLUME NAME         SIZE                CONTAINER
+	hyper               rose                10g
+	hyper               tyler               50g

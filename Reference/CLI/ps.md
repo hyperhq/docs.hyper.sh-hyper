@@ -50,32 +50,32 @@ The following filter matches containers with the `color` label regardless of its
 
     $ hyper ps --filter "label=color"
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES                 PUBLIC IP
-    673394ef1d4c        busybox             "top"               47 seconds ago      Up 45 seconds                           nostalgic_shockley
-    d85756f57265        busybox             "top"               52 seconds ago      Up 51 seconds                           high_albattani
+    673394ef1d4c        busybox             "top"               47 seconds ago      Up 45 seconds                           nostalgic-shockley
+    d85756f57265        busybox             "top"               52 seconds ago      Up 51 seconds                           high-albattani
 
 The following filter matches containers with the `color` label with the `blue` value.
 
     $ hyper ps --filter "label=color=blue"
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES              PUBLIC IP
-    d85756f57265        busybox             "top"               About a minute ago   Up About a minute                       high_albattani
+    d85756f57265        busybox             "top"               About a minute ago   Up About a minute                       high-albattani
 
 #### Name
 
 The `name` filter matches on all or part of a container's name.
 
-The following filter matches all containers with a name containing the `nostalgic_stallman` string.
+The following filter matches all containers with a name containing the `nostalgic-stallman` string.
 
-    $ hyper ps --filter "name=nostalgic_stallman"
+    $ hyper ps --filter "name=nostalgic-stallman"
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES                 PUBLIC IP
-    9b6247364a03        busybox             "top"               2 minutes ago       Up 2 minutes                            nostalgic_stallman
+    9b6247364a03        busybox             "top"               2 minutes ago       Up 2 minutes                            nostalgic-stallman
 
 You can also filter for a substring in a name as this shows:
 
     $ hyper ps --filter "name=nostalgic"
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES                 PUBLIC IP
-    715ebfcee040        busybox             "top"               3 seconds ago       Up 1 seconds                            i_am_nostalgic
-    9b6247364a03        busybox             "top"               7 minutes ago       Up 7 minutes                            nostalgic_stallman
-    673394ef1d4c        busybox             "top"               38 minutes ago      Up 38 minutes                           nostalgic_shockley
+    715ebfcee040        busybox             "top"               3 seconds ago       Up 1 seconds                            i-am-nostalgic
+    9b6247364a03        busybox             "top"               7 minutes ago       Up 7 minutes                            nostalgic-stallman
+    673394ef1d4c        busybox             "top"               38 minutes ago      Up 38 minutes                           nostalgic-shockley
 
 #### Exited
 
@@ -84,9 +84,9 @@ that have exited successfully:
 
     $ hyper ps -a --filter 'exited=0'
     CONTAINER ID        IMAGE             COMMAND                CREATED             STATUS                   PORTS                      NAMES                  PUBLIC IP
-    ea09c3c82f6e        registry:latest   /srv/run.sh            2 weeks ago         Exited (0) 2 weeks ago   127.0.0.1:5000->5000/tcp   desperate_leakey
-    106ea823fe4e        fedora:latest     /bin/sh -c 'bash -l'   2 weeks ago         Exited (0) 2 weeks ago                              determined_albattani
-    48ee228c9464        fedora:20         bash                   2 weeks ago         Exited (0) 2 weeks ago                              tender_torvalds
+    ea09c3c82f6e        registry:latest   /srv/run.sh            2 weeks ago         Exited (0) 2 weeks ago   127.0.0.1:5000->5000/tcp   desperate-leakey
+    106ea823fe4e        fedora:latest     /bin/sh -c 'bash -l'   2 weeks ago         Exited (0) 2 weeks ago                              determined-albattani
+    48ee228c9464        fedora:20         bash                   2 weeks ago         Exited (0) 2 weeks ago                              tender-torvalds
 
 #### Status
 
@@ -94,15 +94,15 @@ The `status` filter matches containers by status. You can filter using `created`
 
     $ hyper ps --filter status=running
     CONTAINER ID        IMAGE                  COMMAND             CREATED             STATUS              PORTS               NAMES                 PUBLIC IP
-    715ebfcee040        busybox                "top"               16 minutes ago      Up 16 minutes                           i_am_nostalgic
+    715ebfcee040        busybox                "top"               16 minutes ago      Up 16 minutes                           i-am-nostalgic
     d5c976d3c462        busybox                "top"               23 minutes ago      Up 23 minutes                           top
-    9b6247364a03        busybox                "top"               24 minutes ago      Up 24 minutes                           nostalgic_stallman
+    9b6247364a03        busybox                "top"               24 minutes ago      Up 24 minutes                           nostalgic-stallman
 
 To filter for `paused` containers:
 
     $ hyper ps --filter status=paused
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES                 PUBLIC IP
-    673394ef1d4c        busybox             "top"               About an hour ago   Up About an hour (Paused)                       nostalgic_shockley
+    673394ef1d4c        busybox             "top"               About an hour ago   Up About an hour (Paused)                       nostalgic-shockley
 
 #### Ancestor
 
@@ -120,29 +120,29 @@ latest `ubuntu` image:
 
     $ hyper ps --filter ancestor=ubuntu
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES               PUBLIC IP
-    919e1179bdb8        ubuntu-c1           "top"               About a minute ago   Up About a minute                       admiring_lovelace
-    5d1e4a540723        ubuntu-c2           "top"               About a minute ago   Up About a minute                       admiring_sammet
-    82a598284012        ubuntu              "top"               3 minutes ago        Up 3 minutes                            sleepy_bose
-    bab2a34ba363        ubuntu              "top"               3 minutes ago        Up 3 minutes                            focused_yonath
+    919e1179bdb8        ubuntu-c1           "top"               About a minute ago   Up About a minute                       admiring-lovelace
+    5d1e4a540723        ubuntu-c2           "top"               About a minute ago   Up About a minute                       admiring-sammet
+    82a598284012        ubuntu              "top"               3 minutes ago        Up 3 minutes                            sleepy-bose
+    bab2a34ba363        ubuntu              "top"               3 minutes ago        Up 3 minutes                            focused-yonath
 
 Match containers based on the `ubuntu-c1` image which, in this case, is a child of `ubuntu`:
 
     $ hyper ps --filter ancestor=ubuntu-c1
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES               PUBLIC IP
-    919e1179bdb8        ubuntu-c1           "top"               About a minute ago   Up About a minute                       admiring_lovelace
+    919e1179bdb8        ubuntu-c1           "top"               About a minute ago   Up About a minute                       admiring-lovelace
 
 Match containers based on the `ubuntu` version `12.04.5` image:
 
     $ hyper ps --filter ancestor=ubuntu:12.04.5
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES                 PUBLIC IP
-    82a598284012        ubuntu:12.04.5      "top"               3 minutes ago        Up 3 minutes                            sleepy_bose
+    82a598284012        ubuntu:12.04.5      "top"               3 minutes ago        Up 3 minutes                            sleepy-bose
 
 The following matches containers based on the layer `d0e008c6cf02` or an image that have this layer
 in it's layer stack.
 
     $ hyper ps --filter ancestor=d0e008c6cf02
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES                 PUBLIC IP
-    82a598284012        ubuntu:12.04.5      "top"               3 minutes ago        Up 3 minutes                            sleepy_bose
+    82a598284012        ubuntu:12.04.5      "top"               3 minutes ago        Up 3 minutes                            sleepy-bose
 
 
 ### Formatting
