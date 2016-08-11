@@ -5,5 +5,4 @@
     Restart a container
 
       --help=false       Print usage
-      -r, --reload       Re-initialize volumes
       -t, --time=10      Seconds to wait for stop before killing the container
