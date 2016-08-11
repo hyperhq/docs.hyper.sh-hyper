@@ -12,7 +12,7 @@
  
  `hyper run --link mysql wordpress` // different containers as they appear to run on the same host;
 
- `hyper fip associate 58.29.129.81 wordpress` // associate floating public IP
+ `hyper fip attach 58.29.129.81 wordpress` // associate floating public IP
 
  `hyper exec db /bin/sh` // remote access
 

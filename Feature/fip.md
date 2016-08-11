@@ -9,12 +9,12 @@ You need to allocate new free IPs before assigning them to containers:
     52.68.129.20
     52.68.129.21
     52.68.129.22
-    $ hyper fip associate 52.68.129.19 myweb
+    $ hyper fip attach 52.68.129.19 myweb
     myweb
 
-To de-associate a floating IP from a container:
+To detach a floating IP from a container:
 
-    $ hyper fip disassociate myweb
+    $ hyper fip detach web
     52.68.129.19
     
 When a container is stopped or restarted, the floating IP (if any) is still associated with the container, which means that when you (re)start the container, you don't need to associate the floating IP again.

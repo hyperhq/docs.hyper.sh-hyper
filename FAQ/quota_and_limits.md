@@ -28,4 +28,3 @@ Open the [Account](https://hyper.sh/account) page, choose `Quota`, click `Reques
 ![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1076x535/73ea2fdf183a69c3a68628d9a217d2f0/request_quota_increase.png)
 
 In the dialog popup, fill in your request and use case details. It usually takes 1-2 business days for us to review the request and get back to you.
-
