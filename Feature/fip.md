@@ -18,7 +18,7 @@ If you want to move the floating ip from one container to another, you must firs
 
     $ hyper fip disassociate myweb && hyper fip associate 52.68.129.19 myweb2
 
-## Deleting Floating IP's
+## Deleting Floating IP
 
 When you `rm` a container, the floating IP will be automatically disassociated.
 
