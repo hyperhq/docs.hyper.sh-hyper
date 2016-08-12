@@ -1,4 +1,4 @@
-# 2016-04-04 (Ver. 1.23)
+# 2016-04-04 [Ver. 1.23]
 
 > NOTE: Parameters with the `IGNORED` mark are not supported in this version. Parameter value will be ignored.
 
