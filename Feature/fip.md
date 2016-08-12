@@ -1,6 +1,6 @@
 # Floating IP
 
-A floating IP or also called FIP, is a public accessible IP address that can be associated to one container. A Floating IP can also be remapped to other containers in the same region, and can be used this way to switch between different deployments.
+A floating IP or also called FIP, is a public accessible IP address that can be attached to one container. A Floating IP can also be remapped to other containers in the same region, and can be used this way to switch between different deployments.
 
 You need to allocate new free IPs before assigning them to containers:
 

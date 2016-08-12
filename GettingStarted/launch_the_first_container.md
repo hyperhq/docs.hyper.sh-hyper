@@ -1,11 +1,11 @@
 # Launch the first container
 
-Now, let's try to launch a container. To complete this tutorial, you need some free credits or [setup the payment method](https://console.hyper.sh/billing/credit). 
+Now, let's try to launch a container. To complete this tutorial, you need some free credits or [setup the payment method](https://console.hyper.sh/billing/credit).
 
 
 ### 1. Pull the image
 
-The first step is to pull the image. However, instead of downloading to your local laptop, `hyper pull` will pull the image to your account at Hyper\_. 
+The first step is to pull the image. However, instead of downloading to your local laptop, `hyper pull` will pull the image to your account at Hyper\_.
 
 Open your terminal and enter:
 
@@ -21,12 +21,12 @@ Once the download completes, you can see images with:
     mysql               latest              7a5866c2edbf        2 weeks ago         361.2 MB
     nginx               latest              af4b3d7d5401        3 weeks ago         190.5 MB
 
-### 2. Create additional volumes 
+### 2. Create additional volumes
 Hyper\_ creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:
 
 	$ hyper volume create --size 10 --name data    # size in GB
 	data
-	
+
 ### 3. Launch the container
 
 	$ hyper run -d -v data:/data --name myweb nginx
@@ -61,6 +61,6 @@ You can remotely access the container using the following command:
     $ hyper rm -f myweb
     myweb
 
-The volume will be unmounted but not deleted. The floating IP will be de-associated, but not released.
+The volume will be unmounted but not deleted. The floating IP will be detached, but not released.
 
 ### Done!

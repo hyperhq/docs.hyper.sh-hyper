@@ -19,4 +19,3 @@ If you attempt to attach the floating IP to a running container, Hyper_ return a
 Each container can have only one floating IP. Trying to attach another floating IP will return an error:
 
 	$ hyper fip attach 211.98.26.102 myweb
-	myweb is associated with 211.98.26.101

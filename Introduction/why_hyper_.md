@@ -9,10 +9,10 @@
  `hyper pull wordpress mysql` // fetch images from (private) registries to Hyper\_ cloud;
 
  `hyper run mysql` // launch a secure container, no need to be nested in VMs;
- 
+
  `hyper run --link mysql wordpress` // different containers as they appear to run on the same host;
 
- `hyper fip attach 58.29.129.81 wordpress` // associate floating public IP
+ `hyper fip attach 58.29.129.81 wordpress` // attach floating public IP
 
  `hyper exec db /bin/sh` // remote access
 
@@ -20,7 +20,7 @@
 
 - **3 Seconds to Deploy** - It takes only 3 seconds from issuing `hyper run` to the point where the container is running in Hyper\_. Your application is empowered with super elasticity to handle customer needs.
 
-- **Per Second Billing** - Hyper\_ uses a **Per Second** pricing model. You can to spin up 100 containers in 3 seconds, crunch some data or run parallel builds on the latest commit for 20s, destroy all containers in 1s, and only pay for 3+20+1=23s. 
+- **Per Second Billing** - Hyper\_ uses a **Per Second** pricing model. You can to spin up 100 containers in 3 seconds, crunch some data or run parallel builds on the latest commit for 20s, destroy all containers in 1s, and only pay for 3+20+1=23s.
 
 ![](https://trello-attachments.s3.amazonaws.com/56b19c6e5bb4a89f92d0e71f/903x472/2ccb5880a4286dd6d4c14eb19b3dab99/upload_2_3_2016_at_2_21_34_PM.png)
 
@@ -29,4 +29,3 @@
 - **Private Network (10Gbps, FREE)** - Hyper\_ creates a default virtual private network for each user. Your container traffic is safely isolated from the rest. The network is built on 10Gbps Ethernet, and the best part is that all traffic is FREE!
 
 - **No Lock-in** – Two requirements to move your application between Hyper\_ and LXC-based cluster: use Docker image and use Docker APIs. Nothing else!
-

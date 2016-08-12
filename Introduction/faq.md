@@ -17,10 +17,10 @@ Q: How is Hyper\_ different than typical container services?
 >  Hyper\_ leverages [virtualization](github.com/hyperhq/hyper) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both words gives you the security of virtual machines to containers with the speed of containers. Thus, the need of VM cluster is gone, along with things like capacity planning, CapEx, VM bootstrapping, scheduling, COE admin, etc. The entire Hyper\_ cloud works like "**A single remote host with unlimited capacity**". Developers can use the Docker native workflow to deploy applications in Hyper\_, just the same as on your laptop.
 
 
-> Hyper\_ uses a "**Per Second**" model, which differs fundamentally in the flexibility, control and significant cost savings it offers developers. You can spin up 100 containers in 2 seconds, crunch some data or run parallel builds on the lastest commit for 10s, destroy all containers in 1s, and Hyper\_ will only charge for 2+10+1=13s. 
+> Hyper\_ uses a "**Per Second**" model, which differs fundamentally in the flexibility, control and significant cost savings it offers developers. You can spin up 100 containers in 2 seconds, crunch some data or run parallel builds on the lastest commit for 10s, destroy all containers in 1s, and Hyper\_ will only charge for 2+10+1=13s.
 
 > Combined with the "**5-seconds**" launch time, Hyper\_ can respond to the workload requests instantly, which empowers developers to build **truly on-demand applications**, e.g. Event-driven (AWS Lambda), Big Data, CD/CI, etc.
- 
+
 ### Product
 
 Q: How quickly will containers be running in Hyper\_?
@@ -51,7 +51,7 @@ Q: How quickly can I scale my containers both up and down?
 > Hyper\_ provides a super elastic container environment. You can spin-up or shutdown containers in less than 5 seconds.
 
 Q: What happens to my data when a container terminates?
-> The data stored on the container's `rootfs` will persist only as long as that container exists. However, data that is stored on additional volumes will persist independently of containers. 
+> The data stored on the container's `rootfs` will persist only as long as that container exists. However, data that is stored on additional volumes will persist independently of containers.
 
 Q: Do you support sharing a single volume among multiple containers?
 > While you are able to attach multiple volumes to a single container, attaching multiple containers to one volume is not supported at this time.
@@ -63,7 +63,7 @@ Q: Why am I limited to 5 Flaoting IPs per region?
 > Public (IPv4) IP addresses are a scarce resource. We are working on IPv6 support.
 
 Q: Does every container need one Floating IP?
-> No, not every container needs a Floating IP. By default, every container comes with a private IP address and an internal domain name (specific to the network it resides in). The private address is associated exclusively with the container and is only returned to Hyper\_ when the container is terminated. It should be adequate for most non-public-facing containers. Only the public-facing containers, such as web app, demand a Floating IP.
+> No, not every container needs a Floating IP. By default, every container comes with a private IP address and an internal domain name (specific to the network it resides in). The private address is attached exclusively with the container and is only returned to Hyper\_ when the container is terminated. It should be adequate for most non-public-facing containers. Only the public-facing containers, such as web app, demand a Floating IP.
 
 Q: Does Hyper\_ use ECC memory?
 > Yes, all the hardware underlying Hyper\_ uses ECC memory.
@@ -80,5 +80,3 @@ Q: When does billing begin and end?
 
 Q: Do your prices include taxes?
 > Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax.
-
-
