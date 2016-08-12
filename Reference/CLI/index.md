@@ -9,6 +9,7 @@
 - [info](./info.md)
 - [inspect](./inspect.md)
 - [kill](./kill.md)
+- [load](./load.md)
 - [login](./login.md)
 - [logout](./logout.md)
 - [logs](./logs.md)
