@@ -4,7 +4,7 @@
 
 ### API Endpoints
 
-- Los Angels: https://la.api.hyper.sh/2016-04-04/
+- Los Angels: https://us-west-1.hyper.sh/2016-04-04/
 
 ### API Format
  - The API tends to be REST. However, for some complex commands, like `attach`
