@@ -18,8 +18,8 @@
               --label-file=[]                 Read in a line delimited file of labels
               --link=[]                       Add link to another container
               --name                          Assign a name to the container
-              -P, --publish-all               Publish all exposed ports to random ports
-              -p, --publish=[]                Publish a container's port(s) to the host
+              -P, --publish-all               Publish all exposed ports
+              -p, --publish=[]                Publish a container's port(s)
               --restart=no                    Restart policy to apply when a container exits
               --size=s4                       The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
               --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
