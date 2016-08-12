@@ -18,7 +18,7 @@ If you want to move the floating ip from one container to another, you must firs
 
     $ hyper fip detach myweb && hyper fip attach 52.68.129.19 myweb2
 
-## Deleting Floating IP's
+## Deleting Floating IP
 
 When you `rm` a container, the floating IP will be automatically detached.
 
@@ -29,7 +29,7 @@ You can also release the ip if there is no container attached:
 
 > NOTE: floating IP is priced at a monthly rate. When an IP is allocated, you will be charged for that current month.
 
-## Floating IP's when stopping and restarting containers
+## Stop and restart containers
 
 When a container is stopped or restarted, the floating IP (if any) is still attached with the container, which means that when you (re)start the container, you don't need to attach the floating IP again.
 
