@@ -13,7 +13,7 @@ Hyper\_ has certain hard and soft (`quota`) limits in using its service. Hard li
 	- Max Floating IP per Container: 1
 	- Max Internal IP per Container: 1
 
-## Quota (for Beta)
+## Quota
 - Container: 10 per region
 - Image:  20 per region
 - Storage
@@ -25,7 +25,6 @@ Hyper\_ has certain hard and soft (`quota`) limits in using its service. Hard li
 
 Open the [Account](https://hyper.sh/account) page, choose `Quota`, click `Request Quota Increase`:
 
-![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1076x535/73ea2fdf183a69c3a68628d9a217d2f0/request_quota_increase.png)
+![](https://trello-attachments.s3.amazonaws.com/57ac415d5c5774e392d184a5/2374x1104/864d7065d6e9bb4bbc15cfa23bf0b59e/quota.png)
 
 In the dialog popup, fill in your request and use case details. It usually takes 1-2 business days for us to review the request and get back to you.
-

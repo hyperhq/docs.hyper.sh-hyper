@@ -6,23 +6,23 @@ You need to allocate new free IPs before assigning them to containers:
 
     $ hyper fip allocate 1
     52.68.129.19
-    $ hyper fip associate 52.68.129.19 myweb
+    $ hyper fip attach 52.68.129.19 myweb
     myweb
 
-To remove a floating IP from a container you disassociate it:
+To detach a floating IP from a container:
 
-    $ hyper fip disassociate myweb
+    $ hyper fip detach web
     52.68.129.19
 
-If you want to move the floating ip from one container to another, you must first disassociate it from the old container and then associate it again like this:
+If you want to move the floating ip from one container to another, you must first detach it from the old container and then attach it again like this:
 
-    $ hyper fip disassociate myweb && hyper fip associate 52.68.129.19 myweb2
+    $ hyper fip detach myweb && hyper fip attach 52.68.129.19 myweb2
 
 ## Deleting Floating IP's
 
-When you `rm` a container, the floating IP will be automatically disassociated.
+When you `rm` a container, the floating IP will be automatically detached.
 
-You can also release the ip if there is no container associate:
+You can also release the ip if there is no container attached:
 
     $ hyper fip release 52.68.129.19
     52.68.129.19
@@ -31,7 +31,7 @@ You can also release the ip if there is no container associate:
 
 ## Floating IP's when stopping and restarting containers
 
-When a container is stopped or restarted, the floating IP (if any) is still associated with the container, which means that when you (re)start the container, you don't need to associate the floating IP again.
+When a container is stopped or restarted, the floating IP (if any) is still attached with the container, which means that when you (re)start the container, you don't need to attach the floating IP again.
 
     $ hyper stop myweb
     myweb

@@ -34,14 +34,14 @@ Hyper\_ creates a 10GB root volume for each container. In the case that you need
 
 `-v data:/data` tells Hyper\_ to mount the volume `data` onto the new container at the path `/data`.
 
-### 4. Associate a floating IP
+### 4. Attach a floating IP
 Hyper\_ creates a default private network for each accounts. The new container is launched in your own private network, which Hyper\_ creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other network or the Internet.
 
-To enable public Internet access to your applcation, you need to associate a floating IP address to the container:
+To enable public Internet access to your applcation, you need to attach a floating IP address to the container:
 
 	$ hyper fip allocate 1
 	211.98.26.201
-	$ hyper fip associate 211.98.26.201 myweb
+	$ hyper fip attach 211.98.26.201 myweb
 	myweb
 
 ### 5. Test

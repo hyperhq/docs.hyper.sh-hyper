@@ -3,23 +3,29 @@
     Usage: hyper create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
     Create a new container
-                -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR
-                --cidfile                       Write the container ID to the file
-                --disable-content-trust=true    Skip image verification
-                -e, --env=[]                    Set environment variables
-                --entrypoint                    Overwrite the default ENTRYPOINT of the image
-                --env-file=[]                   Read in a file of environment variables
-                --help                          Print usage
-                -i, --interactive               Keep STDIN open even if not attached
-                --size=xs                       Container size (e.g. xxs, xs, s, m, l, xl, xxl), default size: xs 
-                -l, --label=[]                  Set meta data on a container
-                --label-file=[]                 Read in a line delimited file of labels
-                --link=[]                       Add link to another container
-                --name                          Assign a name to the container
-                --restart=no                    Restart policy to apply when a container exits
-                -t, --tty                       Allocate a pseudo-TTY
-                -v, --volume=[]                 Bind mount a volume
-                -w, --workdir                   Working directory inside the container
+
+              -a, --attach=[]                 Attach to STDIN, STDOUT or STDERR
+              --cidfile                       Write the container ID to the file
+              --disable-content-trust=true    Skip image verification
+              -e, --env=[]                    Set environment variables
+              --entrypoint                    Overwrite the default ENTRYPOINT of the image
+              --env-file=[]                   Read in a file of environment variables
+              --expose=[]                     Expose a port or a range of ports
+              -h, --hostname                  Container host name
+              --help                          Print usage
+              -i, --interactive               Keep STDIN open even if not attached
+              -l, --label=[]                  Set meta data on a container
+              --label-file=[]                 Read in a line delimited file of labels
+              --link=[]                       Add link to another container
+              --name                          Assign a name to the container
+              -P, --publish-all               Publish all exposed ports to random ports
+              -p, --publish=[]                Publish a container's port(s) to the host
+              --restart=no                    Restart policy to apply when a container exits
+              --size=s4                       The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
+              --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
+              -t, --tty                       Allocate a pseudo-TTY
+              -v, --volume=[]                 Bind mount a volume
+              -w, --workdir                   Working directory inside the container
 
 The `hyper create` command creates a writeable container layer over the
 specified image and prepares it for running the specified command.  The
