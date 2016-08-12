@@ -19,8 +19,8 @@
               --label-file=[]                 Read in a line delimited file of labels
               --link=[]                       Add link to another container
               --name                          Assign a name to the container
-              -P, --publish-all               Publish all exposed ports to random ports
-              -p, --publish=[]                Publish a container's port(s) to the host
+              -P, --publish-all               Publish all exposed ports
+              -p, --publish=[]                Publish a container's port(s)
               --restart=no                    Restart policy to apply when a container exits
               --rm                            Automatically remove the container when it exits
               --size=s4                       The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
@@ -120,6 +120,26 @@ An example of a file passed with `--env-file`
     HOME=/root
     123qwe=bar
     org.spring.config=something
+
+#### Expose incoming ports
+
+Container's internal ports are only accessible by user's containers by default, even a fip is attached to the container. To expose a container’s internal port, an operator can start the container with the `-P` or `-p` flag. The exposed port is available to any client that can reach the container.
+
+```
+-P         : Publish all exposed ports to public
+-p=[]      : Publish a container᾿s port or a range of ports to public
+               format: exposedPort:containerPort
+               Both exposedPort and containerPort can be specified as a
+               range of ports. When specifying ranges for both, the
+               number of container ports in the range must match the
+               number of host ports in the range, for example:
+                   -p 1234-1236:1234-1236/tcp
+
+               When specifying a range for exposedPort only, the
+               containerPort must not be a range.  In this case the
+               container port is published somewhere within the
+               specified hostPort range. (e.g., `-p 1234-1236:1234/tcp`)
+```
 
 #### Set metadata on container (-l, --label, --label-file)
 
