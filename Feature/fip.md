@@ -29,7 +29,7 @@ You can also release the ip if there is no container associate:
 
 > NOTE: floating IP is priced at a monthly rate. When an IP is allocated, you will be charged for that current month.
 
-## Floating IP's when stopping and restarting containers
+## Stop and restart containers
 
 When a container is stopped or restarted, the floating IP (if any) is still associated with the container, which means that when you (re)start the container, you don't need to associate the floating IP again.
 
