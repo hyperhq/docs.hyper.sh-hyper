@@ -29,10 +29,10 @@ Hyper\_ creates a 10GB root volume for each container. In the case that you need
 
 ### 3. Launch the container
 
-	$ hyper run -d -v data:/data --name myweb nginx
+	$ hyper run -d -p 80 -v data:/data --name myweb nginx
 	myweb
 
-`-v data:/data` tells Hyper\_ to mount the volume `data` onto the new container at the path `/data`.
+`-v data:/data` tells Hyper\_ to mount the volume `data` onto the new container at the path `/data`, and `-p 80` indicates http port 80 is published.
 
 ### 4. Attach a floating IP
 Hyper\_ creates a default private network for each accounts. The new container is launched in your own private network, which Hyper\_ creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other network or the Internet.
