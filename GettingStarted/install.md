@@ -8,14 +8,16 @@ Hyper\_ currently provides official CLI builds for Linux and Mac. Windows releas
 
 ## Install on Mac
 
-    $ brew install hyper
-
-or
-
     $ curl -O https://hyper-install.s3.amazonaws.com/hyper-mac.bin.zip
     $ unzip hyper-mac.bin.zip 
     $ chmod +x hyper
     $ ./hyper --help
+
+or
+
+    $ brew install hyper
+
+> NOTE: the version of homebrew is outdated, the latest version is provided later.
 
 ## Install on Linux
 
