@@ -29,6 +29,10 @@ A docker-compose.yml looks like this:
 
 For more information about the Compose file, see the [Compose file reference](../Reference/compose_file_ref.md)
 
+Composed with docker compose specification, hyper compose support two more fieds:
+* `size` - container size for service, we support seven different size, you can find more details at [here](../FAQ/pricing.md). 
+* `fip` - floating IP for service
+
 Compose has commands for managing the whole lifecycle of your application:
 
 * Start, stop services
