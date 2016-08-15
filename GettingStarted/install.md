@@ -17,7 +17,6 @@ or
 
     $ brew install hyper
 
-> NOTE: the version of homebrew is outdated, the latest version is updating.
 
 ## Install on Linux
 
