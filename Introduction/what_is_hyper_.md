@@ -6,7 +6,7 @@
 
 # How does Hyper_ run secure containers?
 
-At Hyper\_  have we made a project called [HyperContainer](github.com/hyperhq/hyper) to secure hardware-enforced isolation between containers, while still keeping the sub-second startup performance.
+At Hyper\_  have we made a project called [HyperContainer](https://github.com/hyperhq/hyper) to secure hardware-enforced isolation between containers, while still keeping the sub-second startup performance.
 
 The difference is that the container does not run on the host kernel. Instead, every container gets its own, independent, guest kernel. By doing this, the application running inside is perfectly isolated from both other containers and the host. In a HyperContainer, the application process is still able to access what it needs: kernel and data.
 
