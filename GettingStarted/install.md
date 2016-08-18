@@ -24,6 +24,13 @@ or
     $ tar xzf hyper-linux-x86_64.tar.gz
     $ chmod +x hyper
     $ ./hyper --help
+    
+## Install on ARM
+
+    $ wget https://hyper-install.s3.amazonaws.com/hyper-arm.tar.gz
+    $ tar xzf hyper-arm.tar.gz
+    $ chmod +x hyper
+    $ ./hyper --help
 
 ## CLI Configuration
 
