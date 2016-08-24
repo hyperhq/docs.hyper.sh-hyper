@@ -2,9 +2,10 @@
 
 Hyper\_ currently provides official CLI builds for Linux and Mac. Windows release will be soon.
 
-- Linux x86_64
+- Linux x86
 - Mac OS X 10.7 (lion) or later
 - Windows (Beta)
+- Linux ARM (Beta)
 
 ## Install on Mac
 
@@ -18,17 +19,10 @@ or
     $ brew install hyper
 
 
-## Install on Linux
+## Install on Linux x86
 
     $ wget https://hyper-install.s3.amazonaws.com/hyper-linux-x86_64.tar.gz
     $ tar xzf hyper-linux-x86_64.tar.gz
-    $ chmod +x hyper
-    $ ./hyper --help
-    
-## Install on ARM
-
-    $ wget https://hyper-install.s3.amazonaws.com/hyper-arm.tar.gz
-    $ tar xzf hyper-arm.tar.gz
     $ chmod +x hyper
     $ ./hyper --help
 
@@ -37,6 +31,15 @@ or
     - Unzip this package
     - Open Windows Command Prompt and run .\hyper.exe --help
 > Note: this package on Windows is beta version, please file a bug at [here](https://github.com/hyperhq/hypercli/issues) if you find any issue.
+
+## Install on Linux ARM (Beta)
+
+    $ wget https://hyper-install.s3.amazonaws.com/hyper-arm.tar.gz
+    $ tar xzf hyper-arm.tar.gz
+    $ chmod +x hyper
+    $ ./hyper --help
+
+
 
 ## CLI Configuration
 
