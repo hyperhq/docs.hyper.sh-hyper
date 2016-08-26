@@ -163,13 +163,17 @@ Containers for the linked service will be reachable at a hostname identical to t
 Links also express dependency between services in the same way as depends_on, so they determine the order of service startup.
 
 ### volumes
-Mount paths or named volumes, optionally specifying a path on the host machine (`VOLUME:CONTAINER`). For version 2 files, named volumes need to be specified with the top-level volumes key. When using version 1, the Hyper_ will create the named volume automatically if it doesn’t exist.
+Mount paths or named volumes. For version 2 files, named volumes can be specified with the top-level volumes key, a public http/https source file, or a public git repository. When using version 1, the Hyper_ will create the named volume automatically if it doesn’t exist.
 ```
 volumes:
   # Just specify a path and let the Engine create a volume
   - /var/lib/mysql
-  # Named volume
+  # Named volume, datavolume is volume name
   - datavolume:/var/lib/my
+  # Named volume, https source
+  - https://raw.githubusercontent.com/msanand/docker-workflow/master/node/Dockerfile:/data/Dockerfile
+  # Named volume, git repository
+  - https://github.com/hyperhq/hypercli.git:/data/hypercli
 ```
 
 ## Hyper compose vs Docker compose
