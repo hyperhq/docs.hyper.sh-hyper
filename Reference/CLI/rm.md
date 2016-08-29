@@ -6,7 +6,7 @@
 
       -f, --force=false      Force the removal of a running container (uses SIGKILL)
       --help=false           Print usage
-      -v, --volumes=false    Remove the volumes associated with the container
+      -v, --volumes=false    Remove auto-created volumes associated with the container
 
 ### Examples
 

@@ -32,7 +32,7 @@ You can also create volumes with `run`:
     
 Once a volume is attached to a container, it will be associated with the container throughout the container's lifecycle, which means that when you (re)start the container, you don't need to mount the volume again. And it cannot be attached to a different container unless the first attaching container is removed.
 
-However, when you `rm` a container, the attached volumes will be automatically unmounted. To remove the attached volumes along with a container:
+However, when you `rm` a container, the attached volumes will be automatically unmounted. To remove the auto-created volumes along with a container:
 
     $ hyper rm -v db_container
     db_container
