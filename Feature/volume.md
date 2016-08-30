@@ -17,6 +17,10 @@ To mount volumes to a container, use `hyper run`.
     $ hyper run -v db_data:/opt/data/ --name mycontainer ubuntu
     mycontainer
     
+You can also mount the same volume to different mountpoints of the same container.
+    $ hyper run -v vol1:/opt/data -v vol1:/opt/log --name=mycontainer ubuntu
+    mycontainer
+
 You can also create volumes with `run`:
 
     $ hyper run -v /container/path --name mycontainer ubuntu                           	// a new blank volume (10GB) will be created and mounted onto `/container/path`
