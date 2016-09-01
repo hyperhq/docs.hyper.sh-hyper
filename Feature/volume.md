@@ -51,3 +51,7 @@ To failover a volume, you need to `stop` or `rm` the old container, and launch a
     new_db
 
 Volumes are constrained by region. There is currently no way for containers to access volume residing in different regions.
+
+### Volume Reuse
+
+Notes on reusing existing volumes: users should pay attention to volume access permissions. For example, if a volume is first mounted in container `foo` and then reused in container `bar`, file/directory permissions in the volume will keep the same as being set in container `foo`. As a result, a change of container users (uid/gid pair) may have impacts on volume contents access rights.
