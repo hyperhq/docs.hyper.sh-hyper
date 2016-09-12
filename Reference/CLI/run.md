@@ -145,6 +145,8 @@ Container's exposed ports are only accessible by user's containers by default, e
                  specified hostPort range. (e.g., `-p 1234-1236:1234/tcp`)
 ```
 
+> Note: The maximum published ports are 32.
+
 #### Set metadata on container (-l, --label, --label-file)
 
 A label is a `key=value` pair that applies metadata to a container. To label a container with two labels:
