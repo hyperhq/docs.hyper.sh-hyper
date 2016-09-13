@@ -44,6 +44,10 @@ You can also create volumes with `run`:
     mycontainer
 
 
+### Volume size
+
+A volume can be create in sizes between 10 and 50 GB.
+
 ### Volume lifecycle
 
 Once a volume is attached to a container, it will be associated with the container throughout the container's lifecycle, which means that when you (re)start the container, you don't need to mount the volume again. And it cannot be attached to a different container unless the first attaching container is removed.
