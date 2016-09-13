@@ -4,7 +4,7 @@ In Hyper\_, volume offers high availability, durability, and consistent performa
 
 Volume uses `EXT4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container:
 
-    $ hyper volume create --size=100 --name=db_data
+    $ hyper volume create --size=10 --name=db_data
     db_data
 
 New volumes can be created based on an existing snapshot. The new volume begins as an exact replica of the original snapshot (same size):
