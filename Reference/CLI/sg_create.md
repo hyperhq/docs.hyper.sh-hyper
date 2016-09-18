@@ -8,7 +8,7 @@
         --help             Print usage
 
 
-An exmaple of security group Yaml file:
+An exmaple of security group yaml file:
 ```
 name: sg-test-1
 description: sg-test-description
@@ -19,3 +19,5 @@ rules:
   protocol: tcp
   remote_ip_prefix: "0.0.0.0/0"
 ```
+
+More details of the security group file can be found [here](../sg_ref.md)
