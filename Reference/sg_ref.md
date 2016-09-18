@@ -37,5 +37,5 @@ rules:
 ### remote_ip_prefix
 > The remote IP prefix to be associated with this security group rule. You can specify either `RemoteGroupID` or `RemoteIPPrefix`. This attribute matches the specified IP prefix as the source IP address of the IP packet.
 
-### remote_group_name
-> ***Optional*** The remote group ID to be associated with this security group rule. You can specify either `remote_group_name` or `remote_ip_prefix`.
+### remote_group_name (***Optional***)
+> The remote group ID to be associated with this security group rule. You can specify either `remote_group_name` or `remote_ip_prefix`.
