@@ -52,7 +52,6 @@ If you have any questions about an outstanding balance, how to add a payment opt
 
 #### Remove Credit Card
 
-- To remvove your credit card information, please make sure that there is no payment due and no any resources in your account
-- If there is payment due, you need to change the card to fullfill the payment first
+- To remove your credit card information, please make sure that there is no payment due and no any resources in your account.
+- If there is payment due, you need to update the card to fullfill the payment first.
 - Once the credit card information is removed, your account will be limited. You can add the card to re-enable the account.
-
