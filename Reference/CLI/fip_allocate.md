@@ -6,4 +6,4 @@
     
       --help=false       Print usage
 
-> NOTE: one user can have a limit of 50 floating IPs per region. To raise the number, please [submit application](https://hyper.sh/)
+> NOTE: one user can have a limit of 5 floating IPs per region. To raise the number, please [submit application](https://hyper.sh/)
