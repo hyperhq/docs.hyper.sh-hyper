@@ -31,8 +31,8 @@
 #### Tax
 Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. Currently, we charges VAT for credits cards issued in NY and Texas. The tax details will be available in the monthly bill.
 
-#### 支付方式
-当前我们支持大多数类型的信用卡，所有的卡片信息由可信任的第三方支付网关存储及验证，卡片敏感信息部分不会经过Hyper_的服务器。
+#### Payment Method
+Currently Hyper_ accepts credit cards. Please note that all payments are processed by trusted third party payment service. No credit card information are kept in Hyper_.
 
 #### Billing Period
 We charge your credit card on the 1st day of each month after usage.
@@ -50,8 +50,9 @@ Balances are considered outstanding if a payment has failed to process on the fi
 
 If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper_ Support](mailto:support@hyper.sh).
 
-#### 移除信用卡
+#### Remove Credit Card
 
-- 当账户未处于欠费状态，且账户中没有任何资源时，可以在[账单页面](https://console.hyper.sh/billing/credit)移除信用卡。
-- 若账户已处于欠费状态，请先更新一张有效的信用卡，在触发自动扣费后再次尝试移除信用卡。
-- 在移除信用卡后，账户将处于限制状态，将不再能够创建新的资源，可以重新添加信用卡以恢复。
+- To remvove your credit card information, please make sure that there is no payment due and no any resources in your account
+- If there is payment due, you need to change the card to fullfill the payment first
+- Once the credit card information is removed, your account will be limited. You can add the card to re-enable the account.
+
