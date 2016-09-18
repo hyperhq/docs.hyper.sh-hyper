@@ -130,6 +130,7 @@
             * [Compose stop](Reference/API/2016-04-04 [Ver. 1.23]/Compose/compose_stop.md)
             * [Compose kill](Reference/API/2016-04-04 [Ver. 1.23]/Compose/compose_kill.md)
    * [Compose File Reference](Reference/compose_file_ref.md)
+   * [Security Group Reference](Reference/sg_ref.md)
 * [FAQ](FAQ/index.md)
    * [Pricing](FAQ/pricing.md)
    * [Quota and Limits](FAQ/quota_and_limits.md)
