@@ -20,4 +20,4 @@ rules:
   remote_ip_prefix: "0.0.0.0/0"
 ```
 
-Reference of the security group file can be found [here](../sg_ref.md).
+> NOTE: Reference of the security group file can be found [here](../sg_ref.md).
