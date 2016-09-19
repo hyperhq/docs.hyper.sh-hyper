@@ -23,6 +23,7 @@
               -p, --publish=[]                Publish a container's port(s)
               --restart=no                    Restart policy to apply when a container exits
               --rm                            Automatically remove the container when it exits
+              --sg=[]                         Security group for each container
               --size=s4                       The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
               --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
               -t, --tty                       Allocate a pseudo-TTY
@@ -243,3 +244,10 @@ Hyper\_ supports the following restart policies:
 This will run the `redis` container with a restart policy of **always**
 so that if the container exits, Hyper\_ will restart it.
 
+#### Add security groups(--sg)
+
+The `--sg` flag tells `hyper run` to add security groups to the container.  A security group acts as a virtual firewall that controls the traffic for one or more containers. 
+
+    $ hyper run --sg ssh --sg web -d jdeathe/centos-ssh
+
+> Note: `ssh` and `web` are the name of security groups associated with the new container.

@@ -21,6 +21,7 @@
               -P, --publish-all               Publish all exposed ports
               -p, --publish=[]                Publish a container's port(s)
               --restart=no                    Restart policy to apply when a container exits
+              --sg=[]                         Security group for each container
               --size=s4                       The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
               --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
               -t, --tty                       Allocate a pseudo-TTY
