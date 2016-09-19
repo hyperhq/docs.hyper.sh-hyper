@@ -1,4 +1,4 @@
-## sg_create
+## sg create
 
     Usage: hyper sg create [OPTIONS] NAME
 

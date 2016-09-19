@@ -1,4 +1,4 @@
-## sg_rm
+## sg rm
 
     Usage:  hyper sg rm [OPTIONS] NAME
 

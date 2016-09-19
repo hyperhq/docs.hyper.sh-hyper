@@ -1,4 +1,4 @@
-## sg_ls
+## sg ls
     
     Usage:  hyper sg ls [OPTIONS]
 

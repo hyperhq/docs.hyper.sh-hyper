@@ -1,4 +1,4 @@
-## sg_update
+## sg update
 
     Usage:  hyper sg update [OPTIONS] NAME
 

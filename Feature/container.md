@@ -17,3 +17,10 @@ By combing the best from both virtualization and container world, HyperContainer
 |IMAGE SIZE	|Big GBs  |**Small MBs**   |**Small MBs**   |
 |EXISTING INFRASTRUCTURE ROI|-  |No  |**Great**  |
 |TOOLCHAIN MATURITY	|**Great**  |Brand new   |**Great**  |
+
+### Container Resource Limits
+- Max open files: 1000000:1000000
+- Max processes: 30604:30604
+- Max pending signals: 30604:30604
+
+> NOTE: These values can be overwritten by setting `rlimit` in the container.
