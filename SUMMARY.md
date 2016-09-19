@@ -15,6 +15,7 @@
    * [Network](Feature/network.md)
    * [Floating IP](Feature/fip.md)
    * [Compose](Feature/compose.md)
+   * [Security Group](Feature/sg.md)
 * [Reference](Reference/index.md)
    * [CLI](Reference/CLI/index.md)
        * [attach](Reference/CLI/attach.md)
