@@ -33,9 +33,6 @@
 
 The `hyper run` command first `creates` a writeable container layer over the specified image, and then `starts` it using the specified Docker images. That is, `hyper run` is equivalent to the API `/container/create` then `/container/(id)/start`. A stopped container can be restarted with all its previous changes intact using `hyper start`. See `hyper ps -a` to view a list of all containers.
 
-The `hyper run` command can be used in combination with `hyper commit` to
-[*change the command that a container runs*](commit.md). There is additional detailed information about `hyper run` in the [Hyper_ run reference](../run.md).
-
 ### Examples
 
 #### Set working directory (-w)
