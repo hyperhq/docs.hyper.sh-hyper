@@ -19,6 +19,7 @@
               --label-file=[]                 Read in a line delimited file of labels
               --link=[]                       Add link to another container
               --name                          Assign a name to the container
+              --noauto-volume                 Do not create volumes specified in image
               -P, --publish-all               Publish all exposed ports
               -p, --publish=[]                Publish a container's port(s)
               --restart=no                    Restart policy to apply when a container exits
@@ -251,3 +252,10 @@ The `--sg` flag tells `hyper run` to add security groups to the container.  A se
     $ hyper run --sg ssh --sg web -d jdeathe/centos-ssh
 
 > Note: `ssh` and `web` are the name of security groups associated with the new container.
+
+#### No automatic image volumes (--noauto-volume)
+
+The `--noauto-volume` option tells Hyper_ service not to create new volumes for `VOLUME` sections in the container image. If not specified, `hyper run` will automatically create volumes for each `VOLUME` section in the container image.
+
+    $ hyper run --noauto-volume image-with-volume
+
