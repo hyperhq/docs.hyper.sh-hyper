@@ -18,6 +18,7 @@
               --label-file=[]                 Read in a line delimited file of labels
               --link=[]                       Add link to another container
               --name                          Assign a name to the container
+              --noauto-volume                 Do not create volumes specified in image
               -P, --publish-all               Publish all exposed ports
               -p, --publish=[]                Publish a container's port(s)
               --restart=no                    Restart policy to apply when a container exits

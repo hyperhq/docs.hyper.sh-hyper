@@ -72,3 +72,18 @@ Volumes are constrained by region. There is currently no way for containers to a
 ### Volume Reuse
 
 Notes on reusing existing volumes: users should pay attention to volume access permissions. For example, if a volume is first mounted in container `foo` and then reused in container `bar`, file/directory permissions in the volume will keep the same as being set in container `foo`. As a result, a change of container users (uid/gid pair) may have impacts on volume contents access rights.
+
+### Image Volume Creation
+
+New volumes will be created automatically if `VOLUME` section is present in the container image.
+
+    $ hyper run --name mycontainer hyperhq/noauto_volume_test
+    mycontainer
+    $ hyper volume ls
+    DRIVER              VOLUME NAME                                                       SIZE                CONTAINER
+    hyper               d358e606246ce22c9d528913f6990c45cd8ddbb7df7d8e1110d3c66b0cbf734   10 GB               1b617eb3ab0f
+    hyper               805ef123f4e60b048448784a4aa56d13469fb4aa42ae0e1fcd006c2b7b1e807   10 GB               1b617eb3ab0f
+
+You can avoid this by specifying the `--noauto-volume` option.
+
+    $ hyper run --name mycontainer --noauto-volume hyperhq/noauto_volume_test
