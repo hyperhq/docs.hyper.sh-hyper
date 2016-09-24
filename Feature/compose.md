@@ -10,7 +10,14 @@ Using Compose is basically a three-step process.
 * Define the services that make up your app in docker-compose.yml so they can be run together in an isolated environment.
 * Lastly, run `hyper compose up` and Compose will start and run your entire app.
 
-A docker-compose.yml looks like this:
+## Example
+
+We need a floating ip first:
+
+	$ hyper fip allocate 1
+	147.75.99.77
+
+A docker-compose.yml looks like this (remember to change the FIP):
 
 	version: '2'
 	services:
@@ -21,10 +28,14 @@ A docker-compose.yml looks like this:
 	      - db:mysql
 	    depends_on:
 	      - db
+	    ports:
+	      - "80:80"
 	  db:
 	    image: mysql:latest
 	    environment:
 	        - MYSQL_ROOT_PASSWORD=my-secret-pw
+
+Now you can run `hyper compose up` and visit your wordpress blog on http://147.75.99.77
 
 
 For more information about the Compose file, see the [Compose file reference](../Reference/compose_file_ref.md)
