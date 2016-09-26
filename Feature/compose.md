@@ -29,9 +29,11 @@ A docker-compose.yml looks like this (remember to change the FIP):
 	    depends_on:
 	      - db
 	    ports:
-	      - "80:80"
+	      - "8080:80"
 	  db:
 	    image: mysql:latest
+	    ports:
+	      - "3306"
 	    environment:
 	        - MYSQL_ROOT_PASSWORD=my-secret-pw
 
