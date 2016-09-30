@@ -32,7 +32,7 @@
 Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. Currently, we charges VAT for credits cards issued in NY and Texas. The tax details will be available in the monthly bill.
 
 #### Payment Method
-Currently Hyper_ accepts credit cards. Please note that all payments are processed by trusted third party payment service. No credit card information are kept in Hyper_.
+Currently Hyper.sh accepts credit cards. Please note that all payments are processed by trusted third party payment service. No credit card information are kept in Hyper.sh.
 
 #### Billing Period
 We charge your credit card on the 1st day of each month after usage.
@@ -48,7 +48,7 @@ Balances are considered outstanding if a payment has failed to process on the fi
 - If the balance is due over two months, we will deactivate your account (unable to login web console and all credential will be removed), and purge all resources in your account permanently
 - Whenever a payment request succeeded, we will immediately resume your account
 
-If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper_ Support](mailto:support@hyper.sh).
+If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper.sh Support](mailto:support@hyper.sh).
 
 #### Remove Credit Card
 

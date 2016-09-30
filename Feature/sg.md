@@ -1,6 +1,6 @@
 # Security Group
 
-In Hyper_, a security group acts as a virtual firewall that controls the traffic for one or more containers. You add rules to each security group that allow traffic to or from its associated containers.  When we decide whether to allow traffic to reach a container, we evaluate all the rules from all the security groups that are associated with the container:
+In Hyper.sh, a security group acts as a virtual firewall that controls the traffic for one or more containers. You add rules to each security group that allow traffic to or from its associated containers.  When we decide whether to allow traffic to reach a container, we evaluate all the rules from all the security groups that are associated with the container:
 
 - if a container has no associated security group, it is accessible (within the network it resides, as well as the Internet) 
 - if a container has associated security group(s) with no `egress` rule, it cannot access the Internet

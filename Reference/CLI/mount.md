@@ -15,7 +15,7 @@ Mount a volume to a (stopped) container:
 	$ hyper mount myweb -v vol-dl1249x4 -d /data -p 0755
 	/data
 
-If the mount point is present in the container, you need to use `--force` flag. Otherwise, Hyper_ return an error:
+If the mount point is present in the container, you need to use `--force` flag. Otherwise, Hyper.sh return an error:
 
 	$ hyper mount myweb -v vol-dl1249x4 -d /data -p 0755
 	/data already exists

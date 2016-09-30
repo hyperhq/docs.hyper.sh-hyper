@@ -48,7 +48,7 @@ The `-w` lets the command being executed inside directory given, here
 
     $ hyper run -d -v hello:/world busybox ls /world
 
-The mount is created inside the container's `/world` directory. Hyper_ does not support relative paths for mount points inside the container.
+The mount is created inside the container's `/world` directory. Hyper.sh does not support relative paths for mount points inside the container.
 
 #### Load data (-v)
 Besides mounting a volume, `-v` also allows to load data from either local computer (where the command is issued) or a URI:
@@ -154,7 +154,7 @@ A label is a `key=value` pair that applies metadata to a container. To label a c
 
 The `my-label` key doesn't specify a value so the label defaults to an empty string(`""`). To add multiple labels, repeat the label flag (`-l` or `--label`).
 
-The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper_ uses the last `key=value` you supply.
+The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper.sh uses the last `key=value` you supply.
 
 Use the `--label-file` flag to load multiple labels from a file. Delimit each label in the file with an EOL mark. The example below loads labels from a labels file in the current directory:
 
@@ -221,7 +221,7 @@ Hyper\_ supports the following restart policies:
       <td><strong>always</strong></td>
       <td>
         Always restart the container regardless of the exit status.
-        When you specify always, Hyper_ will try to restart
+        When you specify always, Hyper.sh will try to restart
         the container indefinitely. The container will also always start
         on daemon startup, regardless of the current state of the container.
       </td>
@@ -252,7 +252,7 @@ The `--sg` flag tells `hyper run` to add security groups to the container.  A se
 
 #### No automatic image volumes (--noauto-volume)
 
-The `--noauto-volume` option tells Hyper_ service not to create new volumes for `VOLUME` sections in the container image. If not specified, `hyper run` will automatically create volumes for each `VOLUME` section in the container image.
+The `--noauto-volume` option tells Hyper.sh service not to create new volumes for `VOLUME` sections in the container image. If not specified, `hyper run` will automatically create volumes for each `VOLUME` section in the container image.
 
     $ hyper run --noauto-volume image-with-volume
 

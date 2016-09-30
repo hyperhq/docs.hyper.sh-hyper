@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-   * [What is Hyper_](Introduction/what_is_hyper_.md)
-   * [Why Hyper_](Introduction/why_hyper_.md)
+   * [What is Hyper.sh](Introduction/what_is_hyper_.md)
+   * [Why Hyper.sh](Introduction/why_hyper_.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/index.md)
    * [Generate API Credential](GettingStarted/generate_api_credential.md)
