@@ -20,7 +20,7 @@ PING mycontainer (172.16.0.119): 56 data bytes
 64 bytes from 172.16.0.119: seq=0 ttl=64 time=0.469 ms
 ```
 
-And that is how easy you can use the network on Hyper_.
+And that is how easy you can use the network on Hyper.sh.
 
 ## Default network configuration
 

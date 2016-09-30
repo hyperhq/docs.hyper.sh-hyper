@@ -1,8 +1,8 @@
-# Show Hyper_ API version information
+# Show Hyper.sh API version information
 
 `GET /version`
 
-Show Hyper_ API version information
+Show Hyper.sh API version information
 
 **Example request**:
 

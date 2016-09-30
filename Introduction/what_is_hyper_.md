@@ -4,7 +4,7 @@
 
 ![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1229x399/bebf8e0ea7d0b82a8982b4c659b01804/caas.png)
 
-# How does Hyper_ run secure containers?
+# How does Hyper.sh run secure containers?
 
 At Hyper\_  have we made a project called [HyperContainer](https://github.com/hyperhq/hyper) to secure hardware-enforced isolation between containers, while still keeping the sub-second startup performance.
 

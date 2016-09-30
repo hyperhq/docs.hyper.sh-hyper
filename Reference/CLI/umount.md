@@ -12,7 +12,7 @@ Unmount a volume from a (stopped) container:
 	$ hyper umount myweb -d /data
 	/data
 
-If no volume is mounted at the mount point or the mount point is absent, Hyper_ return an error:
+If no volume is mounted at the mount point or the mount point is absent, Hyper.sh return an error:
 
 	$ hyper umount myweb -d /data
 	No volume found

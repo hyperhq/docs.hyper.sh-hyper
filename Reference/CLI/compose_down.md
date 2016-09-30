@@ -16,4 +16,4 @@
 
 > NOTE: By default, the project name is the current directory name.
 
-The Hyper_ compose will not accept compose file, you may operate the project by using `-p` option.
+The Hyper.sh compose will not accept compose file, you may operate the project by using `-p` option.
