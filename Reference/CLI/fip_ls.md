@@ -16,6 +16,7 @@ There is a single supported filter `dangling=value` which takes a boolean of `tr
 Example output:
 
     $ hyper fip ls
-    Floating IP         Container
-    211.98.26.102       
-    211.98.26.192       aa733d1782c92f295ff7291817b92c37938274b5e9fc3f4202c13f2db246192b
+    Floating IP         Container                                                           Service
+    211.98.26.102
+    211.98.26.104       aa733d1782c92f295ff7291817b92c37938274b5e9fc3f4202c13f2db246192b
+    211.98.26.103                                                                           http
