@@ -188,8 +188,8 @@ This is how piping a file into a container could be done for a build. The contai
 
 #### Restart policies (--restart)
 
-Use Hyper\_'s `--restart` to specify a container's *restart policy*. A restart policy controls whether to restart a container after exit. The policy will be triggered if the uptime of a container is more than 10 seconds.
-Hyper\_ supports the following restart policies:
+Use Hyper.sh's `--restart` to specify a container's *restart policy*. A restart policy controls whether to restart a container after exit. The policy will be triggered if the uptime of a container is more than 10 seconds.
+Hyper.sh supports the following restart policies:
 
 <table>
   <thead>
@@ -240,7 +240,7 @@ Hyper\_ supports the following restart policies:
     $ hyper run --restart=always redis
 
 This will run the `redis` container with a restart policy of **always**
-so that if the container exits, Hyper\_ will restart it.
+so that if the container exits, Hyper.sh will restart it.
 
 #### Add security groups(--sg)
 

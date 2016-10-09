@@ -5,7 +5,7 @@ Now, let's try to launch a container. To complete this tutorial, you need some f
 
 ### 1. Pull the image
 
-The first step is to pull the image. However, instead of downloading to your local laptop, `hyper pull` will pull the image to your account at Hyper\_.
+The first step is to pull the image. However, instead of downloading to your local laptop, `hyper pull` will pull the image to your account at Hyper.sh.
 
 Open your terminal and enter:
 
@@ -22,7 +22,7 @@ Once the download completes, you can see images with:
     nginx               latest              af4b3d7d5401        3 weeks ago         190.5 MB
 
 ### 2. Create additional volumes
-Hyper\_ creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:
+Hyper.sh creates a 10GB root volume for each container. In the case that you need extra disk space, you can create a data volume:
 
 	$ hyper volume create --size 10 --name data    # size in GB
 	data
@@ -32,10 +32,10 @@ Hyper\_ creates a 10GB root volume for each container. In the case that you need
 	$ hyper run -d -p 80 -v data:/data --name myweb nginx
 	myweb
 
-`-v data:/data` tells Hyper\_ to mount the volume `data` onto the new container at the path `/data`, and `-p 80` indicates http port 80 is published.
+`-v data:/data` tells Hyper.sh to mount the volume `data` onto the new container at the path `/data`, and `-p 80` indicates http port 80 is published.
 
 ### 4. Attach a floating IP
-Hyper\_ creates a default private network for each accounts. The new container is launched in your own private network, which Hyper\_ creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other networks or the Internet.
+Hyper.sh creates a default private network for each accounts. The new container is launched in your own private network, which Hyper.sh creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other networks or the Internet.
 
 To enable public Internet access to your application, you need to attach a floating IP address to the container:
 

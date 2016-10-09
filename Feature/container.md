@@ -1,6 +1,6 @@
 # Container
 
-Simply put, [HyperContainer](https://github.com/hyperhq/hyper) is a virtualized container technology that allows you to run Docker images on hypervisor (KVM, Xen, etc.):
+Simply put, [HyperContainer](https://github.com/hyperhq/hyperd) is a virtualized container technology that allows you to run Docker images on hypervisor (KVM, Xen, etc.):
 
 > HyperContainer = Hypervisor + Docker Image
 

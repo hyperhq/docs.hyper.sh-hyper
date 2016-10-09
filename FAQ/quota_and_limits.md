@@ -1,6 +1,6 @@
 # Quota & Limits
 
-Hyper\_ has certain hard and soft (`quota`) limits in using its service. Hard limits are automatically enforced by the service. Soft limits are consumable resources that you may request to increase:
+Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard limits are automatically enforced by the service. Soft limits are consumable resources that you may request to increase:
 
 ## Hard Limits
 - Image

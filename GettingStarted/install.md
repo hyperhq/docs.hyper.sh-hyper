@@ -1,6 +1,6 @@
 # Install CLI
 
-Hyper\_ currently provides official CLI builds for Linux and Mac. Windows release will be soon.
+Hyper.sh currently provides official CLI builds for Linux and Mac. Windows release will be soon.
 
 - Linux x86
 - Mac OS X 10.7 (lion) or later

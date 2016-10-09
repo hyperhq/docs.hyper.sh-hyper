@@ -1,12 +1,12 @@
-# What is Hyper\_?
+# What is Hyper.sh?
 
-[Hyper\_](https://hyper.sh) is a secure container hosting service. What makes it different from AWS (Amazon Web Services) is that you don't start servers, but start docker images directly from Docker Hub or other registries. Hyper\_ is running the containers in a new way, in which **multi-tenants' containers are inherently safe to run side by side on bare metal**, instead of being nested in VMs. This benefits you in being safe and cheap at the same time and you can focus on your app instead of maintaing servers.
+[Hyper.sh](https://hyper.sh) is a secure container hosting service. What makes it different from AWS (Amazon Web Services) is that you don't start servers, but start docker images directly from Docker Hub or other registries. Hyper.sh is running the containers in a new way, in which **multi-tenants' containers are inherently safe to run side by side on bare metal**, instead of being nested in VMs. This benefits you in being safe and cheap at the same time and you can focus on your app instead of maintaing servers.
 
 ![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/1229x399/bebf8e0ea7d0b82a8982b4c659b01804/caas.png)
 
 # How does Hyper.sh run secure containers?
 
-At Hyper\_  have we made a project called [HyperContainer](https://github.com/hyperhq/hyper) to secure hardware-enforced isolation between containers, while still keeping the sub-second startup performance.
+At Hyper.sh  have we made a project called [HyperContainer](https://github.com/hyperhq/hyper) to secure hardware-enforced isolation between containers, while still keeping the sub-second startup performance.
 
 The difference is that the container does not run on the host kernel. Instead, every container gets its own, independent, guest kernel. By doing this, the application running inside is perfectly isolated from both other containers and the host. In a HyperContainer, the application process is still able to access what it needs: kernel and data.
 
