@@ -18,7 +18,7 @@ Remove one or more services.
 
 **Remove a service but keep backend containers running:**
 
-    $ hyper service rm --keep http
-    service1
+    $ hyper service rm --keep https
+    https
 
 This will only remove the service, and all backend containers are not removed. You may need remove them manually by container ID.
