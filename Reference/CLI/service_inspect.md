@@ -19,7 +19,6 @@ By default, this will render all results in a JSON array. Go’s `text/template`
             "Name": "http",
             "Image": "nginx",
             "WorkingDir": "",
-            "ServiceSize": "s4",
             "ContainerSize": "s4",
             "SSLCert": "",
             "NetMode": "bridge",
