@@ -20,7 +20,6 @@
     --protocol=tcp               Protocol for load balance
     --replicas=-1                Replicas number for container
     --service-port               Service publish port for service container
-    --service-size=s4            Service size for service container
     --session-affinity           Session Affinity
     --sg=[]                      Security group for each container
     --size=s4                    The type for each instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
