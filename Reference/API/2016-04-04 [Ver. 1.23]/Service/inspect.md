@@ -21,7 +21,6 @@ Content-Type: application/json
   "Name": "http",
   "Image": "nginx",
   "WorkingDir": "",
-  "ServiceSize": "s4",
   "ContainerSize": "s4",
   "SSLCert": "",
   "NetMode": "bridge",
