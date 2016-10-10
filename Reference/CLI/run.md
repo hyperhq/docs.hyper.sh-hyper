@@ -257,8 +257,8 @@ The `--noauto-volume` option tells Hyper.sh service not to create new volumes fo
 
     $ hyper run --noauto-volume image-with-volume
 
-#### Enable termination protection(--protection)
+#### Enable termination protection (--protection)
 
-The `--protection` option tells Hyper.sh to add termination protection to the container. A protected container will not be removed until protection is disabled by calling `hyper update --protection=false <container>`.
+The `--protection` flag enables (disable) termination protection to container. A protected container cannot be removed unless the protection is disabled by `hyper update --protection=false <container>`.
 
     $ hyper run --protection=true busybox
