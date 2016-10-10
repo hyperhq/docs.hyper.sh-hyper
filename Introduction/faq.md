@@ -59,8 +59,8 @@ Q: Do you support sharing a single volume among multiple containers?
 Q: Do volumes need to be un-mounted in order to take a snapshot? Does the snapshot need to complete before the volume can be used again?
 > No, snapshots can be done in real time while the volume is attached and in use. However, snapshots only capture data that has been written to your volume, which might exclude any data that has been locally cached by your application or container. In order to ensure consistent snapshots on volumes attached to a container, we recommend cleanly detaching the volume, issuing the snapshot command, and then reattaching the volume.
 
-Q: Why am I limited to 5 Flaoting IPs per region?
-> Public (IPv4) IP addresses are a scarce resource. We are working on IPv6 support.
+Q: Why am I limited to 2 Floating IPs per region?
+> Public (IPv4) IP addresses are scarce resources. We are working on IPv6 support.
 
 Q: Does every container need one Floating IP?
 > No, not every container needs a Floating IP. By default, every container comes with a private IP address and an internal domain name (specific to the network it resides in). The private address is attached exclusively with the container and is only returned to Hyper.sh when the container is terminated. It should be adequate for most non-public-facing containers. Only the public-facing containers, such as web app, demand a Floating IP.
@@ -76,7 +76,7 @@ Q: What is the pricing plan of Hyper.sh ?
 Q: When does billing begin and end?
 > - Container: billing begins when Hyper.sh launches a new container or starts a stopped container, ends when the container stops or terminates, either through an API call, or through container exits (success or failure).
 > - Volume/Snapshot/Image:  billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal.
-> - Floating IP: billing begins when a new IP is allocated, ends when it is released. Partial month is treated as a entire month.
+> - Floating IP: billing begins when a new IP is allocated, ends when it is released. Partial month is treated as an entire month.
 
 Q: Do your prices include taxes?
 > Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax.
