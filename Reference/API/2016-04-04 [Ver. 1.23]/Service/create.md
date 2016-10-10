@@ -31,7 +31,6 @@ Content-Type: application/json
   "Name": "http",
   "Image": "nginx",
   "WorkingDir": "",
-  "ServiceSize": "s4",
   "ContainerSize": "s4",
   "SSLCert": "",
   "NetMode": "",
@@ -67,7 +66,7 @@ Content-Type: application/json
 
 **Json parameters**:
 
-* Name – User-defined name for the service.
+* Name – Service name
 * Labels – A list of labels in format key=value.
 * Image – A string specifying the image name to use for the container.
 * Entrypoint – The entrypoint to run when starting the container.
@@ -82,7 +81,6 @@ Content-Type: application/json
 * SecurityGroups - Security group for the container.
 * ServicePort - Serving port of the service.
 * ContainerPort - Container port of this serivce (default same with service port).
-* ServiceSize - The size of service instance (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3).
 * ContainerSize - The size of service containers (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3).
 * Replicas - Number of containers belonging to this service.
 * Protocol - Service protocol (e.g. http, https, tcp, httpsTerm).
