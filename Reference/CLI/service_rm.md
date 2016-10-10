@@ -2,7 +2,7 @@
 
     Usage:	hyper service rm [OPTIONS] service [service...]
     
-    Remove one or more services
+    Remove one or more service
     
     --help             Print usage
     --keep             Keep the service container
@@ -11,14 +11,14 @@ Remove one or more services.
 
 ### Examples
 
-**Remove a service and all backend containers belonging to it:**
+**Remove a service and all associated containers:**
 
     $ hyper service rm http
     http
 
-**Remove a service but keep backend containers running:**
+**Remove a service but leave containers running:**
 
     $ hyper service rm --keep https
     https
 
-This will only remove the service, and all backend containers are not removed. You may need remove them manually by container ID.
+In this case, you need to remove the containers manually.
