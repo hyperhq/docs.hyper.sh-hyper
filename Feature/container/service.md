@@ -8,10 +8,10 @@ Every service will receive an internal IP address which can only be accessed wit
 
 Currently, service supports four different protocols:
 
-- tcp: containers are serving with tcp and are expose as also tcp.
-- http: containers are serving with http and are exposed as also http.
-- https: containers are serving with https and are exposed as also https.
-- httpsTerm: containers are serving with http and are exposed as https. This protocol reuires a certificate to terminate https.
+- `tcp`        tcp traffic ---> service ---tcp---> containers
+- `http`       http traffic ---> service ---http---> containers
+- `https`      https traffic ---> service ---https---> containers
+- `httpsTerm`  https traffic ---> service ---http---> containers
 
 ### Examples
 
