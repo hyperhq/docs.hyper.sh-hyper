@@ -1,6 +1,6 @@
-## service detach_fip
+## service detach-fip
 
-    Usage:	hyper service detach_fip [OPTIONS] SERVICE [SERVICE...]
+    Usage:	hyper service detach-fip [OPTIONS] SERVICE [SERVICE...]
     
     Detach a fip from the service
     
@@ -12,5 +12,5 @@ Detach the floating IP from one or more services.
 
 Detach the floating IP from a service:
 
-    $ hyper service detach_fip http
+    $ hyper service detach-fip http
     http

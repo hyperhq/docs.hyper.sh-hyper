@@ -6,6 +6,13 @@ As an example, consider an image-processing backend which is running with 3 repl
 
 Every service will receive an internal IP address which can only be accessed within the network where the service resides. For public access, a floating IP address needs to be attached by `attach-fip` command.
 
+Currently, service supports four different protocols:
+
+- tcp: containers are serving with tcp and are expose as also tcp.
+- http: containers are serving with http and are exposed as also http.
+- https: containers are serving with https and are exposed as also https.
+- httpsTerm: containers are serving with http and are exposed as https. This protocol reuires a certificate to terminate https.
+
 ### Examples
 
 **Create a HTTP service:**
@@ -33,7 +40,7 @@ Then create a service with protocol `httpsTerm`:
 
 **Attach an allocated floating IP to a service:**
 
-    $ hyper service attach_fip --fip=6.6.6.6 http
+    $ hyper service attach-fip --fip=6.6.6.6 http
     http
 
 **Scale the service to more replicas:**
@@ -43,5 +50,5 @@ Then create a service with protocol `httpsTerm`:
 
 **Rolling update the service to new image:**
 
-    $ hyper service rolling_update --image httpd http
+    $ hyper service rolling-update --image httpd http
     http

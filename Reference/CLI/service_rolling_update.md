@@ -1,6 +1,6 @@
-## service rolling_update
+## service rolling-update
 
-    Usage:	hyper service rolling_update [OPTIONS] SERVICE [SERVICE...]
+    Usage:	hyper service rolling-update [OPTIONS] SERVICE [SERVICE...]
     
     Perform a rolling update of the given service
     
@@ -12,5 +12,5 @@ new image.
 
 ### Examples
 
-    $ hyper service rolling_update --image httpd http
+    $ hyper service rolling-update --image httpd http
     http
