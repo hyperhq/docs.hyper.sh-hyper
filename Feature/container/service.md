@@ -17,7 +17,7 @@ Currently, service supports four different protocols:
 
 **Create a HTTP service:**
 
-    $ hyper service create --service-port=80 --label=app=nginx --image=nginx --replicas=3 http
+    $ hyper service create --service-port=80 --label=app=nginx --name=http --replicas=3 nginx
     http
 
 **Create a HTTPS termination service:**
@@ -29,7 +29,7 @@ First gets a https certificate from certificate:
 
 Then create a service with protocol `httpsTerm`:
 
-    $ hyper service create --service-port=443 --container-port=80 --label=app=nginx --image=nginx --replicas=3 --ssl-cert=cert.pem --protocol=httpsTerm https
+    $ hyper service create --service-port=443 --container-port=80 --label=app=nginx --name=https --replicas=3 --ssl-cert=cert.pem --protocol=httpsTerm nginx
     https
 
 **List service:**

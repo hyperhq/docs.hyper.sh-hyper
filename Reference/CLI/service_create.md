@@ -1,9 +1,9 @@
 ## service create
 
-    Usage:	hyper service create [OPTIONS] NAME
-
+    Usage:	hyper service create [OPTIONS] IMAGE
+    
     Create a new service
-
+    
     --algorithm=roundrobin       Algorithm for load balance
     --container-port             Container publish port for container
     -e, --env=[]                 Set environment variables
@@ -14,9 +14,9 @@
     --health-check-rise=2        Health check rise for container
     --help                       Print usage
     -i, --interactive            Keep STDIN open even if not attached
-    --image                      Image name
     -l, --label=[]               Set meta data on a container
     --label-file=[]              Read in a line delimited file of labels
+    --name                       Service name
     --protocol=tcp               Protocol for load balance
     --replicas=-1                Replicas number for container
     --service-port               Service publish port for service container
@@ -35,7 +35,7 @@ Creates a new service based on the image and options.
 
 **Create a http service:**
 
-    $ hyper service create --service-port=80 --label=app=nginx --image=nginx --replicas=3 http
+    $ hyper service create --service-port=80 --label=app=nginx --name=http --replicas=3 nginx
     http
 
 **Create a https termination service:**
@@ -47,5 +47,5 @@ First gets a https certificate from certificate:
 
 Then create a service with protocol `httpsTerm`:
 
-    $ hyper service create --service-port=443 --container-port=80 --label=app=nginx --image=nginx --replicas=3 --ssl-cert=cert.pem --protocol=httpsTerm https
+    $ hyper service create --service-port=443 --container-port=80 --label=app=nginx --name=https --replicas=3 --ssl-cert=cert.pem --protocol=httpsTerm nginx
     https
