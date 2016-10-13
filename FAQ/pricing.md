@@ -20,7 +20,7 @@
 #### Service
 |Per Second|Per Hour|Monthly|
 |---|---|---|
-|$0.0000003 |$0.0108|$7.78  |
+|$0.000003 |$0.0108|$7.78  |
 > - Billing begins when a new service created, ends when it is terminated.
 
 #### Storage
