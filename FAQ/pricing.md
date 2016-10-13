@@ -28,6 +28,9 @@
 - Floating IP: $1/IP/month
 > - Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
+#### Service
+Service默认为S4的Container，价格与其一致。
+
 #### Tax
 Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. Currently, we charges VAT for credits cards issued in NY and Texas. The tax details will be available in the monthly bill.
 
