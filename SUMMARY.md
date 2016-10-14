@@ -69,6 +69,7 @@
        * [compose up](Reference/CLI/compose_up.md)
        * [compose rm](Reference/CLI/compose_rm.md)
        * [compose ps](Reference/CLI/compose_ps.md)
+       * [compose pull](Reference/CLI/compose_pull.md)
        * [compose run](Reference/CLI/compose_run.md)
        * [compose kill](Reference/CLI/compose_kill.md)
        * [compose start](Reference/CLI/compose_start.md)
