@@ -24,12 +24,12 @@ Currently, service supports four different protocols:
 
 First gets a https certificate from certificate:
 
-    $ certificate certonly --standalone -d yourdomain.com
-    $ cat fullchain.pem privkey.pem > cert.pem
+    $ certbot certonly --standalone -d yourdomain.com
+    $ cat fullchain.pem privkey.pem > https-service.pem
 
 Then create a service with protocol `httpsTerm`:
 
-    $ hyper service create --service-port=443 --container-port=80 --label=app=nginx --name=https --replicas=3 --ssl-cert=cert.pem --protocol=httpsTerm nginx
+    $ hyper service create --service-port=443 --container-port=80 --label=app=nginx --name=https --replicas=3 --ssl-cert=https-service.pem --protocol=httpsTerm nginx
     https
 
 **List service:**
