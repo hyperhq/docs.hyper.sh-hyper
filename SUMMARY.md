@@ -93,6 +93,8 @@
             * [Get container stats](Reference/API/2016-04-04 [Ver. 1.23]/Container/stats.md)
             * [Inspect a container](Reference/API/2016-04-04 [Ver. 1.23]/Container/inspect.md)
             * [Exec Create](Reference/API/2016-04-04 [Ver. 1.23]/Container/exec_create.md)
+        * [Event](Reference/API/2016-04-04 [Ver. 1.23]/Event/index.md)
+            * [Monitor events with WebSocket](Reference/API/2016-04-04 [Ver. 1.23]/Event/ws.md)
         * [Misc](Reference/API/2016-04-04 [Ver. 1.23]/Misc/index.md)
             * [Display system-wide information](Reference/API/2016-04-04 [Ver. 1.23]/Misc/info.md)
             * [Show the hyper version information](Reference/API/2016-04-04 [Ver. 1.23]/Misc/version.md)
