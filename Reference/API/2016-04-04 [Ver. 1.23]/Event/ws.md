@@ -2,7 +2,7 @@
 
 This is a websocket api, it supports to watch `start` and `stop` event of container(s).
 
-The entrypoint of the websocket api is  `wss://us-west-1.hyper.sh:443/events/ws`. In addition, it's same as other apis.
+The entrypoint of the websocket api is  `wss://￥{REGION}.hyper.sh:443/events/ws`. In addition, it's same as other apis.
 
 As a reference, here is an [example websocket client](https://github.com/hyperhq/websocket-client/blob/master/go/wsclient.go) (written by golang)
 
