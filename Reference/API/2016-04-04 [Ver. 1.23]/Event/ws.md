@@ -2,9 +2,18 @@
 
 This is a websocket api, it supports to watch `start` and `stop` event of container(s).
 
-The entrypoint of the websocket api is  `wss://￥{REGION}.hyper.sh:443/events/ws`. In addition, it's same as other apis.
+The entrypoint of the websocket api is  `wss://${REGION}.hyper.sh:443/events/ws`. In addition, it's same as other apis.
 
 As a reference, here is an [example websocket client](https://github.com/hyperhq/websocket-client/blob/master/go/wsclient.go) (written by golang)
+
+The websocket connection will be closed from the server side if:
+
+- Server restart for maintaining
+- Connection opened for a long time (exceed 24 hours by default)
+- Error occured.
+
+So the client should handle the close and reconnect if needed.
+
 
 
 `GET /events/ws`
