@@ -50,3 +50,5 @@ Once the installation completes, enter `hyper config` in your terminal. The CLI 
 The credential is stored in a local configuration file `$HOME/.hyper/config.json`. The configuration file is similar to Docker's, with an extra section `clouds`.
 
 ![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/635x160/c9caa016982d5884eb06578292c154bf/config.png)
+
+Or you can setup the credential via setting environment `HYPER_ACCESS` and `HYPER_SECRET` with your access key and secret key.
