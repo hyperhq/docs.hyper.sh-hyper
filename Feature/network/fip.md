@@ -5,6 +5,7 @@ A floating IP or also called FIP, is a public accessible IP address that can be 
 You need to allocate new free IPs before assigning them to containers:
 
     $ hyper fip allocate 1
+    Please note that Floating IP (FIP) is billed monthly ($1). The billing begins when a new IP is allocated, ends when it is released. Partial month is treated as a entire month. Do you want to continue? [y/n]: y
     52.68.129.19
     $ hyper fip attach 52.68.129.19 myweb
     myweb

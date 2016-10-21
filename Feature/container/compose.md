@@ -15,6 +15,7 @@ Using Compose is basically a three-step process.
 We need a floating ip first:
 
 	$ hyper fip allocate 1
+	Please note that Floating IP (FIP) is billed monthly ($1). The billing begins when a new IP is allocated, ends when it is released. Partial month is treated as a entire month. Do you want to continue? [y/n]: y
 	147.75.99.77
 
 A docker-compose.yml looks like this (remember to change the FIP):
