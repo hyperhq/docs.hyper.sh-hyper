@@ -1,6 +1,6 @@
 # Install CLI
 
-Hyper.sh currently provides official CLI builds for Linux and Mac. Windows release will be soon.
+Hyper.sh currently provides official CLI builds for Linux and Mac.
 
 - Linux x86
 - Mac OS X 10.7 (lion) or later
@@ -51,4 +51,4 @@ The credential is stored in a local configuration file `$HOME/.hyper/config.json
 
 ![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/635x160/c9caa016982d5884eb06578292c154bf/config.png)
 
-Or you can setup the credential via setting environment `HYPER_ACCESS` and `HYPER_SECRET` with your access key and secret key.
+Or you can use environmental vairables `HYPER_ACCESS` and `HYPER_SECRET` to pass the access key and secret key (CLI will search for these envs before loading the configuration file).
