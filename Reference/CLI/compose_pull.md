@@ -1,4 +1,4 @@
-## Compose create
+## Compose pull
 
     Usage:  hyper compose pull [OPTIONS] [SERVICE...]
 
