@@ -66,11 +66,10 @@ entrypoint:
 
 ### env_file
 
-Add environment variables from a file. Can be a single value or a list.
+Add environment variables from a file. Only accept a list.
 If you have specified a Compose file with `compose -f FILE`, paths in env_file are relative to the directory that file is in.
 Environment variables specified in environment override these values.
 ```
-env_file: .env
 env_file:
   - ./common.env
   - ./apps/web.env
@@ -174,6 +173,35 @@ volumes:
   - https://raw.githubusercontent.com/msanand/docker-workflow/master/node/Dockerfile:/data/Dockerfile
   # Named volume, git repository
   - https://github.com/hyperhq/hypercli.git:/data/hypercli
+```
+
+### fip
+Attach an allocated floating IP to a (running) container, each container can have only one floating IP.  It will only accept a single string:
+
+```
+fip: 211.98.26.102
+```
+
+### size
+The size for each container, it will only accept a single string.  Available size is s1, s2, s3, s4, m1, m2, m3, l1, l2 and l3.  For more details and price, you can refer the [doc](./../FAQ/pricing.md).
+
+```
+size: s4
+```
+
+### noauto_volume
+This option tells Hyper.sh service not to create new volumes for `VOLUME` sections in the container image. If not specified, compose will automatically create volumes for each `VOLUME` section in the container image.
+
+```
+noauto_volume: true
+```
+
+### security_groups
+This option tells compose to add security groups to the container.  A security group acts as a virtual firewall that controls the traffic for one or more containers. 
+
+```
+security_groups:
+  - sg-test-1
 ```
 
 ## Hyper compose vs Docker compose
@@ -526,6 +554,18 @@ volumes:
 <td>No</td>
 <td>Yes</td>
 <td>floating IP</td>
+</tr>
+<tr>
+<td>security_groups</td>
+<td>No</td>
+<td>Yes</td>
+<td>Security Groups</td>
+</tr>
+<tr>
+<td>noauto_volume</td>
+<td>No</td>
+<td>Yes</td>
+<td>Do not auto create volume</td>
 </tr>
 <td>Volume configuration</td>
 <td>Yes</td>

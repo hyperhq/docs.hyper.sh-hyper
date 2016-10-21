@@ -22,6 +22,7 @@
               --noauto-volume                 Do not create volumes specified in image
               -P, --publish-all               Publish all exposed ports
               -p, --publish=[]                Publish a container's port(s)
+              --protection=false              Termination protection for container
               --restart=no                    Restart policy to apply when a container exits
               --rm                            Automatically remove the container when it exits
               --sg=[]                         Security group for each container
@@ -256,3 +257,8 @@ The `--noauto-volume` option tells Hyper.sh service not to create new volumes fo
 
     $ hyper run --noauto-volume image-with-volume
 
+#### Enable termination protection (--protection)
+
+The `--protection` flag enables (disable) termination protection to container. A protected container cannot be removed unless the protection is disabled by `hyper update --protection=false <container>`.
+
+    $ hyper run --protection=true busybox
