@@ -84,7 +84,7 @@ Query Parameters:
 
 Status Codes:
 
--   **200** – no error
+-   **101** – switching protocols
 -   **400** - bad request parameter
 -   **429** - too many requests
 -   **500** – server error
