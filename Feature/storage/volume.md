@@ -87,3 +87,15 @@ New volumes will be created automatically if `VOLUME` section is present in the 
 You can avoid this by specifying the `--noauto-volume` option.
 
     $ hyper run --name mycontainer --noauto-volume hyperhq/noauto_volume_test
+
+### File Volume Initialization
+
+When initializing a volume with a specified source (local or http) that points to a file, the volume destination must also be a file. The destination file will be created automatically if not existed.
+
+However, if the image itself has a directory at the volume destination place, the container will fail to start. For example, the following command will fail to start the container, because `/etc/hosts` is a file source and `/mnt` is an existing directory in container image `ubuntu:14.04`. The same applies to http/https based remote volume sources as well.
+
+    $ hyper run -d -v /etc/hosts:/mnt ubuntu:14.04
+
+Instead, you can avoid the failure by specifying a non-directory place to mount the source file, e.g.:
+
+    $ hyper run -d -v /etc/hosts:/mnt/hosts ubuntu:14.04
