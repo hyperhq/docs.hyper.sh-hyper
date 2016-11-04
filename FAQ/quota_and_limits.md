@@ -23,7 +23,7 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 
 ### Request a quota increase
 
-Open the [Account](https://hyper.sh/account) page, choose `Quota`, click `Request Quota Increase`:
+Open the [Account](https://console.hyper.sh/account/) page, choose `Quota`, click `Request Quota Increase`:
 
 ![](https://trello-attachments.s3.amazonaws.com/57ac415d5c5774e392d184a5/2374x1104/864d7065d6e9bb4bbc15cfa23bf0b59e/quota.png)
 
