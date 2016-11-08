@@ -35,7 +35,7 @@
 > - Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
 #### Tax
-Except as otherwise noted, our prices are exclusive of applicable taxes and duties, including VAT and applicable sales tax. Currently, we charges VAT for credits cards issued in NY and Texas. The tax details will be available in the monthly bill.
+Except as otherwise noted, our prices exclude applicable sales tax and VAT. Currently, we charge sales tax for credit cards issued in the US states of NY and Texas. The tax details will be available in the monthly bill.
 
 #### Payment Method
 Currently Hyper.sh accepts credit cards. Please note that all payments are processed by trusted third party payment service. No credit card information are kept in Hyper.sh.
