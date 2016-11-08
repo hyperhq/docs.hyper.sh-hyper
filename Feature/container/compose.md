@@ -41,10 +41,10 @@ A docker-compose.yml looks like this (remember to change the FIP):
 Now you can run `hyper compose up` and visit your wordpress blog on http://147.75.99.77
 
 
-For more information about the Compose file, see the [Compose file reference](../Reference/compose_file_ref.md)
+For more information about the Compose file, see the [Compose file reference](../../Reference/compose_file_ref.md)
 
 Compared with docker compose specification, hyper compose support two more fields:
-* `size` - container size for the service, we support ten different sizes, you can find more details at [here](../FAQ/pricing.md). 
+* `size` - container size for the service, we support ten different sizes, you can find more details at [here](../../FAQ/pricing.md). 
 * `fip` - floating IP for service
 
 Compose has commands for managing the whole lifecycle of your application:
