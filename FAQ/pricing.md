@@ -40,11 +40,11 @@
 Currently, Hyper.sh accepts credit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
 
 #### Does Hyper.sh keep my credit card information?
-No,all payments are processed through Stripe, a trusted third party payment service. Hyper.sh does not retain any credit card information.
+No, all payments are processed through Stripe, a trusted third party payment processing service. Hyper.sh does not retain any credit card information.
 
 #### Why was my card declined?
-Some common verification message:
-our thrid party payment processing service employs specific checks against card payments. Some of the reasons your card was declined could be:
+
+Our thrid party payment processing service employs specific checks against card payments. Some of the reasons your card was declined could be:
 
 1. **The zip code you supplied failed validation.**: You can leave the Zip Code as blank and try again if your card not located in US.
 2. **Your card's security code is incorrect.**: Currently we require CVC verification.
@@ -68,6 +68,7 @@ If you have any questions about an outstanding balance, how to add a payment opt
 
 #### How do I remove my credit card?
 
+You can go to https://console.hyper.sh/billing/credit to add/update/delete your credit card. 
 - First please make sure that there is no payment due and that there are no resources left in your account.
-- If there is payment due, you need to update the card to fullfill the payment.
-- Once the credit card information is removed, your account will be limited. You can add the card to re-enable the account.
+- If there is payment due, you will need to update the credit card to first fullfill the payment.
+- Once the credit card information is removed, your account will be limited. You can add a credit card to re-enable your account.
