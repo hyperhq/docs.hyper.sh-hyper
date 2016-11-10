@@ -36,28 +36,29 @@
 
 # General FAQ
 
-#### What's the payment type do you accept?
-Currently Hyper.sh accepts credit cards, We accept Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
+#### What payment types do you accept?
+Currently, Hyper.sh accepts credit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
 
-#### Does Hyper.sh will keep my credit card information?
-All payments are processed by trusted third party payment service, no credit card information are kept in Hyper.sh.
+#### Does Hyper.sh keep my credit card information?
+No,all payments are processed through Stripe, a trusted third party payment service. Hyper.sh does not retain any credit card information.
 
-#### Why my card was declined when add it?
+#### Why was my card declined?
 Some common verification message:
+our thrid party payment processing service employs specific checks against card payments. Some of the reasons your card was declined could be:
 
 1. **The zip code you supplied failed validation.**: You can leave the Zip Code as blank and try again if your card not located in US.
 2. **Your card's security code is incorrect.**: Currently we require CVC verification.
 3. **Your card does not support this type of purchase.**: Please get in touch with your bank to confirm the reason declining the payments.
 
-#### When do you charge credit card?
-We charge your credit card on the 1st day of each month after usage.
+#### When will my credit card be charged?
+We charge your credit card on the 1st day of each month.
 
 #### How about the billing tax?
 Except as otherwise noted, our prices exclude applicable sales tax and VAT. Currently, we charge sales tax for credit cards issued in the US states of NY and Texas. The tax details will be available in the monthly bill.
 
 #### What happens after outstanding balance?
 
-- First Payment Attempt: Credit card payment charged on 1st of month. You will receive email notification of failed credit card charge and to update credit card information in web console.
+- First Payment Attempt: Credit card payment charged on 1st of the month. You will receive email notification of failed credit card charge and to update credit card information in web console.
 - Second Payment Attempt: Submitted 3 days after first attempt, if the first charge fails, during this period you will be unable to create / update resources in your account.
 - Third Payment Attempt: Submitted 5 days after second attempt, if the second charge attempt fails. If third attempt fails, we will stop all containers in your account.
 - If the balance is due over 30 days, we will deactivate your account (unable to login to web console, removal of all credentials), and permanently purge all resources in your account.
@@ -65,8 +66,8 @@ Except as otherwise noted, our prices exclude applicable sales tax and VAT. Curr
 
 If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper.sh Support](mailto:support@hyper.sh).
 
-#### How do I remove credit card?
+#### How do I remove my credit card?
 
-- To remove your credit card information, please make sure that there is no payment due and no any resources in your account.
-- If there is payment due, you need to update the card to fullfill the payment first.
+- First please make sure that there is no payment due and that there are no resources left in your account.
+- If there is payment due, you need to update the card to fullfill the payment.
 - Once the credit card information is removed, your account will be limited. You can add the card to re-enable the account.
