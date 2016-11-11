@@ -10,3 +10,4 @@
 
 
 > NOTE: By default, the project name is the current directory name.
+If there are no running containers, the compose project will be deleted.

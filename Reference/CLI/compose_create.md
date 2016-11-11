@@ -14,4 +14,4 @@
       -p, --project-name              Specify an alternate project name
 
 
-> NOTE: By default, the project name is the current directory name.
+> NOTE: By default, the project name is the current directory name. The project name should be `^[a-zA-Z_][a-zA-Z0-9_]*$`.
