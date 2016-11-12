@@ -39,7 +39,7 @@
 # General FAQ
 
 #### What payment types do you accept?
-Currently, Hyper.sh accepts credit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
+Currently, Hyper.sh accepts credit or debit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
 
 #### Does Hyper.sh keep my credit card information?
 No, all payments are processed through Stripe, a trusted third party payment processing service. Hyper.sh does not retain any credit card information.
