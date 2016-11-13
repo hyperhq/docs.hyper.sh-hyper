@@ -51,6 +51,7 @@ Our third party payment processing service employs specific checks against card 
 1. **The zip code you supplied failed validation.**: You can leave the Zip Code as blank and try again if your card not located in US.
 2. **Your card's security code is incorrect.**: Currently we require CVC verification.
 3. **Your card does not support this type of purchase.**: Please get in touch with your bank to confirm the reason declining the payments.
+4. **Your card was declined.**: If you make sure all fields was filled in correctly, please get in touch with your bank to confirm the reason declining the payments.
 
 #### When will my credit card be charged?
 We charge your credit card on the 1st day of each month.
