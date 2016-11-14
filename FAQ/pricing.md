@@ -26,10 +26,11 @@
 
 #### Storage
 |Type|Per Second|Per Hour|Monthly|
-|---|---|---|
+|---|---|---|---|
 |Image|$0.0000000386/GB|$0.0001388889/GB|$0.1/GB|
 |Volume|$0.0000000386/GB|$0.0001388889/GB|$0.1/GB|
 |Snapshot|$0.0000000193/GB|$0.0000694444/GB|$0.05/GB|
+
 > - Billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal
 > - Images are charged per GB with a minimum of 1GB and will be rounded UP to nearest GB (i.e. 1.5GB billed at 2GB)
 
