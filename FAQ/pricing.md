@@ -15,7 +15,7 @@
 |L3 |8| 16GB|10GB|FREE|$0.00012   |$0.432  |$311.04|
 > - Billing begins when Hyper.sh launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
 > - Everytime you issue a `hyper run/start/restart` request, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
-> - Everytime a container is restarted, a default period of 10 second is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
+> - Everytime a container is restarted, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 
 #### Service
 |Per Second|Per Hour|Monthly|
@@ -27,10 +27,11 @@
 |Type|Per Second|Per Hour|Monthly|
 |---|---|---|
 |Image|$0.0000000386/GB|$0.0001388889/GB|$0.1/GB|
+|RootFS|$0.0000000386/GB|$0.0001388889/GB|$0.1/GB|
 |Volume|$0.0000000386/GB|$0.0001388889/GB|$0.1/GB|
 |Snapshot|$0.0000000193/GB|$0.0000694444/GB|$0.05/GB|
-> - Billing begins when the storage object is created (`hyper volume create`, `hyper snapshot create`, `hyper pull`), ends upon removal
-> - Images are charged per GB with a minimum of 1GB and will be rounded UP to nearest GB (i.e. 1.5GB billed at 2GB)
+> - Billing begins when the storage object is created (`hyper pull`, `hyper run`, `hyper volume create`, `hyper snapshot create`), and a default period of 10 seconds is billed, ends upon removal.
+> - Images are charged per GB with a minimum of 1GB and will be rounded UP to nearest GB (i.e. 1.5GB billed at 2GB).
 
 #### Network
 - Floating IP: $1/IP/month
