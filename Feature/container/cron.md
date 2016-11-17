@@ -68,6 +68,6 @@ Remove a cron job:
   * `on-success`: send notification only when a cron job succeeded
   * `all`: always send notification 
 * The notification email contains the last 100 lines of log for the cron job container.
-* When the Hyper Cron service is under maintaince, this may miss to execute some cron jobs. In such case, a missed schedule email will be sent to user.
+* When the Hyper Cron service is under maintaince, some cron jobs may be missed. In such case, a schedule-missed email will be sent to user.
 * When a cron job container finished (either succeeded or failed), the container will be cleaned up in one minute.
 * When you remove a cron job, it could be possible that there are cron job containers running. In such case, the container will be left running. A manual cleanup is needed.
