@@ -2,7 +2,7 @@
 
 `DELETE /crons/(name)`
 
-Remove the cron `name` from the account
+Remove the cron `name`
 
 **Example request**:
 
