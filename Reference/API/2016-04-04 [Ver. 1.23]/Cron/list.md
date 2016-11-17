@@ -2,7 +2,7 @@
 
 `GET /crons`
 
-List all cron jobs Hyper knows about.
+List all cron jobs
 
 **Example request**:
 
