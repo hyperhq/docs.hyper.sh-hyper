@@ -2,7 +2,7 @@
 
 	Usage:	hyper cron history [OPTIONS] cron
 
-	Show history of the cron job
+	Show the execution history of a cron job
 
 		--help             Print usage
 		--since            Show history since timestamp
