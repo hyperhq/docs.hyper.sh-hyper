@@ -59,7 +59,7 @@ Remove a cron job:
     test-cron-job1
     
 ## Notes
-* All timestamps of Hyper Cron service will is UTC+0.
+* All timestamps in Hyper Cron service is UTC+0.
 * When a cron job container finished, Hyper Cron service will try to get `ExitCode` of the container.  If the value is non-zero, the cron job is `failed`.
 * By default, a notification email will be sent to your Hyper account's email address, when a cron job failed.
 * You may override to deliver the email to another address with `--mailto` flag.
