@@ -3,7 +3,7 @@
 In Hyper.sh, cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service but work with the containers. 
 
 ## Cron expression
-The reference documentation for this implementation is found at [here](https://en.wikipedia.org/wiki/Cron#CRON_expression), which I copy/pasted here with modifications where this implementation differs:
+The original Cron reference documentation for this implementation is found at [here](https://en.wikipedia.org/wiki/Cron#CRON_expression), where Hyper Cron implementation differs:
 
 	Field name     Mandatory?   Allowed values    Allowed special characters
 	----------     ----------   --------------    --------------------------
@@ -43,7 +43,7 @@ Check cron job list:
 	Name               Schedule            Image               Command
 	test-cron-job1     */5 * * * *         busybox             ping -c 3 8.8.8.8
 	
-Check cron job execution history:
+Check the execution history of a cron job:
     
     $ hyper cron history test-cron-job1
     Container                   Start                           End                             Status              Message
@@ -59,11 +59,15 @@ Remove a cron job:
     test-cron-job1
     
 ## Notes
-* The user can specify when to send notify email with `--mail` option, such as `on-failure`(default), `all` and `on-success`.
-* It will send notification emails to the user's account email if the user does not set email via `mailto` option.
-* It will only send notify email with last 100 lines log for cron job container.
-* The cron service may be maintained and upgraded, this may cause the users' cron jobs failed to execute. It will send a missed schedule email to user.
-* The cron job's containers which were finished will be removed every minute, since Hyper.sh has quota limit.
-* When the cron job container finished, cron service will try to get `ExitCode` of that cron job containers.  The cron job's status will be `failed` if the `ExitCode` is not 0.
-* All timestamps of cron service will base on UTC timezone.
-* If the user delete the cron job, the running containers may not be removed, you have to remove them by yourself.
+* All timestamps of Hyper Cron service will is UTC+0.
+* When a cron job container finished, Hyper Cron service will try to get `ExitCode` of the container.  If the value is non-zero, the cron job is `failed`.
+* By default, a notification email will be sent to your Hyper account's email address, when a cron job failed.
+* You may override to deliver the email to another address with `--mailto` flag.
+* You may control the notification policy with `--mail` flag:
+  * `on-failure` (default): send notification only when a cron job failed
+  * `on-success`: send notification only when a cron job succeeded
+  * `all`: always send notification 
+* The notification email contains the last 100 lines of log for the cron job container.
+* When the Hyper Cron service is under maintaince, this may miss to execute some cron jobs. In such case, a missed schedule email will be sent to user.
+* When a cron job container finished (either succeeded or failed), the container will be cleaned up in one minute.
+* When you remove a cron job, it could be possible that there are cron job containers running. In such case, the container will be left running. A manual cleanup is needed.
