@@ -8,7 +8,7 @@ As with `hyper run`, options specified in the Docker Image(e.g., CMD, EXPOSE, VO
 
 You can use environment variables in configuration values with a Bash-like ${VARIABLE} syntax - see variable substitution for full details.
 
-## Service configuration feference
+## Service configuration reference
 > Note: There are two versions of the Compose file format – version 1 (the legacy format, which does not support volumes or networks) and version 2 (the most up-to-date). For more information, see the Versioning section.
 
 ### command
@@ -197,7 +197,7 @@ noauto_volume: true
 ```
 
 ### security_groups
-This option tells compose to add security groups to the container.  A security group acts as a virtual firewall that controls the traffic for one or more containers. 
+This option tells compose to add security groups to the container. A security group acts as a virtual firewall that controls the traffic for one or more containers.
 
 ```
 security_groups:
