@@ -1,10 +1,10 @@
 #### snpapshot_create
 
-    Usage: hyper snapshot create [OPTIONS]
+    Usage: hyper snapshot create [OPTIONS] -v volume
 
     Create a snapshot from a volume
     
-    -f, --force               Force to create snapshot
+    -f, --force               Force to create snapshot, needed if volume is in use
         --help=false          Print usage
         --name=               Specify snapshot name
     -v, --volume              Specify volume to create snapshot
