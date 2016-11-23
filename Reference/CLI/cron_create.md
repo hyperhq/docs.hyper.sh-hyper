@@ -1,6 +1,6 @@
 ## cron create
 
-Usage:	hyper cron create [OPTIONS] IMAGE
+Usage:	hyper cron create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 	Create a new cron
 
