@@ -24,6 +24,10 @@
 > - Billing begins when a new service created, ends when it is terminated.
 > - Everytime you issue a `hyper run/start/restart` request, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 
+#### Serverless Cron (BETA)
+
+> During the beta, Hyper Cron is charged at the standard per-second container rates.
+
 #### Storage
 |Type|Per Second|Per Hour|Monthly|
 |---|---|---|---|
