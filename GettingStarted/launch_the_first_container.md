@@ -35,7 +35,7 @@ Hyper.sh creates a 10GB root volume for each container. In the case that you nee
 `-v data:/data` tells Hyper.sh to mount the volume `data` onto the new container at the path `/data`, and `-p 80` indicates http port 80 is published.
 
 ### 4. Attach a floating IP
-Hyper.sh creates a default private network for each accounts. The new container is launched in your own private network, which Hyper.sh creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other networks or the Internet.
+Hyper.sh creates a default private network for each account. The new container is launched in your own private network, which Hyper.sh creates by default. In the private network, an internal IPv4 address is assigned to the container automatically. This IP address is not reachable from other networks or the Internet.
 
 To enable public Internet access to your application, you need to attach a floating IP address to the container:
 
