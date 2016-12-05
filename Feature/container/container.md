@@ -6,7 +6,7 @@ Simply put, [HyperContainer](https://github.com/hyperhq/hyperd) is a virtualized
 
 ![](https://trello-attachments.s3.amazonaws.com/5694785e124f36d746f5c7be/1511x393/b8b5cd31b59af44c0c86349e150438fb/HyperContainer_vs_LinuxContainer.png)
 
-By combing the best from both virtualization and container world, HyperContainer is able to bring the hardware-enforced Isolation as VM, and the speed of container.
+By combining the best from both virtualization and container world, HyperContainer is able to bring the hardware-enforced isolation as VM, and the speed of container.
 
 |  . | VM | Container | HyperContainer |
 |:-:|:-:|:-:|:-:|
