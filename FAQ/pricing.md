@@ -44,6 +44,14 @@
 - Floating IP: $1/IP/month
 > - Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
+#### Examples
+- Cheapest single container with a publicly accessible IP (FIP) assuming a 1GB Docker image size.
+> - S1 container: 1.03/month
+> - FIP: $1/month
+> - RootFS Container Volume (10GB@$0.1/GB/month): $1/month
+> - Container Image (1GB@$0.1/GB/month): $0.1
+> - **Total monthly price:** $3.13/month
+
 # General FAQ
 
 #### What payment types do you accept?
