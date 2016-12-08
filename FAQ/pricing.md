@@ -3,16 +3,17 @@
 #### Container
 |Size|CPU Core|Mem|Disk|Network|Per Second|Per Hour|Monthly|
 |:-:|:-:|:-:|:-:|:-:|---|---|---|
-|S1 |1|64MB |10GB|FREE|$0.0000004 |$0.00144|$1.03  |
-|S2 |1|128MB|10GB|FREE|$0.0000006 |$0.00216|$1.55  |
-|S3 |1|256MB|10GB|FREE|$0.000001  |$0.0036 |$2.59  |
-|S4 |1|512MB|10GB|FREE|$0.000002  |$0.0072 |$5.18  |
-|M1 |1|  1GB|10GB|FREE|$0.000004  |$0.0144 |$10.36 |
-|M2 |2|  2GB|10GB|FREE|$0.000008  |$0.0288 |$20.73 |
-|M3 |2|  4GB|10GB|FREE|$0.000015  |$0.054  |$38.88 |
-|L1 |4|  4GB|10GB|FREE|$0.00003   |$0.108  |$77.76 |
-|L2 |4|  8GB|10GB|FREE|$0.00006   |$0.216  |$155.52|
-|L3 |8| 16GB|10GB|FREE|$0.00012   |$0.432  |$311.04|
+|S1 |1|64MB |10GB*|FREE|$0.0000004 |$0.00144|$1.03  |
+|S2 |1|128MB|10GB*|FREE|$0.0000006 |$0.00216|$1.55  |
+|S3 |1|256MB|10GB*|FREE|$0.000001  |$0.0036 |$2.59  |
+|S4 |1|512MB|10GB*|FREE|$0.000002  |$0.0072 |$5.18  |
+|M1 |1|  1GB|10GB*|FREE|$0.000004  |$0.0144 |$10.36 |
+|M2 |2|  2GB|10GB*|FREE|$0.000008  |$0.0288 |$20.73 |
+|M3 |2|  4GB|10GB*|FREE|$0.000015  |$0.054  |$38.88 |
+|L1 |4|  4GB|10GB*|FREE|$0.00003   |$0.108  |$77.76 |
+|L2 |4|  8GB|10GB*|FREE|$0.00006   |$0.216  |$155.52|
+|L3 |8| 16GB|10GB*|FREE|$0.00012   |$0.432  |$311.04|
+> \* All containers include a 10GB rootFS disk volume which is billed separately. See 'Storage' section below.
 > - Billing begins when Hyper.sh launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
 > - Everytime you issue a `hyper run/start/restart` request, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 > - Everytime a container is restarted, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
@@ -21,6 +22,7 @@
 |Per Second|Per Hour|Monthly|
 |---|---|---|
 |$0.000003 |$0.0108|$7.78  |
+> \* Hyper Service provides extra specific functionality and is not necessary for most use cases, for more information please consult the documentation [here](https://docs.hyper.sh/Feature/container/service.html).
 > - Billing begins when a new service created, ends when it is terminated.
 > - Everytime you issue a `hyper run/start/restart` request, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 
