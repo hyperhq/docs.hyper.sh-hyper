@@ -6,7 +6,7 @@ If you've built any multi-container applications, chances are you've had to defi
 - `EXPOSE` instruction in the Dockerfile
 - publish ports by using the `-p` or `-P` flags with `hyper run`
 
-**The behavior of container port in Hyper.sh is very simpe**:
+**The behavior of container port in Hyper.sh is very simple**:
 
 - All containers in the same network are inter-accessible; all ports are open within the network by default
 - `-P` flag publishes all ports exposed by `--expose` flag at runtime, or `EXPOSE` instruction in the Dockerfile
