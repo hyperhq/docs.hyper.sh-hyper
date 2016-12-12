@@ -2,6 +2,7 @@
 
 * [Container](./container/index.md)
    * [Container](./container/container.md)
+   * [Logs](./container/logs.md)
    * [Compose](./container/compose.md)
    * [Cron (Beta)](./container/cron.md)
    * [Service](./container/service.md)
@@ -13,4 +14,3 @@
    * [Floating IP](./network/fip.md)
    * [Port](./network/port.md)
    * [Security Group](./network/sg.md)
-   

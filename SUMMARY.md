@@ -11,6 +11,7 @@
 * [Features](Feature/index.md)
    * [Container](Feature/container/index.md)
        * [Container](Feature/container/container.md)
+       * [Logs](Feature/container/logs.md)
        * [Compose](Feature/container/compose.md)
        * [Cron (Beta)](Feature/container/cron.md)
        * [Service](Feature/container/service.md)
