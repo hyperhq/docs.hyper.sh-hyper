@@ -1,8 +1,5 @@
 # Launch the first container
 
-Now, let's try to launch a container. To complete this tutorial, you need some free credits or [setup the payment method](https://console.hyper.sh/billing/credit).
-
-
 ### 1. Pull the image
 
 The first step is to pull the image. However, instead of downloading to your local laptop, `hyper pull` will pull the image to your account at Hyper.sh.
