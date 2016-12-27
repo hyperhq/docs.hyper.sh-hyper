@@ -20,6 +20,9 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 	- Volume: 40 volumes per region
 	- Snapshot: 40 snapshots per region
 - Floating IP: 2 per region
+- Credential: 3 per region
+- SecurityGroup: 100 per region
+- Service: 5 per region
 
 ### Request a quota increase
 
