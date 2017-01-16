@@ -30,6 +30,7 @@
               --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
               -t, --tty                       Allocate a pseudo-TTY
               -v, --volume=[]                 Bind mount a volume
+	      --volumes-from=[]               Mount shared volumes from the specified container(s)
               -w, --workdir                   Working directory inside the container
 
 The `hyper run` command first `creates` a writeable container layer over the specified image, and then `starts` it using the specified Docker images. That is, `hyper run` is equivalent to the API `/container/create` then `/container/(id)/start`. A stopped container can be restarted with all its previous changes intact using `hyper start`. See `hyper ps -a` to view a list of all containers.
@@ -262,3 +263,10 @@ The `--noauto-volume` option tells Hyper.sh service not to create new volumes fo
 The `--protection` flag enables (disable) termination protection to container. A protected container cannot be removed unless the protection is disabled by `hyper update --protection=false <container>`.
 
     $ hyper run --protection=true busybox
+
+#### Import shared volumes (--volumes-from)
+
+The `--volumes-from` option imports all shared NFS volumes from another container. The shared volumes should be created with `hyperhq/nfs-server` image, which automatically exports all configured volumes via NFS protocol. The imported volumes will have identical mountpoint as in the `hyperhq/nfs-server` container.
+
+    $ hyper run --name mycontainer -d -v /data1 -v /data2 hyperhq/nfs-server
+    $ hyper run -d --volumes-from mycontainer busybox
