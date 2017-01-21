@@ -264,9 +264,9 @@ The `--protection` flag enables (disable) termination protection to container. A
 
     $ hyper run --protection=true busybox
 
-#### Import shared volumes (--volumes-from)
+#### Mount shared volumes (--volumes-from)
 
-The `--volumes-from` option imports all shared NFS volumes from another container. The shared volumes should be created with `hyperhq/nfs-server` image, which automatically exports all configured volumes via NFS protocol. The imported volumes will have identical mountpoint as in the `hyperhq/nfs-server` container.
+The `--volumes-from` option mount all shared volumes from another container using NFS protocol. The volumes must be created with `hyperhq/nfs-server` image, which automatically expose all volumes via NFS. The volumes will be mounted under the same paths as in the `hyperhq/nfs-server` container.
 
     $ hyper run --name mycontainer -d -v /data1 -v /data2 hyperhq/nfs-server
     $ hyper run -d --volumes-from mycontainer busybox
