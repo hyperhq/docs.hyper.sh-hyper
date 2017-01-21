@@ -6,7 +6,7 @@
 
       --help=false       Print usage
 
-Initializes one or more volumes. You cannot initialize a volume that is in use by a container.
+Initialize one or more volumes. You cannot initialize a volume that is in use by a container.
 Supported SOURCE includes http/https destination and git repository in public domain, and also local
 files and directories with absolute path. A volume can be initialized only once.
 
