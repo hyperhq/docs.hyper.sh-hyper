@@ -102,23 +102,23 @@ Instead, you can avoid the failure by specifying a non-directory place to mount 
 
 ### Shared Volumes
 
-Shared volumes are provided through an official NFS image and the `--volumes-from` option.
+Shared volumes are provided using the `--volumes-from` option.
 
-To use shared volumes, you need to create a container using `hyperhq/nfs-server` image. It runs a customised nfs-ganesha server and automatically exports all attached volumes via NFS protocol. After that, you can import shared volumes from the created `hyperhq/nfs-server` container with `--volumes-from` option.
+You need to create a container using `hyperhq/nfs-server` image. It runs an optimized [nfs-ganesha](https://github.com/nfs-ganesha/nfs-ganesha) server and automatically exports all attached volumes via NFS protocol. Once ready, you can mount the exposed volumes in other containers using the `--volumes-from` option.
 
-For example, following commands will create two shared volumes (`/data1` and `/data2`), and import them in the two `busybox` container (`test1` and `test2`). Container `test1` and `test2` will each have two shared volumes attached to directory `/data` and `/data2`.
+For example,thefollowing commands expose two volumes (`/data1` and `/data2`), and mount them in the two `busybox` container (`test1` and `test2`). Container `test1` and `test2` will each have these two volumes mounted at the path `/data` and `/data2`.
 
     $ hyper run --name mycontainer -d -v /data1 -v /data2 hyperhq/nfs-server
     $ hyper run -d --name test1 --volumes-from mycontainer busybox
     $ hyper run -d --name test2 --volumes-from mycontainer busybox
 
-NOTE1: Recursive mounting is not allowed, e.g. you cannot re-mount the NFS volumes from containers `test1` and `test2` to a third one `test3`:
+> NOTE: Recursive mounting is not allowed, e.g. you cannot re-mount the NFS volumes from containers `test1` and `test2` to a third one `test3`:
 
     $ hyper run -d --name test3 --volumes-from test1 busybox
     hyper: Error response from daemon: Cannot recursively import volumes from test1.
     See 'hyper run --help'.
 
-NOTE2: `--volumes-from` source container must be created with hyperhq official image (`hyperhq/nfs-server`). Trying to import volumes from containers of other images will be rejected. E.g.,
+> NOT2: `--volumes-from` source container must be created with the Hyper official image (`hyperhq/nfs-server`). Trying to import volumes from containers of other images will fail, e.g.,
 
     $ hyper run -d --name foo busybox
     $ hyper run -d --volumes-from foo busybox
