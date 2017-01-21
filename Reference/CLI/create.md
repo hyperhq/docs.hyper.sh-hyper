@@ -28,6 +28,7 @@
               --stop-signal=SIGTERM           Signal to stop a container, SIGTERM by default
               -t, --tty                       Allocate a pseudo-TTY
               -v, --volume=[]                 Bind mount a volume
+	      --volumes-from=[]               Mount shared volumes from the specified container(s)
               -w, --workdir                   Working directory inside the container
 
 The `hyper create` command creates a writeable container layer over the

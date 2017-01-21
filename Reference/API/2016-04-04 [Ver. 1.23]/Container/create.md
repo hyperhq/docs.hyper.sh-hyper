@@ -81,7 +81,7 @@ Create a container
              "DnsOptions": [""],
              "DnsSearch": [""],
              "ExtraHosts": null,
-             "VolumesFrom": ["parent", "other:ro"],
+             "VolumesFrom": ["parent"],
              "CapAdd": ["NET_ADMIN"],
              "CapDrop": ["MKNOD"],
              "GroupAdd": ["newgroup"],
@@ -181,7 +181,7 @@ Json Parameters:
     -   `IGNORED` **DnsSearch** - A list of DNS search domains
     -   `IGNORED` **ExtraHosts** - A list of hostnames/IP mappings to add to the
         container's `/etc/hosts` file. Specified in the form `["hostname:IP"]`.
-    -   `IGNORED` **VolumesFrom** - A list of volumes to inherit from another container.
+    -   **VolumesFrom** - A list of volumes to inherit from another container.
           Specified in the form `<container name>[:<ro|rw>]`
     -   `IGNORED` **CapAdd** - A list of kernel capabilities to add to the container.
     -   `IGNORED` **Capdrop** - A list of kernel capabilities to drop from the container.

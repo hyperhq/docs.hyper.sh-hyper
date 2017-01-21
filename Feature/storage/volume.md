@@ -99,3 +99,28 @@ However, if the image itself has a directory at the volume destination place, th
 Instead, you can avoid the failure by specifying a non-directory place to mount the source file, e.g.:
 
     $ hyper run -d -v /etc/hosts:/mnt/hosts ubuntu:14.04
+
+### Shared Volumes
+
+Shared volumes are provided using the `--volumes-from` option.
+
+You need to create a container using `hyperhq/nfs-server` image. It runs an optimized [nfs-ganesha](https://github.com/nfs-ganesha/nfs-ganesha) server and automatically exports all attached volumes via NFS protocol. Once ready, you can mount the exposed volumes in other containers using the `--volumes-from` option.
+
+For example,thefollowing commands expose two volumes (`/data1` and `/data2`), and mount them in the two `busybox` container (`test1` and `test2`). Container `test1` and `test2` will each have these two volumes mounted at the path `/data` and `/data2`.
+
+    $ hyper run --name mycontainer -d -v /data1 -v /data2 hyperhq/nfs-server
+    $ hyper run -d --name test1 --volumes-from mycontainer busybox
+    $ hyper run -d --name test2 --volumes-from mycontainer busybox
+
+> NOTE: Recursive mounting is not allowed, e.g. you cannot re-mount the NFS volumes from containers `test1` and `test2` to a third one `test3`:
+
+    $ hyper run -d --name test3 --volumes-from test1 busybox
+    hyper: Error response from daemon: Cannot recursively import volumes from test1.
+    See 'hyper run --help'.
+
+> NOT2: `--volumes-from` source container must be created with the Hyper official image (`hyperhq/nfs-server`). Trying to import volumes from containers of other images will fail, e.g.,
+
+    $ hyper run -d --name foo busybox
+    $ hyper run -d --volumes-from foo busybox
+    hyper: Error response from daemon: volumes-from source container is created from busybox rather than the official image hyperhq/nfs-server.
+    See 'hyper run --help'.
