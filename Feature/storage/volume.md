@@ -106,7 +106,7 @@ Shared volumes are provided using the `--volumes-from` option.
 
 You need to create a container using `hyperhq/nfs-server` image. It runs an optimized [nfs-ganesha](https://github.com/nfs-ganesha/nfs-ganesha) server and automatically exports all attached volumes via NFS protocol. Once ready, you can mount the exposed volumes in other containers using the `--volumes-from` option.
 
-For example,thefollowing commands expose two volumes (`/data1` and `/data2`), and mount them in the two `busybox` container (`test1` and `test2`). Container `test1` and `test2` will each have these two volumes mounted at the path `/data` and `/data2`.
+For example,the following commands expose two volumes (`/data1` and `/data2`), and mount them in two `busybox` containers (`test1` and `test2`). `test1` and `test2` will each have these two volumes mounted at the path `/data` and `/data2`.
 
     $ hyper run --name mycontainer -d -v /data1 -v /data2 hyperhq/nfs-server
     $ hyper run -d --name test1 --volumes-from mycontainer busybox
