@@ -118,7 +118,7 @@ For example,the following commands expose two volumes (`/data1` and `/data2`), a
     hyper: Error response from daemon: Cannot recursively import volumes from test1.
     See 'hyper run --help'.
 
-> NOT2: `--volumes-from` source container must be created with the Hyper official image (`hyperhq/nfs-server`). Trying to import volumes from containers of other images will fail, e.g.,
+> NOTE: `--volumes-from` source container must be created with the Hyper official image (`hyperhq/nfs-server`). Trying to import volumes from containers of other images will fail, e.g.,
 
     $ hyper run -d --name foo busybox
     $ hyper run -d --volumes-from foo busybox
