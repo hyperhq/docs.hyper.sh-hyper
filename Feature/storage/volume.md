@@ -1,8 +1,8 @@
 # Volume
 
-In Hyper.sh, volume offers high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from failure. 
+In Hyper.sh, volumes offer high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from failure. 
 
-Volume uses `EXT4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with container:
+Volume uses `EXT4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with a container:
 
     $ hyper volume create --size=10 --name=dbdata
     dbdata
@@ -90,7 +90,7 @@ You can avoid this by specifying the `--noauto-volume` option.
 
 ### File Volume Initialization
 
-When initializing a volume with a specified source (local or http) that points to a file, the volume destination must also be a file. The destination file will be created automatically if not existed.
+When initializing a volume with a specified source (local or http) that points to a file, the volume destination must also be a file. The destination file will be created automatically if it does not already exist.
 
 However, if the image itself has a directory at the volume destination place, the container will fail to start. For example, the following command will fail to start the container, because `/etc/hosts` is a file source and `/mnt` is an existing directory in container image `ubuntu:14.04`. The same applies to http/https based remote volume sources as well.
 
