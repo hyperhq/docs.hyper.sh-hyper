@@ -2,7 +2,7 @@
 
 In Hyper.sh, volumes offer high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from failure. 
 
-Volume uses `EXT4` filesystem (more options in the future). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created separately with a container:
+Volume use the `EXT4` filesystem (with more options on the roadmap). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created and attached to containers separately:
 
     $ hyper volume create --size=10 --name=dbdata
     dbdata
@@ -67,11 +67,11 @@ To failover a volume, you need to `stop` or `rm` the old container, and launch a
     $ hyper run -v dbdata:/opt/data --name new_db ubuntu
     new_db
 
-Volumes are constrained by region. There is currently no way for containers to access volume residing in different regions.
+Volumes are constrained by region. There is currently no way for containers to access volumes residing in different regions.
 
 ### Volume Reuse
 
-Notes on reusing existing volumes: users should pay attention to volume access permissions. For example, if a volume is first mounted in container `foo` and then reused in container `bar`, file/directory permissions in the volume will keep the same as being set in container `foo`. As a result, a change of container users (uid/gid pair) may have impacts on volume contents access rights.
+Notes on reusing existing volumes: users should pay attention to volume access permissions. For example, if a volume is first mounted in container `foo` and then reused in container `bar`, the file/directory permissions in the volume will remain the same those set in container `foo`. As a result, a change of container users (uid/gid pair) may effect the volume's access rights.
 
 ### Image Volume Creation
 
@@ -92,7 +92,7 @@ You can avoid this by specifying the `--noauto-volume` option.
 
 When initializing a volume with a specified source (local or http) that points to a file, the volume destination must also be a file. The destination file will be created automatically if it does not already exist.
 
-However, if the image itself has a directory at the volume destination place, the container will fail to start. For example, the following command will fail to start the container, because `/etc/hosts` is a file source and `/mnt` is an existing directory in container image `ubuntu:14.04`. The same applies to http/https based remote volume sources as well.
+However, if the image itself has a directory at the volume's target destination, the container will fail to start. For example, the following command will fail to start the container, because `/etc/hosts` is a file source and `/mnt` is an existing directory in container image `ubuntu:14.04`. The same applies to http/https based remote volume sources also.
 
     $ hyper run -d -v /etc/hosts:/mnt ubuntu:14.04
 
