@@ -124,3 +124,5 @@ For example,the following commands expose two volumes (`/data1` and `/data2`), a
     $ hyper run -d --volumes-from foo busybox
     hyper: Error response from daemon: volumes-from source container is created from busybox rather than the official image hyperhq/nfs-server.
     See 'hyper run --help'.
+
+> NOTE: Your `hyper/nfs-server` container should have enough resources to run the nfs service properly. We recommend creating it with at least `s3` size. If you use too small containers, it may be work just fine at first but can fail with OOM if your workload rises. To see a list of size choises when creating a container, see `hyper run --help`.
