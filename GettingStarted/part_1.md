@@ -118,7 +118,7 @@ NOTICE : attached volume(15df3e3368feed5443809dc91d398d1cb15549c024fe7358aecc217
 >**Note on rootFS billing**
 >After running `hyper stop` you will still be billed for the rootFS volume. It is not deleted as you may later want to `hyper start` the container again. Only when you `hyper rm` the container will the container and rootFS volume be removed. Also, as with Docker, you can also perform both of the above commands in one go by using `hyper rm -f <containername or containerID>`.
 
-Next let’s remove the the volume.
+Next let’s remove the volume.
 
 ```
 $ hyper volume ls
