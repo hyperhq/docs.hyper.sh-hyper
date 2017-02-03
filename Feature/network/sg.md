@@ -9,7 +9,7 @@ In Hyper.sh, a security group acts as a virtual firewall that controls the traff
 Security group works independently from port, e.g. **You need to publish the container ports even if the associated security group allows the traffic**.
 
 ### Create a security group
-Security group is defined in a yaml file. **Please read [the security group reference](../Reference/sg_ref.md) for more details**.
+Security group is defined in a yaml file. **Please read [the security group reference](../../Reference/sg_ref.md) for more details**.
 
 ``` bash
 	$ cat ssh_sg.yaml
