@@ -10,5 +10,5 @@
 ### Examples
 
     $ hyper service ls
-    Name         SIZE     Image           Command           UUID
-    thumbnail    s4       image-resize    --size 200x150    e5304888-f112-11e6-bc64-92361f002671
+    NAME         SIZE     IMAGE           COMMAND          CREATED           UUID
+    thumbnail    s4       image-resize    --size 200x150   33 minutes ago    e5304888-f112-11e6-bc64-92361f002671

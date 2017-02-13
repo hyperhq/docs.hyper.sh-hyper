@@ -23,7 +23,7 @@ Content-Type: application/json
   "Image": "image-resize",
   "Command": ["--size", "200x150"],
   "Env": ["QUALITY=high"],
-  "Headers": ["Content-Type=image/jpeg"],
+  "Header": ["Content-Type=image/jpeg"],
   "MaxConcurrency": 20,
   "MaxLimit": 50,
   "UUID": "e5304888-f112-11e6-bc64-92361f002671",
