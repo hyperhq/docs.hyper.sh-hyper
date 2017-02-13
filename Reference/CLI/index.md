@@ -39,6 +39,7 @@
 - [func rm](./func_rm.md)
 - [func call](./func_call.md)
 - [func log](./func_log.md)
+- [func get](./func_get.md)
 - [start](./start.md)
 - [stats](./stats.md)
 - [stop](./stop.md)

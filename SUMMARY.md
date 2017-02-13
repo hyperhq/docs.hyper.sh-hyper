@@ -101,6 +101,7 @@
        * [func rm](Reference/CLI/func_rm.md)
        * [func log](Reference/CLI/func_log.md)
        * [func call](Reference/CLI/func_call.md)
+       * [func get](Reference/CLI/func_get.md)
    * [API](Reference/API/index.md)
        * [2016-04-04 [Ver. 1.23]](Reference/API/2016-04-04 [Ver. 1.23]/index.md)
         * [Container](Reference/API/2016-04-04 [Ver. 1.23]/Container/index.md)

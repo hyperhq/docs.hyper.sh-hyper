@@ -10,4 +10,5 @@
 
 **Call a func:**
 
-    $ cat image.jpeg | hyper func call thumbnail | tee image-small.jpeg
+    $ echo "Hello" | hyper func call helloworld
+    Request ID: 7f713fff-a65c-4004-b195-72b0c7bce84a

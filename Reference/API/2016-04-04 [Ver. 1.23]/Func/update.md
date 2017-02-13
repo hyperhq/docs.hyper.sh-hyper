@@ -15,7 +15,7 @@ Content-Type: application/json
   "Image": "image-resize",
   "Command": ["--size", "200x150"],
   "Env": ["QUALITY=high"],
-  "Headers": ["Content-Type=image/jpeg"],
+  "Header": ["Content-Type=image/jpeg"],
   "MaxConcurrency": 20,
   "MaxLimit": 50,
   "Refresh": true
@@ -34,7 +34,7 @@ Content-Type: application/json
   "Image": "image-resize",
   "Command": ["--size", "200x150"],
   "Env": ["QUALITY=high"],
-  "Headers": ["Content-Type=image/jpeg"],
+  "Header": ["Content-Type=image/jpeg"],
   "MaxConcurrency": 20,
   "MaxLimit": 50,
   "UUID": "82a1cae2-b08a-4e74-b890-4cf9de4c7ba8",

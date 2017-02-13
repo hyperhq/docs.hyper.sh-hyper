@@ -2,7 +2,7 @@
 
   Usage:	hyper func update [OPTIONS] IMAGE [COMMAND]
 
-  Create a new func
+  Update a func
 
     --name                   Func name
     --size=s4                The size of func containers (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
@@ -13,8 +13,6 @@
     --image                  The image name to use for the container
     --command                The command to run when starting the container
     --refresh                Whether to regenerate the uuid of func
-
-Creates a new func based on the image and options.
 
 ### Examples
 
