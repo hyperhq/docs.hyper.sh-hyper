@@ -7,4 +7,4 @@
 - [func update](./update.md)
 - [func remove](./remove.md)
 - [func call](./call.md)
-- [func status](./status.md)
+- [func get](./get.md)

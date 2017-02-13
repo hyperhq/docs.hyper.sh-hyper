@@ -182,7 +182,6 @@
             * [Func list](Reference/API/2016-04-04 [Ver. 1.23]/Func/list.md)
             * [Func inspect](Reference/API/2016-04-04 [Ver. 1.23]/Func/inspect.md)
             * [Func remove](Reference/API/2016-04-04 [Ver. 1.23]/Func/remove.md)
-            * [Func log](Reference/API/2016-04-04 [Ver. 1.23]/Func/log.md)
             * [Func call](Reference/API/2016-04-04 [Ver. 1.23]/Func/call.md)
             * [Func get](Reference/API/2016-04-04 [Ver. 1.23]/Func/get.md)
    * [Compose File Reference](Reference/compose_file_ref.md)

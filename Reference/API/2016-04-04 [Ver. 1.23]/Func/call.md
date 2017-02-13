@@ -2,7 +2,7 @@
 
 `GET/POST/PUT/DELETE https://$region.hyperapp.io/$func/$uuid`
 
-Call a func then get a Request ID.
+Call a func then get a Request ID, no authentication required.
 
 **Example request**:
 

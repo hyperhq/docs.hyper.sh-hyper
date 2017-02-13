@@ -2,6 +2,8 @@
 
 `GET https://$region.hyperapp.io/$func/$uuid/$request_id`
 
+Query status of a func call, no authentication required.
+
 **Example request**:
 
 ```
