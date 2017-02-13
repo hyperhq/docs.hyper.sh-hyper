@@ -17,5 +17,5 @@ Creates a new func based on the image and options.
 
 **Create a func:**
 
-    $ hyper func create --name thumbnail --size s4 --env QUALITY=high --header "Content-Type=image/jpeg" --max_concurrency 20 --max_limit 50 image-resize --size 200x150
-    https://us-west-1.hyperapp.io/thumbnail/e5304888-f112-11e6-bc64-92361f002671
+    $ hyper func create --name helloworld --size s4 --header "Content-Type=text/plain" --max_concurrency 20 --max_limit 50 echo world
+    https://us-west-1.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671

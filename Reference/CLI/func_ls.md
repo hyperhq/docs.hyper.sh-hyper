@@ -11,4 +11,4 @@
 
     $ hyper service ls
     NAME         SIZE     IMAGE           COMMAND          CREATED           UUID
-    thumbnail    s4       image-resize    --size 200x150   33 minutes ago    e5304888-f112-11e6-bc64-92361f002671
+    helloworld   s4       my-hello-world  echo World       33 minutes ago    e5304888-f112-11e6-bc64-92361f002671

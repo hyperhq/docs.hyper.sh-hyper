@@ -10,5 +10,5 @@
 
 **Remove a func:**
 
-    $ hyper func rm thumbnail
-    thumbnail
+    $ hyper func rm helloworld
+    helloworld

@@ -7,17 +7,14 @@ Update a func.
 **Example request**:
 
 ```
-PUT /funcs/thumbnail HTTP/1.1
+PUT /funcs/helloworld HTTP/1.1
 Content-Type: application/json
 
 {
-  "Size": "s4",
-  "Image": "image-resize",
-  "Command": ["--size", "200x150"],
-  "Env": ["QUALITY=high"],
-  "Header": ["Content-Type=image/jpeg"],
-  "MaxConcurrency": 20,
-  "MaxLimit": 50,
+  "Size": "s3",
+  "Command": ["echo", "HelloWorld"],
+  "MaxConcurrency": 50,
+  "MaxLimit": 100,
   "Refresh": true
 }
 ```
@@ -29,15 +26,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "Name": "thumbnail",
-  "Size": "s4",
-  "Image": "image-resize",
-  "Command": ["--size", "200x150"],
-  "Env": ["QUALITY=high"],
-  "Header": ["Content-Type=image/jpeg"],
-  "MaxConcurrency": 20,
-  "MaxLimit": 50,
-  "UUID": "82a1cae2-b08a-4e74-b890-4cf9de4c7ba8",
+  "Name": "helloworld",
+  "Size": "s3",
+  "Image": "my-hello-world",
+  "Command": ["echo", "HelloWorld"],
+  "Env": [],
+  "Header": ["Content-Type=text/plain"],
+  "MaxConcurrency": 50,
+  "MaxLimit": 100,
+  "UUID": "ba06ca01-8366-4331-8c6b-f81b096f6f66",
   "Created": "2017-02-10T04:05:26.704Z"
 }
 ```

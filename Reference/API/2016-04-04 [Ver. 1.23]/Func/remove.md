@@ -7,7 +7,7 @@ Remove a func.
 **Example request**:
 
 ```
-DELETE /funcs/thumbnail HTTP/1.1
+DELETE /funcs/helloworld HTTP/1.1
 ```
 
 **Example response**:

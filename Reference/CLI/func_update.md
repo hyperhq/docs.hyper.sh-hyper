@@ -18,5 +18,5 @@
 
 **Update a func:**
 
-    $ hyper func update --name thumbnail --size s3 --env QUALITY=low --refresh
-    https://us-west-1.hyperapp.io/thumbnail/82a1cae2-b08a-4e74-b890-4cf9de4c7ba8
+    $ hyper func update --name helloworld --size s3 --refresh
+    https://us-west-1.hyperapp.io/helloworld/ba06ca01-8366-4331-8c6b-f81b096f6f66

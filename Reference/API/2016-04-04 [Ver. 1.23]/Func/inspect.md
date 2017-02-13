@@ -7,7 +7,7 @@ Inspect a func to get the detailed information.
 **Example request**:
 
 ```
-GET /funcs/thumbnail HTTP/1.1
+GET /funcs/helloworld HTTP/1.1
 Content-Type: application/json
 ```
 
@@ -18,12 +18,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "Name": "thumbnail",
+  "Name": "helloworld",
   "Size": "s4",
-  "Image": "image-resize",
-  "Command": ["--size", "200x150"],
-  "Env": ["QUALITY=high"],
-  "Header": ["Content-Type=image/jpeg"],
+  "Image": "my-hello-world",
+  "Command": ["echo", "World"],
+  "Env": [],
+  "Header": ["Content-Type=text/plain"],
   "MaxConcurrency": 20,
   "MaxLimit": 50,
   "UUID": "e5304888-f112-11e6-bc64-92361f002671",

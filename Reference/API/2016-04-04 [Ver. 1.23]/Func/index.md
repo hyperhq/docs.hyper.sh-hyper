@@ -6,3 +6,5 @@
 - [func inspect](./inspect.md)
 - [func update](./update.md)
 - [func remove](./remove.md)
+- [func call](./call.md)
+- [func status](./status.md)
