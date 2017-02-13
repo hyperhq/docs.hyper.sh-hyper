@@ -9,7 +9,7 @@
     -e, --env=[]             Set environment variables
     --header=[]              The http response header of the endpoint of func status query
     --max_concurrency=-1     The maximum number of concurrent container, default (-1) is container quota
-  	--max_limit=-1           The maximum number of func call which waiting for completed, default (-1) is unlimit
+    --max_limit=-1           The maximum number of func call which waiting for completed, default (-1) is unlimit
     --image                  The image name to use for the container
     --command                The command to run when starting the container
     --refresh                Whether to regenerate the uuid of func

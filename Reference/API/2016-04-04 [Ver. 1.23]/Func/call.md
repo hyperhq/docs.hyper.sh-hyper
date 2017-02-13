@@ -25,18 +25,18 @@ Content-Type: application/json
 
 **URL parameters**:
 
-* $region – Supported region.
-* $func – The func name.
-* $uuid – The uuid of func.
+* $region - Supported region.
+* $func - The func name.
+* $uuid - The uuid of func.
 
 **Json parameters**:
 
-* RequestId – The request id of a func call.
+* RequestId - The request id of a func call.
 
 **Status Codes**:
 
-* 200 – no error
-* 404 – no such func
-* 500 – server error
+* 200 - no error
+* 404 - no such func
+* 500 - server error
 * 413 - request body is too large
 * 503 - reached maximum limit of func call which waiting for completed

@@ -21,14 +21,14 @@ World
 
 **URL parameters**:
 
-* $region – Supported region.
-* $func – The func name.
-* $uuid – The uuid of func.
+* $region - Supported region.
+* $func - The func name.
+* $uuid - The uuid of func.
 * $request_id - The request id of a func call.
 
 **Status Codes**:
 
-* 200 – func call is completed successfully
-* 201 – func call is being executed
-* 404 – func call not exists
-* 509 – response body of func call is too large
+* 200 - func call is completed successfully
+* 201 - func call is being executed
+* 404 - func call not exists
+* 509 - response body of func call is too large

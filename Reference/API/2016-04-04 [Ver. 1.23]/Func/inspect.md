@@ -33,6 +33,6 @@ Content-Type: application/json
 
 **Status Codes**:
 
-* 200 – no error
-* 404 – no such func
-* 500 – server error
+* 200 - no error
+* 404 - no such func
+* 500 - server error
