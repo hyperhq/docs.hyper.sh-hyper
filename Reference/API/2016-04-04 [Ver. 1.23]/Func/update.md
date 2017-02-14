@@ -12,7 +12,6 @@ Content-Type: application/json
 
 {
   "Size": "s3",
-  "Command": ["echo", "HelloWorld"],
   "MaxConcurrency": 50,
   "MaxLimit": 100,
   "Refresh": true
