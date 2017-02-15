@@ -1,6 +1,6 @@
 # Query status of a func call
 
-`GET https://$region.hyperapp.io/$func/$uuid/$request_id`
+`GET https://$region.hyperapp.io/$func/$uuid/$request_id[/wait]`
 
 Query status of a func call, no authentication required.
 
@@ -25,10 +25,15 @@ World
 * $func - The func name.
 * $uuid - The uuid of func.
 * $request_id - The request id of a func call.
+* /wait - Block until the func call completed.
 
 **Status Codes**:
 
 * 200 - func call is completed successfully
 * 201 - func call is being executed
+* 202 - func call is waiting for execution
 * 404 - func call not exists
 * 509 - response body of func call is too large
+* 500 - func call execution error
+        reached container quota limit
+        image not exists
