@@ -61,4 +61,5 @@ helloworld
 
 ## Notes
 * Func 有 func container quota 的限制，它是指同时处理 func call 的 container 的最大数量，可以在 [Account](https://console.hyper.sh/account/) 申请更多 quota。
-* 每个 func 包含 50MB 已完成 func call 的 STDIN 与 STDOUT 的数据存储空间 (超过该大小时，最新数据会自动覆盖最旧数据)。
+* 当正在运行的 func call 数达到 func container quota 的限制时，新的 func call 会等待有空闲 quota 时才会继续执行。
+* 每个 func 包含 50MB 已经完成的 func call 的 STDIN 与 STDOUT 的数据存储空间 (超过该大小时，最新数据会自动覆盖最旧数据)，当旧数据被覆盖后，你可能会获取不到相关的已完成 func call 的结果。
