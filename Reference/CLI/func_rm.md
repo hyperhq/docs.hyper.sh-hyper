@@ -2,7 +2,7 @@
 
   Usage:	hyper func rm [OPTIONS] NAME [NAME...]
 
-  Remove one or more func
+  Remove one or more function
 
     --help             Print usage
 
