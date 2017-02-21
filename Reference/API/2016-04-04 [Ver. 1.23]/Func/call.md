@@ -1,6 +1,10 @@
 # Call a func
 
-`GET/POST/PUT/DELETE https://$region.hyperapp.io/$func/$uuid`
+```
+GET/POST/PUT/DELETE https://$region.hyperapp.io/$func/$uuid
+
+{payload}
+```
 
 Call a func then get a Request ID, no authentication required.
 

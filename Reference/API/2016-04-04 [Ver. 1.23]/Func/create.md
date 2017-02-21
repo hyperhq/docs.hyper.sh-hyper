@@ -14,7 +14,6 @@ Content-Type: application/json
   "Image": "my-hello-world",
   "Command": ["echo", "World"],
   "Header": ["Content-Type=text/plain"],
-  "MaxConcurrency": 20,
   "MaxLimit": 50
 }
 ```
@@ -32,7 +31,6 @@ Content-Type: application/json
   "Command": ["echo", "World"],
   "Env": [],
   "Header": ["Content-Type=text/plain"],
-  "MaxConcurrency": 20,
   "MaxLimit": 50,
   "UUID": "e5304888-f112-11e6-bc64-92361f002671",
   "Created": "2017-02-10T04:05:26.704Z"
@@ -47,7 +45,6 @@ Content-Type: application/json
 * Command - The command to run when starting the container.
 * Env - A list of environment variables in the form of ["VAR=value"[,"VAR2=value2"]].
 * Header - The http response headers of the endpoint of func status query.
-* MaxConcurrency - The maximum number of concurrent container, default (-1) is container quota.
 * MaxLimit - The maximum number of func call which waiting for completed, default (-1) is unlimit.
 * UUID - The uuid of func.
 * Created - The created date of func.

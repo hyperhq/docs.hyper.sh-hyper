@@ -12,7 +12,6 @@ Content-Type: application/json
 
 {
   "Size": "s3",
-  "MaxConcurrency": 50,
   "MaxLimit": 100,
   "Refresh": true
 }
@@ -31,7 +30,6 @@ Content-Type: application/json
   "Command": ["echo", "HelloWorld"],
   "Env": [],
   "Header": ["Content-Type=text/plain"],
-  "MaxConcurrency": 50,
   "MaxLimit": 100,
   "UUID": "ba06ca01-8366-4331-8c6b-f81b096f6f66",
   "Created": "2017-02-10T04:05:26.704Z"
@@ -45,7 +43,6 @@ Content-Type: application/json
 * Command - The command to run when starting the container.
 * Env - A list of environment variables in the form of ["VAR=value"[,"VAR2=value2"]].
 * Headers - The http response headers of the endpoint of func status query.
-* MaxConcurrency - The maximum number of concurrent container, default (-1) is container quota.
 * MaxLimit - The maximum number of func call which waiting for completed, default (-1) is unlimit.
 * Refresh - Whether to regenerate the uuid of func.
 
