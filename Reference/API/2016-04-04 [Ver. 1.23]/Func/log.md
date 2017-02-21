@@ -1,13 +1,13 @@
 # Query logs of a func
 
-`GET /funcs/(name)/log`
+`GET https://$region.hyperapp.io/$func/$uuid/logs`
 
-Query logs of a func, no authentication required.
+Query realtime logs of a func, no authentication required.
 
 **Example request**:
 
 ```
-GET /funcs/helloworld/log HTTP/1.1
+GET https://$region.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/logs HTTP/1.1
 ```
 
 **Example response**:

@@ -34,6 +34,8 @@ World
 * 202 - func call is waiting for execution
 * 404 - func call not exists
 * 509 - response body of func call is too large
-* 500 - func call execution error
-        reached container quota limit
-        image not exists
+* 500 - func call execution error:
+
+        - server error
+        - reached container quota limit of func
+        - image not exists
