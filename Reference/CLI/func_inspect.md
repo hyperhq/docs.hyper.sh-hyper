@@ -2,7 +2,7 @@
 
   Usage:	hyper func inspect [OPTIONS] NAME [NAME...]
 
-  Display detailed information on the given func
+  Display detailed information on the given function
 
     -f, --format       Format the output using the given go template
     --help             Print usage
@@ -19,7 +19,7 @@ By default, this will render all results in a JSON array. Go’s `text/template`
             "Name": "helloworld",
             "Size": "s4",
             "Image": "my-hello-world",
-            "Command": ["echo", "World"],
+            "Command": ["echo", "Hello World"],
             "Env": [],
             "Header": ["Content-Type=text/plain"],
             "MaxLimit": 50,
