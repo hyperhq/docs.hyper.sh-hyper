@@ -17,6 +17,7 @@
        * [Compose](Feature/container/compose.md)
        * [Cron (Beta)](Feature/container/cron.md)
        * [Service](Feature/container/service.md)
+       * [Func (Beta)](Feature/container/func.md)
    * [Storage](Feature/storage/index.md)
        * [Volume](Feature/storage/volume.md)
        * [Snapshot](Feature/storage/snapshot.md)
