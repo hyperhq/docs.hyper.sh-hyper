@@ -182,12 +182,12 @@ Attach an allocated floating IP to a (running) container, each container can hav
 fip: 211.98.26.102
 ```
 
-Or you can allocate or use available one by specifying `auto`, such as:
+The reserved keyword `auto` tries to use free (existing) FIPs, before allocating more.
 
 ```
 fip: auto
 ```
-> Note: `auto` keyword only work by using Hyper.sh client.  It would be better to `compose down` to clear the environment if you enconter some unknown issue while `auto` fip in your compose file, specially in concurrent scene.
+> Note: the `auto` keyword only works with Hyper CLI.
 
 ### size
 The size for each container, it will only accept a single string.  Available size is s1, s2, s3, s4, m1, m2, m3, l1, l2 and l3.  For more details and price, you can refer the [doc](./../FAQ/pricing.md).
