@@ -1,18 +1,18 @@
-# Create a func
+# Create a function
 
-`POST /funcs/create`
+`POST /func/create`
 
 **Example request**:
 
 ```
-POST /funcs/create HTTP/1.1
+POST /func/create HTTP/1.1
 Content-Type: application/json
 
 {
   "Name": "helloworld",
   "Size": "s4",
   "Image": "my-hello-world",
-  "Command": ["echo", "World"],
+  "Command": ["echo", "Hello World"],
   "Header": ["Content-Type=text/plain"],
   "MaxLimit": 50
 }
@@ -28,7 +28,7 @@ Content-Type: application/json
   "Name": "helloworld",
   "Size": "s4",
   "Image": "my-hello-world",
-  "Command": ["echo", "World"],
+  "Command": ["echo", "Hello World"],
   "Env": [],
   "Header": ["Content-Type=text/plain"],
   "MaxLimit": 50,
@@ -39,15 +39,14 @@ Content-Type: application/json
 
 **Json parameters**:
 
-* Name - Func name.
-* Size - The size of func containers (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3).
-* Image - A string specifying the image name to use for the container.
+* Name - the function name.
+* Size - the size of containers to run the function (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3).
+* Image - a string specifying the image name to use for the container.
 * Command - The command to run when starting the container.
 * Env - A list of environment variables in the form of ["VAR=value"[,"VAR2=value2"]].
-* Header - The http response headers of the endpoint of func status query.
-* MaxLimit - The maximum number of func call which waiting for completed, default (-1) is unlimit.
-* UUID - The uuid of func.
-* Created - The created date of func.
+* Header - The http response headers of the endpoint of function status query.
+* UUID - The uuid of function.
+* Created - The created timestamp of function.
 
 **Status Codes**:
 
