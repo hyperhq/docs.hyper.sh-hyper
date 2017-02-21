@@ -12,4 +12,4 @@ Get the return of a function call
 **Get the return of a function call:**
 
     $ hyper func get --wait 7f713fff-a65c-4004-b195-72b0c7bce84a
-    World
+    Hello World
