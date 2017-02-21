@@ -1,4 +1,4 @@
-# Call a func
+# Call a function
 
 ```
 GET/POST/PUT/DELETE https://$region.hyperapp.io/$func/$uuid
@@ -6,9 +6,9 @@ GET/POST/PUT/DELETE https://$region.hyperapp.io/$func/$uuid
 {payload}
 ```
 
-Call a func then get a Request ID, no authentication required.
+Call a function, which returns the call id
 
-**Example request**:
+**Example call**:
 
 ```
 POST https://us-west-1.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
@@ -23,24 +23,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "RequestId": "7f713fff-a65c-4004-b195-72b0c7bce84a"
+  "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"
 }
 ```
 
 **URL parameters**:
 
 * $region - Supported region.
-* $func - The func name.
+* $function - The function name.
 * $uuid - The uuid of func.
 
 **Json parameters**:
 
-* RequestId - The request id of a func call.
+* CallId - The call id of a function call.
 
 **Status Codes**:
 
 * 200 - no error
-* 404 - no such func
+* 404 - no such function
 * 500 - server error
-* 413 - request body is too large
-* 503 - reached maximum limit of func call which waiting for completed
+* 413 - call body is too large
+* 503 - reached maximum limit of function call which waiting for completed
