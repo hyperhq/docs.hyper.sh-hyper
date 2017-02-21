@@ -1,31 +1,36 @@
-# Func (Beta)
+# Hyper Func (Beta)
 
-In Hyper.sh, func is a serverless service that runs jobs via endpoint we provided.
+Hyper Func is a Docker-based serverless platform. You can wrap functions in Docker images and have them run on demand.
 
-## Examples
+## How it works
 
-Create a func which will output "World":
+Create a “Hello World” function:
+``` bash
+$ hyper func create --name helloworld ubuntu echo "Hello World"
+```
 
-  $ hyper func create --name helloworld ubuntu echo "World"
+Make a call of the function:
+``` bash
+$ hyper call helloworld
+Request ID: 7f713fff-a65c-4004-b195-72b0c7bce84a
+```
+ 
+Get the output of the call:
+``` bash
+$ hyper func get --wait 7f713fff-a65c-4004-b195-72b0c7bce84a 
+Hello World
+```
 
-Query logs of the func:
+Check the logs of the function:
+``` bash
+$ hyper func logs helloworld
+```
 
-  $ hyper func logs helloworld
-
-Call the func:
-
-  $ hyper call helloworld
-  Request ID: 7f713fff-a65c-4004-b195-72b0c7bce84a
-
-Query output of the func:
-
-  $ hyper func get --wait 7f713fff-a65c-4004-b195-72b0c7bce84a
-  World
-
-Remove the func:
-
-  $ hyper func rm helloworld
+Remove the function:
+``` bash
+$ hyper func rm helloworld
+```
 
 ## Notes
-* Func has a limitation of container quota, which is the maximum number of concurrent containers, open the [Account](https://console.hyper.sh/account/) page to request increase.
-* Every func includes 50MB of free space for STDIN and STDOUT data (with rotation).
+* Hyper Func has a max concurrency of your account quota. Goto the the [Account](https://console.hyper.sh/account/) page to request a quota increase
+* Every func includes 50MB of free space for STDIN and STDOUT data (with rotation)
