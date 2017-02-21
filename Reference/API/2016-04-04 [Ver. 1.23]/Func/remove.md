@@ -1,8 +1,8 @@
-# Remove a func
+# Remove a function
 
-`DELETE /funcs/(name)`
+`DELETE /func/(name)`
 
-Remove a func.
+Remove a function.
 
 **Example request**:
 
