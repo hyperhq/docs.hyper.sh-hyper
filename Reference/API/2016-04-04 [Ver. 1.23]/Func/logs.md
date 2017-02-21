@@ -1,8 +1,8 @@
-# Query logs of a func
+# Retrive logs of a function
 
 `GET https://$region.hyperapp.io/$func/$uuid/logs`
 
-Query realtime logs of a func, no authentication required.
+Query realtime logs of a function.
 
 **Example request**:
 
@@ -17,19 +17,19 @@ HTTP/1.1 101 UPGRADED
 Connection: Upgrade
 Upgrade: tcp
 
-{"Time": "2017-01-06T15:47:31.485331387Z", "Event": "CALL", "RequestId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdin": "Hello"}
-{"Time": "2017-01-06T15:47:32.485331387Z", "Event": "PENDING", "RequestId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
-{"Time": "2017-01-06T15:47:33.485331387Z", "Event": "RUNNING", "RequestId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
-{"Time": "2017-01-06T15:47:45.485331387Z", "Event": "COMPLETED", "RequestId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdout": "World"}
+{"Time": "2017-01-06T15:47:31.485331387Z", "Event": "CALL", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdin": "Hello"}
+{"Time": "2017-01-06T15:47:32.485331387Z", "Event": "PENDING", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
+{"Time": "2017-01-06T15:47:33.485331387Z", "Event": "RUNNING", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
+{"Time": "2017-01-06T15:47:45.485331387Z", "Event": "COMPLETED", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdout": "World"}
 ```
 
 **URL parameters**:
 
-* name - The func name.
+* name - The function name.
 
 **Query Parameters:**
 
-- **request_id** - Filter logs of specific RequestId. Default all.
+- **request_id** - Filter logs of specific CallId. Default `all`.
 
 **Status Codes**:
 
