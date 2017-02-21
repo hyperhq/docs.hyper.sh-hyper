@@ -4,14 +4,15 @@
 
     Attach floating IP to a (running) container
 
-      --help=false         Print usage
+      -f, --force          Forcefully attach the FIP to the container (detach if necessary)
+      --help=false         Print usage
 
 Attach an allocated floating IP to a (running) container:
 
 	$ hyper fip attach 211.98.26.102 myweb
 	myweb
 
-If you attempt to attach the floating IP to a running container, Hyper.sh return an error:
+If you attempt to attach the floating IP to a running container, an error will be returned:
 
 	$ hyper fip attach 211.98.26.102 myweb
 	myweb is not running
