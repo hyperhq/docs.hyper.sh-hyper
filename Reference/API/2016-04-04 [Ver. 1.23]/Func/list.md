@@ -1,13 +1,13 @@
-# List funcs
+# List all functions
 
-`GET /funcs`
+`GET /func`
 
-List all funcs.
+List all functions.
 
 **Example request**:
 
 ```
-GET /funcs HTTP/1.1
+GET /func HTTP/1.1
 Content-Type: application/json
 ```
 
@@ -22,7 +22,7 @@ Content-Type: application/json
     "Name": "helloworld",
     "Size": "s4",
     "Image": "my-hello-world",
-    "Command": ["echo", "World"],
+    "Command": ["echo", "Hello World"],
     "Env": [],
     "Header": ["Content-Type=text/plain"],
     "MaxLimit": 50,
