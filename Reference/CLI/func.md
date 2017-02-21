@@ -9,7 +9,7 @@
       rm                       Remove one or more funcs
       inspect                  Display detailed information on the given func
       call                     Call a func
-      log                      Display execution log of a func
+      logs                     Display logs of a func
       get                      Query the request status of a func call
 
     Run 'hyper func COMMAND --help' for more information on a command.

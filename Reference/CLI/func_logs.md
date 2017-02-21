@@ -1,4 +1,4 @@
-## func log
+## func logs
 
   Usage: hyper func logs [OPTIONS] NAME
 
