@@ -2,19 +2,18 @@
 
   Usage:	hyper func create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
-  Create a new func
+  Create a new function
 
-    --name                   Func name
-    --size=s4                The size of func containers (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
+    --name                   Function name
+    --size=s4                The size of func containers to run the funciton (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
     -e, --env=[]             Set environment variables
-    --header=[]              The http response header of the endpoint of func status query
-    --max_limit=-1           The maximum number of func call which waiting for completed, default (-1) is unlimit
+    --header=[]              The http response header of the endpoint of function status query
 
-Creates a new func based on the image and options.
+Creates a new function with the specified image and options.
 
 ### Examples
 
-**Create a func:**
+**Create a function:**
 
-    $ hyper func create --name helloworld --size s4 --header "Content-Type=text/plain" --max_limit 50 echo World
+    $ hyper func create --name helloworld --size s4 --header "Content-Type=text/plain" --max_limit 50 echo "Hello World"
     helloworld
