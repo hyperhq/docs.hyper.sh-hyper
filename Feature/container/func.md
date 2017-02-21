@@ -6,7 +6,7 @@ In Hyper.sh, func is a serverless service that runs jobs via endpoint we provide
 
 Create a func which will output "World":
 
-	$ hyper func create --name helloworld ubuntu echo "World"
+  $ hyper func create --name helloworld ubuntu echo "World"
 
 Query logs of the func:
 
@@ -27,5 +27,5 @@ Remove the func:
   $ hyper func rm helloworld
 
 ## Notes
-* Func has a limitation of container quota, open the [Account](https://console.hyper.sh/account/) page to request increase.
+* Func has a limitation of container quota, which is the maximum number of concurrent containers, open the [Account](https://console.hyper.sh/account/) page to request increase.
 * Every func includes 50MB of free space for STDIN and STDOUT data (with rotation).

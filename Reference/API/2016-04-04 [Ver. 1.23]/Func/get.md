@@ -37,5 +37,4 @@ World
 * 500 - func call execution error:
 
         - server error
-        - reached container quota limit of func
         - image not exists

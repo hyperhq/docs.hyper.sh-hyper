@@ -7,7 +7,7 @@ Call a func then get a Request ID, no authentication required.
 **Example request**:
 
 ```
-GET https://us-west-1.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
+POST https://us-west-1.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
 
 Hello
 ```
