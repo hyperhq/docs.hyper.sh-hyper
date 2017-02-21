@@ -4,6 +4,7 @@
 
     Attach floating IP to a (running) container
 
+      -f, --force          Deattach that FIP and attach it to this container
       --help=false         Print usage
 
 Attach an allocated floating IP to a (running) container:
