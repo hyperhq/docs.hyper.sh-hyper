@@ -1,13 +1,13 @@
-# Inspect a func
+# Inspect a function
 
-`GET /funcs/(name)`
+`GET /func/(name)`
 
-Inspect a func to get the detailed information.
+Inspect a function to get the detailed information.
 
 **Example request**:
 
 ```
-GET /funcs/helloworld HTTP/1.1
+GET /func/helloworld HTTP/1.1
 Content-Type: application/json
 ```
 
@@ -21,7 +21,7 @@ Content-Type: application/json
   "Name": "helloworld",
   "Size": "s4",
   "Image": "my-hello-world",
-  "Command": ["echo", "World"],
+  "Command": ["echo", "Hello World"],
   "Env": [],
   "Header": ["Content-Type=text/plain"],
   "MaxLimit": 50,
