@@ -1,6 +1,6 @@
 # Func (Beta)
 
-Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Docker images and have them run on demand. 
+Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Docker images and have them run on demand.
 
 - Fire & Forget
 	- Fully managed service
@@ -12,12 +12,12 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 - Secure Container Runtime
 	- VM-like isolation
 	- New container instance for each function call
-	- Run as long as you wish 
+	- Run as long as you wish
 
 ## How it works
 
 1. Hyper Func uses the popular Docker images as the format to deploy functions. Baking the code, dependencies, data into Docker images, and then create functions with the image.
-2. Upon calling, a new container will be launched using the registered function image. The HTTP request payload is passed to the container STDIN as the function input. A new request ID will be returned, which can be used to retrieve the output later.
+2. Upon calling, a new container will be launched using the registered function image. The HTTP request payload is passed to the container STDIN as the function input. A new call ID will be returned, which can be used to retrieve the output later.
 3. The max concurrent function calls a user could execute at a given time is subject to the user's quota. When the max concurrency is reached, new calls will be queued to wait for slots.
 4. The queued calls are processed in the ***First-In-First-Out*** manner. However we cannot guarantee the function execution will be completed in such order.
 5. Hyper Func maintains a 50MB cache for each function (**not call**). The cache is used to store the STDIN and STDOUT of the **completed** function calls. These data is ready to be fetched by `hyper func get`. However, if they are not retrieved in time, the cache will be rotated once full.
@@ -35,18 +35,17 @@ helloworld is created with the address of https://us-west-1.hyperfunc.io/hellowo
 
 ``` bash
 $ hyper func call helloworld
-Request ID: 7f713fff-a65c-4004-b195-72b0c7bce84a
+CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
 ```
-> Tips: calling with payload `echo Hello | hyper func call helloworld` 
-
+> Tips: calling with payload `echo Hello | hyper func call helloworld`
 
 3. Check the function logs:
 ``` bash
 $ hyper func logs helloworld
-2017-02-10T04:05:26.704Z [CALL] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin:
-2017-02-10T04:05:27.704Z [PENDING] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [RUNNING] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [COMPLETED] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
+2017-02-10T04:05:26.704Z [CALL] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin:
+2017-02-10T04:05:27.704Z [PENDING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
+2017-02-10T04:05:27.704Z [RUNNING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
+2017-02-10T04:05:27.704Z [COMPLETED] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
 ```
 
 4. Retrieve the function return:
