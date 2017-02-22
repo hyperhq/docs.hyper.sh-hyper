@@ -1,13 +1,13 @@
 # Get the return of a function call
 
-`GET https://$region.hyperapp.io/$func/$uuid/$request_id[/wait]`
+`GET https://$region.hyperfunc.io/$func/$uuid/$call_id[/wait]`
 
 Get the return of a function call.
 
 **Example request**:
 
 ```
-GET https://us-west-1.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
+GET https://us-west-1.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
 ```
 
 **Example response**:
@@ -22,9 +22,9 @@ Hello World
 **URL parameters**:
 
 * $region - Supported region.
-* $function - The function name.
+* $func - The function name.
 * $uuid - The uuid of function.
-* $call_id- The id of a function call.
+* $call_id - The id of a function call.
 * /wait - Block until the function call completed.
 
 **Status Codes**:

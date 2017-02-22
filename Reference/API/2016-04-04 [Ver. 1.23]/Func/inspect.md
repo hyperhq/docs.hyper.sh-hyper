@@ -1,13 +1,13 @@
 # Inspect a function
 
-`GET /func/(name)`
+`GET /funcs/(name)`
 
 Inspect a function to get the detailed information.
 
 **Example request**:
 
 ```
-GET /func/helloworld HTTP/1.1
+GET /funcs/helloworld HTTP/1.1
 Content-Type: application/json
 ```
 
@@ -33,5 +33,5 @@ Content-Type: application/json
 **Status Codes**:
 
 * 200 - no error
-* 404 - no such func
+* 404 - no such function
 * 500 - server error

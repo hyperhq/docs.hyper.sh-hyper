@@ -1,6 +1,6 @@
 # Remove a function
 
-`DELETE /func/(name)`
+`DELETE /funcs/(name)`
 
 Remove a function.
 
@@ -19,5 +19,5 @@ HTTP/1.1 204 No Content
 **Status Codes**:
 
 * 204 - no error
-* 404 - no such func
+* 404 - no such function
 * 500 - server error

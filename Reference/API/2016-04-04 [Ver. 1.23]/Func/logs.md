@@ -1,13 +1,13 @@
 # Retrive logs of a function
 
-`GET https://$region.hyperapp.io/$func/$uuid/logs`
+`GET https://$region.hyperfunc.io/$func/$uuid/logs`
 
 Query realtime logs of a function.
 
 **Example request**:
 
 ```
-GET https://$region.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/logs?request_id=7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
+GET https://$region.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/logs?call_id=7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
 ```
 
 **Example response**:
@@ -25,14 +25,16 @@ Upgrade: tcp
 
 **URL parameters**:
 
-* name - The function name.
+* $region - Supported region.
+* $func - The function name.
+* $uuid - The uuid of function.
 
 **Query Parameters:**
 
-- **request_id** - Filter logs of specific CallId. Default `all`.
+- **call_id** - Filter logs of specific CallId. Default `all`.
 
 **Status Codes**:
 
 * 101 - no error
-* 404 - no such func
+* 404 - no such function
 * 500 - server error

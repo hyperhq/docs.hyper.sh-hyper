@@ -1,7 +1,7 @@
 # Call a function
 
 ```
-GET/POST/PUT/DELETE https://$region.hyperapp.io/$func/$uuid
+GET/POST/PUT/DELETE https://$region.hyperfunc.io/$func/$uuid
 
 {payload}
 ```
@@ -11,7 +11,7 @@ Call a function, which returns the call id
 **Example call**:
 
 ```
-POST https://us-west-1.hyperapp.io/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
+POST https://us-west-1.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
 
 Hello
 ```
@@ -30,7 +30,7 @@ Content-Type: application/json
 **URL parameters**:
 
 * $region - Supported region.
-* $function - The function name.
+* $func - The function name.
 * $uuid - The uuid of func.
 
 **Json parameters**:

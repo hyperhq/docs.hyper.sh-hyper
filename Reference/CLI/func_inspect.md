@@ -11,7 +11,7 @@ By default, this will render all results in a JSON array. Go’s `text/template`
 
 ## Examples
 
-**Inspect a func:**
+**Inspect a function:**
 
     $ hyper func inspect helloworld
     [

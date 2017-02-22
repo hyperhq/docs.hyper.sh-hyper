@@ -1,6 +1,6 @@
 ## func get
 
-  Usage: hyper func get [OPTIONS] REQUEST_ID
+  Usage: hyper func get [OPTIONS] CALL_ID
 
 Get the return of a function call
 

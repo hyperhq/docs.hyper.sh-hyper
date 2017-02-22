@@ -8,7 +8,7 @@
 
 ### Examples
 
-**Remove a func:**
+**Remove a function:**
 
     $ hyper func rm helloworld
     helloworld

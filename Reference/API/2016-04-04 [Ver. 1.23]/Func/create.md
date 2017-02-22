@@ -1,11 +1,11 @@
 # Create a function
 
-`POST /func/create`
+`POST /funcs/create`
 
 **Example request**:
 
 ```
-POST /func/create HTTP/1.1
+POST /funcs/create HTTP/1.1
 Content-Type: application/json
 
 {
@@ -47,6 +47,7 @@ Content-Type: application/json
 * Header - The http response headers of the endpoint of function status query.
 * UUID - The uuid of function.
 * Created - The created timestamp of function.
+* MaxLimit - The maximum number of function call which waiting for completed, default (-1) is unlimit. 
 
 **Status Codes**:
 

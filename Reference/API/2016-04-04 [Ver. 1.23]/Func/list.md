@@ -1,13 +1,13 @@
 # List all functions
 
-`GET /func`
+`GET /funcs`
 
 List all functions.
 
 **Example request**:
 
 ```
-GET /func HTTP/1.1
+GET /funcs HTTP/1.1
 Content-Type: application/json
 ```
 

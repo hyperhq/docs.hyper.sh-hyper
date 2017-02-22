@@ -11,4 +11,4 @@
 **Call a func:**
 
     $ echo "Hello" | hyper func call helloworld
-    Request ID: 7f713fff-a65c-4004-b195-72b0c7bce84a
+    CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
