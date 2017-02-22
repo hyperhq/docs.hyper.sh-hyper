@@ -9,6 +9,7 @@
     --header=[]              The http response header of the endpoint of function status query
     --max_limit              The maximum number of function call which waiting for completed, default (-1) is unlimit
     --refresh                Whether to regenerate the uuid of function
+    --timeout                The maximum execution duration of function call, default is 300
 
 ### Examples
 

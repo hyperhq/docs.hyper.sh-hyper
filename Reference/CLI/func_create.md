@@ -9,6 +9,7 @@
     -e, --env=[]             Set environment variables
     --header=[]              The http response header of the endpoint of function status query
     --max_limit              The maximum number of function call which waiting for completed, default (-1) is unlimit
+    --timeout                The maximum execution duration of function call, default is 300
 
 Creates a new function with the specified image and options.
 

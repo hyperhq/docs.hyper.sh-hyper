@@ -34,6 +34,7 @@ Hello World
 * 202 - function call is waiting for execution
 * 404 - function call not exists
 * 509 - response body of function call is too large
+* 504 - function call execution timeout
 * 500 - function call execution error:
         - server error
         - image not exists
