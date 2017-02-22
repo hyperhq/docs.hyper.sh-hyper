@@ -1,6 +1,6 @@
 # Remove a function
 
-`DELETE /funcs/(name)`
+`DELETE /funcs/$name`
 
 Remove a function.
 
@@ -15,6 +15,10 @@ DELETE /funcs/helloworld HTTP/1.1
 ```
 HTTP/1.1 204 No Content
 ```
+
+**URL parameters**:
+
+* $name - The function name.
 
 **Status Codes**:
 

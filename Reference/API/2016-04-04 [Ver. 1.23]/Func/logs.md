@@ -1,6 +1,6 @@
 # Retrive logs of a function
 
-`GET https://$region.hyperfunc.io/$func/$uuid/logs`
+`GET https://$region.hyperfunc.io/$name/$uuid/logs`
 
 Query realtime logs of a function.
 
@@ -26,7 +26,7 @@ Upgrade: tcp
 **URL parameters**:
 
 * $region - Supported region.
-* $func - The function name.
+* $name - The function name.
 * $uuid - The uuid of function.
 
 **Query Parameters:**

@@ -1,6 +1,6 @@
 # Inspect a function
 
-`GET /funcs/(name)`
+`GET /funcs/$name`
 
 Inspect a function to get the detailed information.
 
@@ -29,6 +29,10 @@ Content-Type: application/json
   "Created": "2017-02-10T04:05:26.704Z"
 }
 ```
+
+**URL parameters**:
+
+* $name - The function name.
 
 **Status Codes**:
 

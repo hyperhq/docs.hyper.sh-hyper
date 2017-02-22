@@ -1,6 +1,6 @@
 # Update a function
 
-`PUT /funcs/(name)`
+`PUT /funcs/$name`
 
 Update a function.
 
@@ -34,6 +34,10 @@ Content-Type: application/json
   "Created": "2017-02-10T04:05:26.704Z"
 }
 ```
+
+**URL parameters**:
+
+* $name - The function name.
 
 **JSON parameters**:
 

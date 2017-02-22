@@ -1,7 +1,7 @@
 # Call a function
 
 ```
-GET/POST/PUT/DELETE https://$region.hyperfunc.io/$func/$uuid
+GET/POST/PUT/DELETE https://$region.hyperfunc.io/$name/$uuid
 
 {payload}
 ```
@@ -30,7 +30,7 @@ Content-Type: application/json
 **URL parameters**:
 
 * $region - Supported region.
-* $func - The function name.
+* $name - The function name.
 * $uuid - The uuid of func.
 
 **Json parameters**:

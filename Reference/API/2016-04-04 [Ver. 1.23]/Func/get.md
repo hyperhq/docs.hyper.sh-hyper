@@ -1,6 +1,6 @@
 # Get the return of a function call
 
-`GET https://$region.hyperfunc.io/$func/$uuid/$call_id[/wait]`
+`GET https://$region.hyperfunc.io/$name/$uuid/$call_id[/wait]`
 
 Get the return of a function call.
 
@@ -22,7 +22,7 @@ Hello World
 **URL parameters**:
 
 * $region - Supported region.
-* $func - The function name.
+* $name - The function name.
 * $uuid - The uuid of function.
 * $call_id - The id of a function call.
 * /wait - Block until the function call completed.
