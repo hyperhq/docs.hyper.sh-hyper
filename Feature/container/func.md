@@ -1,68 +1,64 @@
 # Func (Beta)
 
-Hyper Func is a Docker-based serverless platform. You can wrap functions in Docker images and have them run on demand. 它适用于一次性的 job 处理，例如典型的图片剪裁应用场景。
+Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Docker images and have them run on demand. 
+
+- Fire & Forget
+	- Fully managed service
+    - Easy to use for developers
+    - Minimal ops overhead
+- Docker centric
+	- Deploy your function in Docker image
+	- Any language, any libs, any deps
+- Secure Container Runtime
+	- VM-like isolation
+	- New container instance for each function call
+	- Run as long as you wish 
 
 ## How it works
 
-一个标准的 function 工作流程如下：
-
-1. 使用 CLI 或 endpoint 来 call 该 function，可以附带 payload。
-2. function 运行一个指定 image 的 container，在 container 启动时将 payload 作为其 stdin。
-3. 你可以在 container 中使用任何方式读取 stdin，做一些任务，最后向 stdout 写入数据作为返回结果。
-4. 使用 CLI 或 endpoint 来获取返回结果。
+1. Hyper Func uses the popular Docker images as the format to deploy functions. Baking the code, dependencies, data into Docker images, and then create functions with the image.
+2. Upon calling, a new container will be launched using the registered function image. The HTTP request payload is passed to the container STDIN as the function input. A new request ID will be returned, which can be used to retrieve the output later.
+3. The max concurrent function calls a user could execute at a given time is subject to the user's quota. When the max concurrency is reached, new calls will be queued to wait for slots.
+4. The queued calls are processed in the ***First-In-First-Out*** manner. However we cannot guarantee the function execution will be completed in such order.
+5. Hyper Func maintains a 50MB cache for each function (**not call**). The cache is used to store the STDIN and STDOUT of the **completed** function calls. These data is ready to be retrieved by `hyper func get`. However, if you didn't get them in time, the cache will be rotated if full.
 
 ## Example
 
-1. 创建一个会输出 "Hello World" 的简单 function:
+1. Create a "Hello World" function:
 
 ``` bash
 $ hyper func create --name helloworld ubuntu echo Hello World
-helloworld is created with the address of https://us-west-1.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671
+helloworld **TODO: url**
 ```
 
-2. 查询 function 的 logs，此时该命令会阻塞:
+2. Call the function:
 
+``` bash
+$ hyper func call helloworld
+Request ID: 7f713fff-a65c-4004-b195-72b0c7bce84a
+```
+> Tips: calling with payload `echo Hello | hyper func call helloworld` 
+
+
+3. Check the function logs:
 ``` bash
 $ hyper func logs helloworld
+2017-02-10T04:05:26.704Z [CALL] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin:
+2017-02-10T04:05:27.704Z [PENDING] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a
+2017-02-10T04:05:27.704Z [RUNNING] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a
+2017-02-10T04:05:27.704Z [COMPLETED] RequestId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
 ```
 
-3. 然后切换到另外一个终端窗口，来 call 该 function:
-
-``` bash
-$ hyper call helloworld
-CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-```
-
-**Tips: 可以使用 `echo Hello | hyper call helloworld` 附带 payload**
-
-4. 切换回刚才查询 function logs 的终端窗口，会看到:
-
-``` bash
-$ hyper func logs helloworld
-2017-02-10T04:05:26.704Z [CALL] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin:
-2017-02-10T04:05:27.704Z [PENDING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [RUNNING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [COMPLETED] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
-```
-
-5. 使用步骤3获得的 CallId，来获取这次 function call 的执行结果:
-
+4. Retrieve the function return:
 ``` bash
 $ hyper func get --wait 7f713fff-a65c-4004-b195-72b0c7bce84a
 Hello World
 ```
+> Tips: `--wait` blocks the CLI until the call completed (or failed)
 
-6. 删除该 function:
+5. Remove the function:
 
 ``` bash
 $ hyper func rm helloworld
 helloworld
 ```
-
-## Notes
-* Func 有 function container quota 的限制，它是指同时处理 function call 的 container 的最大数量，可以在 [Account](https://console.hyper.sh/account/) 申请更多 quota。
-* 当正在运行的 function call 数达到 function container quota 的限制时，新的 function call 会等待有空闲 quota 时才会继续执行。
-* 每个 function 包含 50MB 已经 completed 的 function call 的 stdin 与 stdout 的数据存储空间 (超过该大小时，最新数据会自动覆盖最旧数据)，当旧数据被覆盖后，你可能会获取不到相关的结果。未 completed 的 function call 的 stdin 不受此限制。
-* 可以使用 `hyper func update --refresh $name` 命令重新为 function 生成新的 endpoint，适用于如 endpoint 被泄露的情况。
-* Func Name 长度不能超过 255，且只能是数字，字母与-。
-* stdin 与 stdout 数据最大尺寸为 5MB。
