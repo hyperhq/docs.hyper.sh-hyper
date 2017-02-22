@@ -2,7 +2,7 @@
 
 `GET https://$region.hyperfunc.io/$name/$uuid/logs`
 
-Query realtime logs of a function.
+Retrieve the logs of a function.
 
 **Example request**:
 
