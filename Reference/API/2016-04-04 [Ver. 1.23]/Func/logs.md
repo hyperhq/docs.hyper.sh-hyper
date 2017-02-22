@@ -1,6 +1,6 @@
 # Retrive logs of a function
 
-`GET https://$region.hyperfunc.io/$name/$uuid/logs`
+`GET https://$region.hyperfunc.io/logs/$name/$uuid`
 
 Retrieve the logs of a function.
 

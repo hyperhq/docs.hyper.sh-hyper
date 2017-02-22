@@ -1,7 +1,7 @@
 # Call a function
 
 ```
-GET/POST/PUT/DELETE https://$region.hyperfunc.io/$name/$uuid
+GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid
 
 {payload}
 ```

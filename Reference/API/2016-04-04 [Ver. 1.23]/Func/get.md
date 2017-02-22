@@ -1,6 +1,6 @@
 # Get the return of a function call
 
-`GET https://$region.hyperfunc.io/$name/$uuid/$call_id[/wait]`
+`GET https://$region.hyperfunc.io/output/$name/$uuid/$call_id[/wait]`
 
 Get the return of a function call.
 

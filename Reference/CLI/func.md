@@ -9,8 +9,8 @@
       rm                       Remove one or more functions
       inspect                  Display detailed information on the given function
       call                     Call a function
-      logs                     Display logs of a function
-      get                      Query the request status of a function call
+      logs                     Retrieve the logs of a function
+      get                      Get the return of a function call
 
     Run 'hyper func COMMAND --help' for more information on a command.
 
