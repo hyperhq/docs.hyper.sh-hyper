@@ -17,3 +17,7 @@
 
     $ hyper func update --size s3 --refresh helloworld
     https://us-west-1.hyperapp.io/helloworld/ba06ca01-8366-4331-8c6b-f81b096f6f66
+
+**Notes**
+
+* You can use `hyper func update --refresh $name` to update the endpoint of function.
