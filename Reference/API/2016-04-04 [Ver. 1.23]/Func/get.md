@@ -32,6 +32,7 @@ Hello World
 * 200 - function call is completed successfully
 * 201 - function call is being executed
 * 202 - function call is waiting for execution
+* 204 - the return of function call already expired
 * 404 - function call not exists
 * 509 - response body of function call is too large
 * 504 - function call execution timeout
