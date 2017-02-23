@@ -7,7 +7,7 @@ Retrieve the logs of a function.
 **Example request**:
 
 ```
-GET https://$region.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/logs?follow=1?callid=7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
+GET https://$region.hyperfunc.io/logs/helloworld/e5304888-f112-11e6-bc64-92361f002671?follow=1?callid=7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
 ```
 
 **Example response**:

@@ -61,3 +61,8 @@ Hello World
 $ hyper func rm helloworld
 helloworld
 ```
+
+**Notes**
+
+* 可以使用 `hyper func update --refresh $name` 命令重新为 function 生成新的 endpoint，适用于如 endpoint 被泄露的情况。
+* STDIN 与 STDOUT 数据最大尺寸为 5MB。

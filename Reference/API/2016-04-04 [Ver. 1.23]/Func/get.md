@@ -7,7 +7,7 @@ Get the return of a function call.
 **Example request**:
 
 ```
-GET https://us-west-1.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671/7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
+GET https://us-west-1.hyperfunc.io/output/helloworld/e5304888-f112-11e6-bc64-92361f002671/7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
 ```
 
 **Example response**:
