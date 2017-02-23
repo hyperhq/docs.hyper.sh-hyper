@@ -11,7 +11,7 @@ Call a function, which returns the call id
 **Example call**:
 
 ```
-POST https://us-west-1.hyperfunc.io/call/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
+POST https://us-west-1.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
 
 Hello
 ```
@@ -41,6 +41,5 @@ Content-Type: application/json
 
 * 200 - no error
 * 404 - no such function
+* 413 - request entity too large
 * 500 - server error
-* 413 - call body is too large
-* 503 - reached maximum limit of function call which waiting for completed
