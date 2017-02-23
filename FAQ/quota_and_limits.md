@@ -23,8 +23,7 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 - Credential: 3 per region
 - SecurityGroup: 100 per region
 - Service: 5 per region
-- Function: 5 per region
-- Container Of Function: 10 per region
+- Concurrent Function Executation (Container): 10 per region
 
 ### Request a quota increase
 
