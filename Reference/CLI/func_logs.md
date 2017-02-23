@@ -22,3 +22,4 @@
 **Notes**
 
 * `ShortStdin, ShortStdout, ShortStderr` is the first 255 bytes of `STDIN, STDOUT, STDERR`.
+* Each function includes 50MB of logs space (with rotation).

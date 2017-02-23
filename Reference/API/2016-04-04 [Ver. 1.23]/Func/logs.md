@@ -37,6 +37,7 @@ Upgrade: tcp
 
 **Status Codes**:
 
-* 101 - no error
+* 101 - no error, hints proxy about hijacking
+* 200 - no error, no upgrade header found
 * 404 - no such function
 * 500 - server error
