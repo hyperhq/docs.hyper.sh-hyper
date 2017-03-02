@@ -35,6 +35,16 @@ Upgrade: tcp
 - **follow** - 1/True/true or 0/False/false, return stream. Default `false`.
 - **tail** - Output specified number of lines at the end of logs: `all` or `<number>`. Default all.
 
+**Json Response**:
+
+* Time - The time of the event.
+* Event - The event name, can be CALL, PENDING, RUNNING, COMPLETED, ERROR.
+* CallId - The call id of a function call.
+* ShortStdin - The first few bytes of STDIN.
+* ShortStdout - The first few bytes of STDOUT.
+* ShortStderr - The first few bytes of STDERR.
+* Message - The error message.
+
 **Status Codes**:
 
 * 101 - no error, hints proxy about hijacking

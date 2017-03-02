@@ -38,4 +38,4 @@ Hello World
 * 504 - function call execution timeout
 * 500 - function call execution error:
         - server error
-        - image not exists
+        - no such image: $image
