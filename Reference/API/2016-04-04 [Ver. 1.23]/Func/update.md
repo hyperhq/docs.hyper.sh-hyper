@@ -29,7 +29,6 @@ Content-Type: application/json
   "Command": ["echo", "Hello World"],
   "Env": [],
   "Header": ["Content-Type=text/plain"],
-  "MaxLimit": 100,
   "UUID": "ba06ca01-8366-4331-8c6b-f81b096f6f66",
   "Created": "2017-02-10T04:05:26.704Z",
   "Timeout": 300
@@ -47,8 +46,7 @@ Content-Type: application/json
 * Command - The command to run when starting the container.
 * Env - A list of environment variables in the form of ["VAR=value"[,"VAR2=value2"]].
 * Header - The http response headers of the endpoint of function status query.
-* MaxLimit - The maximum number of function call which waiting for completed, default (-1) is unlimit.
-* Timeout - The maximum execution duration of function call, default is 300.
+* Timeout - The maximum execution duration of function call, default is 300 seconds, maximum is 86400 seconds.
 
 **Status Codes**:
 

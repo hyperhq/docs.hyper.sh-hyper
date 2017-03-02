@@ -25,7 +25,6 @@ Content-Type: application/json
     "Command": ["echo", "Hello World"],
     "Env": [],
     "Header": ["Content-Type=text/plain"],
-    "MaxLimit": 50,
     "UUID": "e5304888-f112-11e6-bc64-92361f002671",
     "Created": "2017-02-10T04:05:26.704Z",
     "Timeout": 300

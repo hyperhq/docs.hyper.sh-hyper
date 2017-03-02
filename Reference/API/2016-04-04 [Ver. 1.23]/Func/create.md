@@ -13,8 +13,7 @@ Content-Type: application/json
   "Size": "s4",
   "Image": "my-hello-world",
   "Command": ["echo", "Hello World"],
-  "Header": ["Content-Type=text/plain"],
-  "MaxLimit": 50
+  "Header": ["Content-Type=text/plain"]
 }
 ```
 
@@ -31,7 +30,6 @@ Content-Type: application/json
   "Command": ["echo", "Hello World"],
   "Env": [],
   "Header": ["Content-Type=text/plain"],
-  "MaxLimit": 50,
   "UUID": "e5304888-f112-11e6-bc64-92361f002671",
   "Created": "2017-02-10T04:05:26.704Z",
   "Timeout": 300
@@ -48,8 +46,7 @@ Content-Type: application/json
 * Header - The http response headers of the endpoint of function status query.
 * UUID - The uuid of function.
 * Created - The created timestamp of function.
-* MaxLimit - The maximum number of function call which waiting for completed, default (-1) is unlimit.
-* Timeout - The maximum execution duration of function call, default is 300.
+* Timeout - The maximum execution duration of function call, default is 300 seconds, maximum is 86400 seconds.
 
 **Status Codes**:
 
