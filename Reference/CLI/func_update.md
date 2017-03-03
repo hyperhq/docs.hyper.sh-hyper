@@ -6,7 +6,6 @@
 
     --size=s4                The size of containers to run the function (e.g. s1, s2, s3, s4, m1, m2, m3, l1, l2, l3)
     -e, --env=[]             Set environment variables
-    --header=[]              The http response header of the endpoint of function status query
     --timeout=300            The maximum execution duration of function call
     --refresh                Whether to regenerate the uuid of function
 

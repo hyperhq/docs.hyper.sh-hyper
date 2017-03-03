@@ -22,6 +22,7 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 4. The queued calls are processed in the ***First-In-First-Out*** manner. However we cannot guarantee the function execution will be completed in such order.
 5. Hyper Func maintains a 50MB cache for each function (**not call**). The cache is used to store the STDOUT of **completed** function calls. These data need to be fetched by `hyper func get`. Otherwise the cache will be rotated once full.
 6. For each function call, the max data size of STDIN and STDOUT is 5MB.
+7. The headers of HTTP request and the env config of function will be as the environment variable of container.
 
 ## Usage
 

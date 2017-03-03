@@ -12,8 +12,7 @@ Content-Type: application/json
   "Name": "helloworld",
   "Size": "s4",
   "Image": "my-hello-world",
-  "Command": ["echo", "Hello World"],
-  "Header": ["Content-Type=text/plain"]
+  "Command": ["echo", "Hello World"]
 }
 ```
 
@@ -29,7 +28,6 @@ Content-Type: application/json
   "Image": "my-hello-world",
   "Command": ["echo", "Hello World"],
   "Env": [],
-  "Header": ["Content-Type=text/plain"],
   "UUID": "e5304888-f112-11e6-bc64-92361f002671",
   "Created": "2017-02-10T04:05:26.704Z",
   "Timeout": 300
@@ -43,7 +41,6 @@ Content-Type: application/json
 * Image - a string specifying the image name to use for the container.
 * Command - The command to run when starting the container.
 * Env - A list of environment variables in the form of ["VAR=value"[,"VAR2=value2"]].
-* Header - The http response headers of the endpoint of function status query.
 * UUID - The uuid of function.
 * Created - The created timestamp of function.
 * Timeout - The maximum execution duration of function call, default is 300 seconds, maximum is 86400 seconds.
