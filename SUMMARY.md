@@ -130,6 +130,8 @@
             * [List volumes](Reference/API/2016-04-04 [Ver. 1.23]/Volume/list.md)
             * [Create a volume](Reference/API/2016-04-04 [Ver. 1.23]/Volume/create.md)
             * [Remove a volume](Reference/API/2016-04-04 [Ver. 1.23]/Volume/remove.md)
+            * [Init a volume](Reference/API/2016-04-04 [Ver. 1.23]/Volume/init.md)
+            * [Inspect a volume](Reference/API/2016-04-04 [Ver. 1.23]/Volume/inspect.md)
         * [Snapshot](Reference/API/2016-04-04 [Ver. 1.23]/Snapshot/index.md)
             * [Create a snapshot](Reference/API/2016-04-04 [Ver. 1.23]/Snapshot/create.md)
             * [List snapshots](Reference/API/2016-04-04 [Ver. 1.23]/Snapshot/list.md)
