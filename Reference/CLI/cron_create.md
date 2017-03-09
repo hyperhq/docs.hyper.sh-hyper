@@ -37,7 +37,7 @@ Usage:	hyper cron create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 ### Examples
 
-Create a cron job which ping an address every 5 minutes:
+Create a cron job which pings an address every 5 minutes:
 
 	$ hyper cron create --minute=*/15 --hour=* --name test-cron-job1 busybox ping -c 3 114.114.114.114
 	latest: Pulling from library/busybox
