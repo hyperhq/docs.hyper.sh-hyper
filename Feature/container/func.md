@@ -29,7 +29,7 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 1. Create a "Hello World" function:
 ``` bash
 $ hyper func create --name helloworld ubuntu echo Hello World
-helloworld is created with the address of https://us-west-1.hyperfunc.io/helloworld/e5304888-f112-11e6-bc64-92361f002671
+helloworld is created with the address of https://us-west-1.hyperfunc.io/call/helloworld/e5304888-f112-11e6-bc64-92361f002671
 ```
 
 2. Call the function:

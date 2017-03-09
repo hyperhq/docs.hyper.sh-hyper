@@ -1,6 +1,6 @@
 ## func inspect
 
-  Usage:	hyper func inspect [OPTIONS] NAME [NAME...]
+  Usage: hyper func inspect [OPTIONS] NAME [NAME...]
 
   Display detailed information on the given function
 
