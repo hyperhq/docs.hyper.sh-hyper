@@ -24,4 +24,5 @@ HTTP/1.1 204 No Content
 
 * 204 - no error
 * 404 - no such function
+* 409 - still have function call that is being executed
 * 500 - server error
