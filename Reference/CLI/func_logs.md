@@ -11,7 +11,7 @@
 
 ## Examples
 
-**Fetch realtime logs of a function:**
+**Fetch logs of a function:**
 
     $ hyper func logs -f --callid 7f713fff-a65c-4004-b195-72b0c7bce84a helloworld
     2017-02-10T04:05:26.704Z [CALL] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin: Hello
