@@ -20,8 +20,8 @@ Content-Type: application/json
   Total: 20,
   Pending: 3,
   Running: 10,
-  Completed: 4,
-  Error: 0,
+  Finished: 4,
+  Failed: 0,
   List: [
     {
       CallId: '7f713fff-a65c-4004-b195-72b0c7bce84a',

@@ -20,7 +20,7 @@ Upgrade: tcp
 {"Time": "2017-01-06T15:47:31.485331387Z", "Event": "CALL", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdin": "Hello"}
 {"Time": "2017-01-06T15:47:32.485331387Z", "Event": "PENDING", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
 {"Time": "2017-01-06T15:47:33.485331387Z", "Event": "RUNNING", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
-{"Time": "2017-01-06T15:47:45.485331387Z", "Event": "COMPLETED", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdout": "World", "ShortStderr": ""}
+{"Time": "2017-01-06T15:47:45.485331387Z", "Event": "FINISHED", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdout": "World", "ShortStderr": ""}
 ```
 
 **URL parameters**:
@@ -38,7 +38,7 @@ Upgrade: tcp
 **Json Response**:
 
 * Time - The time of the event.
-* Event - The event name, can be CALL, PENDING, RUNNING, COMPLETED, ERROR.
+* Event - The event name, can be CALL, PENDING, RUNNING, FINISHED, FAILED.
 * CallId - The call id of a function call.
 * ShortStdin - The first few bytes of STDIN.
 * ShortStdout - The first few bytes of STDOUT.
