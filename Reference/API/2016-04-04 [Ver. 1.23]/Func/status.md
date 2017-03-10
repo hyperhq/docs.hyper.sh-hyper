@@ -18,9 +18,9 @@ Content-Type: application/json
 
 {
   Total: 20,
-  Pending: 3,
+  Pending: 4,
   Running: 10,
-  Finished: 4,
+  Finished: 6,
   Failed: 0,
   List: [
     {

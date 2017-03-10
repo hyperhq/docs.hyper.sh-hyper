@@ -9,5 +9,5 @@
 ## Examples
 
     $ hyper func status helloworld
-    TOTAL     RUNNING     PENDING     FINISHED     FAILED
-    20        3           10          4            0
+    TOTAL     PENDING     RUNNING     FINISHED     FAILED
+    20        4           10          6            0
