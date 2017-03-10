@@ -39,3 +39,7 @@ Hello World
 * 500 - function call execution error:
         - server error
         - no such image: $image
+
+**Notes**
+
+* The finished/failed/expired function call will be removed once the api is successfully called.
