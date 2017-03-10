@@ -19,8 +19,8 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 1. Hyper Func uses the popular Docker images as the format to deploy functions. Baking the code, dependencies, data into Docker images, and then register the images to create functions.
 2. Upon calling, a new container will be launched from the function image. The HTTP request payload is passed to the container STDIN as the function input. A new call ID will be returned, which can be used to retrieve the output later.
 3. The max concurrent function calls a user could execute at a given time is subject to the user's quota. When the max concurrency is reached, new calls will be queued to wait for slots.
-4. The queued calls are processed in the ***First-In-First-Out*** manner. However we cannot guarantee the function execution will be completed in such order.
-5. Hyper Func maintains a 50MB cache for each function (**not call**). The cache is used to store the STDOUT of **completed** function calls. These data need to be fetched by `hyper func get`. Otherwise the cache will be rotated once full.
+4. The queued calls are processed in the ***First-In-First-Out*** manner. However we cannot guarantee the function execution will be finished in such order.
+5. Hyper Func maintains a 50MB cache for each function (**not call**). The cache is used to store the STDOUT of **finished** function calls. These data need to be fetched by `hyper func get`. Otherwise the cache will be rotated once full.
 6. Hyper Func maintains a 50MB cache for logs of each function. These data need to be fetched by `hyper func logs`. Otherwise the cache will be rotated once full.
 7. For each function call, the max data size of STDIN and STDOUT is 5MB.
 8. The headers of HTTP request and the env config of function will be as the environment variable of container.
@@ -46,7 +46,7 @@ $ hyper func logs helloworld
 2017-02-10T04:05:26.704Z [CALL] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin:
 2017-02-10T04:05:27.704Z [PENDING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
 2017-02-10T04:05:27.704Z [RUNNING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [COMPLETED] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
+2017-02-10T04:05:27.704Z [FINISHED] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
 ```
 
 4. Retrieve the function return:
@@ -54,7 +54,7 @@ $ hyper func logs helloworld
 $ hyper func get --wait 7f713fff-a65c-4004-b195-72b0c7bce84a
 Hello World
 ```
-> Tips: `--wait` blocks the CLI until the call completed (or failed)
+> Tips: `--wait` blocks the CLI until the call finished (or failed)
 
 5. Remove the function:
 ``` bash
