@@ -33,7 +33,7 @@ When you launch a container, you associate one or more security groups with the 
 ```
 
 ### Change security groups
-You can update containers to add or remove containers.
+You can update containers to add or remove security groups.
 
 ``` bash
 	$ hyper update --sg-add ssh-sg ssh-container
