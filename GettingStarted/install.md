@@ -7,6 +7,9 @@ Hyper.sh currently provides official CLI builds for Linux and Mac.
 - Windows (Beta)
 - Linux ARM (Beta)
 
+> **Please note**
+The hyper client will attempt to update itself to the latest version once per day automatically. If you don't want to wait for the next daily cycle, just remove ~/.hyper/cktime.json, and the check will occur immediately.
+
 ## Install on Mac
 
     $ curl -O https://hyper-install.s3.amazonaws.com/hyper-mac.bin.zip
