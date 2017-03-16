@@ -18,16 +18,28 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 [
-  {
-    "Name": "helloworld",
-    "Size": "s4",
-    "Image": "my-hello-world",
-    "Command": ["echo", "Hello World"],
-    "Env": [],
-    "UUID": "e5304888-f112-11e6-bc64-92361f002671",
-    "Created": "2017-02-10T04:05:26.704Z",
-    "Timeout": 300
-  }
+    {
+        "Name": "helloworld",
+        "ContainerSize": "s4",
+        "Timeout": 300,
+        "UUID": "e62c014e-386c-42ea-8d07-41d44e98cc3d",
+        "Created": "2017-03-16T07:05:24.473Z",
+        "Config": {
+            "Env": [],
+            "Cmd": [
+                "echo",
+                "HelloWorld"
+            ],
+            "Image": "ubuntu",
+            "StopSignal": "SIGTERM"
+        },
+        "HostConfig": {
+            "NetworkMode": "bridge"
+        },
+        "NetworkingConfig": {
+            "EndpointsConfig": null
+        }
+    }
 ]
 ```
 

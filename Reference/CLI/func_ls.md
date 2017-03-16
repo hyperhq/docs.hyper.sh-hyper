@@ -10,5 +10,5 @@
 ### Examples
 
     $ hyper func ls
-    NAME         SIZE     IMAGE           COMMAND          CREATED           UUID
-    helloworld   s4       my-hello-world  echo Hello World 33 minutes ago    e5304888-f112-11e6-bc64-92361f002671
+    NAME                SIZE                IMAGE               COMMAND             CREATED             UUID
+    helloworld          s4                  ubuntu              echo HelloWorld     35 minutes ago      e62c014e-386c-42ea-8d07-41d44e98cc3d

@@ -11,7 +11,7 @@ Call a function, which returns the call id
 **Example call**:
 
 ```
-POST https://us-west-1.hyperfunc.io/call/helloworld/e5304888-f112-11e6-bc64-92361f002671 HTTP/1.1
+POST https://us-west-1.hyperfunc.io/call/helloworld/e62c014e-386c-42ea-8d07-41d44e98cc3d HTTP/1.1
 
 Hello
 ```
@@ -23,7 +23,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"
+  "CallId": "218b7b10-e7f1-4c48-ac3c-66792f8ffc06"
 }
 ```
 

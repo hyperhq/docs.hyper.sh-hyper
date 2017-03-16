@@ -11,4 +11,4 @@
 **Call a function and pass a payload:**
 
     $ echo "Hello" | hyper func call helloworld
-    CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
+    CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06

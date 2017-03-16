@@ -27,32 +27,33 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 
 ## Usage
 
-1. Create a "Hello World" function:
+1. Create a "HelloWorld" function:
 ``` bash
-$ hyper func create --name helloworld ubuntu echo Hello World
-helloworld is created with the address of https://us-west-1.hyperfunc.io/call/helloworld/e5304888-f112-11e6-bc64-92361f002671
+$ hyper func create --name helloworld ubuntu echo HelloWorld
+helloworld is created with the address of https://us-west-1.hyperfunc.io/call/helloworld/e62c014e-386c-42ea-8d07-41d44e98cc3d
 ```
 
 2. Call the function:
 ``` bash
 $ hyper func call helloworld
-CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
+CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 ```
 > Tips: calling with payload `echo Hello | hyper func call helloworld`
 
 3. Check the function logs:
 ``` bash
 $ hyper func logs helloworld
-2017-02-10T04:05:26.704Z [CALL] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin:
-2017-02-10T04:05:27.704Z [PENDING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [RUNNING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-2017-02-10T04:05:27.704Z [FINISHED] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: Hello World
+2017-03-16T15:05:58Z [CALL] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdin: 
+2017-03-16T15:05:58Z [PENDING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
+2017-03-16T15:06:04Z [RUNNING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
+2017-03-16T15:06:10Z [FINISHED] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdout: HelloWorld
+, ShortStderr: 
 ```
 
 4. Retrieve the function return:
 ``` bash
-$ hyper func get --wait 7f713fff-a65c-4004-b195-72b0c7bce84a
-Hello World
+$ hyper func get --wait 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
+HelloWorld
 ```
 > Tips: `--wait` blocks the CLI until the call finished (or failed)
 

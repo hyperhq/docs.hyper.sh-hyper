@@ -1,23 +1,24 @@
 ## func logs
 
-  Usage: hyper func logs [OPTIONS] NAME
+    Usage:	hyper func logs [OPTIONS] NAME
 
-  Retrieve the logs of a function
+    Retrieve the logs of a function
 
-    --help=false              Print usage
-    --callid                  Only retrieve specific logs of CallId
-    -f, --follow=false        Follow log output
-    --tail="all"              Number of lines to show from the end of the logs
+        --callid           Only retrieve specific logs of CallId
+        -f, --follow       Follow log output
+        --help             Print usage
+        --tail=all         Number of lines to show from the end of the logs
 
 ## Examples
 
 **Fetch logs of a function:**
 
-    $ hyper func logs -f --callid 7f713fff-a65c-4004-b195-72b0c7bce84a helloworld
-    2017-02-10T04:05:26.704Z [CALL] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdin: Hello
-    2017-02-10T04:05:27.704Z [PENDING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-    2017-02-10T04:05:27.704Z [RUNNING] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a
-    2017-02-10T04:05:27.704Z [FINISHED] CallId: 7f713fff-a65c-4004-b195-72b0c7bce84a, ShortStdout: World, ShortStderr:
+    $ hyper func logs -f --callid 218b7b10-e7f1-4c48-ac3c-66792f8ffc06 helloworld
+    2017-03-16T15:05:58Z [CALL] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdin: 
+    2017-03-16T15:05:58Z [PENDING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
+    2017-03-16T15:06:04Z [RUNNING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
+    2017-03-16T15:06:10Z [FINISHED] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdout: HelloWorld
+    , ShortStderr: 
 
 **Notes**
 

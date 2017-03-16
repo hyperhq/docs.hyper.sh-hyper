@@ -7,7 +7,7 @@ Retrieve the logs of a function.
 **Example request**:
 
 ```
-GET https://$region.hyperfunc.io/logs/helloworld/e5304888-f112-11e6-bc64-92361f002671?follow=1?callid=7f713fff-a65c-4004-b195-72b0c7bce84a HTTP/1.1
+GET https://us-west-1.hyperfunc.io/logs/helloworld/e62c014e-386c-42ea-8d07-41d44e98cc3d?follow=1?callid=218b7b10-e7f1-4c48-ac3c-66792f8ffc06 HTTP/1.1
 ```
 
 **Example response**:
@@ -17,10 +17,10 @@ HTTP/1.1 101 UPGRADED
 Connection: Upgrade
 Upgrade: tcp
 
-{"Time": "2017-01-06T15:47:31.485331387Z", "Event": "CALL", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdin": "Hello"}
-{"Time": "2017-01-06T15:47:32.485331387Z", "Event": "PENDING", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
-{"Time": "2017-01-06T15:47:33.485331387Z", "Event": "RUNNING", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a"}
-{"Time": "2017-01-06T15:47:45.485331387Z", "Event": "FINISHED", "CallId": "7f713fff-a65c-4004-b195-72b0c7bce84a", "ShortStdout": "World", "ShortStderr": ""}
+{"Time":"2017-03-16T07:05:58.216Z","Event":"CALL","CallId":"218b7b10-e7f1-4c48-ac3c-66792f8ffc06"}
+{"Time":"2017-03-16T07:05:58.257Z","Event":"PENDING","CallId":"218b7b10-e7f1-4c48-ac3c-66792f8ffc06"}
+{"Time":"2017-03-16T07:06:04.483Z","Event":"RUNNING","CallId":"218b7b10-e7f1-4c48-ac3c-66792f8ffc06"}
+{"Time":"2017-03-16T07:06:10.528Z","Event":"FINISHED","CallId":"218b7b10-e7f1-4c48-ac3c-66792f8ffc06","ShortStdout":"HelloWorld\n"}
 ```
 
 **URL parameters**:
