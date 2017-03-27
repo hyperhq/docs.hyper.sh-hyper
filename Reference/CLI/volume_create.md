@@ -6,7 +6,7 @@
     
       --help=false          Print usage
       --name=               Specify volume name
-      --size=               Specify volume size (a multiple of 10 GB, up to 1TB)
+      --size=               Specify volume size (a multiple of 10 GB, up to 50 GB)
       --snapshot=           Specify snapshot id or name to restore
 
 Creates a new volume that containers can consume and store data in. If a name is not specified, Hyper.sh generates a random id. You create a volume and then configure the container to use it, for example:
