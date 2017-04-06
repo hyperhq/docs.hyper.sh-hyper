@@ -2,7 +2,7 @@
 
 `GET https://$region.hyperfunc.io/status/$name/$uuid`
 
-Retrieve the status of a function.
+Retrieve the status of a function
 
 **Example request**:
 

@@ -2,7 +2,7 @@
 
 `GET /funcs/$name`
 
-Inspect a function to get the detailed information.
+Inspect a function to get more details information.
 
 **Example request**:
 

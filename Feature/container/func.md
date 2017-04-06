@@ -8,22 +8,22 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
     - Minimal ops overhead
 - Docker centric
 	- Deploy your function in Docker image
-	- Any language, any libs, any deps
+	- Any language, any libraries, any dependencies
 - Secure Container Runtime
 	- VM-like isolation
 	- New container instance for each function call
-	- Run as long as you wish
+	- Run functions for as long as you wish
 
 ## How it works
 
-1. Hyper Func uses the popular Docker images as the format to deploy functions. Baking the code, dependencies, data into Docker images, and then register the images to create functions.
-2. Upon calling, a new container will be launched from the function image. The HTTP request payload is passed to the container STDIN as the function input. A new call ID will be returned, which can be used to retrieve the output later.
-3. The max concurrent function calls a user could execute at a given time is subject to the user's quota. When the max concurrency is reached, new calls will be queued to wait for slots.
-4. The queued calls are processed in the ***First-In-First-Out*** manner. However we cannot guarantee the function execution will be finished in such order.
-5. Hyper Func maintains a 50MB cache for each function (**not call**). The cache is used to store the STDOUT of **finished** function calls. These data need to be fetched by `hyper func get`, and then will be removed once be fetched. Otherwise the cache will be rotated once full.
-6. Hyper Func maintains a 50MB cache for logs of each function. These data need to be fetched by `hyper func logs`. Otherwise the cache will be rotated once full.
-7. For each function call, the max data size of STDIN and STDOUT is 5MB.
-8. The headers of HTTP request and the env config of function will be as the environment variable of container.
+1. Hyper Func uses straight Docker images as the underlying format to deploy functions. Code, dependencies and data are baked into Docker images and then uploaded to any popular container registry. From there you can launch functions with the runtime of your choosing.
+2. Upon launch a new container is started with the selected function image. The HTTP request payload is passed to the container STDIN as input to the function and a call ID is returned so you can retrieve output later.
+3. The maximum number of concurrent functions is subject to the user's quota, which can be upgraded on request. When the quota limit is reached subsequent functions are queued until a slot becomes available.
+4. Queued functions are processed in a **First-In-First-Out** order. We cannot however guarantee that the functions will terminate in this order however.
+5. Hyper Func maintains a 50MB cache for each individual function. (**Not per function call**). This cache is used to store the STDOUT of **finished** function calls. This data therefore needs to be fetched regularly using `hyper func get`. Once the 50MB limit is reached the cache will be rotated.
+6. Hyper Func maintains a 50MB cache for the logs of each function. This data needs to be fetched using `hyper func logs`. Once the cache is full the logs will be rotated.
+7. For each function call, the maximum size of data flowing through STDIN and STDOUT is limited to 5MB.
+8. The headers of the HTTP request and any environment configuration of the function will be exposed as environment variables in the host container.
 
 ## Usage
 
@@ -38,7 +38,7 @@ helloworld is created with the address of https://us-west-1.hyperfunc.io/call/he
 $ hyper func call helloworld
 CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 ```
-> Tips: calling with payload `echo Hello | hyper func call helloworld`
+> Tip: calling with payload `echo Hello | hyper func call helloworld`
 
 3. Check the function logs:
 ``` bash
@@ -55,7 +55,7 @@ $ hyper func logs helloworld
 $ hyper func get --wait 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 HelloWorld
 ```
-> Tips: `--wait` blocks the CLI until the call finished (or failed)
+> Tip: `--wait` blocks the CLI until the call finished (or failed)
 
 5. Remove the function:
 ``` bash

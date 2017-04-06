@@ -60,7 +60,6 @@ Content-Type: application/json
 
 -   **Config**
 
-    -   **Hostname** - A string value containing the hostname to use for the container.
     -   **Tty** - Boolean value, Attach standard streams to a `tty`, including `stdin` if it is not closed.
     -   **ExposedPorts** - An object mapping ports to an empty object in the form of:
           `"ExposedPorts": { "<port>/<tcp|udp>: {}" }`

@@ -8,7 +8,6 @@
         --entrypoint             Overwrite the default ENTRYPOINT of the image
         --env-file=[]            Read in a file of environment variables
         --expose=[]              Expose a port or a range of ports
-        -h, --hostname           Container host name
         --help                   Print usage
         -l, --label=[]           Set meta data on a container
         --label-file=[]          Read in a line delimited file of labels
