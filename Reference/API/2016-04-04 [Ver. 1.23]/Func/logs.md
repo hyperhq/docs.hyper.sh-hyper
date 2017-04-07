@@ -2,7 +2,7 @@
 
 `GET https://$region.hyperfunc.io/logs/$name/$uuid`
 
-Retrieve the logs of a function.
+Retrieve the logs of a function, no signature authentication requirements.
 
 **Example request**:
 

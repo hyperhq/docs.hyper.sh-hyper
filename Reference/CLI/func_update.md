@@ -16,12 +16,12 @@
 **Update the address of a function:**
 
     $ hyper func update --refresh helloworld
-    https://us-west-1.hyperfunc.io/call/helloworld/ba06ca01-8366-4331-8c6b-f81b096f6f66
+    helloworld
 
 **Clear the environment variables of a function**
 
     $ hyper func update --env "" helloworld
-    Function helloworld is updated.
+    helloworld
 
 **Notes**
 

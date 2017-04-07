@@ -6,7 +6,7 @@ GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid
 {payload}
 ```
 
-Call a function, which returns the call id
+Call a function, which returns the call id, no signature authentication requirements.
 
 **Example call**:
 

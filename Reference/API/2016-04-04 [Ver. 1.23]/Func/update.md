@@ -62,7 +62,7 @@ Content-Type: application/json
 
 **Status Codes**:
 
-* 204 - no content
+* 200 - no error
 * 400 - bad request parameters
 * 404 - no such function
 * 500 - server error

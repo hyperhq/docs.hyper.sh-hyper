@@ -9,3 +9,4 @@
 - [func call](./call.md)
 - [func get](./get.md)
 - [func logs](./logs.md)
+- [func status](./status.md)

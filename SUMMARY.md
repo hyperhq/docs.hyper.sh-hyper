@@ -186,6 +186,7 @@
             * [Func call](Reference/API/2016-04-04 [Ver. 1.23]/Func/call.md)
             * [Func get](Reference/API/2016-04-04 [Ver. 1.23]/Func/get.md)
             * [Func logs](Reference/API/2016-04-04 [Ver. 1.23]/Func/logs.md)
+            * [Func status](Reference/API/2016-04-04 [Ver. 1.23]/Func/status.md)
    * [Compose File Reference](Reference/compose_file_ref.md)
    * [Security Group Reference](Reference/sg_ref.md)
 * [FAQ](FAQ/index.md)
