@@ -13,8 +13,8 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 	- Max floating IP per container: 1
 	- Max internal IP per container: 1
 - Function
-	- Max size of function input (STDIN): 5MB
-	- Max size of function output (STDOUT): 5MB
+	- Max size of function input (STDIN): 1MB
+	- Max size of function output (STDOUT): 1MB
 	- Cache size of completed function calls: 50MB
 
 ## Quota
