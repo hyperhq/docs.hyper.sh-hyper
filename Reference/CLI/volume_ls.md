@@ -5,6 +5,7 @@
     List volumes
 
       -f, --filter=[]      Provide filter values (i.e. 'dangling=true')
+      --format           Pretty-print containers using a Go template
       --help=false         Print usage
       -q, --quiet=false    Only display volume names
 
@@ -22,3 +23,6 @@ Example output:
 	DRIVER              VOLUME NAME         SIZE                CONTAINER
 	hyper               rose                10g
 	hyper               tyler               50g
+    $ hyper volume ls --format {{.Name}}
+    rose
+    tyler
