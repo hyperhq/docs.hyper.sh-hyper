@@ -55,6 +55,7 @@
        * [update](Reference/CLI/update.md)
        * [volume create](Reference/CLI/volume_create.md)
        * [volume init](Reference/CLI/volume_init.md)
+       * [volume inspect](Reference/CLI/volume_inspect.md)
        * [volume ls](Reference/CLI/volume_ls.md)
        * [volume rm](Reference/CLI/volume_rm.md)
        * [snapshot create](Reference/CLI/snapshot_create.md)

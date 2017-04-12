@@ -15,12 +15,14 @@ Return low-level information on the volume `name`
 
     {
         "Name": "tardis",
-        "Driver": "",
+        "Driver": "hyper",
         "Mountpoint": "",
         "Labels": {
+            "container": "",
             "size": "10",
             "snapshot": ""
         }
+        "CreatedAt": "2017-03-28T13:37:43.744Z"
     }
 
 Status Codes:
