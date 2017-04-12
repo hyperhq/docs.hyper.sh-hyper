@@ -30,6 +30,10 @@
 
 > During the beta, Hyper Cron is charged at the standard per-second container rates.
 
+#### Hyper Func (BETA)
+
+> During the beta, Hyper Func is charged at the standard per-second conatiner rates.
+
 #### Storage
 |Type|Per Second|Per Hour|Monthly|
 |---|---|---|---|
