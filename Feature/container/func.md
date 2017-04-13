@@ -62,3 +62,28 @@ HelloWorld
 $ hyper func rm helloworld
 helloworld
 ```
+
+## Resize picture example
+
+1. Pull the imagemagick image:
+``` bash
+$ hyper pull v4tech/imagemagick
+...
+```
+
+2. Create a "resizer" function:
+``` bash
+$ hyper func create --name resizer v4tech/imagemagick convert - -resize 50% fd:1
+resizer is created with the address of https://us-west-1.hyperfunc.io/call/resizer/11f91366-2fea-4381-8297-dc12f6ba200a
+``` 
+
+3. Call the function with a picture payload:
+``` bash
+$ cat picture.jpg | hyper func call resizer
+CallId: ac62c2a9-8236-4e57-8a24-362389a701c6
+```
+
+4. Retrieve the function return:
+``` bash
+$ hyper func get --wait ac62c2a9-8236-4e57-8a24-362389a701c6 > picture_small.jpg
+```
