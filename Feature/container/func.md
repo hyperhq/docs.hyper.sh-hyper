@@ -28,20 +28,20 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 ## Usage
 
 1. Create a "HelloWorld" function:
-``` bash
+```
 $ hyper func create --name helloworld ubuntu echo HelloWorld
 helloworld is created with the address of https://us-west-1.hyperfunc.io/call/helloworld/e62c014e-386c-42ea-8d07-41d44e98cc3d
 ```
 
 2. Call the function:
-``` bash
+```
 $ hyper func call helloworld
 CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 ```
 > Tip: calling with payload `echo Hello | hyper func call helloworld`
 
 3. Check the function logs:
-``` bash
+```
 $ hyper func logs helloworld
 2017-03-16T15:05:58Z [CALL] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdin: 
 2017-03-16T15:05:58Z [PENDING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
@@ -51,14 +51,14 @@ $ hyper func logs helloworld
 ```
 
 4. Retrieve the function return:
-``` bash
+```
 $ hyper func get --wait 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 HelloWorld
 ```
 > Tip: `--wait` blocks the CLI until the call finished (or failed)
 
 5. Remove the function:
-``` bash
+```
 $ hyper func rm helloworld
 helloworld
 ```
@@ -66,24 +66,24 @@ helloworld
 ## Resize picture example
 
 1. Pull the imagemagick image:
-``` bash
+```
 $ hyper pull v4tech/imagemagick
 ...
 ```
 
 2. Create a "resizer" function:
-``` bash
+```
 $ hyper func create --name resizer v4tech/imagemagick convert - -resize 50% fd:1
 resizer is created with the address of https://us-west-1.hyperfunc.io/call/resizer/11f91366-2fea-4381-8297-dc12f6ba200a
 ``` 
 
 3. Call the function with a picture payload:
-``` bash
+```
 $ cat picture.jpg | hyper func call resizer
 CallId: ac62c2a9-8236-4e57-8a24-362389a701c6
 ```
 
 4. Retrieve the function return:
-``` bash
+```
 $ hyper func get --wait ac62c2a9-8236-4e57-8a24-362389a701c6 > picture_small.jpg
 ```
