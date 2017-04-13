@@ -32,7 +32,7 @@
 
 #### Hyper Func (BETA)
 
-> During the beta, Hyper Func is charged at the standard per-second conatiner rates.
+> During the beta, Hyper Func is charged at the standard per-second container rates.
 
 #### Storage
 |Type|Per Second|Per Hour|Monthly|
