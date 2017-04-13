@@ -4,14 +4,18 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 
 ## Hard Limits
 - Image
-	- Max Image Size: 5GB
+	- Max image size: 5GB
 - Volume
-	- Root Volume Size: 10GB
-	- Volume Size Range: 10GB - 50GB
+	- Root volume size: 10GB
+	- Volume size range: 10GB - 50GB
 	- Max number of volumes mounted on one container: 4
 - Network
-	- Max Floating IP per Container: 1
-	- Max Internal IP per Container: 1
+	- Max floating IP per container: 1
+	- Max internal IP per container: 1
+- Function
+	- Max size of function input (STDIN): 1MB
+	- Max size of function output (STDOUT): 1MB
+	- Cache size of completed function calls: 50MB
 
 ## Quota
 - Container: 10 per region
@@ -21,8 +25,9 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 	- Snapshot: 40 snapshots per region
 - Floating IP: 2 per region
 - Credential: 3 per region
-- SecurityGroup: 100 per region
+- Security Group: 100 per region
 - Service: 5 per region
+- Concurrent function execution (container): 10 per region
 
 ### Request a quota increase
 

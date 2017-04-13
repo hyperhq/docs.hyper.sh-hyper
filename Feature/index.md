@@ -6,6 +6,7 @@
    * [Compose](./container/compose.md)
    * [Cron (Beta)](./container/cron.md)
    * [Service](./container/service.md)
+   * [Func (Beta)](./container/func.md)
 * [Storage](./storage/index.md)
    * [Volume](./storage/volume.md)
    * [Snapshot](./storage/snapshot.md)
