@@ -1,4 +1,4 @@
-## Compose create
+## compose create
 
     Usage:	hyper compose create [OPTIONS] [SERVICE...]
 

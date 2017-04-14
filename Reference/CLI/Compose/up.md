@@ -1,4 +1,4 @@
-## Compose up
+## compose up
 
 	Usage:	hyper compose up [OPTIONS] [SERVICE...]
 

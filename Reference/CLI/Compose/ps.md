@@ -1,4 +1,4 @@
-## Compose ps
+## compose ps
 
 	Usage:	hyper compose ps [OPTIONS] [SERVICE...]
 

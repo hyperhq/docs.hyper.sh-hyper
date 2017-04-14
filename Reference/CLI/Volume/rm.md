@@ -1,4 +1,4 @@
-#### volume_rm
+## volume rm
 
     Usage: hyper volume rm [OPTIONS] VOLUME [VOLUME...]
 

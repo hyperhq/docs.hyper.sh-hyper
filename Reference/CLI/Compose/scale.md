@@ -1,4 +1,4 @@
-## Compose scale
+## compose scale
 
 	Usage:	hyper compose scale [OPTIONS] [SERVICE=NUM...]
 

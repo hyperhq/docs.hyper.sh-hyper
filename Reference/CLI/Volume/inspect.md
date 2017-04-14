@@ -1,4 +1,4 @@
-## inspect
+## volume inspect
 
     Usage:  hyper volume inspect [OPTIONS] VOLUME [VOLUME...]
 

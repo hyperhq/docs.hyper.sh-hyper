@@ -1,4 +1,4 @@
-## Compose kill
+## compose kill
 
 	Usage:	hyper compose kill [OPTIONS] [SERVICE...]
 
