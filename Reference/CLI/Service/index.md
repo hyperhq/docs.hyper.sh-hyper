@@ -11,12 +11,6 @@
       attach-fip               Attach a fip to the service
       detach-fip               Detach the fip from the service
       rm                       Remove one or more services
-    
-    Run 'hyper service COMMAND --help' for more information on a command.
-    
-      --help             Print usage
-    
-      Run 'hyper service COMMAND --help' for more information on a command.
 
 In Hyper.sh, a service is an abstraction which defines a logical set of containers and a policy by which to access them. The set of containers targeted by a service is determined by labels.
 
