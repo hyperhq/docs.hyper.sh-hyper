@@ -27,20 +27,26 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 
 ## Usage
 
-1. Create a "HelloWorld" function:
+1. Pull the ubuntu image:
+```
+$ hyper pull ubuntu
+...
+```
+
+2. Create a "HelloWorld" function:
 ```
 $ hyper func create --name helloworld ubuntu echo HelloWorld
 helloworld is created with the address of https://us-west-1.hyperfunc.io/call/helloworld/e62c014e-386c-42ea-8d07-41d44e98cc3d
 ```
 
-2. Call the function:
+3. Call the function:
 ```
 $ hyper func call helloworld
 CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 ```
 > Tip: calling with payload `echo Hello | hyper func call helloworld`
 
-3. Check the function logs:
+4. Check the function logs:
 ```
 $ hyper func logs helloworld
 2017-03-16T15:05:58Z [CALL] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdin: 
@@ -50,14 +56,14 @@ $ hyper func logs helloworld
 , ShortStderr: 
 ```
 
-4. Retrieve the function return:
+5. Retrieve the function return:
 ```
 $ hyper func get --wait 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 HelloWorld
 ```
 > Tip: `--wait` blocks the CLI until the call finished (or failed)
 
-5. Remove the function:
+6. Remove the function:
 ```
 $ hyper func rm helloworld
 helloworld
