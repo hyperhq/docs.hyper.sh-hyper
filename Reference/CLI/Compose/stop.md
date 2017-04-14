@@ -1,4 +1,4 @@
-## Compose stop
+## compose stop
 
 	Usage:	hyper compose stop [OPTIONS] [SERVICE...]
 

@@ -1,4 +1,4 @@
-#### snapshot_ls
+## snapshot ls
 
     Usage: hyper snapshot ls [OPTIONS]
 

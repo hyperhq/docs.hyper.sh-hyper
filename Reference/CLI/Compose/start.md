@@ -1,4 +1,4 @@
-## Compose start
+## compose start
 
 	Usage:	hyper compose start [OPTIONS] [SERVICE...]
 

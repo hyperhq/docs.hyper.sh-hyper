@@ -1,4 +1,4 @@
-## Compose run
+## compose run
 
 	Usage:	hyper compose run [OPTIONS] SERVICE [COMMAND] [ARGS...]
 

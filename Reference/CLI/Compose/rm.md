@@ -1,4 +1,4 @@
-## Compose rm
+## compose rm
 
 	Usage:	hyper compose rm [OPTIONS] [SERVICE...]
 

@@ -1,4 +1,4 @@
-#### snapshot_rm
+## snapshot rm
 
     Usage: hyper snapshot rm [OPTIONS] SNAPSHOT [SNAPSHOT...]
 

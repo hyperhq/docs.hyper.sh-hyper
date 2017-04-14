@@ -1,4 +1,4 @@
-#### volume_init
+## volume init
 
     Usage:  hyper volume init [OPTIONS] SOURCE:VOLUME [SOURCE:VOLUME...]
 

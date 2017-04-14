@@ -1,4 +1,4 @@
-## Compose down
+## compose down
 
 	Usage:	hyper compose down [OPTIONS]
 

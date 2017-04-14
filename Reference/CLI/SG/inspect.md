@@ -1,4 +1,4 @@
-## sg_inspect
+## sg inspect
 
 	Usage:	hyper sg inspect [OPTIONS] NAME
 
