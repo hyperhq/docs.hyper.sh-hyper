@@ -14,7 +14,6 @@ The hyper client will attempt to update itself to the latest version once per da
 
     $ curl -O https://hyper-install.s3.amazonaws.com/hyper-mac.bin.zip
     $ unzip hyper-mac.bin.zip 
-    $ chmod +x hyper
     $ ./hyper --help
 
 or
@@ -26,7 +25,6 @@ or
 
     $ wget https://hyper-install.s3.amazonaws.com/hyper-linux-x86_64.tar.gz
     $ tar xzf hyper-linux-x86_64.tar.gz
-    $ chmod +x hyper
     $ ./hyper --help
 
 ## Install on Windows (Beta)
@@ -39,7 +37,6 @@ or
 
     $ wget https://hyper-install.s3.amazonaws.com/hyper-arm.tar.gz
     $ tar xzf hyper-arm.tar.gz
-    $ chmod +x hyper
     $ ./hyper --help
 
 
