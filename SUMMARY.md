@@ -82,7 +82,7 @@
            * [down](Reference/CLI/Compose/down.md)
            * [up](Reference/CLI/Compose/up.md)
            * [rm](Reference/CLI/Compose/rm.md)
-           * [ps](Reference/CLI/Compose/ps.md)
+           * [ps](Reference/CLI/Compose/ps.md)
            * [pull](Reference/CLI/Compose/pull.md)
            * [run](Reference/CLI/Compose/run.md)
            * [kill](Reference/CLI/Compose/kill.md)
