@@ -58,6 +58,13 @@
 
 # General FAQ
 
+#### Does Hyper.sh offer a free trial?
+
+- Hyper.sh offers a free trial plan for up to 3 months. After the registration, you will have a free trial period of 1 month, and will get an additional 2 months free trial period once add a credit card.
+- During the trial period, you will incur no costs for the following resources: 1 Container (<= S4), 1 Image, 1 Volume, 1 Floating IP.
+- Once the free trial period ends, you will be charged accordingly each month for all resources.
+- During the free trial period, if we find that the resources are being abused, we will delete related account and resources without notice and retain the right of interpretation.
+
 #### What payment types do you accept?
 Currently, Hyper.sh accepts credit or debit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
 
