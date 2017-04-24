@@ -2,7 +2,10 @@
 
 In part 1 we looked at starting, inspecting and interacting with a single container that had both an attached volume and a FIP to expose a port publicly. In this section we’ll look at how to work with multiple containers by using the perennial Wordpress example.
 
->**Note**
+>**Note 1**
+>Parts 2 and 3 require more resources than are available on the free trial, so now would be a good time to upgrade!
+
+>**Note 2**
 >If you’re familiar with Docker Compose, this will seem like a lot of manual work. Don’t worry, we’ll get to Hyper Compose in the next section!
 
 ## Starting MySQL
