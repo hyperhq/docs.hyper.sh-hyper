@@ -1,7 +1,7 @@
 # Call a function
 
 ```
-GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid
+GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid[/wait]
 
 {payload}
 ```
@@ -32,6 +32,7 @@ Content-Type: application/json
 * $region - Supported region.
 * $name - The function name.
 * $uuid - The uuid of func.
+* /wait - Block until the function call completed.
 
 **Json parameters**:
 
@@ -43,3 +44,8 @@ Content-Type: application/json
 * 404 - no such function
 * 413 - request entity too large
 * 500 - server error
+* Using the `/wait` parameter: same status codes with [get](./get.md) endpoint.
+
+**Notes**
+
+* The finished/failed/expired function call will be removed once the api with `/wait` parameter is successfully called.
