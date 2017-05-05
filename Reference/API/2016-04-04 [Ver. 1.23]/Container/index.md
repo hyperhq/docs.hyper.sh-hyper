@@ -15,3 +15,4 @@
 - [Get container stats](./stats.md)
 - [Inspect a container](./inspect.md)
 - [Exec Create](./exec_create.md)
+- [Commit a container](./commit.md)
