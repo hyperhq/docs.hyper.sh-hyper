@@ -3,6 +3,7 @@
 > NOTE: Options with the `IGNORED` mark are not supported currently and will be ignored.
 
 - [attach](./attach.md)
+- [commit](./commit.md)
 - [create](./create.md)
 - [exec](./exec.md)
 - [images](./images.md)
@@ -16,6 +17,7 @@
 - [port](./port.md)
 - [ps](./ps.md)
 - [pull](./pull.md)
+- [push](./push.md)
 - [rename](./rename.md)
 - [restart](./restart.md)
 - [rm](./rm.md)
