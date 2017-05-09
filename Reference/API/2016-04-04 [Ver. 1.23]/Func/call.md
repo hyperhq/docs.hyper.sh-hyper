@@ -44,7 +44,7 @@ Content-Type: application/json
 * 404 - no such function
 * 413 - request entity too large
 * 500 - server error
-* Using the `/wait` parameter: same status codes with [get](./get.md) endpoint.
+* If use `/wait` parameter: same status codes with [get](./get.md) endpoint.
 
 **Notes**
 
