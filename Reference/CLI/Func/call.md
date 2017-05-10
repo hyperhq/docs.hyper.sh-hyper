@@ -16,4 +16,4 @@
 
 **Notes**
 
-* The finished/failed/expired function call will be removed once the command with `--sync` parameter is successfully called.
+* The finished/failed function call will be removed once the command with `--sync` parameter is successfully called.
