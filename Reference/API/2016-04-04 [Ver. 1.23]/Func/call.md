@@ -1,12 +1,12 @@
 # Call a function
 
 ```
-GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid[/wait]
+GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid[/sync]
 
 {payload}
 ```
 
-Call a function, which returns the call id, no signature authentication requirements.
+Call a function, default is asynchronous, using the `/sync` parameter to be synchronized, no signature authentication requirements.
 
 **Example call**:
 
@@ -32,7 +32,7 @@ Content-Type: application/json
 * $region - Supported region.
 * $name - The function name.
 * $uuid - The uuid of func.
-* /wait - Block until the function call completed.
+* /sync - Block until the function call completed.
 
 **Json parameters**:
 
@@ -44,8 +44,8 @@ Content-Type: application/json
 * 404 - no such function
 * 413 - request entity too large
 * 500 - server error
-* If use `/wait` parameter: same status codes with [get](./get.md) endpoint.
+* If use `/sync` parameter: same status codes with [get](./get.md) endpoint.
 
 **Notes**
 
-* The finished/failed/expired function call will be removed once the api with `/wait` parameter is successfully called.
+* The finished/failed/expired function call will be removed once the api with `/sync` parameter is successfully called.

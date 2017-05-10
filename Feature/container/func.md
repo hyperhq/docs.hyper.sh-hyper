@@ -20,7 +20,7 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 2. Upon launch, a new container is started with the selected function image. The HTTP request payload is passed to the container STDIN as input to the function and the output is returned or a call ID is returned so you can retrieve output later.
 3. The maximum number of concurrent functions is subject to the user's quota, which can be upgraded on request. When the quota limit is reached subsequent functions are queued until a slot becomes available.
 4. Queued functions are processed in a **First-In-First-Out** order. We cannot however guarantee that the functions will terminate in this order.
-5. Hyper Func maintains a 50MB cache for each individual function. (**Not per function call**). This cache is used to store the STDOUT of **finished** function calls. This data therefore needs to be fetched regularly using `hyper func get` or `hyper func call --wait`. Once the 50MB limit is reached the cache will be rotated.
+5. Hyper Func maintains a 50MB cache for each individual asynchronous function. (**Not per function call**). This cache is used to store the STDOUT of **finished** function calls. This data therefore needs to be fetched regularly using `hyper func get`. Once the 50MB limit is reached the cache will be rotated.
 6. Hyper Func maintains a 50MB cache for the logs of each function. This data needs to be fetched using `hyper func logs`. Once the cache is full the logs will be rotated.
 7. For each function call, the maximum size of data flowing through STDIN and STDOUT is limited to 1MB.
 8. The headers of the HTTP request and any environment configuration will be exposed as environment variables in the host container where they can be accessed by the function.
@@ -39,7 +39,7 @@ $ hyper func create --name helloworld ubuntu echo HelloWorld
 helloworld is created with the address of https://us-west-1.hyperfunc.io/call/helloworld/e62c014e-386c-42ea-8d07-41d44e98cc3d
 ```
 
-3. Call the function:
+3. Call the asynchronous function:
 ```
 $ hyper func call helloworld
 CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
@@ -83,13 +83,7 @@ $ hyper func create --name resizer v4tech/imagemagick convert - -resize 50% fd:1
 resizer is created with the address of https://us-west-1.hyperfunc.io/call/resizer/11f91366-2fea-4381-8297-dc12f6ba200a
 ``` 
 
-3. Call the function with a picture payload:
+3. Call the synchronous function with a picture payload:
 ```
-$ cat picture.jpg | hyper func call resizer
-CallId: ac62c2a9-8236-4e57-8a24-362389a701c6
-```
-
-4. Retrieve the function return:
-```
-$ hyper func get --wait ac62c2a9-8236-4e57-8a24-362389a701c6 > picture_small.jpg
+$ cat picture.jpg | hyper func call --sync resizer > picture_small.jpg
 ```

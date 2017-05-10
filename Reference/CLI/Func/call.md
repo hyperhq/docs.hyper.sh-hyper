@@ -5,7 +5,7 @@
   Call a function
 
     --help             Print usage
-    --wait             Block until the call is completed
+    --sync             Block until the call is completed
 
 ### Examples
 
@@ -16,4 +16,4 @@
 
 **Notes**
 
-* The finished/failed/expired function call will be removed once the command with `--wait` parameter is successfully called.
+* The finished/failed/expired function call will be removed once the command with `--sync` parameter is successfully called.

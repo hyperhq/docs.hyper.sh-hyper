@@ -2,7 +2,7 @@
 
   Usage: hyper func get [OPTIONS] CALL_ID
 
-Get the return of a function call
+Get the return of a asynchronous function call
 
     --wait             Block until the call is completed
     --help             Print usage

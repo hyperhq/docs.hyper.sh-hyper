@@ -2,7 +2,7 @@
 
 `GET https://$region.hyperfunc.io/output/$name/$uuid/$call_id[/wait]`
 
-Get the return of a function call, no signature authentication requirements.
+Get the return of a asynchronous function call, no signature authentication requirements.
 
 **Example request**:
 
