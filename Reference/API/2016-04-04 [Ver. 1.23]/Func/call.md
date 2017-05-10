@@ -32,7 +32,7 @@ Content-Type: application/json
 * $region - Supported region.
 * $name - The function name.
 * $uuid - The uuid of func.
-* /sync - Block until the function call completed.
+* /sync - Block until the function call has completed.
 
 **Json parameters**:
 
@@ -44,7 +44,7 @@ Content-Type: application/json
 * 404 - no such function
 * 413 - request entity too large
 * 500 - server error
-* If use `/sync` parameter: same status codes with [get](./get.md) endpoint.
+* If the `/sync` parameter is used: same status codes as with the [get](./get.md) endpoint.
 
 **Notes**
 
