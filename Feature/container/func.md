@@ -19,7 +19,7 @@ Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Do
 1. Hyper Func uses straight Docker images as the underlying format to deploy functions. Code, dependencies and data are baked into your Docker images and then uploaded to any popular container registry. From there you can launch functions with the runtime of your choosing.
 2. Upon launch, a new container is started with the selected function image. The HTTP request payload is passed to the container STDIN as input to the function and the output is returned or a call ID is returned so you can retrieve output later.
 3. The maximum number of concurrent functions is subject to the user's quota, which can be upgraded on request. When the quota limit is reached subsequent functions are queued until a slot becomes available.
-4. Queued functions are processed in a **First-In-First-Out** order. We cannot however guarantee that the functions will terminate in this order however.
+4. Queued functions are processed in a **First-In-First-Out** order. We cannot however guarantee that the functions will terminate in this order.
 5. Hyper Func maintains a 50MB cache for each individual function. (**Not per function call**). This cache is used to store the STDOUT of **finished** function calls. This data therefore needs to be fetched regularly using `hyper func get` or `hyper func call --wait`. Once the 50MB limit is reached the cache will be rotated.
 6. Hyper Func maintains a 50MB cache for the logs of each function. This data needs to be fetched using `hyper func logs`. Once the cache is full the logs will be rotated.
 7. For each function call, the maximum size of data flowing through STDIN and STDOUT is limited to 1MB.
