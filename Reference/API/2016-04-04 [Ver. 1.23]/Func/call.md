@@ -6,7 +6,7 @@ GET/POST/PUT/DELETE https://$region.hyperfunc.io/call/$name/$uuid[/sync]
 {payload}
 ```
 
-Call a function, default is asynchronous, using the `/sync` parameter to be synchronized, no signature authentication requirements.
+Call a function (by default the call is asynchronous, add the `/sync` parameter for synchronous call), no signature authentication requirements.
 
 **Example call**:
 
