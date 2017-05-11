@@ -10,8 +10,8 @@
       -m, --message=""    Commit message
 
 It can be useful to commit a container's file changes or settings into a new
-image. This allows you debug a container by running an interactive shell, or to
-export a working dataset to another server. Generally, it is better to use
+image. This allows you to debug a container by running an interactive shell, or to
+export a working dataset to another server. However, it is generally better to use
 Dockerfiles to manage your images in a documented and maintainable way.
 
 The commit operation will not include any data contained in
@@ -21,7 +21,7 @@ The `--change` option will apply `Dockerfile` instructions to the image that is
 created.  Supported `Dockerfile` instructions:
 `CMD`|`ENTRYPOINT`|`ENV`|`EXPOSE`|`LABEL`|`ONBUILD`|`USER`|`VOLUME`|`WORKDIR`
 
-The commit operation only works on stopped container now.
+The commit operation only works on stopped container for now.
 
 ### Examples
 
@@ -38,7 +38,7 @@ The commit operation only works on stopped container now.
     REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
     user/testimage      v1                  a0696d8da7b6        30 seconds ago      1.126 MB
 
-#### Commit a container with new configurations
+#### Commit a container with a new configuration
 
     $ hyper ps -a
     CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                           PORTS
