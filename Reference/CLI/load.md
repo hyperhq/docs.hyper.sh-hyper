@@ -2,10 +2,12 @@
 
     Usage:	hyper load [OPTIONS]
 
-    Load an image from a tar archive
+    Load an image from a tar archive or local docker daemon
 
       --help             Print usage
       -i, --input        Read from a remote archive file compressed with gzip, bzip, or xz
+      -f, --file         Read from local tar archive file (only the new layers will be uploaded)
+      -l, --local        Read from local docker daemon (only the new layers will be uploaded)
       -q, --quiet        Do not show load process
 
 ## Examples
@@ -33,3 +35,12 @@
 **load image with basic auth:**
 
      $ hyper load -i http://<username>:<password>@<host_domain>/helloworld.tar
+
+**load image from local tar archive file: (only the new layers will be uploaded)**
+
+     $ hyper load -f helloworld.tar
+
+**load image from local docker daemon (only the new layers will be uploaded)**
+
+     $ hyper load -l helloworld:latest
+

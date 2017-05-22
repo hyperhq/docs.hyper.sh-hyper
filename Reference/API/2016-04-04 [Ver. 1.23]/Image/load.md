@@ -1,8 +1,8 @@
-# Load image from archive
+# Load an image from a tar archive
 
 `POST /images/load`
 
-Load a set of images from a remote archive file compressed with gzip, bzip, or xz.
+Load a set of images from a tar archive or a remote archive file compressed with gzip, bzip, or xz.
 
 **Example request**:
 
@@ -12,6 +12,15 @@ Load a set of images from a remote archive file compressed with gzip, bzip, or x
       "fromSrc":"https://<bucket>.s3.amazonaws.com/public/busybox_alpine.tar.gz",
       "quiet":false
     }
+
+**Example request**:
+
+    POST /images/load?file=true HTTP/1.1
+    {tar archive}
+
+**Query Parameters:**
+
+- **file** - 1/True/true or 0/False/false, use a tar archive. Default `false`.
 
 **Example response**:
 
