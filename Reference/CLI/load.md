@@ -5,8 +5,7 @@
     Load an image from a tar archive or local docker daemon
 
       --help             Print usage
-      -i, --input        Read from a remote archive file compressed with gzip, bzip, or xz
-      -f, --file         Read from local tar archive file (only the new layers will be uploaded), instead of STDIN
+      -i, --input        Read from a local or remote archive file compressed with gzip, bzip, or xz, instead of STDIN
       -l, --local        Read from local docker daemon (only the new layers will be uploaded)
       -q, --quiet        Do not show load process
 
@@ -42,9 +41,8 @@
 
 **load image from local tar archive file: (only the new layers will be uploaded)**
 
-     $ hyper load -f helloworld.tar
+     $ hyper load -i helloworld.tar
 
 **load image from local docker daemon (only the new layers will be uploaded)**
 
      $ hyper load -l helloworld:latest
-
