@@ -6,7 +6,7 @@
 
       --help             Print usage
       -i, --input        Read from a remote archive file compressed with gzip, bzip, or xz
-      -f, --file         Read from local tar archive file (only the new layers will be uploaded)
+      -f, --file         Read from local tar archive file (only the new layers will be uploaded), instead of STDIN
       -l, --local        Read from local docker daemon (only the new layers will be uploaded)
       -q, --quiet        Do not show load process
 
@@ -35,6 +35,10 @@
 **load image with basic auth:**
 
      $ hyper load -i http://<username>:<password>@<host_domain>/helloworld.tar
+
+**load image from STDIN: (only the new layers will be uploaded)**
+
+     $ cat helloworld.tar | hyper load
 
 **load image from local tar archive file: (only the new layers will be uploaded)**
 

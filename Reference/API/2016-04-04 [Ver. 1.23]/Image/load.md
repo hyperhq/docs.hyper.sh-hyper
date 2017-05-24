@@ -18,10 +18,6 @@ Load a set of images from a tar archive or a remote archive file compressed with
     POST /images/load?file=true HTTP/1.1
     {tar archive}
 
-**Query Parameters:**
-
-- **file** - 1/True/true or 0/False/false, use a tar archive. Default `false`.
-
 **Example response**:
 
     HTTP/1.1 200 OK
@@ -29,6 +25,10 @@ Load a set of images from a tar archive or a remote archive file compressed with
     {"status":"Loading layer...}
     {"status":"Loading layer","progressDetail":{"current":1024,"total":1024},"progress":"[====..."}
     {"status":"...:latest(sha256:94df4f0ce8a4d4d4c030b9bdfe91fc9cf6a4b7be914542315ef93a046d520614) has been loaded."}
+
+**Query Parameters:**
+
+- **file** - 1/True/true or 0/False/false, use a tar archive. Default `false`.
 
 Status Codes:
 
