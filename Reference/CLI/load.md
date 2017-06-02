@@ -2,12 +2,12 @@
 
     Usage:	hyper load [OPTIONS]
 
-    Load an image from a tar archive or local docker daemon
+    Load a local image or a tar file
 
       --help             Print usage
       -i, --input        Read from a local or remote archive file compressed with gzip, bzip, or xz, instead of STDIN
-      -l, --local        Read from local docker daemon (only the new layers will be uploaded)
-      -q, --quiet        Do not show load process
+      -l, --local        Read from a local image
+      -q, --quiet        Do not show load process
 
 ## Examples
 
@@ -39,10 +39,10 @@
 
      $ cat helloworld.tar | hyper load
 
-**load image from local tar archive file: (only the new layers will be uploaded)**
+**load image from local tar archive file: (similiar with `push`, only upload the diff)**
 
      $ hyper load -i helloworld.tar
 
-**load image from local docker daemon (only the new layers will be uploaded)**
+**load a local image: (similiar with `push`, only upload the diff) **
 
      $ hyper load -l helloworld:latest
