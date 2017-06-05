@@ -35,7 +35,7 @@
 
      $ hyper load -i http://<username>:<password>@<host_domain>/helloworld.tar
 
-**load image from STDIN: (only the new layers will be uploaded)**
+**load image from STDIN: (similiar with `push`, only upload the diff)**
 
      $ cat helloworld.tar | hyper load
 

@@ -16,6 +16,7 @@ Load a local image or a archive file compressed with gzip, bzip, or xz.
 **Example request**:
 
     POST /images/load?file=true HTTP/1.1
+    X-Hyper-Content-Length: 10922468
     {tar archive}
 
 **Example response**:
@@ -29,6 +30,7 @@ Load a local image or a archive file compressed with gzip, bzip, or xz.
 **Query Parameters:**
 
 - **file** - 1/True/true or 0/False/false, use a tar archive. Default `false`.
+- **quiet** - 1/True/true or 0/False/false, do not return load process. Default `false`.
 
 Status Codes:
 
