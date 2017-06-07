@@ -1,8 +1,8 @@
-# Load a local image or a tar file
+# Load image from a local or remote archive file
 
 `POST /images/load`
 
-Load a local image or an archive file compressed with gzip, bzip or xz.
+Load image from a local or remote archive file compressed with gzip, bzip or xz.
 
 **Example request**:
 
