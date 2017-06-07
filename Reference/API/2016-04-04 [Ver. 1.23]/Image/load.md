@@ -2,7 +2,7 @@
 
 `POST /images/load`
 
-Load a local image or a archive file compressed with gzip, bzip, or xz.
+Load a local image or an archive file compressed with gzip, bzip or xz.
 
 **Example request**:
 

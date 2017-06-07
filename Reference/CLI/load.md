@@ -46,3 +46,8 @@
 **load a local image: (similiar with `push`, only upload the diff) **
 
      $ hyper load -l helloworld:latest
+
+**Notes**
+
+* Loading multiple images from local is not supported.
+* The image is limited to 4GB size.
