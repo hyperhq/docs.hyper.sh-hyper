@@ -50,4 +50,4 @@
 **Notes**
 
 * Loading multiple images from local is not supported.
-* The image is limited to 4GB size.
+* The image size is limited to 4GB.
