@@ -183,7 +183,7 @@ Query Parameters:
 -   **size** – 1/True/true or 0/False/false, Show the containers sizes
 -   **filters** - a JSON encoded value of the filters (a `map[string][]string`) to process on the containers list. Available filters:
   -   `exited=<int>`; -- containers with exit code of  `<int>` ;
-  -   `status=`(`created`|`running`|`exited`)
+  -   `status=`(`created`|`restarting`|`running`|`exited`)
   -   `label=key` or `label="key=value"` of a container label
 
 Status Codes:
