@@ -51,3 +51,7 @@
 
 * Loading multiple images from local is not supported.
 * The image size is limited to 4GB.
+
+**Best Practice**
+
+* Use `hyper pull` to pull the base image first before `hyper load`, will speed up the load progress.
