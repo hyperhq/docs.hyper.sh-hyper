@@ -2,11 +2,12 @@
 
     Usage:	hyper load [OPTIONS]
 
-    Load an image from a tar archive
+    Load a local image or a tar file
 
       --help             Print usage
-      -i, --input        Read from a remote archive file compressed with gzip, bzip, or xz
-      -q, --quiet        Do not show load process
+      -i, --input        Read from a local or remote archive file compressed with gzip, bzip, or xz, instead of STDIN
+      -l, --local        Read from a local image
+      -q, --quiet        Do not show load process
 
 ## Examples
 
@@ -33,3 +34,24 @@
 **load image with basic auth:**
 
      $ hyper load -i http://<username>:<password>@<host_domain>/helloworld.tar
+
+**load image from STDIN: (similiar with `push`, only upload the diff)**
+
+     $ cat helloworld.tar | hyper load
+
+**load image from local tar archive file: (similiar with `push`, only upload the diff)**
+
+     $ hyper load -i helloworld.tar
+
+**load a local image: (similiar with `push`, only upload the diff) **
+
+     $ hyper load -l helloworld:latest
+
+**Notes**
+
+* Loading multiple images from local is not supported.
+* The image size is limited to 4GB.
+
+**Best Practice**
+
+* Use `hyper pull` to pull the base image first before `hyper load`, will speed up the load progress.

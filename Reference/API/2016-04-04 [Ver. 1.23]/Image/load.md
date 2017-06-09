@@ -1,8 +1,8 @@
-# Load image from archive
+# Load image from a local or remote archive file
 
 `POST /images/load`
 
-Load a set of images from a remote archive file compressed with gzip, bzip, or xz.
+Load image from a local or remote archive file compressed with gzip, bzip or xz.
 
 **Example request**:
 
@@ -13,6 +13,12 @@ Load a set of images from a remote archive file compressed with gzip, bzip, or x
       "quiet":false
     }
 
+**Example request**:
+
+    POST /images/load?file=true HTTP/1.1
+    X-Hyper-Content-Length: 10922468
+    {tar archive}
+
 **Example response**:
 
     HTTP/1.1 200 OK
@@ -20,6 +26,11 @@ Load a set of images from a remote archive file compressed with gzip, bzip, or x
     {"status":"Loading layer...}
     {"status":"Loading layer","progressDetail":{"current":1024,"total":1024},"progress":"[====..."}
     {"status":"...:latest(sha256:94df4f0ce8a4d4d4c030b9bdfe91fc9cf6a4b7be914542315ef93a046d520614) has been loaded."}
+
+**Query Parameters:**
+
+- **file** - 1/True/true or 0/False/false, use a tar archive. Default `false`.
+- **quiet** - 1/True/true or 0/False/false, do not return load process. Default `false`.
 
 Status Codes:
 
