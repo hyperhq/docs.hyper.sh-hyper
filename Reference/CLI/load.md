@@ -35,15 +35,15 @@
 
      $ hyper load -i http://<username>:<password>@<host_domain>/helloworld.tar
 
-**load image from STDIN: (similiar with `push`, only upload the diff)**
+**load image from STDIN: (similar with `push`, only upload the diff)**
 
      $ cat helloworld.tar | hyper load
 
-**load image from local tar archive file: (similiar with `push`, only upload the diff)**
+**load image from local tar archive file: (similar with `push`, only upload the diff)**
 
      $ hyper load -i helloworld.tar
 
-**load a local image: (similiar with `push`, only upload the diff) **
+**load a local image: (similar with `push`, only upload the diff) **
 
      $ hyper load -l helloworld:latest
 
