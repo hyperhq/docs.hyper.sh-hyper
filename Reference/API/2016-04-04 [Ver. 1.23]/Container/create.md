@@ -31,60 +31,50 @@ Create a container
            "Labels": {
                    "com.example.vendor": "Acme",
                    "com.example.license": "GPL",
-                   "com.example.version": "1.0"
-                   "sh_hyper_instancetype": "xxs"
+                   "com.example.version": "1.0",
+                   "sh_hyper_instancetype": "s4"
            },
-           "Mounts": [
-             {
-               "Name": "fac362...80535",
-               "Source": "/data",
-               "Destination": "/data",
-               "Driver": "local",
-               "Mode": "ro,Z",
-               "RW": false,
-               "Propagation": ""
-             }
-           ],
+           "Mounts": [],
            "WorkingDir": "",
            "NetworkDisabled": false,
-           "MacAddress": "12:34:56:78:9a:bc",
+           "MacAddress": "",
            "ExposedPorts": {
                    "22/tcp": {}
            },
            "StopSignal": "SIGTERM",
            "HostConfig": {
-             "Binds": ["tmp_volume:/tmp"],
-             "Links": ["redis3:redis"],
+             "Binds": [],
+             "Links": [],
              "Memory": 0,
              "MemorySwap": 0,
              "MemoryReservation": 0,
              "KernelMemory": 0,
-             "CpuShares": 512,
-             "CpuPeriod": 100000,
-             "CpuQuota": 50000,
-             "CpusetCpus": "0,1",
-             "CpusetMems": "0,1",
-             "BlkioWeight": 300,
-             "BlkioWeightDevice": [{}],
-             "BlkioDeviceReadBps": [{}],
-             "BlkioDeviceReadIOps": [{}],
-             "BlkioDeviceWriteBps": [{}],
-             "BlkioDeviceWriteIOps": [{}],
-             "MemorySwappiness": 60,
+             "CpuShares": 0,
+             "CpuPeriod": 0,
+             "CpuQuota": 0,
+             "CpusetCpus": "",
+             "CpusetMems": "",
+             "BlkioWeight": 0,
+             "BlkioWeightDevice": [],
+             "BlkioDeviceReadBps": [],
+             "BlkioDeviceReadIOps": [],
+             "BlkioDeviceWriteBps": [],
+             "BlkioDeviceWriteIOps": [],
+             "MemorySwappiness": -1,
              "OomKillDisable": false,
-             "OomScoreAdj": 500,
+             "OomScoreAdj": 0,
              "PortBindings": { "22/tcp": [{ "HostPort": "11022" }] },
              "PublishAllPorts": false,
              "Privileged": false,
              "ReadonlyRootfs": false,
-             "Dns": ["8.8.8.8"],
+             "Dns": [],
              "DnsOptions": [""],
              "DnsSearch": [""],
              "ExtraHosts": null,
-             "VolumesFrom": ["parent"],
-             "CapAdd": ["NET_ADMIN"],
-             "CapDrop": ["MKNOD"],
-             "GroupAdd": ["newgroup"],
+             "VolumesFrom": [],
+             "CapAdd": [],
+             "CapDrop": [],
+             "GroupAdd": [],
              "RestartPolicy": { "Name": "", "MaximumRetryCount": 0 },
              "NetworkMode": "bridge",
              "Devices": [],
@@ -93,7 +83,7 @@ Create a container
              "SecurityOpt": [""],
              "CgroupParent": "",
              "VolumeDriver": "",
-             "ShmSize": 67108864
+             "ShmSize": 0 
           }
       }
 
