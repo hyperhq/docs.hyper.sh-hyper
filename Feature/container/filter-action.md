@@ -6,6 +6,7 @@ In Hyper.sh, you can create a filter to group resources with the same attributes
 - id=<container id>
 - name=<container name>
 - image=<image name>
+- label=<key>
 - label=<key>=<value>
 ```
 
@@ -20,3 +21,8 @@ Once you saved a filter, you can set up some actions on the filter. currently, w
 - The notification email will include container id, name, exit code and time.
 - If your container repeatedly restarts, we will only send one notification email within 5 minutes.
 - If the container stop is caused by hyper.sh service problem, we will send the notification email as soon as possible.
+
+# Limits
+
+- The maximum length of filter name is 255
+- The maximum number of filters is 50
