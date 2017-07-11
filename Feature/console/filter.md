@@ -9,11 +9,11 @@ Filter is dynamic, e.g. new resources matched with the filter will be automatica
 ### Filter Sytax
 The filter syntax is resource specfic. More details can be found at:
 
-> - [Container](https://docs.hyper.sh/Reference/CLI/ps.html)
+> - Container (The part of [ps filters](https://docs.hyper.sh/Reference/CLI/ps.html))
 > 	- id (container's id)
 >  	- label (label=<key> or label=<key>=<value>)
 > 	- name (container's name)
-> 	- image (container image)
+> 	- image (container's image)
 
 The same filter expression attribute will be as a union, different will be as an intersection.
 
@@ -41,15 +41,15 @@ Once a filter is created, you can set up actions on it:
 Action is resource specific. Currently the following actions are supported:
 
 > - Container
-> 	- Send email notification on container exit
+> 	- Send email notification on container (unexpected) exit
 
 # Action Reference
 
-### Send email notification on container exit
+### Send email notification on container (unexpected) exit
 An email notification will be sent your registered email address if a container exited unexpectedly:
 
 - User-trigger container stop (CLI and API) are NOT included
-- Normal container exit are included, e.g. job finished, so resource filter is best not to include such containers
+- Normal container exit are NOT included (exit code should be 0), e.g. job finished
 - Notification threshold is 5 minutes. All container exit events during this period will be put in one email
 - The notification email will include container id, name, exit code and time.
 - If your container repeatedly restarts (with `--restart=always` flag), only one notification will be sent within 5 minutes
