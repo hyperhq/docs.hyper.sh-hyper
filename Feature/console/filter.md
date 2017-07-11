@@ -41,14 +41,15 @@ Once a filter is created, you can set up actions on it:
 Action is resource specific. Currently the following actions are supported:
 
 > - Container
-> 	- Send email notification on (unexpected) container exit
+> 	- Send email notification on container exit
 
 # Action Reference
 
-### Send email notification on (unexpected) container exit
+### Send email notification on container exit
 An email notification will be sent your registered email address if a container exited unexpectedly:
 
 - User-trigger container stop (CLI and API) are NOT included
+- Normal container exit are included, e.g. job finished, so resource filter is best not to include such containers
 - Notification threshold is 5 minutes. All container exit events during this period will be put in one email
 - The notification email will include container id, name, exit code and time.
 - If your container repeatedly restarts (with `--restart=always` flag), only one notification will be sent within 5 minutes
