@@ -35,21 +35,20 @@ The same filter expression attribute will be as a union, different will be as an
 Once a filter is created, you can set up actions on it:
 
 - Login to [the web console](https://console.hyper.sh)
-- Goto the `Resource Filter` page
+- Goto the `Resource Filters` page
 - Select (unselect) actions for filters
  
 Action is resource specific. Currently the following actions are supported:
 
 > - Container
-> 	- Send email notfication on (unexpected) container exit
+> 	- Send email notification on (unexpected) container exit
 
-# Action Referenence
+# Action Reference
 
-### Send email notfication on (unexpected) container exit
+### Send email notification on (unexpected) container exit
 An email notification will be sent your registered email address if a container exited unexpectedly:
 
 - User-trigger container stop (CLI and API) are NOT included
-- Normal container exit are NOT included, e.g. job finished
 - Notification threshold is 5 minutes. All container exit events during this period will be put in one email
 - The notification email will include container id, name, exit code and time.
 - If your container repeatedly restarts (with `--restart=always` flag), only one notification will be sent within 5 minutes
