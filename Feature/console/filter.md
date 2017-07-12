@@ -54,3 +54,8 @@ An email notification will be sent your registered email address if a container 
 - The notification email will include container id, name, exit code and time.
 - If your container repeatedly restarts (with `--restart=always` flag), only one notification will be sent within 5 minutes
 - If the container exit is caused by the platform incident, we will send the notification email as soon as possible
+
+# Limits
+
+- The maximum length of filter name is 255
+- The maximum number of filters is 50
