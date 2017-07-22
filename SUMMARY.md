@@ -26,6 +26,8 @@
        * [Floating IP](Feature/network/fip.md)
        * [Port](Feature/network/port.md)
        * [Security Group](Feature/network/sg.md)
+   * [Console](Feature/console/index.md)
+       * [Filter](Feature/console/filter.md)
 * [Reference](Reference/index.md)
    * [CLI](Reference/CLI/index.md)
        * [attach](Reference/CLI/attach.md)
