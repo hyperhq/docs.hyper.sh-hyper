@@ -11,7 +11,7 @@ The filter syntax is resource specfic. More details can be found at:
 
 > - Container (The part of [ps filters](https://docs.hyper.sh/Reference/CLI/ps.html))
 > 	- id (container's id)
->  	- label (label=<key> or label=<key>=<value>)
+> 	- label (label=<key> or label=<key>=<value>)
 > 	- name (container's name)
 > 	- image (container's image)
 
