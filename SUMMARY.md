@@ -3,6 +3,8 @@
 * [Introduction](README.md)
    * [What is Hyper.sh](Introduction/what_is_hyper_.md)
    * [Why Hyper.sh](Introduction/why_hyper_.md)
+   * [Pricing](FAQ/pricing.md)
+   * [Quota and Limits](FAQ/quota_and_limits.md)
    * [FAQ](Introduction/faq.md)
 * [Getting Started](GettingStarted/index.md)
    * [Generate API Credential](GettingStarted/generate_api_credential.md)
