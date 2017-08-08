@@ -29,6 +29,10 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 - Service: 5 per region
 - Concurrent function execution (container): 10 per region
 
+> Note: Beta services are not open for higher quota
+> - Hyper Cron
+> - Hyper Func
+
 ### Request a quota increase
 
 Open the [Account](https://console.hyper.sh/account/) page, choose `Quota`, click `Request Quota Increase`:
