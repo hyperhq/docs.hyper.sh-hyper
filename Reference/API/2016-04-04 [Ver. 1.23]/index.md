@@ -19,6 +19,7 @@ Authenticate your account when using the API by signing the request with your ac
 Hyper.sh API signature algorithm is based on [AWS Signature Version 4](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html), and there are several open source SDKs available:
 
 - `Go`: [hyperhq/hypercli](https://github.com/hyperhq/hypercli/blob/302a6b530148f6a777cd6b8772f706ab5e3da46b/vendor/src/github.com/docker/engine-api/client/sign4.go#L73)
+- `Ruby`: [drish/hyperb](https://github.com/drish/hyperb)
 - `Python`: [tardyp/hyper_sh](https://github.com/tardyp/hyper_sh/blob/master/hyper_sh/requests_aws4auth/aws4auth.py)
 - `NodeJS/Javascript`: [npm: hyper-aws4](https://www.npmjs.com/package/hyper-aws4)
 
