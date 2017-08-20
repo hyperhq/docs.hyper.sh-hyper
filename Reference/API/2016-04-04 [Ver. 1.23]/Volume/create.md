@@ -41,5 +41,6 @@ Status Codes:
 JSON Parameters:
 
 - **Name** - The new volume's name. If not specified, Docker generates a name.
-- **Size** - The size of the new volume. The value must be integer with the unit of GB, and valid value is from 10-1000 (1TB).
-- **SnapshotId** - The Id of the snapshot to restore.
+- **DriverOpts** - A json object containing:
+    - **Size** - The size of the new volume. The value must be integar with the unit of GB, and valid value is from 10-1000 (1TB). Default, 10.
+    - **Snapshot** - The Id of the snapshot to restore. Optional
