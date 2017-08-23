@@ -218,373 +218,368 @@ security_groups:
 <table class="table table-bordered table-striped table-condensed">
 <tr>
 <td></td>
-<td>docker compose</td>
-<td>hyper compose</td>
-<td>detail</td>
+<td>Docker</td>
+<td>Hyper</td>
+<td>Note</td>
 </tr>
 <tr>
 <td>build</td>
-<td>Yes</td></td>
-<td>No</td>
+<td>x</td></td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>cap_add</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Add container capabilities.</td>
 </tr>
 <tr>
 <td>cap_drop</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Drop container capabilities.</td>
 </tr>
 <tr>
 <td>command</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Override the default command.</td>
 </tr>
 <tr>
 <td>cgroup_parent</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Specify an optional parent cgroup for the container.</td>
 </tr>
 <tr>
 <td>container_name</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Specify a custom container name, rather than a generated default name.</td>
 </tr>
 <tr>
 <td>devices</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>List of device mappings.</td>
 </tr>
 <tr>
 <td>depends_on</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Express dependency between services.</td>
 </tr>
 <tr>
 <td>dns</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Custom DNS servers. Can be a single value or a list.</td>
 </tr>
 <tr>
 <td>dns_search</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Custom DNS search domains. Can be a single value or a list.</td>
 </tr>
 <tr>
 <td>tmpfs</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Mount a temporary file system inside the container. </td>
 </tr>
 <tr>
 <td>entrypoint</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Override the default entrypoint.</td>
 </tr>
 <tr>
 <td>env_file</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Add environment variables from a file. </td>
 </tr>
 <tr>
 <td>environment</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Add environment variables. </td>
 </tr>
 <tr>
 <td>expose</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Expose ports without publishing them to the host machine. (support later)</td>
 </tr>
 <tr>
 <td>extends</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Extend another service, in the current file or another, optionally overriding configuration.</td>
 </tr>
 <tr>
 <td>external_links</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Link to containers started outside this docker-compose.yml or even outside of Compose</td>
 </tr>
 <tr>
 <td>extra_hosts</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Add hostname mappings.</td>
 </tr>
 <tr>
 <td>image</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Specify the image to start the container from.</td>
 </tr>
 <tr>
 <td>labels</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Add metadata to containers using Docker labels.</td>
 </tr>
 <tr>
 <td>links</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Link to containers in another service. </td>
 </tr>
 <tr>
 <td>logging</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Logging configuration for the service.</td>
 </tr>
 <tr>
 <td>log_driver</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Specify a log driver.</td>
 </tr>
 <tr>
 <td>log_opt</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Specify logging options as key-value pairs.</td>
 </tr>
 <tr>
 <td>net</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>[v1 only]network mode</td>
 </tr>
 <tr>
 <td>network_mode</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>[v2 only]network mode</td>
 </tr>
 <tr>
 <td>networks</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>[v2 only]Networks to join.</td>
 </tr>
 <tr>
 <td>aliases</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Aliases (alternative hostnames) for this service on the network.</td>
 </tr>
 <tr>
 <td>ipv4_address</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Specify a static IP address for containers for this service when joining the network.</td>
 </tr>
 <tr>
 <td>ipv6_address</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Specify a static IP address for containers for this service when joining the network.</td>
 </tr>
 <tr>
 <td>pid</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Sets the PID mode to the host PID mode.</td>
 </tr>
 <tr>
 <td>ports</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Expose ports.</td>
 </tr>
 <tr>
 <td>security_opt</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Override the default labeling scheme for each container.</td>
 </tr>
 <tr>
 <td>stop_signal</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Sets an alternative signal to stop the container.</td>
 </tr>
 <tr>
 <td>ulimits</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Override the default ulimits for a container. </td>
 </tr>
 <tr>
 <td>volumes</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>Mount paths or named volumes.</td>
 </tr>
 <tr>
 <td>volume_driver</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>volume_from</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>Mount all of the volumes from another service or container</td>
 </tr>
 <tr>
 <td>cpu_shares</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>cpu_shares: 73</td>
 </tr>
 <tr>
 <td>cpu_quota</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>cpu_quota: 50000</td>
 </tr>
 <tr>
 <td>cpuset</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>cpuset: 0,1</td>
 </tr>
 <tr>
 <td>domainname</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>domainname: foo.com</td>
 </tr>
 <tr>
 <td>hostname</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>hostname: boo</td>
 </tr>
 <tr>
 <td>ipc</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>mac_address</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td>mac_address: 02:42:ac:11:65:43</td>
 </tr>
 <tr>
 <td>mem_limit</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>memswap_limit</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>privileged</td>
-<td>Yes</td>
-<td>No</td>
-<td>hyper.sh container is always privileged</td>
+<td>x</td>
+<td>-</td>
+<td></td>
 </tr>
 <tr>
 <td>read_only</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>restart</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td>restart: always</td>
 </tr>
 <tr>
 <td>shm_size</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>stdin_open</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td></td>
 </tr>
 <tr>
 <td>tty</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td></td>
 </tr>
 <tr>
 <td>user</td>
-<td>Yes</td>
-<td>No</td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 <tr>
 <td>working_dir</td>
-<td>Yes</td>
-<td>Yes</td>
+<td>x</td>
+<td>x</td>
 <td></td>
 </tr>
 <tr>
 <td>size</td>
-<td>No</td>
-<td>Yes</td>
+<td>-</td>
+<td>x</td>
 <td>instance size of Hyper.sh container</td>
 </tr>
 <tr>
 <td>fip</td>
-<td>No</td>
-<td>Yes</td>
+<td>-</td>
+<td>x</td>
 <td>floating IP</td>
 </tr>
 <tr>
 <td>security_groups</td>
-<td>No</td>
-<td>Yes</td>
+<td>-</td>
+<td>x</td>
 <td>Security Groups</td>
 </tr>
 <tr>
 <td>noauto_volume</td>
-<td>No</td>
-<td>Yes</td>
+<td>-</td>
+<td>x</td>
 <td>Do not auto create volume</td>
 </tr>
-<td>Volume configuration</td>
-<td>Yes</td>
-<td>Yes</td>
-<td></td>
-</tr>
 <tr>
-<td>Network configuration</td>
-<td>Yes</td>
-<td>No</td>
+<td>networks/td>
+<td>x</td>
+<td>-</td>
 <td></td>
 </tr>
 </table>
