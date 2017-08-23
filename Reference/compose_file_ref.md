@@ -577,7 +577,7 @@ security_groups:
 <td>Do not auto create volume</td>
 </tr>
 <tr>
-<td>networks/td>
+<td>networks</td>
 <td>x</td>
 <td>-</td>
 <td></td>
