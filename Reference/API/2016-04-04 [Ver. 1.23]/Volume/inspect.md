@@ -21,7 +21,7 @@ Return low-level information on the volume `name`
             "container": "",
             "size": "10",
             "snapshot": ""
-        }
+        },
         "CreatedAt": "2017-03-28T13:37:43.744Z"
     }
 
