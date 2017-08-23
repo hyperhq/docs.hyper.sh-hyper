@@ -9,7 +9,7 @@ As with `hyper run`, options specified in the Docker Image(e.g., CMD, EXPOSE, VO
 You can use environment variables in configuration values with a Bash-like ${VARIABLE} syntax - see variable substitution for full details.
 
 ## Service configuration reference
-> Note: There are two versions of the Compose file format – version 1 (the legacy format, which does not support volumes or networks) and version 2 (the most up-to-date). For more information, see the Versioning section.
+> Note: Hyper compose only supports two versions of the Compose file format – version 1 (the legacy format, which does not support volumes or networks) and version 2.
 
 ### command
 Override the default command.
@@ -174,6 +174,8 @@ volumes:
   # Named volume, git repository
   - https://github.com/hyperhq/hypercli.git:/data/hypercli
 ```
+
+>Note: You can not specify local directory or files to init the volume like docker compose.
 
 ### fip
 Attach an allocated floating IP to a (running) container, each container can have only one floating IP.  It will only accept a single string:
@@ -506,7 +508,7 @@ security_groups:
 <td>privileged</td>
 <td>Yes</td>
 <td>No</td>
-<td></td>
+<td>hyper.sh container is always privileged</td>
 </tr>
 <tr>
 <td>read_only</td>
