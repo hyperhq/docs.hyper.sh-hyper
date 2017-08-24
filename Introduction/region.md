@@ -7,7 +7,7 @@ When you view your resources, you'll only see the resources tied to the region y
 The following table lists the regions provided by Hyper.sh
 |Region|Location|
 |---|---|
-|us-west-1 | USA |
+|us-west-1 | Los Angels |
 |eu-1 | EU |
 
 ### Specify Your Regions
