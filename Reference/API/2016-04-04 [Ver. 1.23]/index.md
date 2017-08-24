@@ -5,6 +5,7 @@
 ### Endpoints
 
 - Los Angels: https://us-west-1.hyper.sh/v1.23
+- EU: https://eu-1.hyper.sh/v1.23
 
 ### Format
  - The API tends to be REST. However, for some complex commands, like `attach`
