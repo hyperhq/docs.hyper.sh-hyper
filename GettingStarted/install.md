@@ -43,7 +43,7 @@ or
 
 ## CLI Configuration
 
-Once the installation completes, enter `hyper config` in your terminal. The CLI will prompt to ask for your API credential:
+Once the installation completes, enter `hyper config` in your terminal and the CLI will prompt you for your API credential:
 
 ![](https://user-images.githubusercontent.com/1132167/29712961-f2680432-89ce-11e7-984d-88ae35a3803c.jpg)
 
@@ -51,4 +51,4 @@ The credential is stored in a local configuration file `$HOME/.hyper/config.json
 
 ![](https://user-images.githubusercontent.com/1132167/29712962-f26d343e-89ce-11e7-81d5-1f68e1eb688e.jpg)
 
-Or you can use environmental vairables `HYPER_ACCESS` and `HYPER_SECRET` to pass the access key and secret key (CLI will search for these envs before loading the configuration file).
+Or you can use environment vairables `HYPER_ACCESS` and `HYPER_SECRET` to pass the access key and secret key to the CLI which will search for these environment variables _before_ loading the configuration file.
