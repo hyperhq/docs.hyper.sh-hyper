@@ -45,10 +45,10 @@ or
 
 Once the installation completes, enter `hyper config` in your terminal. The CLI will prompt to ask for your API credential:
 
-![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/720x143/9fdd9a68694376d4ec62a3d93409e67c/upload_3_18_2016_at_6_11_19_PM.png)
+![](https://user-images.githubusercontent.com/1132167/29712961-f2680432-89ce-11e7-984d-88ae35a3803c.jpg)
 
 The credential is stored in a local configuration file `$HOME/.hyper/config.json`. The configuration file is similar to Docker's, with an extra section `clouds`.
 
-![](https://trello-attachments.s3.amazonaws.com/56daae9b816ec930c8d98197/635x160/c9caa016982d5884eb06578292c154bf/config.png)
+![](https://user-images.githubusercontent.com/1132167/29712962-f26d343e-89ce-11e7-81d5-1f68e1eb688e.jpg)
 
 Or you can use environmental vairables `HYPER_ACCESS` and `HYPER_SECRET` to pass the access key and secret key (CLI will search for these envs before loading the configuration file).
