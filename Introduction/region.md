@@ -20,12 +20,14 @@ The following table lists the regions provided by Hyper.sh
 ### Specify Your Regions
 Now, we have supported two regions. You may specify the region via `--region` option when you want to operate the resources which region located in. The Los Angels region will be default region.
 
+You can not use `--region` option if you do not run the command `hyper config`, only default(Los Angels) region can be used.
+
 #### Setup the region credential
 ```
 $ hyper config
+Enter Access Key: HYPERTHEMOSTEASYCONTAINER
+Enter Secret Key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Enter Default Region (us-west-1):    # if set Europe region, it will be default region.
-Enter Access Key: XXX
-Enter Secret Key: XXX
 WARNING: Your login credentials has been saved in /home/lei/.hyper/config.json
 ```
 
@@ -48,18 +50,13 @@ The more detailed introduction of hyper command is at [CLI index](../Reference/C
 {
 	"auths": {},
 	"clouds": {
-		"us-west-1": {
+		"tcp://*.hyper.sh:443": {
 			"accesskey": "HYPERTHEMOSTEASYCONTAINER",
 			"secretkey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-			"default": true
-		},
-		"eu-1": {
-			"accesskey": "HYPERTHEMOSTEASYCONTAINER",
-			"secretkey": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-			"default": false
+			"region": "us-west-1"
 		}
 	}
 }
 ```
 
-You may find that there is a new field named `default`, it identifes which region is the default region. You can edit it with any editor, but we do recommand you modify it via `hyper config` command.
+You may find that there is a new field named `region`, it identifes which region is the default region. You can edit it with any editor, but we do recommand you modify it via `hyper config` command.
