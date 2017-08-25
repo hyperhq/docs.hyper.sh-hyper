@@ -58,7 +58,7 @@ Commands:
 Run 'hyper COMMAND --help' for more information on a command.
 ```
 
-Now, we have supported two regions
+Now, we have supported two [regions](../../Introduction/region.md)
 - Los Angels: us-west-1
 - Europe: eu-1
 
