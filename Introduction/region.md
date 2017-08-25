@@ -1,6 +1,6 @@
 # Regions
 
-Each Hyper region is designed to be completely isolated from one another, to achieve the greatest possible fault tolerance and stability.
+Hyper regions are designed to be completely isolated from one another, to achieve the greatest possible fault tolerance and stability.
 
 When you view your resources, you'll only see the resources tied to the region you've specified. This is because regions are isolated from each other, and are not replicated across regions automatically.
 
@@ -20,7 +20,7 @@ The following table lists the regions provided by Hyper.sh
 ### Specify Your Regions
 We now have support for two regions. You may specify the region via the `--region` option when you want to manage the resources for that specific region. The us-west-1 region will be the default region.
 
-You can not use `--region` option if you do not run the command `hyper config`, only default(us-west-1) region can be used.
+You can only use the `--region` option if first run the command `hyper config`. Otherwise all commands will default to the 'us-west-1' region.
 
 #### Setup the region credential
 ```
@@ -43,7 +43,7 @@ $ hyper --region eu-1 ps
 CONTAINER ID        IMAGE                                       COMMAND                  CREATED             STATUS                      PORTS                                              NAMES                       PUBLIC IP
 ```
 
-A more detailed introduction of hyper command line is at [CLI index](../Reference/CLI/index.md).
+A more detailed introduction to the hyper command line can be found here: [CLI index](../Reference/CLI/index.md).
 
 ### Layout of the region config file
 ```
