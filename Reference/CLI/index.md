@@ -59,10 +59,10 @@ Run 'hyper COMMAND --help' for more information on a command.
 ```
 
 Now, we have support for two [regions](../../Introduction/region.md)
-- Los Angels: us-west-1
+- Los Angeles: us-west-1
 - Europe: eu-1
 
-You may specify the region via the `--region` option when you want to manage the resources located in that specific region. The Los Angels region will be the default region.
+You may specify the region via the `--region` option when you want to manage the resources located in that specific region. The Los Angeles region will be the default region.
 
 > NOTE: Options with the `IGNORED` mark are not supported currently and will be ignored.
 
