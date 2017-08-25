@@ -31,7 +31,7 @@ Enter Default Region (us-west-1):    # if set Europe region, it will be default 
 WARNING: Your login credentials has been saved in /home/lei/.hyper/config.json
 ```
 
-#### Use the different region with `--region` option
+#### Specify a different region with the `--region` option
 ```
 $ hyper --region us-west-1 run -d busybox ping -c 30 8.8.8.8
 e697934c9577171cf06bc6d458124306d54de9543ad74f2afb58fcf97a888b22
@@ -45,7 +45,7 @@ CONTAINER ID        IMAGE                                       COMMAND         
 
 A more detailed introduction of hyper command line is at [CLI index](../Reference/CLI/index.md).
 
-### Layout of different region config file
+### Layout of the region config file
 ```
 {
 	"auths": {},
