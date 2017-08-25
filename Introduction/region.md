@@ -1,8 +1,8 @@
 # Regions
 
-Each Hyper region is designed to be completely isolated from the other Hyper regions. This achieves the greatest possible fault tolerance and stability.
+Each Hyper region is designed to be completely isolated from one another, to achieve the greatest possible fault tolerance and stability.
 
-When you view your resources, you'll only see the resources tied to the region you've specified. This is because regions are isolated from each other, and we don't replicate resources across regions automatically.
+When you view your resources, you'll only see the resources tied to the region you've specified. This is because regions are isolated from each other, and are not replicated across regions automatically.
 
 The following table lists the regions provided by Hyper.sh
 <table class="table table-bordered table-striped table-condensed">
@@ -10,7 +10,7 @@ The following table lists the regions provided by Hyper.sh
 <td>Region</td><td>Location</td>
 </tr>
 <tr>
-<td>us-west-1</td><td>Los Angels</td>
+<td>us-west-1</td><td>Los Angeles</td>
 </tr>
 <tr>
 <td>eu-1</td><td>Europe</td>
@@ -18,9 +18,9 @@ The following table lists the regions provided by Hyper.sh
 </table>
 
 ### Specify Your Regions
-Now, we have supported two regions. You may specify the region via `--region` option when you want to operate the resources which region located in. The Los Angels region will be default region.
+Now, we have support for two regions. You may specify the region via the `--region` option when you want to manage the resources for that specific region. The Los Angeles region will be the default region.
 
-You can not use `--region` option if you do not run the command `hyper config`, only default(Los Angels) region can be used.
+You can not use `--region` option if you do not run the command `hyper config`, only default(Los Angeles) region can be used.
 
 #### Setup the region credential
 ```
@@ -43,7 +43,7 @@ $ hyper --region eu-1 ps
 CONTAINER ID        IMAGE                                       COMMAND                  CREATED             STATUS                      PORTS                                              NAMES                       PUBLIC IP
 ```
 
-The more detailed introduction of hyper command is at [CLI index](../Reference/CLI/index.md).
+A more detailed introduction of hyper command line is at [CLI index](../Reference/CLI/index.md).
 
 ### Layout of different region config file
 ```
@@ -59,4 +59,4 @@ The more detailed introduction of hyper command is at [CLI index](../Reference/C
 }
 ```
 
-You may find that there is a new field named `region`, it identifes which region is the default region. You can edit it with any editor, but we do recommand you modify it via `hyper config` command.
+You may find that there is a new field named `region`, it identifes which region is the default region. You may edit it with any editor, but we do recommand you modify it via `hyper config` command.
