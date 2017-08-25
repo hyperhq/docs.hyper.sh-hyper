@@ -4,7 +4,7 @@
 
 ### Endpoints
 
-- Los Angels: https://us-west-1.hyper.sh/v1.23
+- Los Angeles: https://us-west-1.hyper.sh/v1.23
 - EU: https://eu-1.hyper.sh/v1.23
 
 ### Format
@@ -29,7 +29,7 @@ Hyper.sh API signature algorithm is based on [AWS Signature Version 4](http://do
 > - Change the HTTP headers `X-AMZ-*` to `X-Hyper-*`
 > - Change the literatures with `"AWS"` to `"HYPER"`
 
-### Error Code
+### Error Codes
 Hyper.sh has two types of error codes:
 
 - `Client errors`: These errors are usually caused by something the client did, such as use an action or resource on behalf of a user that doesn't have permission to use the action or resource, or specify an identifier that is not valid. These errors are accompanied by a 400-series HTTP response code.
