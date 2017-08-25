@@ -18,7 +18,7 @@ The following table lists the regions provided by Hyper.sh
 </table>
 
 ### Specify Your Regions
-Now, we have support for two regions. You may specify the region via the `--region` option when you want to manage the resources for that specific region. The Los Angeles region will be the default region.
+We now have support for two regions. You may specify the region via the `--region` option when you want to manage the resources for that specific region. The Los Angeles region will be the default region.
 
 You can not use `--region` option if you do not run the command `hyper config`, only default(Los Angeles) region can be used.
 
