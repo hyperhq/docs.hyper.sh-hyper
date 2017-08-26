@@ -1,8 +1,6 @@
 # Regions
 
-Hyper regions are designed to be completely isolated from one another, to achieve the greatest possible fault tolerance and stability.
-
-When you view your resources, you'll only see the resources tied to the region you've specified. This is because regions are isolated from each other, and are not replicated across regions automatically.
+Hyper regions are physical data centers isolated from one another. When you view your resources, you'll only see the resources tied to the region you've specified. This is because regions are isolated from each other, and are not replicated across regions automatically.
 
 The following table lists the regions provided by Hyper.sh
 <table class="table table-bordered table-striped table-condensed">
