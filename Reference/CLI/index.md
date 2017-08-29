@@ -60,7 +60,7 @@ Run 'hyper COMMAND --help' for more information on a command.
 
 Now, we have support for two [regions](../../Introduction/region.md)
 - Los Angeles: us-west-1
-- Europe: eu-1
+- Frankfurt: eu-central-1
 
 You may specify the region via the `--region` option when you want to manage the resources located in that specific region. The Los Angeles region will be the default region.
 

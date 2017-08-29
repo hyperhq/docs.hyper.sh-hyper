@@ -13,4 +13,4 @@
 ### Endpoints
 
 - Los Angeles: https://us-west-1.hyper.sh/v1.23
-- EU: https://eu-1.hyper.sh/v1.23
+- Frankfurt: https://eu-central-1.hyper.sh/v1.23

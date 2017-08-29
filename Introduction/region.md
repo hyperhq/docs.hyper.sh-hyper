@@ -11,7 +11,7 @@ The following table lists the regions provided by Hyper.sh
 <td>us-west-1</td><td>Los Angeles</td>
 </tr>
 <tr>
-<td>eu-1</td><td>Europe</td>
+<td>eu-central-1</td><td>Frankfurt</td>
 </tr>
 </table>
 
@@ -33,11 +33,11 @@ WARNING: Your login credentials has been saved in /home/lei/.hyper/config.json
 ```
 $ hyper --region us-west-1 run -d busybox ping -c 30 8.8.8.8
 e697934c9577171cf06bc6d458124306d54de9543ad74f2afb58fcf97a888b22
-$ hyper --region us-west-1 ps 
+$ hyper --region us-west-1 ps
 CONTAINER ID        IMAGE                                       COMMAND                  CREATED             STATUS                      PORTS                                              NAMES                       PUBLIC IP
 e697934c9577        busybox                                     "ping -c 30 8.8.8.8"     52 seconds ago      Exited (0) 19 seconds ago                                                      evil-pike
 # run `ps` with different region
-$ hyper --region eu-1 ps
+$ hyper --region eu-central-1 ps
 CONTAINER ID        IMAGE                                       COMMAND                  CREATED             STATUS                      PORTS                                              NAMES                       PUBLIC IP
 ```
 
