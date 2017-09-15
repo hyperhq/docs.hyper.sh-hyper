@@ -35,8 +35,8 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 
 ### Request a quota increase
 
-Open the [Account](https://console.hyper.sh/account/) page, choose `Quota`, click `Request Quota Increase`:
+Open the [Overview](https://console.hyper.sh/overview/) page, click `Request Quota Increase`:
 
-![](https://trello-attachments.s3.amazonaws.com/57ac415d5c5774e392d184a5/2374x1104/864d7065d6e9bb4bbc15cfa23bf0b59e/quota.png)
+![](https://trello-attachments.s3.amazonaws.com/5700ea0da7030dcf7485ed70/57ac415d5c5774e392d184a5/54e79f48f900bc73590d58964c80cd92/quota.png)
 
 In the dialog popup, fill in your request and use case details. It usually takes 1-2 business days for us to review the request and get back to you.
