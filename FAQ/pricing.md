@@ -46,6 +46,7 @@
 
 #### Network
 - Floating IP: $1/IP/month
+> - Billed by calender month, e.g. one FIP is allocated in Jan. 29th, and released in Feb. 2nd, $2 will be charged.
 > - Billing begins when a new Floating IP is allocated, ends when it is released. Partial month is treated as a entire month.
 
 #### Examples
