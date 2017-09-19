@@ -4,7 +4,7 @@ Hyper.sh has certain hard and soft (`quota`) limits in using its service. Hard l
 
 ## Hard Limits
 - Image
-	- Max image size: 5GB
+	- Max image size: 10GB
 - Volume
 	- Root volume size: 10GB
 	- Volume size range: 10GB - 50GB
