@@ -9,8 +9,3 @@
 - [func get](./get.md)
 - [func logs](./logs.md)
 - [func status](./status.md)
-
-### Endpoints
-
-- Los Angeles: https://us-west-1.hyper.sh/v1.23
-- Frankfurt: https://eu-central-1.hyper.sh/v1.23
