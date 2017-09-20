@@ -85,7 +85,7 @@ Our third party payment processing service employs specific checks against card 
 We charge your credit card on the 1st day of each month.
 
 #### How about the billing tax?
-Except as otherwise noted, our prices exclude applicable sales tax and VAT. Currently, we charge sales tax for credit cards issued in the US states of NY and Texas. The tax details will be available in the monthly bill.
+Except as otherwise noted, our prices exclude applicable sales tax and VAT. Currently, we charge US sales tax for credit cards issued in the US states of NY and Texas and VAT tax for non-business users based in EU. The tax details will be available in the monthly bill.
 
 #### What happens after outstanding balance?
 
