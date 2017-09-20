@@ -16,9 +16,9 @@ The following table lists the regions provided by Hyper.sh
 </table>
 
 ### Specify Your Regions
-We now have support for two regions. You may specify the region via the `--region` option when you want to manage the resources for that specific region. The us-west-1 region will be the default region.
+We now have support for two regions. You may specify the region via the `--region` option when you want to manage the resources for that specific region. The `us-west-1` region will be the default region.
 
-You can only use the `--region` option if first run the command `hyper config`. Otherwise all commands will default to the 'us-west-1' region.
+You can only use the `--region` option if first run the command `hyper config`. Otherwise all commands will default to the `us-west-1` region.
 
 #### Setup the region credential
 ```
