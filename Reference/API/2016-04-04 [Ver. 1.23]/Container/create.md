@@ -26,7 +26,7 @@ Create a container
            "Cmd": [
                    "date"
            ],
-           "Entrypoint": "",
+           "Entrypoint": [],
            "Image": "ubuntu",
            "Labels": {
                    "com.example.vendor": "Acme",
