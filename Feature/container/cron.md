@@ -35,7 +35,7 @@ Hyphens define ranges. For example, 2000-2010 indicates every year between 2000 
 
 Create a cron job which will ping an address every 5 minutes:
 
-	$hyper cron create  --minute=*/5 --hour=* --name test-cron-job1 busybox ping -c 3 8.8.8.8
+	$ hyper cron create  --minute=*/5 --hour=* --name test-cron-job1 busybox ping -c 3 8.8.8.8
 
 Check cron job list:
 
