@@ -14,7 +14,7 @@ Q: How is Hyper.sh different than typical container services?
 
 > - **Over-subscribed VM size**: DB containers prefer VMs with big memory, but web containers love high CPU. If you provision VM based on container size, you are actually doing the scheduler's job. Otherwise, you will have to use "Big & Tall" VMs across the entire fleet.
 
->  Hyper.sh leverages [virtualization](github.com/hyperhq/hyper) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both words gives you the security of virtual machines to containers with the speed of containers. Thus, the need of VM cluster is gone, along with things like capacity planning, CapEx, VM bootstrapping, scheduling, COE admin, etc. The entire Hyper.sh cloud works like "**A single remote host with unlimited capacity**". Developers can use the Docker native workflow to deploy applications in Hyper.sh, just the same as on your laptop.
+>  Hyper.sh leverages [virtualization](github.com/hyperhq/hyperd) technology to apply hardware-enforced isolation to containers, and keep the sub-second startup performance. The combination of the best from both words gives you the security of virtual machines to containers with the speed of containers. Thus, the need of VM cluster is gone, along with things like capacity planning, CapEx, VM bootstrapping, scheduling, COE admin, etc. The entire Hyper.sh cloud works like "**A single remote host with unlimited capacity**". Developers can use the Docker native workflow to deploy applications in Hyper.sh, just the same as on your laptop.
 
 
 > Hyper.sh uses a "**Per Second**" model, which differs fundamentally in the flexibility, control and significant cost savings it offers developers. You can spin up 100 containers in 2 seconds, crunch some data or run parallel builds on the lastest commit for 10s, destroy all containers in 1s, and Hyper.sh will only charge for 2+10+1=13s.
@@ -45,7 +45,7 @@ Q: What does `hyper pull` do?
 > `hyper pull` fetches images from a public or private registry to your Hyper.sh account.
 
 Q: How many containers can I run in Hyper.sh?
-> You are limited to running up to 100 containers per region, though you may [request to increase the quota](../Reference/quota_and_limits.md).
+> You are limited to running up to 100 containers per region, though you may [request to increase the quota](../FAQ/quota_and_limits.md).
 
 Q: How quickly can I scale my containers both up and down?
 > Hyper.sh provides a super elastic container environment. You can spin-up or shutdown containers in less than 5 seconds.

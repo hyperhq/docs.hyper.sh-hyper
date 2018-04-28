@@ -119,7 +119,6 @@ You may specify the region via the `--region` option when you want to manage the
 	- [down](./Compose/down.md)
 	- [up](./Compose/up.md)
 	- [rm](./Compose/rm.md)
-	- [logs](./Compose/logs.md)
 	- [ps](./Compose/ps.md)
 	- [run](./Compose/run.md)
 	- [kill](./Compose/kill.md)
