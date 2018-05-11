@@ -1,6 +1,6 @@
 # Service
 
-In Hyper.sh, a `Service` is an abstraction which defines a logical set of containers in a single (private) network and a policy by which to access them. The set of containers targeted by a Service is determined by labels.
+In Hyper, a `Service` is an abstraction which defines a logical set of containers in a single (private) network and a policy by which to access them. The set of containers targeted by a Service is determined by labels.
 
 As an example, consider an image-processing backend which is running with 3 replicas. Those replicas are fungible - frontends do not care which backend they use. While the actual containers that compose the backend set may change, the frontend clients should not need to be aware of that or keep track of the list of backends themselves. The Service abstraction enables this decoupling.
 

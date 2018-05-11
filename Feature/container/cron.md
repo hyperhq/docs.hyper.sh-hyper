@@ -1,6 +1,6 @@
 # Cron (Beta)
 
-In Hyper.sh, cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service but work with the containers. 
+In Hyper, cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service but work with the containers. 
 
 ## Cron expression
 The original Cron reference documentation for this implementation is found at [here](https://en.wikipedia.org/wiki/Cron#CRON_expression), where Hyper Cron implementation differs:

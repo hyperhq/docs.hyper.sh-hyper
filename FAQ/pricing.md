@@ -14,7 +14,7 @@
 |L2 |4|  8GB|10GB*|FREE|$0.00006   |$0.216  |$155.52|
 |L3 |8| 16GB|10GB*|FREE|$0.00012   |$0.432  |$311.04|
 > \* All containers include a 10GB rootFS disk volume which is billed separately. See 'Storage' section below.
-> - Billing begins when Hyper.sh launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
+> - Billing begins when Hyper launches a new container or start a stopped container, ends when the container stops or terminates, either through an API call, or through container exists (success or failure).
 > - Everytime you issue a `hyper run/start/restart` request, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 > - Everytime a container is restarted, a default period of 10 seconds is billed. If a container runs for 5s, it will be billed for 10s; if it runs for 30s, it is billed for 30s.
 
@@ -59,18 +59,18 @@
 
 # General FAQ
 
-#### Does Hyper.sh offer a free tier?
+#### Does Hyper offer a free tier?
 
-- Hyper.sh offers a free tier plan for up to 2 months by adding a credit card.
+- Hyper offers a free tier plan for up to 2 months by adding a credit card.
 - During the free tier period you will incur no costs for the following resources: 1 Container (<= S4), 1 Image, 1 Volume, 1 Floating IP.
 - Once the free tier period ends, you will be charged accordingly each month for all resources.
 - During the free tier period if we find that resources are being abused we will delete your account and associated resources without notice. We reserve the right to define abusive usage.
 
 #### What payment types do you accept?
-Currently, Hyper.sh accepts credit or debit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
+Currently, Hyper accepts credit or debit cards, including Visa, MasterCard, American Express, JCB, Discover, and Diners Club.
 
-#### Does Hyper.sh keep my credit card information?
-No, all payments are processed through Stripe, a trusted third party payment processing service. Hyper.sh does not retain any credit card information.
+#### Does Hyper keep my credit card information?
+No, all payments are processed through Stripe, a trusted third party payment processing service. Hyper does not retain any credit card information.
 
 #### Why was my card declined?
 
@@ -95,7 +95,7 @@ Except as otherwise noted, our prices exclude applicable sales tax and VAT. Curr
 - If the balance is due over 30 days, we will deactivate your account (unable to login to web console, removal of all credentials), and permanently purge all resources in your account.
 - You can login the web console to update your credit card information, which will trigger new payment request, whenever a payment request succeeds, we will immediately resume your account.
 
-If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper.sh Support](mailto:support@hyper.sh).
+If you have any questions about an outstanding balance, how to add a payment option, or about billing in general, please feel free to contact [Hyper Support](mailto:support@hyper.sh).
 
 #### How do I remove my credit card?
 

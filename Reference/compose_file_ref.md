@@ -25,7 +25,7 @@ Specify a custom container name, rather than a generated default name.
 ```
 container_name: my-web-container
 ```
-Because Hyper.sh container names must be unique, you cannot scale a service beyond 1 container if you have specified a custom name. Attempting to do so results in an error.
+Because Hyper container names must be unique, you cannot scale a service beyond 1 container if you have specified a custom name. Attempting to do so results in an error.
 
 ### depends_on
 Express dependency between services, which has two effects:
@@ -134,7 +134,7 @@ If the image does not exist, `Compose` attempts to pull it, unless you have also
 
 ### labels
 
-Add metadata to containers using Hyper.sh labels. You can use either an array or a dictionary.
+Add metadata to containers using Hyper labels. You can use either an array or a dictionary.
 It’s recommended that you use reverse-DNS notation to prevent your labels from conflicting with those used by other software.
 
 ```
@@ -162,7 +162,7 @@ Containers for the linked service will be reachable at a hostname identical to t
 Links also express dependency between services in the same way as depends_on, so they determine the order of service startup.
 
 ### volumes
-Mount paths or named volumes. For version 2 files, named volumes can be specified with the top-level volumes key, a public http/https source file, or a public git repository. When using version 1, the Hyper.sh will create the named volume automatically if it doesn’t exist.
+Mount paths or named volumes. For version 2 files, named volumes can be specified with the top-level volumes key, a public http/https source file, or a public git repository. When using version 1, the Hyper will create the named volume automatically if it doesn’t exist.
 ```
 volumes:
   # Just specify a path and let the Engine create a volume
@@ -199,7 +199,7 @@ size: s4
 ```
 
 ### noauto_volume
-This option tells Hyper.sh service not to create new volumes for `VOLUME` sections in the container image. If not specified, compose will automatically create volumes for each `VOLUME` section in the container image.
+This option tells Hyper service not to create new volumes for `VOLUME` sections in the container image. If not specified, compose will automatically create volumes for each `VOLUME` section in the container image.
 
 ```
 noauto_volume: true
@@ -556,7 +556,7 @@ security_groups:
 <td>size</td>
 <td>-</td>
 <td>x</td>
-<td>instance size of Hyper.sh container</td>
+<td>instance size of Hyper container</td>
 </tr>
 <tr>
 <td>fip</td>

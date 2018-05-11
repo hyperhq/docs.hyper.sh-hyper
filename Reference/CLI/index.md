@@ -18,13 +18,13 @@ Options:
 Commands:
     attach    Attach to a running container
     commit    Create a new image from a container's changes
-    compose   Define and run multi-container applications with Hyper.sh
+    compose   Define and run multi-container applications with Hyper
     config    Config access key and secret key to Hyper server
     create    Create a new container
-    cron      Manage cron service of Hyper.sh
+    cron      Manage cron service of Hyper
     exec      Run a command in a running container
-    fip       Manage Hyper.sh floating IPs
-    func      Manage func service of Hyper.sh
+    fip       Manage Hyper floating IPs
+    func      Manage func service of Hyper
     history   Show the history of an image
     images    List images
     info      Display system-wide information
@@ -44,15 +44,15 @@ Commands:
     rmi       Remove one or more images
     run       Run a command in a new container
     search    Search the Docker Hub for images
-    service   Manage service of Hyper.sh
-    sg        Manage security group of Hyper.sh
-    snapshot  Manage Hyper.sh snapshots
+    service   Manage service of Hyper
+    sg        Manage security group of Hyper
+    snapshot  Manage Hyper snapshots
     start     Start one or more stopped containers
     stats     Display a live stream of container(s) resource usage statistics
     stop      Stop a running container
     update    Update resources of one or more containers
-    version   Show the Hyper.sh version information
-    volume    Manage Hyper.sh volumes
+    version   Show the Hyper version information
+    volume    Manage Hyper volumes
     wait      Block until a container stops, then print its exit code
 
 Run 'hyper COMMAND --help' for more information on a command.

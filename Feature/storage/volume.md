@@ -1,6 +1,6 @@
 # Volume
 
-In Hyper.sh, volumes offer high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from failure. 
+In Hyper, volumes offer high availability, durability, and consistent performance needed to run your workloads. It is a persistent storage service for use with containers.  Multiple replicas will be automatically created with each volume in the same region to protect your data from failure. 
 
 Volume use the `EXT4` filesystem (with more options on the roadmap). Each container is shipped with a default `root volume` of 10GB. Additional volumes can be created and attached to containers separately:
 

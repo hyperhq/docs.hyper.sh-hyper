@@ -2,7 +2,7 @@
 
     Usage: hyper login [OPTIONS] [SERVER]
 
-    Make Hyper.sh to log in to a Docker registry server, if no server is
+    Make Hyper to log in to a Docker registry server, if no server is
 	specified "https://index.docker.io/v1/" is the default.
 
       -e, --email=""       Email

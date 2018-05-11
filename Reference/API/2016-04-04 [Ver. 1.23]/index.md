@@ -17,20 +17,20 @@
 ### Authentication
 Authenticate your account when using the API by signing the request with your access key ID and secret access key. You can manage your API keys in the [console](https://console.hyper.sh).
 
-Hyper.sh API signature algorithm is based on [AWS Signature Version 4](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html), and there are several open source SDKs available:
+Hyper API signature algorithm is based on [AWS Signature Version 4](http://docs.aws.amazon.com/general/latest/gr/sigv4_signing.html), and there are several open source SDKs available:
 
 - `Go`: [hyperhq/hypercli](https://github.com/hyperhq/hypercli/blob/302a6b530148f6a777cd6b8772f706ab5e3da46b/vendor/src/github.com/docker/engine-api/client/sign4.go#L73)
 - `Ruby`: [drish/hyperb](https://github.com/drish/hyperb)
 - `Python`: [tardyp/hyper_sh](https://github.com/tardyp/hyper_sh/blob/master/hyper_sh/requests_aws4auth/aws4auth.py)
 - `NodeJS/Javascript`: [npm: hyper-aws4](https://www.npmjs.com/package/hyper-aws4)
 
-> **NOTE: Difference between Hyper.sh Signature and AWS Signature V4**
-> - Use host, region, service name of Hyper instead of AWS.
+> **NOTE: Difference between Hyper Signature and AWS Signature V4**
+> - Use host, region, service name Hyper instead of AWS.
 > - Change the HTTP headers `X-AMZ-*` to `X-Hyper-*`
 > - Change the literatures with `"AWS"` to `"HYPER"`
 
 ### Error Codes
-Hyper.sh has two types of error codes:
+Hyper has two types of error codes:
 
 - `Client errors`: These errors are usually caused by something the client did, such as use an action or resource on behalf of a user that doesn't have permission to use the action or resource, or specify an identifier that is not valid. These errors are accompanied by a 400-series HTTP response code.
 - `Server errors`: These errors are usually caused by a server-side issue. These errors are accompanied by a 500-series HTTP response code.

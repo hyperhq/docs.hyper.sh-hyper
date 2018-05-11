@@ -9,7 +9,7 @@
         --name=               Specify snapshot name
     -v, --volume              Specify volume to create snapshot
 
-Creates a new snapshot from a volume. If a name is not specified, Hyper.sh generates a random id:
+Creates a new snapshot from a volume. If a name is not specified, Hyper generates a random id:
 
 	$ hyper snapshot create --name db-snapshot db-vol
 	db-snapshot

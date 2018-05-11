@@ -12,7 +12,7 @@
       detach-fip               Detach the fip from the service
       rm                       Remove one or more services
 
-In Hyper.sh, a service is an abstraction which defines a logical set of containers and a policy by which to access them. The set of containers targeted by a service is determined by labels.
+In Hyper, a service is an abstraction which defines a logical set of containers and a policy by which to access them. The set of containers targeted by a service is determined by labels.
 
 As an example, consider an image-processing backend which is running with 3 replicas. Those replicas are identical - frontends do not care which backend they use. While the actual containers that compose the backend set may change, the frontend clients should not need to be aware of that or keep track of the list of backends themselves. The service abstraction enables this decoupling.
 

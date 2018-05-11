@@ -16,10 +16,10 @@ Status: Downloaded newer image for jenkins:latest
 9c2c73118d7c370fbf59377cec5b2d7369c307acf32724404805e5b4d5f87749
 ```
 
-If you’re familiar with Docker you’ll see that the commands and behaviour are identical. Hyper.sh found that the `jenkins` image was not available locally, pulled it and then started the container.
+If you’re familiar with Docker you’ll see that the commands and behaviour are identical. Hyper found that the `jenkins` image was not available locally, pulled it and then started the container.
 
 > **A note on container sizes**
-The Hyper.sh CLI actually hid one argument from you during the hyper run command that’s worth mentioning. With Hyper.sh you can choose the size of your container using the `--size` flag. The default size for a container is ‘s4’ as you can see in the [hyper run documentation](https://docs.hyper.sh/Reference/CLI/run.html). You can see what the various sizes mean on the pricing page [here](https://hyper.sh/pricing.html).
+The Hyper CLI actually hid one argument from you during the hyper run command that’s worth mentioning. With Hyper you can choose the size of your container using the `--size` flag. The default size for a container is ‘s4’ as you can see in the [hyper run documentation](https://docs.hyper.sh/Reference/CLI/run.html). You can see what the various sizes mean on the pricing page [here](https://hyper.sh/pricing.html).
 
 Next we exposed port `8080` via the `-p 8080:8080` flag so that we can later attach our container to a public IP.
 
@@ -30,7 +30,7 @@ Lastly, we mounted a [Hyper Volume](https://docs.hyper.sh/Feature/storage/volume
 
 ## Exposing via a public IP
 
-Now that the Jenkins container is running, we will connect it to a public IP address. First you need to create a new public IP address, which in Hyper.sh is called a floating IP (FIP).
+Now that the Jenkins container is running, we will connect it to a public IP address. First you need to create a new public IP address, which in Hyper is called a floating IP (FIP).
 
 ```
 $ hyper fip allocate 1
@@ -40,7 +40,7 @@ $ hyper fip attach <YOUR NEW FIP> myjenkins
 ```
 
 >**A note on FIP billing**
->Resources on Hyper.sh are billed per-second, _apart from_ FIPs which cost $1 per month from the point of allocation. This is to prevent abuse. To stop you accidentally spending too much money on FIPs you will be warned by the CLI if you attempt to allocate a new FIP when you have unused FIPs still available.
+>Resources on Hyper are billed per-second, _apart from_ FIPs which cost $1 per month from the point of allocation. This is to prevent abuse. To stop you accidentally spending too much money on FIPs you will be warned by the CLI if you attempt to allocate a new FIP when you have unused FIPs still available.
 
 ## Inspecting the container
 
@@ -103,7 +103,7 @@ You can now paste your `initialAdminPassword` into the browser in order to proce
 
 ## Cleaning up
 
-One of the key benefits of Hyper.sh is reducing your operations costs. To make sure that you’re not being billing for any resources that you’re not using, you should know how to clean up all resources once you are finished with them.
+One of the key benefits of Hyper is reducing your operations costs. To make sure that you’re not being billing for any resources that you’re not using, you should know how to clean up all resources once you are finished with them.
 
 First you clean up the container:
 
@@ -141,7 +141,7 @@ Deleted: sha256:f61635651954adb853e95690b04dd3791e4fdbcfab7bfb66a2d505e31f3df31c
 
 ## How much did that cost?
 
-In Hyper.sh, all resources are billed per-second apart from FIPs as mentioned above. With the above example there are 5 items that will be billed:
+In Hyper, all resources are billed per-second apart from FIPs as mentioned above. With the above example there are 5 items that will be billed:
 
 The container itself plus the rootFS disk in the container.
 The attached Hyper Volume
@@ -160,9 +160,9 @@ The billing for the example above would break down as follows.
 
 **FIP:** $1/month
 
-So the total monthly price for running a Jenkins container at s4 size with an attached volume and FIP is **$8.28**. You can always check your current usage costs in the [Hyper.sh console](https://console.hyper.sh/billing/credit).
+So the total monthly price for running a Jenkins container at s4 size with an attached volume and FIP is **$8.28**. You can always check your current usage costs in the [Hyper console](https://console.hyper.sh/billing/credit).
 
 >**Note on pricing**
->Remember that Hyper.sh allows you to choose the size of your container at start time so the billing information above applies to this example only. Check the pricing page for more information: [https://hyper.sh/pricing.html](https://hyper.sh/pricing.html)
+>Remember that Hyper allows you to choose the size of your container at start time so the billing information above applies to this example only. Check the pricing page for more information: [https://hyper.sh/pricing.html](https://hyper.sh/pricing.html)
 
 That's it for part 1. In [Part 2](./part_2.html) we'll learn about working with multiple containers.

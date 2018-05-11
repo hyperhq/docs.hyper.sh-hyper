@@ -2,7 +2,7 @@
 
 `Last updated on:  April 4th, 2016`
 
-Your use of the Service is subject to this Acceptable Use Policy. If you are found to be in violation of our policies at any time, as determined by Hyper.sh in its sole discretion, we may warn you or suspend or terminate your account. Please note that we may change our Acceptable Use Policy at any time, and pursuant to the Hyper.sh Terms, it is your responsibility to keep up-to-date with and adhere to the policies posted here. All capitalized terms used herein have the meanings stated in the Terms, unless stated otherwise.
+Your use of the Service is subject to this Acceptable Use Policy. If you are found to be in violation of our policies at any time, as determined by Hyper in its sole discretion, we may warn you or suspend or terminate your account. Please note that we may change our Acceptable Use Policy at any time, and pursuant to the Hyper Terms, it is your responsibility to keep up-to-date with and adhere to the policies posted here. All capitalized terms used herein have the meanings stated in the Terms, unless stated otherwise.
 
 ##Prohibited Content
 The Content displayed and/or processed through your Application or other web site utilizing the Service shall not contain any of the following types of content:
@@ -23,7 +23,7 @@ In addition to (and/or as some examples of) the violations described in the Term
 - Generate or facilitate unsolicited commercial email (spam). Such activity includes, but is not limited to:
 	- sending email in violation of the CAN-SPAM Act or any other applicable anti-spam law;
 	- imitating or impersonating another person or his, her or its email address, or creating false accounts for the purpose of sending spam;
-	- data mining any web property (including Hyper.sh) to find email addresses or other user account information;
+	- data mining any web property (including Hyper) to find email addresses or other user account information;
 	- sending unauthorized mail via open, third-party servers;
 	- sending emails to users who have requested to be removed from a mailing list;
 	- selling, exchanging or distributing to a third party the email addresses of any person without such persons knowing and continued consent to such disclosure; and
@@ -43,9 +43,9 @@ In addition to (and/or as some examples of) the violations described in the Term
 - Reformat or frame any portion of the web pages that are part of the Services administration display;
 - Use the Service in connection with illegal peer-to-peer file sharing;
 - Display any content on the Service that contains any hate-related or violent content or contains any other material, products or services that violate or encourage conduct that would violate any criminal laws, any other applicable laws, or any third party rights;
-- Modify the Hyper.sh logo or any other Hyper.sh Marks; or
-- Use the Service, or any interfaces provided with the Service, to access any Hyper.sh product or service in a manner that violates the Terms or other terms and conditions for use of such Hyper.sh product or service.
+- Modify the Hyper logo or any other Hyper Marks; or
+- Use the Service, or any interfaces provided with the Service, to access any Hyper product or service in a manner that violates the Terms or other terms and conditions for use of such Hyper product or service.
 
-> NOTE: This document is an adaptation of the Heroku Acceptable Use Policy. The original work has been modified. Heroku, Inc. is not connected with and does not sponsor or endorse Hyper.sh sponsor or endorse Hyper.sh or its use of the work.
+> NOTE: This document is an adaptation of the Heroku Acceptable Use Policy. The original work has been modified. Heroku, Inc. is not connected with and does not sponsor or endorse Hyper sponsor or endorse Hyper or its use of the work.
 
 

@@ -1,6 +1,6 @@
 # Network
 
-Networking is easy with Hyper.sh. All containers of a user will be automatically placed in the user's own network. Containers in the same network are reachable to each other but isolated from other networks. In technical terms, Hyper.sh setup a Layer-2 virtual private network for every user.
+Networking is easy with Hyper. All containers of a user will be automatically placed in the user's own network. Containers in the same network are reachable to each other but isolated from other networks. In technical terms, Hyper setup a Layer-2 virtual private network for every user.
 
 Containers are able to access the Internet, but can not be accessed by the public. This makes your containers more secure as you can't accidently expose an important part of your infrastructure to the public. (To enable the public access, you have to use a [floating IP](./fip.md) pointed to the container).
 
@@ -20,10 +20,10 @@ PING mycontainer (172.16.0.119): 56 data bytes
 64 bytes from 172.16.0.119: seq=0 ttl=64 time=0.469 ms
 ```
 
-And that is how easy you can use the network on Hyper.sh.
+And that is how easy you can use the network on Hyper.
 
 ## Default network configuration
 
-When a new container is launched, Hyper.sh will automatically assign a private IP address to the container. There is currently no way to control the IP allocation.
+When a new container is launched, Hyper will automatically assign a private IP address to the container. There is currently no way to control the IP allocation.
 
-The [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) of the default private network is set to `172.16.0.0/16`. Note: Hyper.sh reserves a few addresses for its own usage.
+The [CIDR](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing) of the default private network is set to `172.16.0.0/16`. Note: Hyper reserves a few addresses for its own usage.

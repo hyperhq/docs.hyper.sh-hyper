@@ -20,7 +20,7 @@ services:
 >**Note on the term ‘service’**
 >You’ll notice in the Docker Compose format that each container is referred to as a ‘service:’. This is not the same as the Hyper Service functionality which is outside of the scope of this guide. You can read more about Hyper Service in the docs here: [https://docs.hyper.sh/Feature/container/service.html](https://docs.hyper.sh/Feature/container/service.html)
 
-Above you can see that Hyper Compose and Docker Compose have pretty much the same format. In fact in most cases you can just run an existing Docker Compose file using Hyper Compose. The `size` and `FIP` fields are not present in Docker Compose, but as we’ve seen earlier in this guide, these are specific to Hyper.sh.
+Above you can see that Hyper Compose and Docker Compose have pretty much the same format. In fact in most cases you can just run an existing Docker Compose file using Hyper Compose. The `size` and `FIP` fields are not present in Docker Compose, but as we’ve seen earlier in this guide, these are specific to Hyper.
 
 Let’s save the compose file locally as `myfirstcompose.yml` and try it out. **Remember to insert your own FIP!**
 
@@ -92,4 +92,4 @@ In Part 3 we’ve looked at two examples of how to use Hyper Compose to manage m
 
 And for now, that's it. If you want to learn you're advised to look through the [documentation](https://docs.hyper.sh/) and the [blog](https://blog.hyper.sh/).
 
-We wish you happy hacking on Hyper.sh, but if you think that we've missed anything from the getting started guide **_please do_** tell us via the [Hyper.sh console](https://console.hyper.sh/), [the forum](https://forum.hyper.sh/) or on [Twitter](https://twitter.com/hyper_sh).
+We wish you happy hacking on Hyper, but if you think that we've missed anything from the getting started guide **_please do_** tell us via the [Hyper console](https://console.hyper.sh/), [the forum](https://forum.hyper.sh/) or on [Twitter](https://twitter.com/hyper_sh).

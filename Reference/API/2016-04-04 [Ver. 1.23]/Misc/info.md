@@ -1,8 +1,8 @@
-# Display Hyper.sh system-wide information
+# Display Hyper system-wide information
 
 `GET /info`
 
-Display Hyper.sh system-wide information
+Display Hyper system-wide information
 
 **Example request**:
 

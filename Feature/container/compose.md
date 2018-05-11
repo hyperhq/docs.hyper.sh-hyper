@@ -1,6 +1,6 @@
 # Compose
 
-Compose is a sub-command for defining and running multi-container applications. With this, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration in Hyper.sh cloud.
+Compose is a sub-command for defining and running multi-container applications. With this, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration in Hyper cloud.
 
 Compose is great and easy to test and deploy your production, as well as CI workflows. You can learn more about each case in Common Use Cases.
 

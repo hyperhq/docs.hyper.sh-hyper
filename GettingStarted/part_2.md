@@ -45,7 +45,7 @@ To answer is that we need to look at [the Dockerfile](https://github.com/docker-
 VOLUME /var/lib/mysql
 ```
 
-When there is a `VOLUME` line in a Dockerfile, the Docker engine will automatically create a volume when the container is started. Hyper.sh mirrors this behaviour, but because you pay per-second with Hyper.sh, it’s always good to know what you’re paying for.
+When there is a `VOLUME` line in a Dockerfile, the Docker engine will automatically create a volume when the container is started. Hyper mirrors this behaviour, but because you pay per-second with Hyper, it’s always good to know what you’re paying for.
 
 If you would like to disable this behaviour entirely you can always do that during the run command with the `--noauto-volume` flag, for example:
 

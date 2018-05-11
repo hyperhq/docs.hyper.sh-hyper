@@ -2,7 +2,7 @@
 
     Usage: hyper version [OPTIONS]
 
-    Show the Hyper.sh CLI version information.
+    Show the Hyper CLI version information.
 
       -f, --format=""    Format the output using the given go template
       --help=false       Print usage
@@ -30,5 +30,5 @@ Go's [text/template](http://golang.org/pkg/text/template/) package describes all
 
 **Get API version:**
 
-    $ Hyper.sh version --format '{{.Cloud.API Version}}'
+    $ Hyper version --format '{{.Cloud.API Version}}'
 	2015-12-16

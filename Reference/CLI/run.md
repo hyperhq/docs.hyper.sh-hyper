@@ -50,7 +50,7 @@ The `-w` lets the command being executed inside directory given, here
 
     $ hyper run -d -v hello:/world busybox ls /world
 
-The mount is created inside the container's `/world` directory. Hyper.sh does not support relative paths for mount points inside the container.
+The mount is created inside the container's `/world` directory. Hyper does not support relative paths for mount points inside the container.
 
 #### Load data (-v)
 Besides mounting a volume, `-v` also allows to load data from either local computer (where the command is issued) or a URI:
@@ -156,7 +156,7 @@ A label is a `key=value` pair that applies metadata to a container. To label a c
 
 The `my-label` key doesn't specify a value so the label defaults to an empty string(`""`). To add multiple labels, repeat the label flag (`-l` or `--label`).
 
-The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper.sh uses the last `key=value` you supply.
+The `key=value` must be unique to avoid overwriting the label value. If you specify labels with identical keys but different values, each subsequent value overwrites the previous. Hyper uses the last `key=value` you supply.
 
 Use the `--label-file` flag to load multiple labels from a file. Delimit each label in the file with an EOL mark. The example below loads labels from a labels file in the current directory:
 
@@ -190,8 +190,8 @@ This is how piping a file into a container could be done for a build. The contai
 
 #### Restart policies (--restart)
 
-Use Hyper.sh's `--restart` to specify a container's *restart policy*. A restart policy controls whether to restart a container after exit. The policy will be triggered if the uptime of a container is more than 10 seconds.
-Hyper.sh supports the following restart policies:
+Use Hyper's `--restart` to specify a container's *restart policy*. A restart policy controls whether to restart a container after exit. The policy will be triggered if the uptime of a container is more than 10 seconds.
+Hyper supports the following restart policies:
 
 <table>
   <thead>
@@ -223,7 +223,7 @@ Hyper.sh supports the following restart policies:
       <td><strong>always</strong></td>
       <td>
         Always restart the container regardless of the exit status.
-        When you specify always, Hyper.sh will try to restart
+        When you specify always, Hyper will try to restart
         the container indefinitely. The container will also always start
         on daemon startup, regardless of the current state of the container.
       </td>
@@ -242,7 +242,7 @@ Hyper.sh supports the following restart policies:
     $ hyper run --restart=always redis
 
 This will run the `redis` container with a restart policy of **always**
-so that if the container exits, Hyper.sh will restart it.
+so that if the container exits, Hyper will restart it.
 
 #### Add security groups(--sg)
 
@@ -254,7 +254,7 @@ The `--sg` flag tells `hyper run` to add security groups to the container.  A se
 
 #### No automatic image volumes (--noauto-volume)
 
-The `--noauto-volume` option tells Hyper.sh service not to create new volumes for `VOLUME` sections in the container image. If not specified, `hyper run` will automatically create volumes for each `VOLUME` section in the container image.
+The `--noauto-volume` option tells Hyper service not to create new volumes for `VOLUME` sections in the container image. If not specified, `hyper run` will automatically create volumes for each `VOLUME` section in the container image.
 
     $ hyper run --noauto-volume image-with-volume
 
