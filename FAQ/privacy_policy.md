@@ -57,10 +57,10 @@ We may make certain personal information about you available to service provider
 
 We do not share your personal information (information that can identify a person, such as name, address, telephone number, and e-mail address) with anyone else, except that we may share personal information required or permitted by law:
 
-With your consent;
-To comply with legal orders and government requests;
+With your consent;<br/>
+To comply with legal orders and government requests;<br/>
 To combat fraud or criminal activity, and to protect the rights of Hyper or others; or
-With our vendors (who are required to safeguard personal information) that help us operate our business;
+With our vendors (who are required to safeguard personal information) that help us operate our business;<br/>
 We do not share your email address or phone number with third parties for promotional or marketing purposes.
 
 We may share non-personal information (information that cannot identify a person such as cookie data) for the same reasons as we might share personal information with third-party ad servers to place our ads, and to analyze the effectiveness of those ads.
