@@ -1,6 +1,6 @@
 # Privacy Policy
 
-`Last updated on:  April 4th, 2016`
+`Last updated on:  May 22th, 2018`
 
 HyperHQ, Inc. (“Hyper” or the “Company”) is committed to protecting the privacy of your information. This Privacy Statement describes Hyper’s Web site privacy practices.
 
@@ -53,16 +53,23 @@ Hyper may post a list of Customers and testimonials on the Company’s Web site 
 
 ## Sharing of Information Collected
 
-Hyper may share Data About Hyper Customers with the Company’s service providers so that these service providers can contact Customers and Visitors who have provided contact information on our behalf. Hyper may also share Data About Hyper Customers with the Company’s service providers to ensure the quality of information provided. Unless described in this privacy statement, Hyper does not share, sell, rent, or trade any information provided with third parties for their promotional purposes.
-From time to time, Hyper may partner with other companies to jointly offer products or services. If you purchase or specifically express interest in a jointly-offered product or service from Hyper, the Company may share Data About Hyper Customers collected in connection with your purchase or expression of interest with our joint promotion partner(s). Hyper does not control our business partners’ use of the Data About Hyper Customers we collect, and their use of the information will be in accordance with their own privacy policies. If you do not wish for your information to be shared in this manner, you may opt not to purchase or specifically express interest in a jointly offered product or service.
-Hyper uses a third-party service provider to manage credit card processing. This service provider is not permitted to store, retain, or use Billing Information except for the sole purpose of credit card processing on the Company’s behalf.
-Hyper reserves the right to use or disclose information provided if required by law or if the Company reasonably believes that use or disclosure is necessary to protect the Company’s rights and/or to comply with a judicial proceeding, court order, or legal process.
+We may make certain personal information about you available to service providers that perform work for Hyper in order for us to provide services to you. These service providers may help Hyper verify information, process transactions, deliver services, manage and enhance user data, provide customer service, assess your interest in Hyper’s products and services or conduct user research and surveys. These companies are obligated to protect your personal information and may have their own privacy policies if you link to or access their websites or systems.
+
+We do not share your personal information (information that can identify a person, such as name, address, telephone number, and e-mail address) with anyone else, except that we may share personal information required or permitted by law:
+
+With your consent;
+To comply with legal orders and government requests;
+To combat fraud or criminal activity, and to protect the rights of Hyper or others; or
+With our vendors (who are required to safeguard personal information) that help us operate our business;
+We do not share your email address or phone number with third parties for promotional or marketing purposes.
+
+We may share non-personal information (information that cannot identify a person such as cookie data) for the same reasons as we might share personal information with third-party ad servers to place our ads, and to analyze the effectiveness of those ads.
 
 ## International Transfer of Information Collected
 To facilitate Hyper’s global operations, the Company may transfer and access Data About Hyper Customers from around the world, including the United States. This Privacy Statement shall apply even if Hyper transfers Data About Hyper Customers to other countries.
 
-## Communications Preferences
-Hyper offers Customers and Visitors who provide contact information a means to choose how the Company uses the information provided. You may manage your receipt of marketing and non-transactional communications by clicking on the “unsubscribe” link located on the bottom of the Company’s marketing emails. Additionally, you may send a request specifying your communications preferences to support@hyper.sh. Customers cannot opt out of receiving transactional emails related to their account with Hyper or the Services.
+## WHAT ARE YOUR CHOICES?
+Hyper offers Customers and Visitors who provide contact information a means to choose how the Company uses the information provided. You may manage your receipt of marketing and non-transactional communications by clicking on the “unsubscribe” link located on the bottom of the Company’s marketing emails. Additionally, you may send a request specifying your communications preferences to privacy@hyper.sh. Customers cannot opt out of receiving transactional emails related to their account with Hyper or the Services.
 
 ## Correcting and Updating Your Information
 Customers may update or change their registration information by logging in to their accounts at https://hyper.sh. Requests to access, change, or delete your information will be handled within 30 days.
@@ -70,11 +77,58 @@ Customers may update or change their registration information by logging in to t
 ## Security
 Hyper uses appropriate administrative, technical, and physical security measures to protect Data About Hyper Customers.
 
+## Children under 13
+Our application(s) and site(s) are not for children under 13 years old. We do not knowingly solicit data online from, or market online to, children under 13. If we knowingly receive a child’s personal information, we will delete it from our systems.
+
 ## Changes to this Privacy Statement
 Hyper reserves the right to change this Privacy Statement.
 
 ## Contacting Us
 
-Questions regarding this Privacy Statement or the information practices of the Company’s Web site should be directed to support@hyper.sh.
+Questions regarding this Privacy Statement or the information practices of the Company’s Web site should be directed to privacy@hyper.sh.
 
-> NOTE: This document is an adaptation of the Heroku Privacy Policy. The original work has been modified. Heroku, Inc. is not connected with and does not sponsor or endorse Hyper or its use of the work.
+# Privacy Policy FAQ
+
+The following are basic questions you may have about our privacy statement. We encourage you to read the detailed statement above for additional details.
+
+## Why is Hyper updating its privacy statement?
+We now meet the high standard required by the European Union's General Data Protection Regulation (GDPR) and have updated our privacy statement to reflect that. We also continue to simplify language and remove jargon, to make our privacy statement easier to understand and read.
+
+## What is the GDPR?
+The GDPR is a regulation intended to strengthen and unify data protection for everyone within the European Union (EU). And because we believe that all our customers can benefit from its mandates, we're implementing it globally. The GDPR requires greater openness and transparency from companies on how they collect, store and use personal data, while also imposing tighter limits on the use of personal data. You can learn more [here](https://www.eugdpr.org/).
+
+## How often do you anticipate updating your privacy statement?
+We will update our privacy statement as necessary to ensure that our policies are in line with international regulations, our product and business practices.
+
+## What information does Hyper collect about me?
+Hyper collects your name, phone number, email address, mailing address, payment information, location data, IP address, social identifiers, data provided by cookies and similar technologies, functional data such as registration and system data, as well as additional usage data; for instance, performance and activity information.
+
+## Why does Hyper need my information?
+Hyper uses the data we collect to provide you the best experience within our services we offer, which includes using data to improve and personalize your experiences. We also use the data to communicate with you, for example, informing you about your account, new products or services available, security and other types of updates.
+
+## How is my information used?
+Hyper uses the data we collect for the following purposes:
+
+- Product Improvement
+- Future Product Development
+- Customer Support
+- Security, Safety, and Dispute Resolution
+- Communications and Marketing
+
+## Does Hyper sell information to third parties?
+No. We never have. And we never will.
+
+## How do I delete my personal data from Hyper and what are the consequences?
+You can always send us an email to privacy@hyper.sh request that your data be deleted. Please note, however, that by deleting your personal data your Hyper service will stop working.
+
+## Does Hyper keep or share my credit card information?
+No. It’s only used to process your payment at the time of purchase.
+
+## How long does Hyper keep my information?
+Hyper retains personal data for as long as necessary to provide the services, support your product and fulfill the transactions you have requested, or for other essential purposes such as complying with our legal obligations, resolving disputes and enforcing our agreements. Because these needs can vary for different data types in the context of different products or services, actual retention periods can vary significantly. For instance, we’ll keep all functional data on file as long as you have an active Hyper account.
+
+## Does Hyper use interest-based advertising?
+Yes. We work with third-party advertisers that utilize cookies and similar technologies to provide more relevant advertising about Hyper on our website and across the internet. To provide interest-based advertising, the advertisers combine non-personal data learned about your online activities over time to customize the advertising delivered to you. We do not share your personal information to do this.
+
+## How can I contact Hyper if I have questions regarding Hyper privacy statement?
+If you have any questions about the use of your personal information, please send us an email to privacy@hyper.sh.
