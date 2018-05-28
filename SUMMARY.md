@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-   * [What is Hyper](Introduction/what_is_hyper_.md)
-   * [Why Hyper](Introduction/why_hyper_.md)
+   * [What is Hyper](Introduction/what_is_hyper.md)
+   * [Why Hyper](Introduction/why_hyper.md)
    * [Regions](Introduction/region.md)
    * [Pricing](FAQ/pricing.md)
    * [Quota and Limits](FAQ/quota_and_limits.md)

@@ -31,7 +31,7 @@ Q: What does `hyper pull` do?
 > `hyper pull` fetches images from a public or private registry to your Hyper account.
 
 Q: How many containers can I run in Hyper?
-> You are limited to running up to 100 containers per region, though you may [request to increase the quota](../Reference/quota_and_limits.md).
+> You are limited to running up to 100 containers per region, though you may [request to increase the quota](../FAQ/quota_and_limits.md).
 
 Q: How quickly can I scale my containers both up and down?
 > Hyper provides a super elastic container environment. You can spin-up or shutdown containers in less than 5 seconds.
