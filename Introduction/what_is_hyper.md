@@ -1,6 +1,6 @@
 # What is Hyper?
 
-As a serverless container hosting service, [Hyper](docker.hyper.sh) allows you to run containers without having to manage VMs or clusters. With Hyper, you no longer have to provision, configure, and scale clusters of virtual machines to run containers. This removes the need to choose server types, decide when to scale your clusters, or optimize resource utilization. Hyper lets you focus on designing and building your applications instead of managing the underlying infrastructure.
+As a serverless container hosting service, [Hyper](https://www.hyper.sh/hyper) allows you to run containers without having to manage VMs or clusters. With Hyper, you no longer have to provision, configure, and scale clusters of virtual machines to run containers. This removes the need to choose server types, decide when to scale your clusters, or optimize resource utilization. Hyper lets you focus on designing and building your applications instead of managing the underlying infrastructure.
 
 Hyper is built to be consistent with Docker (API, workflow, etc.). The result is that if you know Docker, you will know how to use Hyper.  Imagine the entire cloud as a gigantic laptop in the cloud. Hyper allows you to deploy containers in production w running Docker on your own laptop.
 
@@ -40,4 +40,3 @@ Hyper is built to be consistent with Docker (API, workflow, etc.). The result is
 <td>Hypernetes</td><td>Kubernetes</td><td>REST API</td><td>gcp-us-central1</td>
 </tr>
 </table>
-
