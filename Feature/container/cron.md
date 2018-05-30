@@ -1,6 +1,6 @@
-# Cron (Beta)
+# Cron
 
-In Hyper, cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service but work with the containers. 
+In Hyper, cron is a system service that runs scheduled jobs at given intervals or times, just like the cron unix service but work with the containers.
 
 ## Cron expression
 The original Cron reference documentation for this implementation is found at [here](https://en.wikipedia.org/wiki/Cron#CRON_expression), where Hyper Cron implementation differs:
@@ -42,9 +42,9 @@ Check cron job list:
 	$ hyper cron ls
 	Name               Schedule            Image               Command
 	test-cron-job1     */5 * * * *         busybox             ping -c 3 8.8.8.8
-	
+
 Check the execution history of a cron job:
-    
+
     $ hyper cron history test-cron-job1
     Container                   Start                           End                             Status              Message
     test-cron-job1-1479265800   2016-11-16 03:10:00 +0000 UTC   2016-11-16 03:11:24 +0000 UTC   done                Job[test-cron-job1] is success to run
@@ -57,7 +57,7 @@ Remove a cron job:
 
     $ hyper cron rm test-cron-job1
     test-cron-job1
-    
+
 ## Notes
 * All timestamps in Hyper Cron service is UTC+0.
 * When a cron job container finished, Hyper Cron service will try to get `ExitCode` of the container.  If the value is non-zero, the cron job is `failed`.
@@ -66,7 +66,7 @@ Remove a cron job:
 * You may control the notification policy with `--mail` flag:
   * `on-failure` (default): send notification only when a cron job failed
   * `on-success`: send notification only when a cron job succeeded
-  * `all`: always send notification 
+  * `all`: always send notification
 * The notification email contains the last 100 lines of log for the cron job container.
 * When the Hyper Cron service is under maintaince, some cron jobs may be missed. In such case, a schedule-missed email will be sent to user.
 * When a cron job container finished (either succeeded or failed), the container will be cleaned up within a minute.

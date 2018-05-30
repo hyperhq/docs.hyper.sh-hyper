@@ -1,4 +1,4 @@
-# Cron (Beta)
+# Cron
 
 
 - [Cron create](./create.md)

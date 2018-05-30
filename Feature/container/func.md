@@ -1,4 +1,4 @@
-# Func (Beta)
+# Func
 
 Hyper Func is a Docker-centric Serverless platform. You can wrap functions in Docker images and have them run on demand.
 
@@ -49,11 +49,11 @@ CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 4. Check the function logs:
 ```
 $ hyper func logs helloworld
-2017-03-16T15:05:58Z [CALL] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdin: 
+2017-03-16T15:05:58Z [CALL] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdin:
 2017-03-16T15:05:58Z [PENDING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 2017-03-16T15:06:04Z [RUNNING] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06
 2017-03-16T15:06:10Z [FINISHED] CallId: 218b7b10-e7f1-4c48-ac3c-66792f8ffc06, ShortStdout: HelloWorld
-, ShortStderr: 
+, ShortStderr:
 ```
 
 5. Retrieve the function return:
@@ -81,7 +81,7 @@ $ hyper pull v4tech/imagemagick
 ```
 $ hyper func create --name resizer v4tech/imagemagick convert - -resize 50% fd:1
 resizer is created with the address of https://us-west-1.hyperfunc.io/call/resizer/11f91366-2fea-4381-8297-dc12f6ba200a
-``` 
+```
 
 3. Call the function with a picture payload:
 ```

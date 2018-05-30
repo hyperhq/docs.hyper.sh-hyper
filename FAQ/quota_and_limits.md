@@ -29,9 +29,6 @@ Hyper has certain hard and soft (`quota`) limits in using its service. Hard limi
 - Service: 5 per region
 - Concurrent function execution (container): 10 per region
 
-> Note: Beta services are not open for higher quota
-> - Hyper Cron
-> - Hyper Func
 
 ### Request a quota increase
 
