@@ -3,5 +3,5 @@
 * [Container](./container.md)
 * [logs](./logs.md)
 * [Compose](./compose.md)
-* [Cron (Beta)](./cron.md)
+* [Cron](./cron.md)
 * [Service](./service.md)
