@@ -26,17 +26,33 @@ Let’s save the compose file locally as `myfirstcompose.yml` and try it out. **
 
 ```
 hyper compose up -f myfirstcompose.yml
-Project [markcoleman]: Starting project 
-[1/1] [jenkins]: Starting 
-[1/1] [jenkins]: Started 
-Project [markcoleman]: Project started 
+Project [markcoleman]: Starting project
+[1/1] [jenkins]: Starting
+[1/1] [jenkins]: Started
+Project [markcoleman]: Project started
 (Output cut to save space)
 jenkins-1 | --> setting agent port for jnlp
 jenkins-1 | --> setting agent port for jnlp... done
+...
+jenkins-1 | *************************************************************
+jenkins-1 | *************************************************************
+jenkins-1 | *************************************************************
+jenkins-1 |
+jenkins-1 | Jenkins initial setup is required. An admin user has been created and a password generated.
+jenkins-1 | Please use the following password to proceed to installation:
+jenkins-1 |
+jenkins-1 | ad07e5fcddaf43d3963f1550d0ad4f68
+jenkins-1 |
+jenkins-1 | This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+jenkins-1 |
+jenkins-1 | *************************************************************
+jenkins-1 | *************************************************************
+jenkins-1 | *************************************************************
+...
 ```
 
 And that’s it. The Jenkins example that we looked at in Part 1 will now be up and running and accessible on `<YOUR FIP>:8080`
- 
+
 >**Note on changing compose files**
 >If you want to make a change to your compose file, remember to first run `hyper compose down`, and then `hyper compose up` again to make sure that all changes are processed correctly.
 
@@ -61,7 +77,7 @@ services:
     ports:
       - "8080:80"
   mysqldb:
-    image: mysql:latest
+    image: mysql:5.7
     environment:
         - MYSQL_ROOT_PASSWORD=12345678
 ```
@@ -72,12 +88,12 @@ The `depends_on` field makes sure that the `mysqldb` service is started _before_
 
 ```
 hyper compose up -f mywordpress_compose.yml
-Project [markcoleman]: Starting project 
-[1/2] [mysqldb]: Starting 
-[1/2] [mysqldb]: Started 
-[2/2] [web]: Starting 
-[2/2] [web]: Started 
-Project [markcoleman]: Project started 
+Project [markcoleman]: Starting project
+[1/2] [mysqldb]: Starting
+[1/2] [mysqldb]: Started
+[2/2] [web]: Starting
+[2/2] [web]: Started
+Project [markcoleman]: Project started
 (Output cut to save space)
 ```
 
