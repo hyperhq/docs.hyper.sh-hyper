@@ -11,7 +11,7 @@ Create a volume
 
     {
       "Name": "tardis",
-      "Driver": "",
+      "Driver": "hyper",
       "DriverOpts": {
           "size": "10",
           "snapshot":""
@@ -25,7 +25,7 @@ Create a volume
 
     {
           "Name": "tardis",
-          "Driver": "",
+          "Driver": "hyper",
           "Mountpoint": "",
           "Labels": {
               "size": "10",
