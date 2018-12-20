@@ -54,6 +54,10 @@ Q: Does every container need one Floating IP?
 Q: Does Hyper use ECC memory?
 > Yes, all the hardware underlying Hyper uses ECC memory.
 
+Q: How do I migrate data from hyper.sh?
+> There are two ways to migrate data to external storage. One is to use the hyper container as a file server, and the other is to use the hyper container as a client. Please refer to [our detail solution](../GettingStarted/migrate_data).
+
+
 ### Pricing
 
 Q: What is the pricing plan of Hyper ?
