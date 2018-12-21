@@ -87,7 +87,7 @@ $ eval "hyper run -d --name sftpserver ${VOL_LIST} -p ${SFTP_PORT}:22 atmoz/sftp
 
 > SFTP user is the same user group as root here
 
-If you want to use an encrypted password when running hyper container, please go to  [FAQ5](#5can-i-use-an-encrypted-password-for-sftp)
+If you want to use an encrypted password when running hyper container, please go to  [FAQ5](#5-can-i-use-an-encrypted-password-for-sftp)
 
 ## Attach FIP
 
