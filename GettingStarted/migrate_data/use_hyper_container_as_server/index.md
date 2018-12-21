@@ -91,16 +91,16 @@ If you want to use an encrypted password when running hyper container, please go
 
 ## Attach FIP
 
-attach a public IP to the SFTP server container container
+attach a public IP to the SFTP server container
 
 ```
 //If you have an unused FIP
 $ FIP=$(hyper fip ls -f dangling=true | grep -v Floating | head -n 1)
 
-//If you have used FIP, please detach one from a container, then run the above command line again
+//If you have FIP in use, please detach one from a container, then run the above command line again
 $ hyper fip detach <container>
 
-//If you have no FIP, please allocate a new one.
+//If you don't have FIP, please allocate one.
 $ FIP=$(hyper fip allocate -y 1)
 
 //Attach the FIP to the SFTP server container
