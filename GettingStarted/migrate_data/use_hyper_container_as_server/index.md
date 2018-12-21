@@ -26,11 +26,11 @@
 
 #  Instructions for data migration
 
-- Run the SFTP/SSH server in hyper.sh
-- Download volume data from hyper.sh to your localhost
+- Run a file server container in hyper.sh(with data volumes mounted, and a FIP was attached)
+- Download volume data from the hyper container to your localhost
 
 
-Here is an example of running the SFTP(It's safer than FTP) server in hyper.sh
+Here is an example of running the SFTP(It's safer than FTP) server container in hyper.sh
 
 We will use the docker image `atmoz/sftp` in this example:
 - Dockerfile: https://github.com/atmoz/sftp
@@ -227,7 +227,7 @@ $ SFTP_CRYPT_PWD=$(echo -n $RESULT | awk '{print $2}' | tr -d "\\r")
 $ hyper run -d --name sftpserver \
     ${VOL_LIST} \
     -p ${SFTP_PORT}:22 \
-    atmoz/sftp "${SFTP_USER}:${SFTP_CRYPT_PWD}:e:1001"
+    atmoz/sftp "${SFTP_USER}:${SFTP_CRYPT_PWD}:e:1001:0"
 ```
 > You can also use the local docker daemon to run the `atmoz/makepasswd` container.
 

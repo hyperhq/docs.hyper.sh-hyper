@@ -14,16 +14,17 @@
 
 #  Instructions for data migration
 
-- Upload volume data from hyper.sh to your own server or cloud storage
+- Install and config the command line tool in your running hyper container
+- Upload volume data from the hyper container to your own server or cloud storage with cli
 
 ## Prerequisites
 
 Any of the following
 
-- The user has own servers
+- You have your own file server
   - SFTP server with public IP
   - SSH server with public IP
-- The user has own cloud storage
+- You have your own cloud storage
   - AWS S3
   - Google Cloud Storage
   - Azure Blob Storage
@@ -139,3 +140,5 @@ Operation completed over 1 objects/123.0 B.
 REF:
 - https://docs.microsoft.com/en-us/azure/storage/common/storage-azure-cli#azure-cli-sample-script
 - https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-cli
+
+> There is no example here, but it is similar to the example above.
