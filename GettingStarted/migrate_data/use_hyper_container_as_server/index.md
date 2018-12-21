@@ -1,6 +1,6 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Instruction for back up volume data](#instruction-for-back-up-volume-data)
+- [Instructions for data migration](#instructions-for-data-migration)
 	- [Prerequisites](#prerequisites)
 	- [Get volume name to backup](#get-volume-name-to-backup)
 	- [Start a SFTP server](#start-a-sftp-server)
@@ -9,28 +9,28 @@
 	- [Delete the SFTP server](#delete-the-sftp-server)
 - [Use util.sh](#use-utilsh)
 - [FAQ](#faq)
-	- [1.No more image quota for use](#1no-more-image-quota-for-use)
-	- [2.No more container quota for use](#2no-more-container-quota-for-use)
-	- [3.No more FIP quota for use](#3no-more-fip-quota-for-use)
-	- [4.How to get the SFTP account](#4how-to-get-the-sftp-account)
-	- [5.Can I use an encrypted password for SFTP](#5can-i-use-an-encrypted-password-for-sftp)
-	- [6.Can I change the SFTP docker image](#6can-i-change-the-sftp-docker-image)
-	- [7.No space left on volume](#7no-space-left-on-volume)
-	- [8.How to compress the data in volume](#8how-to-compress-the-data-in-volume)
-	- [9.Login SFTP Permission denied](#9login-sftp-permission-denied)
-	- [10.Permission issue of file or dir](#10permission-issue-of-file-or-dir)
+	- [1. No more image quota for use](#1-no-more-image-quota-for-use)
+	- [2. No more container quota for use](#2-no-more-container-quota-for-use)
+	- [3. No more FIP quota for use](#3-no-more-fip-quota-for-use)
+	- [4. How to get the SFTP account](#4-how-to-get-the-sftp-account)
+	- [5. Can I use an encrypted password for SFTP](#5-can-i-use-an-encrypted-password-for-sftp)
+	- [6. Can I change the SFTP docker image](#6-can-i-change-the-sftp-docker-image)
+	- [7. No space left on volume](#7-no-space-left-on-volume)
+	- [8. How to compress the data in volume](#8-how-to-compress-the-data-in-volume)
+	- [9. Login SFTP Permission denied](#9-login-sftp-permission-denied)
+	- [10. Permission issue of file or dir](#10-permission-issue-of-file-or-dir)
 
 <!-- /TOC -->
 
 ![](./as-server.jpg)
 
-# Instructions for backing up volume data
+#  Instructions for data migration
 
-- run a SFTP/SSH server in hyper.sh
-- copy the volume data from hyper.sh to your localhost
+- Run the SFTP/SSH server in hyper.sh
+- Download volume data from hyper.sh to your localhost
 
 
-Here is an example of running a SFTP(It's safer than FTP) server in hyper.sh
+Here is an example of running the SFTP(It's safer than FTP) server in hyper.sh
 
 We will use the docker image `atmoz/sftp` in this example:
 - Dockerfile: https://github.com/atmoz/sftp
@@ -87,7 +87,7 @@ $ eval "hyper run -d --name sftpserver ${VOL_LIST} -p ${SFTP_PORT}:22 atmoz/sftp
 
 > SFTP user is the same user group as root here
 
-If you want to use an encrypted password when running hyper container, please goto  [FAQ5](#5can-i-use-an-encrypted-password-for-sftp)
+If you want to use an encrypted password when running hyper container, please go to  [FAQ5](#5can-i-use-an-encrypted-password-for-sftp)
 
 ## Attach FIP
 
@@ -114,7 +114,7 @@ Copy file from SFTP server to localhost
 //root dir for SFTP is '/home/${SFTP_USER}', all volumes are mounted in this dir.
 
 //for example:
-//'data' is the volume name, the full file path in container is /home/backupdata/data/hello.txt, so the path of sftp is /data/hello.txt
+//'data' is the volume name, the full file path in the container is /home/backupdata/data/hello.txt, so the path of SFTP is /data/hello.txt
 
 //non-interactive mode
 $ sftp -P ${SFTP_PORT} ${SFTP_USER}@${FIP}:/data/hello.txt .
@@ -171,24 +171,24 @@ sftp> ls
 sftp> get -Pr *
 sftp> exit
 
-// delete SFTP server container, fip and SFTP server password file
+// delete SFTP server container, fip, and SFTP server password file
 $ ./util.sh clean
 ```
 
-> A fip will be attached to the SFTP server container automatically, in this case the fip is `209.177.92.169`  
+> A fip will be attached to the SFTP server container automatically, in this case, the fip is `209.177.92.169`  
 
 > The script was tested under MacOS and CentOS.
 
 # FAQ
 
-## 1.No more image quota for use
+## 1. No more image quota for use
 
-Please delete a image
+Please delete an image
 ```
 $ hyper rmi <image>
 ```
 
-## 2.No more container quota for use
+## 2. No more container quota for use
 
 Please delete a container
 ```
@@ -199,21 +199,21 @@ $ hyper rm -fv <container>
 $ hyper rm -f <container>
 ```
 
-## 3.No more FIP quota for use
+## 3. No more FIP quota for use
 
 Please detach the using FIP from your container
 ```
 $ hyper fip detach <container>
 ```
 
-## 4.How to get the SFTP account
+## 4. How to get the SFTP account
 
 You can run the following command  line
 ```
 $ ./util.sh view
 ```
 
-## 5.Can I use an encrypted password for SFTP
+## 5. Can I use an encrypted password for SFTP
 
 Yes
 ```
@@ -223,7 +223,7 @@ $ RESULT=$(hyper run -it --rm atmoz/makepasswd --crypt-md5)
 $ SFTP_PWD=$(echo -n $RESULT | awk '{print $1}')
 $ SFTP_CRYPT_PWD=$(echo -n $RESULT | awk '{print $2}' | tr -d "\\r")
 
-//start the SFTP server container with encrypted password
+//start the SFTP server container with an encrypted password
 $ hyper run -d --name sftpserver \
     ${VOL_LIST} \
     -p ${SFTP_PORT}:22 \
@@ -235,7 +235,7 @@ $ hyper run -d --name sftpserver \
 > SFTP_CRYPT_PWD is the encrypted password for start SFTP server container
 
 
-## 6.Can I change the SFTP docker image
+## 6. Can I change the SFTP docker image
 
 Yes
 ```
@@ -251,13 +251,13 @@ You can also build both images by yourself, then push them to docker hub.
 Then update the value of MKPWD_IMAGE_NAME and SFTP_IMAGE_NAME in the `util.sh` script.
 ```
 
-## 7.No space left on volume
+## 7. No space left on volume
 
 - create a volume with enough space
 - mount it to the SFTP server container
 
 ```
-//create new volume
+//create a new volume
 $ hyper volume create --name vol-backup --size 20
 
 //delete old sftpserver container
@@ -272,7 +272,7 @@ $ hyper exec -it sftpserver df -hT | grep home
 /dev/sdc       ext4      9.8G  137M  9.1G   2% /home/backupdata/95c10ca3f04efd493f9c946df9d3a65aace0f289cb7d4a0730424cc4846c5e7
 ```
 
-## 8.How to compress the data in volume
+## 8. How to compress the data in volume
 
 - enter the sftpserver container
 - cd the data dir
@@ -295,7 +295,7 @@ total 102500
 -rw-r--r-- 1 root root 104857600 Dec 19 13:39 hello.txt
 ```
 
-## 9.Login SFTP Permission denied
+## 9. Login SFTP Permission denied
 
 I changed the SFTP username to `backup`, but when I copy file, the error occur:
 ```
@@ -303,14 +303,14 @@ backupdata@199.245.56.54's password:
 Permission denied, please try again.
 ```
 
-The cause is `backup` is a exist username, the following usernames can not be used as SFTP username in this SFTP server container
+The cause is the `backup` is an existing username, the following usernames cannot be used as SFTP username in this SFTP server container
 ```
 root, daemon, bin, sys, sync, games, man, lp, mail, news, uucp, proxy, www-data,
 backup, list, irc, gnats, nobody, _apt, messagebus, sshd,
 systemd-timesync, systemd-network, systemd-resolve, systemd-bus-proxy
 ```
 
-## 10.Permission issue of file or dir
+## 10. Permission issue of file or dir
 
 **case1: file permission**
 ```

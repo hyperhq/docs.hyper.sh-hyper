@@ -1,6 +1,6 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Instruction for back up volume data](#instruction-for-back-up-volume-data)
+- [Instructions for data migration](#instructions-for-data-migration)
 	- [Prerequisites](#prerequisites)
 	- [Example](#example)
 		- [SFTP/SSH Server](#sftpssh-server)
@@ -12,18 +12,18 @@
 
 ![](./as-client.jpg)
 
-# Instruction for back up volume data
+#  Instructions for data migration
 
-- copy the volume data from hyper.sh to your own server or cloud storage
+- Upload volume data from hyper.sh to your own server or cloud storage
 
 ## Prerequisites
 
 Any of the following
 
-- User has own servers
-  - sftp server with public ip
-  - ssh server with public ip
-- User has own cloud storage
+- The user has own servers
+  - SFTP server with public IP
+  - SSH server with public IP
+- The user has own cloud storage
   - AWS S3
   - Google Cloud Storage
   - Azure Blob Storage
@@ -33,9 +33,9 @@ Any of the following
 
 ### SFTP/SSH Server
 
-You should have the IP, Port, username and password of your own sftp/ssh server.
+You should have the IP, Port, username, and password of your own SFTP/SSH server.
 
-Example: copy file from  hyper container to sftp server
+Example: copy file from the hyper container to the SFTP server
 ```
 $ hyper exec -it mycontainer sh
 root@5cd5b9fe7b2a:~# which sftp
@@ -44,7 +44,7 @@ root@5cd5b9fe7b2a:~# tar czvf /data/hello.tar.gz /data/hello.txt
 root@5cd5b9fe7b2a:~# sftp -P 2222 /data/hello.tar.gz foo@209.177.93.134:/data
 ```
 
-Example: copy file from  hyper container to ssh server
+Example: copy file from  hyper container to the SSH server
 ```
 $ hyper exec -it mycontainer sh
 root@5cd5b9fe7b2a:~# which scp
@@ -53,7 +53,7 @@ root@5cd5b9fe7b2a:~# tar czvf /data/hello.tar.gz /data/hello.txt
 root@5cd5b9fe7b2a:~# scp -P 2222 /data/hello.tar.gz foo@209.177.93.134:/data
 ```
 
-If your server have keypairs, you can create the private key file in the hyper container.
+If your server has keypairs, you can create the private key file in the hyper container.
 ```
 $ hyper exec -it mycontainer sh
 root@5cd5b9fe7b2a:~# which scp
@@ -73,8 +73,8 @@ REF:
 
 Step:
 - create a temporary credential with AWS console first, then you will get `AWS Access Key`  and  `AWS Secret Access Key`
-- install and config aws cli in hyper container
-- compress file in volume
+- install and config aws cli in the hyper container
+- compress files in the volume
 - copy compressed file to s3
 
 ```
@@ -103,7 +103,7 @@ REF:
 - https://cloud.google.com/storage/docs/quickstart-gsutil
 - https://cloud.google.com/storage/docs/gsutil_install
 
-Run the following command lines in hyper container
+Run the following command lines in the hyper container
 ```
 // install gsutil
 root@a52aa7ba39b4:/# curl https://sdk.cloud.google.com | bash
