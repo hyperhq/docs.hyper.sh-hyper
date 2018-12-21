@@ -17,8 +17,8 @@
 	- [6. Can I change the SFTP docker image](#6-can-i-change-the-sftp-docker-image)
 	- [7. No space left on volume](#7-no-space-left-on-volume)
 	- [8. How to compress the data in volume](#8-how-to-compress-the-data-in-volume)
-	- [9. Login SFTP Permission denied](#9-login-sftp-permission-denied)
-	- [10. Permission issue of file or dir](#10-permission-issue-of-file-or-dir)
+	- [9. SFTP access denied](#9-sftp-access-denied)
+	- [10. Permissions issues with file and directory](#10-permissions-issues-with-file-and-directory)
 
 <!-- /TOC -->
 
@@ -111,7 +111,7 @@ $ hyper fip attach ${FIP} sftpserver
 
 Copy file from SFTP server to localhost
 ```
-//root dir for SFTP is '/home/${SFTP_USER}', all volumes are mounted in this dir.
+//root directory for SFTP is '/home/${SFTP_USER}', all volumes are mounted in this directory.
 
 //for example:
 //'data' is the volume name, the full file path in the container is /home/backupdata/data/hello.txt, so the path of SFTP is /data/hello.txt
@@ -145,13 +145,13 @@ NOTICE : attached volume(95c10ca3f04efd493f9c946df9d3a65aace0f289cb7d4a0730424cc
 
 # Use util.sh
 
-To facilitate the creation of SFTP server, we also provide a script `util.sh`.
+To make it easier for you to create the SFTP server container, we also provide a script.
 
 You can download the script here: [util.sh](util.sh)
 
 After you download this script, please set the file mode: `chmod +x util.sh`
 
-Here is the usage:
+Here's an example:
 ```
 // If you do not use the default hyper config, you can modify the HYPER_BIN variable in uitl.sh
 
@@ -161,9 +161,9 @@ $ ./util.sh start vol1 vol2     # start SFTP server container, run 'hyper volume
 $ ./util.sh view                # get SFTP server IP and account
 
 //download file with non-interactive mode
-$ sftp -P 2222 backupdata@209.177.92.169:/vol1/file1 .   # root dir for SFTP is '/home/backupdata', all volumes are mounted in this dir.
+$ sftp -P 2222 backupdata@209.177.92.169:/vol1/file1 .   # root directory for SFTP is '/home/backupdata', all volumes are mounted in this dir.
 
-//download dir with interactive mode
+//download directory with interactive mode
 $ sftp -P 2222 backupdata@209.177.92.169
 sftp> ls
 sftp> get -Pr *
@@ -173,9 +173,9 @@ sftp> exit
 $ ./util.sh clean
 ```
 
-> A fip will be attached to the SFTP server container automatically, in this case, the fip is `209.177.92.169`  
+> A FIP will be attached to the SFTP server container automatically, in this case, the FIP is `209.177.92.169`  
 
-> The script was tested under MacOS and CentOS.
+> The script was tested under MacOS,CentOS, and Ubuntu
 
 # FAQ
 
@@ -229,7 +229,7 @@ $ hyper run -d --name sftpserver \
 ```
 > You can also use the local docker daemon to run the `atmoz/makepasswd` container.
 
-> SFTP_PWD is the plain password for login SFTP_PWD  
+> SFTP_PWD is the plain password for login SFTP  
 > SFTP_CRYPT_PWD is the encrypted password for start SFTP server container
 
 
@@ -252,7 +252,7 @@ Then update the value of MKPWD_IMAGE_NAME and SFTP_IMAGE_NAME in the `util.sh` s
 ## 7. No space left on volume
 
 - create a volume with enough space
-- mount it to the SFTP server container
+- mount the volume to the SFTP server container
 
 ```
 //create a new volume
@@ -274,7 +274,7 @@ $ hyper exec -it sftpserver df -hT | grep home
 
 - enter the sftpserver container
 - cd the data dir
- - SFTP root dir is `/home/backupdata`
+ - SFTP root directory is `/home/backupdata`
  - all volume will be mounted in this dir
 - compress the file
 
@@ -293,24 +293,24 @@ total 102500
 -rw-r--r-- 1 root root 104857600 Dec 19 13:39 hello.txt
 ```
 
-## 9. Login SFTP Permission denied
+## 9. SFTP access denied
 
-I changed the SFTP username to `backup`, but when I copy file, the error occur:
+I changed the SFTP_USER to `backup` in util.sh, but when I login the SFTP server, the error occur:
 ```
 backupdata@199.245.56.54's password:
 Permission denied, please try again.
 ```
 
-The cause is the `backup` is an existing username, the following usernames cannot be used as SFTP username in this SFTP server container
+The reason is that `backup` is an existing user name, the following user names cannot be used as user name of this SFTP server container
 ```
 root, daemon, bin, sys, sync, games, man, lp, mail, news, uucp, proxy, www-data,
 backup, list, irc, gnats, nobody, _apt, messagebus, sshd,
 systemd-timesync, systemd-network, systemd-resolve, systemd-bus-proxy
 ```
 
-## 10. Permission issue of file or dir
+## 10. Permissions issues with file and directory
 
-**case1: file permission**
+**case1: file has no permissions**
 ```
 $ sftp -P 2222 backupdata@209.177.92.169:/data/hello.txt .
 backupdata@209.177.92.169's password:
@@ -319,8 +319,8 @@ Fetching /data/hello.txt to ./hello.txt
 remote open("/data/hello.txt"): Permission denied
 Connection closed.
 ```
-Cause: sftp user has no permission to access file `hello.txt`
-Solution1. change the mode of the file, for example
+Cause: SFTP user doesn't have access to the file
+Solution1. Change the file mode, for example:
 ```
 $ hyper exec -it sftpserver bash
 root@a52aa7ba39b4:/# cd /home/backupdata/
@@ -335,7 +335,7 @@ root@a52aa7ba39b4:/# cd /home/backupdata/data
 root@a52aa7ba39b4:/home/backupdata/data# tar czvf data.tar.gz *
 ```
 
-**case2: dir permission**
+**case2: directory has no permissions**
 ```
 $ sftp -P 2222 backupdata@209.177.92.169:/data/hello.txt .
 backupdata@209.177.92.169's password:
@@ -353,8 +353,8 @@ sftp> ls
 remote readdir("/data"): Permission denied
 sftp>
 ```
-Cause:  sftp user has no permission to access volume mount dir `data`
-Solution: change the mode of the dir, for example:
+Cause:  SFTP user doesn't have access to the volume mount directory
+Solution: Change the directory mode, for example::
 ```
 $ hyper exec -it sftpserver bash
 root@a52aa7ba39b4:/# cd /home/backupdata/
