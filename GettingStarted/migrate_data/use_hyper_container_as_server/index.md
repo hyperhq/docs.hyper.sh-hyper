@@ -160,8 +160,6 @@ $ ./util.sh generate            # genereate SFTP password
 $ ./util.sh start vol1 vol2     # start SFTP server container, run 'hyper volume ls' to get the volume name
 $ ./util.sh view                # get SFTP server IP and account
 
-$ sftp -P 2222 backupdata@209.177.92.169:/vol1/file1 .   # root dir for SFTP is '/home/backupdata', all volumes are mounted in this dir.
-
 //download file with non-interactive mode
 $ sftp -P 2222 backupdata@209.177.92.169:/vol1/file1 .   # root dir for SFTP is '/home/backupdata', all volumes are mounted in this dir.
 
